@@ -1,7 +1,49 @@
-# Vue 3 + Vite
+# TVK Dynamic Poster Generator
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A high-performance web application built with Vue 3 and Vuetify 3 for creating professional, branded election campaign posters for Tamilaga Vettri Kazhagam (TVK).
 
-## Recommended IDE Setup
+## Features
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- **Ultra-HD Rendering**: Generates posters at 3000px width (DPI suitable for professional printing).
+- **Party Branding**: Includes a high-resolution header with the party leader (Vijay) and key historical figures (Periyar, Velunachiyar, Kamarajar, Ambedkar, and Anjalaiyammal).
+- **Multi-Image Support**: Upload and automatically grid multiple images in the white content area.
+- **Dynamic Data Fields**: Customizable fields for Constituency, Part No, Street, Date, and Description.
+- **Footer Integration**: Automatically positions key election information in the branded footer.
+
+## Tech Stack
+
+- **Frontend**: Vue 3 (Options API)
+- **UI Framework**: Vuetify 3
+- **State Management**: Pinia
+- **Build Tool**: Vite
+- **Canvas Engine**: HTML5 Canvas API (Ultra-HD optimized)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16.18+ or v18+)
+- npm
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Project Structure
+
+- `src/components/PosterCreator`: Core logic for the poster workspace and canvas engine.
+- `src/assets`: Branded templates and static assets.
+- `src/plugins/vuetify.js`: Custom theme configuration (Maroon & Gold).
+
+## License
+
+MIT
