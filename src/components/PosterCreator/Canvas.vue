@@ -5,6 +5,9 @@
 </template>
 
 <script>
+import headerTemplate from '../../assets/header.png';
+import whistleSymbol from '../../assets/voteForWhistle.jpg';
+
 export default {
   name: 'PosterCanvas',
   props: {
@@ -19,6 +22,7 @@ export default {
     streetName: { type: String, default: '' },
     date: { type: String, default: '' },
     headerSrc: { type: String, default: '' },
+    candidateUrl: { type: String, default: '' },
   },
   data: () => ({
     ctx: null,
@@ -28,6 +32,7 @@ export default {
       handler: 'draw',
       deep: true
     },
+    candidateUrl: 'draw',
     textTop: 'draw',
     textContent: 'draw',
     constituencyNo: 'draw',
@@ -53,31 +58,78 @@ export default {
       this.ctx.fillRect(0, 0, this.width, this.height);
 
       // 1. Draw Header
-      const headerImg = await this.loadImage(this.headerSrc || '/src/assets/header.png');
+      const headerImg = await this.loadImage(this.headerSrc || headerTemplate);
       const headerHeight = this.width * (headerImg.height / headerImg.width);
       this.ctx.drawImage(headerImg, 0, 0, this.width, headerHeight);
 
+      // Draw Whistle Symbol - Below Header LEFT
+      try {
+        const whistleImg = await this.loadImage(whistleSymbol);
+        const whistleSize = 450;
+        const whistleX = 100;
+        const whistleY = headerHeight + 50;
+        
+        this.ctx.save();
+        this.ctx.beginPath();
+        this.ctx.arc(whistleX + whistleSize/2, whistleY + whistleSize/2, whistleSize/2, 0, Math.PI * 2);
+        this.ctx.clip();
+        this.ctx.fillStyle = 'white';
+        this.ctx.fill();
+        this.ctx.drawImage(whistleImg, whistleX, whistleY, whistleSize, whistleSize);
+        this.ctx.restore();
+      } catch (e) { console.error("Whistle load error", e); }
+
+      // Draw Candidate Image - Below Header RIGHT
+      if (this.candidateUrl) {
+        try {
+          const candImg = await this.loadImage(this.candidateUrl);
+          const candSize = 500; 
+          const candX = this.width - candSize - 100;
+          const candY = headerHeight + 50;
+          
+          this.ctx.save();
+          this.ctx.beginPath();
+          this.ctx.arc(candX + candSize/2, candY + candSize/2, candSize/2, 0, Math.PI * 2);
+          this.ctx.clip();
+          
+          const scale = Math.max(candSize / candImg.width, candSize / candImg.height);
+          const drawW = candImg.width * scale;
+          const drawH = candImg.height * scale;
+          const offX = (candSize - drawW) / 2;
+          const offY = (candSize - drawH) / 2;
+          
+          this.ctx.fillStyle = 'white';
+          this.ctx.fill();
+          this.ctx.drawImage(candImg, candX + offX, candY + offY, drawW, drawH);
+          this.ctx.restore();
+        } catch (e) { console.error("Candidate load error", e); }
+      }
+
       // 2. Draw Footer
-      const footerHeight = 400; // Scaled up
+      // Footer Bar (Maroon with gold stroke)
       this.ctx.fillStyle = '#800000';
-      this.ctx.fillRect(0, this.height - footerHeight, this.width, footerHeight);
+      this.ctx.strokeStyle = '#D4AF37';
+      this.ctx.lineWidth = 10;
+      const footerH = 300;
+      const footerY = this.height - footerH;
+      this.ctx.fillRect(0, footerY, this.width, footerH);
+      this.ctx.strokeRect(0, footerY, this.width, footerH);
       
       this.ctx.fillStyle = '#FFD700'; // Gold Bar at bottom
       this.ctx.fillRect(0, this.height - 120, this.width, 120);
 
       // 3. Draw Main Images Grid
       if (this.imageUrls && this.imageUrls.length > 0) {
-        const availableHeight = this.height - headerHeight - footerHeight - 1200;
+        const availableHeight = this.height - headerHeight - footerH - 1200;
         const startY = headerHeight + 1000;
         
         const count = this.imageUrls.length;
         let cols = 1;
-        let rows = 1;
         
-        if (count > 1) cols = 2;
-        if (count > 2) rows = Math.ceil(count / 2);
-        if (count > 4) cols = 3;
-        if (count > 6) rows = Math.ceil(count / 3);
+        if (count >= 2 && count <= 4) cols = 2;
+        else if (count >= 5) cols = 3;
+        
+        const rows = Math.ceil(count / cols);
 
         const cellWidth = (this.width * 0.9) / cols;
         const cellHeight = availableHeight / rows;
@@ -93,9 +145,11 @@ export default {
           
           const drawW = cellWidth - padding * 2;
           const drawH = cellHeight - padding * 2;
-          const ratio = Math.min(drawW / img.width, drawH / img.height);
-          const finalW = img.width * ratio;
-          const finalH = img.height * ratio;
+          
+          // 'Contain' logic: show full image inside the cell
+          const scale = Math.min(drawW / img.width, drawH / img.height);
+          const finalW = img.width * scale;
+          const finalH = img.height * scale;
           
           const offX = (drawW - finalW) / 2;
           const offY = (drawH - finalH) / 2;
@@ -109,16 +163,16 @@ export default {
       
       // Top Headline (Large)
       if (this.textTop) {
-        this.ctx.font = 'bold 140px "Inter", sans-serif';
-        this.ctx.fillStyle = '#1a1a1a';
-        this.ctx.fillText(this.textTop, this.width / 2, headerHeight + 300);
+        this.ctx.font = 'bold 110px "Inter", sans-serif';
+        this.ctx.fillStyle = '#800000';
+        this.ctx.fillText(this.textTop, this.width / 2, headerHeight + 320, 1400); 
       }
 
       // Content Description (Smaller, below headline)
       if (this.textContent) {
-        this.ctx.font = '72px "Inter", sans-serif';
+        this.ctx.font = '62px "Inter", sans-serif';
         this.ctx.fillStyle = '#444444';
-        this.drawWrappedText(this.textContent, this.width / 2, headerHeight + 500, this.width * 0.8, 90);
+        this.drawWrappedText(this.textContent, this.width / 2, headerHeight + 520, 1400, 80);
       }
 
       // --- FOOTER INFO ---
