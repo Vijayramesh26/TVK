@@ -86,7 +86,7 @@
           <v-avatar size="120" class="elevation-10 border-gold mb-4" color="white">
             <span class="text-h3 font-weight-black maroon--text">{{ getInitials(selectedCandidate.nameEn || selectedCandidate.name) }}</span>
           </v-avatar>
-          <h2 class="text-h4 font-weight-black mb-1" :class="selectedCandidate.isPresident ? 'white--text' : 'maroon--text'">
+          <h2 class="text-h4 font-weight-black mb-1" :class="selectedCandidate.isPresident ? 'maroon--text' : 'white--text'">
             {{ selectedCandidate.name }}
           </h2>
           <v-chip :color="selectedCandidate.isPresident ? '#800000' : '#D4AF37'" theme="dark" class="font-weight-bold">

@@ -51,29 +51,29 @@ export const candidatesData = [
     district: "Tiruvallur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A., B.L.",
     bio: "Poonamallee தொகுதியின் வளர்ச்சிக்காக பாடுபடுகிறார்.",
   },
   {
     id: 6,
     name: "திரு. ஆர். ரமேஷ் குமார்",
     nameEn: "R. Ramesh Kumar",
-    constituency: "Avadi",
+    constituency: "Maduravoyal",
     district: "Tiruvallur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A.",
     bio: "Avadi தொகுதியில் தொழில் வளர்ச்சி மற்றும் வேலைவாய்ப்பை பெருக்க உழைப்பவர்.",
   },
   {
     id: 7,
     name: "திரு. ரேவந்த் சரண்",
     nameEn: "P. Revanth Charan",
-    constituency: "Maduravoyal",
+    constituency: "Avadi",
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A., B.L. (Hons), LLM (London)",
     bio: "Maduravoyal தொகுதியில் இளைஞர்களின் முன்னேற்றத்திற்காக பாடுபடுகிறார்.",
   },
   {
@@ -84,7 +84,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "DCT, ADCA",
     bio: "Ambattur தொகுதியின் உட்கட்டமைப்பை மேம்படுத்த பாடுபடுகிறார்.",
   },
   {
@@ -106,7 +106,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E., B.L.",
     bio: "Thiruvottiyur தொகுதியில் மீனவர் நலன் மற்றும் தொழில் வளர்ச்சிக்காக பாடுபடுகிறார்.",
   },
   {
@@ -117,7 +117,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Tech., MBA, Ph.D.",
     bio: "R.K. Nagar தொகுதியை முன்மாதிரி தொகுதியாக மாற்ற உழைப்பவர்.",
   },
   {
@@ -128,7 +128,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "6",
     assets: "₹548.82 Cr",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Sc. (Visual Communication)",
     bio: "Perambur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -139,7 +139,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A.",
     bio: "Kolathur தொகுதி மக்களின் குரலாக சட்டமன்றத்தில் ஒலிக்க உழைப்பவர்.",
   },
   {
@@ -161,7 +161,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A.",
     bio: "வடசென்னை மக்களின் வாழ்வாதாரத்தை உயர்த்த பாடுபடும் பெண் வேட்பாளர்.",
   },
   {
@@ -199,13 +199,13 @@ export const candidatesData = [
   },
   {
     id: 19,
-    name: "திரு. டி. செல்வா",
-    nameEn: "T. Selvam",
+    name: "திரு. டி. செல்வம்",
+    nameEn: "D. Selvam",
     constituency: "Chepauk-Thiruvallikeni",
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Com., LL.B.",
     bio: "சேப்பாக்கம்-திருவல்லிக்கேணி தொகுதி மக்களின் தேவைகளை பூர்த்தி செய்ய பாடுபடுபவர்.",
   },
   {
@@ -216,7 +216,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A., B.L.",
     bio: "Thousand Lights தொகுதியில் தனது நீண்டகால அனுபவத்தால் வளர்ச்சித் திட்டங்களை கொண்டு வர உழைப்பவர்.",
   },
   {
@@ -227,7 +227,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E., M.E.",
     bio: "Anna Nagar தொகுதியை ஒரு சிறந்த குடியிருப்பு மற்றும் வர்த்தக பகுதியாக மேம்படுத்த பாடுபடுபவர்.",
   },
   {
@@ -238,7 +238,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E.",
     bio: "Virugambakkam தொகுதியில் போக்குவரத்து மற்றும் சுற்றுச்சூழல் மேம்பாட்டிற்கு முக்கியத்துவம் கொடுப்பவர்.",
   },
   {
@@ -249,7 +249,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Com.",
     bio: "Saidapet தொகுதி மக்களின் அடிப்படை உரிமைகளுக்காக போராடுபவர்.",
   },
   {
@@ -271,7 +271,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Com., MBA, ML (Advocate)",
     bio: "Mylapore தொகுதியின் பாரம்பரியத்தை காப்பதோடு, நவீன வசதிகளையும் கொண்டு வர பாடுபடுவார்.",
   },
   {
@@ -304,7 +304,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E., LL.B.",
     bio: "Alandur தொகுதியின் ஒட்டுமொத்த வளர்ச்சிக்காக பாடுபடும் துடிப்பான இளைஞர்.",
   },
   {
@@ -337,7 +337,7 @@ export const candidatesData = [
     district: "Chengalpattu",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBA",
     bio: "Tambaram மாநகராட்சியின் வளர்ச்சியை வேகப்படுத்த பாடுபடுவார்.",
   },
   {
@@ -359,7 +359,7 @@ export const candidatesData = [
     district: "Chengalpattu",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "BA., LLB (Hons)",
     bio: "Thiruporur தொகுதியின் கலாச்சாரம் மற்றும் சுற்றுலாவை மேம்படுத்துவார்.",
   },
   {
@@ -370,7 +370,7 @@ export const candidatesData = [
     district: "Chengalpattu",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "ITI",
     bio: "Cheyyur தொகுதியின் கடலோர மற்றும் விவசாய மக்களின் வாழ்வை மேம்படுத்துவார்.",
   },
   {
@@ -381,7 +381,7 @@ export const candidatesData = [
     district: "Chengalpattu",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Sc., B.Ed.",
     bio: "Madurantakam தொகுதியின் ஏரி நீர் மேலாண்மை மற்றும் விவசாய நலன்களுக்காக பாடுபடுவார்.",
   },
   {
@@ -392,7 +392,7 @@ export const candidatesData = [
     district: "Kanchipuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "BBA, LLB",
     bio: "Uthiramerur தொகுதியின் பழங்கால கலாச்சாரம் மற்றும் விவசாயத்தை காக்க பாடுபடுவார்.",
   },
   {
@@ -414,7 +414,7 @@ export const candidatesData = [
     district: "Ranipet",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A.",
     bio: "Arakkonam இரயில்வே மற்றும் பிற வசதிகளை மேம்படுத்த பாடுபடுவார்.",
   },
   {
@@ -425,18 +425,18 @@ export const candidatesData = [
     district: "Ranipet",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBBS",
     bio: "Sholinghur தொகுதியின் சுற்றுலாவை மேம்படுத்த பாடுபடுவார்.",
   },
   {
     id: 40,
-    name: "திரு. சுதாகர்",
-    nameEn: "M. Sudhakar",
+    name: "டாக்டர் எம். சுதாகர்",
+    nameEn: "Dr. M. Sudhakar",
     constituency: "Katpadi",
     district: "Vellore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBBS, D.Diab.",
     bio: "Katpadi தொகுதியை வளர்ந்த தொகுதியாக மாற்ற உழைப்பார்.",
   },
   {
@@ -469,7 +469,7 @@ export const candidatesData = [
     district: "Vellore",
     criminalCases: "0",
     assets: "₹0.01 Cr",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "BBA",
     bio: "கோட்டை நகரமான வேலூர் தொகுதியை நவீன வசதிகளுடன் மேம்படுத்த பாடுபடுவார்.",
   },
   {
@@ -513,7 +513,7 @@ export const candidatesData = [
     district: "Tirupathur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "BCA, LLB",
     bio: "Vaniyambadi தோல் பதனிடுதல் மற்றும் பிற தொழில்களின் வளர்ச்சிக்கு உதவி செய்வார்.",
   },
   {
@@ -524,7 +524,7 @@ export const candidatesData = [
     district: "Tirupathur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.S. (London)",
     bio: "துணிச்சலான முடிவுகளால் ஆம்பூர் தொகுதியில் பல மாற்றங்களை கொண்டு வருவார்.",
   },
   {
@@ -540,24 +540,24 @@ export const candidatesData = [
   },
   {
     id: 50,
-    name: "திரு. ஸ்ரீனிவாச சேதுபதி",
+    name: "டாக்டர் என். திருப்பதி",
     nameEn: "N. Tirupathi",
     constituency: "Tirupattur",
     district: "Tirupathur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "Medical Professional",
     bio: "திருப்பத்தூர் தொகுதியின் ஒட்டுமொத்த வளர்ச்சிக்காக பாடுபடுவார்.",
   },
   {
     id: 51,
-    name: "திரு. குமரவேல்",
-    nameEn: "P. Kumaravel",
+    name: "டாக்டர் இளையராஜா",
+    nameEn: "Dr. Elayaraja",
     constituency: "Uthangarai",
     district: "Krishnagiri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "Doctoral Degree",
     bio: "Uthangarai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -595,8 +595,8 @@ export const candidatesData = [
   },
   {
     id: 55,
-    name: "திரு. அம்ப்ரீஸ்",
-    nameEn: "M. Ambirish",
+    name: "திரு. வேந்தர்க்கரசன்",
+    nameEn: "Vendarkkarasan",
     constituency: "Hosur",
     district: "Krishnagiri",
     criminalCases: "0",
@@ -656,7 +656,7 @@ export const candidatesData = [
     district: "Dharmapuri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MA, B.Ed.",
     bio: "Pappireddippatti தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -667,7 +667,7 @@ export const candidatesData = [
     district: "Dharmapuri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Sc.",
     bio: "Harur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -678,7 +678,7 @@ export const candidatesData = [
     district: "Tiruvannamalai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A.",
     bio: "Chengam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -689,7 +689,7 @@ export const candidatesData = [
     district: "Tiruvannamalai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E.",
     bio: "Tiruvannamalai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -733,7 +733,7 @@ export const candidatesData = [
     district: "Tiruvannamalai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Sc.",
     bio: "Arani தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -744,7 +744,7 @@ export const candidatesData = [
     district: "Tiruvannamalai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "12th Pass",
     bio: "Cheyyar தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -755,7 +755,7 @@ export const candidatesData = [
     district: "Tiruvannamalai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A., ITI",
     bio: "Vandavasi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -766,7 +766,7 @@ export const candidatesData = [
     district: "Viluppuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Sc., B.Ed.",
     bio: "Gingee தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -777,7 +777,7 @@ export const candidatesData = [
     district: "Viluppuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E., MBA",
     bio: "Mailam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -788,7 +788,7 @@ export const candidatesData = [
     district: "Viluppuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E.",
     bio: "Tindivanam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -799,7 +799,7 @@ export const candidatesData = [
     district: "Viluppuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "BBA",
     bio: "Vanur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -810,7 +810,7 @@ export const candidatesData = [
     district: "Viluppuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "SSLC",
     bio: "Villupuram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -821,7 +821,7 @@ export const candidatesData = [
     district: "Viluppuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "SSLC",
     bio: "Vikravandi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -843,7 +843,7 @@ export const candidatesData = [
     district: "Kallakurichi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "Diploma in Civil Engineering",
     bio: "Ulundurpettai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -876,7 +876,7 @@ export const candidatesData = [
     district: "Kallakurichi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Sc.",
     bio: "Kallakurichi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -887,7 +887,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.E.",
     bio: "Gangavalli தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -920,7 +920,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E.",
     bio: "Omalur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -942,8 +942,8 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
-    bio: "Edappadi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
+    degree: "Nomination Rejected",
+    bio: "Edappadi தொகுதியில் கட்சியின் வேட்புமனு நிராகரிக்கப்பட்டதால், தற்சமயம் வேட்பாளர் இல்லை.",
   },
   {
     id: 87,
@@ -975,7 +975,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBA",
     bio: "Salem (North) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1008,7 +1008,7 @@ export const candidatesData = [
     district: "Namakkal",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBA",
     bio: "Rasipuram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1052,18 +1052,18 @@ export const candidatesData = [
     district: "Namakkal",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBBS (MMC), Former IRS",
     bio: "Tiruchengodu தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
     id: 97,
-    name: "திரு. விஜயலட்சுமி",
-    nameEn: "Vijayalakshmi",
+    name: "திருமதி. சி. விஜயலட்சுமி",
+    nameEn: "C. Vijayalakshmi",
     constituency: "Kumarapalayam",
     district: "Namakkal",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Com",
     bio: "Kumarapalayam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1074,7 +1074,7 @@ export const candidatesData = [
     district: "Erode",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Com",
     bio: "Erode (East) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1085,7 +1085,7 @@ export const candidatesData = [
     district: "Erode",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBA",
     bio: "Erode (West) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1096,7 +1096,7 @@ export const candidatesData = [
     district: "Erode",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E.",
     bio: "Modakkurichi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1118,7 +1118,7 @@ export const candidatesData = [
     district: "Tiruppur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Com",
     bio: "Kangayam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1151,7 +1151,7 @@ export const candidatesData = [
     district: "Erode",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E.",
     bio: "Anthiyur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1162,7 +1162,7 @@ export const candidatesData = [
     district: "Erode",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "SSLC (10th Std)",
     bio: "Gobichettipalayam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1173,7 +1173,7 @@ export const candidatesData = [
     district: "Erode",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MA, B.Lit",
     bio: "Bhavanisagar தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1250,7 +1250,7 @@ export const candidatesData = [
     district: "Tiruppur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Com",
     bio: "Tiruppur (South) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1283,7 +1283,7 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "Professional Astrologer",
     bio: "Kavundampalayam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1316,8 +1316,8 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
-    bio: "Coimbatore (South) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
+    degree: "MBA",
+    bio: "Coimbatore (North) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
     id: 121,
@@ -1327,7 +1327,7 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Sc., B.L. (Hons)",
     bio: "Singanallur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1338,7 +1338,7 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Sc.",
     bio: "Kinathukadavu தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1349,7 +1349,7 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "DME",
     bio: "Pollachi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1393,7 +1393,7 @@ export const candidatesData = [
     district: "Dindigul",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "Medical Doctor",
     bio: "Palani தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1426,7 +1426,7 @@ export const candidatesData = [
     district: "Dindigul",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Com (CA)",
     bio: "Nilakottai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1459,7 +1459,7 @@ export const candidatesData = [
     district: "Dindigul",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.V.Sc. (Veterinary)",
     bio: "Vedasandur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1547,8 +1547,8 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
-    bio: "Tiruchirappalli (East) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
+    degree: "B.Sc. (Visual Communications)",
+    bio: "தமிழக வெற்றி கழகத்தின் தலைவர் மற்றும் Tiruchirappalli (East) வேட்பாளர்.",
   },
   {
     id: 142,
@@ -1591,7 +1591,7 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E. (Civil)",
     bio: "Musiri தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1602,7 +1602,7 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "D.EEE",
     bio: "Thuraiyur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1668,7 +1668,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Sc.",
     bio: "Virudhachalam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1679,7 +1679,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E. (Mechanical)",
     bio: "Neyveli தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1701,7 +1701,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "DME",
     bio: "Cuddalore தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1712,7 +1712,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "Diploma",
     bio: "Kurinjipadi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1723,7 +1723,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.Com",
     bio: "Bhuvanagiri தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1822,7 +1822,7 @@ export const candidatesData = [
     district: "Tiruvarur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "Diploma",
     bio: "Thiruthuraipoondi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1833,7 +1833,7 @@ export const candidatesData = [
     district: "Tiruvarur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "DEEE",
     bio: "Mannargudi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1877,7 +1877,7 @@ export const candidatesData = [
     district: "Thanjavur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E.",
     bio: "Kumbakonam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1910,7 +1910,7 @@ export const candidatesData = [
     district: "Thanjavur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "BBA",
     bio: "Thanjavur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1921,7 +1921,7 @@ export const candidatesData = [
     district: "Thanjavur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBBS",
     bio: "Orathanadu தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1932,7 +1932,7 @@ export const candidatesData = [
     district: "Thanjavur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "SSLC",
     bio: "Pattukkottai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1998,7 +1998,7 @@ export const candidatesData = [
     district: "Pudukkottai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A., B.L.",
     bio: "Alangudi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2020,7 +2020,7 @@ export const candidatesData = [
     district: "Sivaganga",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MDS (Oral Implantology, Germany), MScD, BDS",
     bio: "Karaikudi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2075,7 +2075,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.A., LLB",
     bio: "Madurai East தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2251,7 +2251,7 @@ export const candidatesData = [
     district: "Virudhunagar",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.Sc.",
     bio: "Sivakasi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2262,7 +2262,7 @@ export const candidatesData = [
     district: "Virudhunagar",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "DCE (Diploma in Civil Engineering)",
     bio: "Virudhunagar தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2295,7 +2295,7 @@ export const candidatesData = [
     district: "Ramanathapuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "M.A., M.Phil.",
     bio: "Paramakudi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2306,7 +2306,7 @@ export const candidatesData = [
     district: "Ramanathapuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBBS, PGTFS",
     bio: "Tiruvadanai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2317,7 +2317,7 @@ export const candidatesData = [
     district: "Ramanathapuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MBBS, MD",
     bio: "Ramanathapuram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2361,7 +2361,7 @@ export const candidatesData = [
     district: "Thoothukudi",
     criminalCases: "6",
     assets: "₹0.42 Cr",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "BBA",
     bio: "Tiruchendur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2394,7 +2394,7 @@ export const candidatesData = [
     district: "Thoothukudi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "ITI",
     bio: "Kovilpatti தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2405,7 +2405,7 @@ export const candidatesData = [
     district: "Tenkasi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "MCA (Master of Computer Applications)",
     bio: "Sankarankovil தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2493,7 +2493,7 @@ export const candidatesData = [
     district: "Tirunelveli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "SSLC",
     bio: "Nanguneri தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2515,13 +2515,13 @@ export const candidatesData = [
     district: "Kanyakumari",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "Diploma in Electrical and Electronics Engineering (D.EEE)",
     bio: "Kanniyakumari தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
     id: 230,
     name: "திரு. பிரவீன் கிங்ஸ்",
-    nameEn: "G. Berwin Kings",
+    nameEn: "G. Berwin Kingsly",
     constituency: "Nagercoil",
     district: "Kanyakumari",
     criminalCases: "0",
@@ -2537,7 +2537,7 @@ export const candidatesData = [
     district: "Kanyakumari",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "BDS, MDS, DICOI (USA)",
     bio: "Colachal தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
