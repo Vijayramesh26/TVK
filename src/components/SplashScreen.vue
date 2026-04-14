@@ -1,10 +1,33 @@
 <template>
   <transition name="fade">
     <div v-if="show" class="splash-screen">
+      <div class="stars-overlay"></div>
       <div class="logo-container">
-        <img src="/favicon.png" alt="TVK Logo" class="pulse-logo" />
-        <h1 class="splash-title">My Vetri Tamilnadu</h1>
-        <div class="loading-bar"></div>
+        <!-- Main Logo with Glow -->
+        <div class="logo-wrapper">
+          <img src="./assets/tvk-logo.png" alt="TVK Logo" class="pulse-logo" />
+          <div class="logo-glow"></div>
+        </div>
+
+        <!-- Animated Tamil Text -->
+        <div class="text-wrapper mt-8">
+          <h1 class="splash-title shadow-text">
+            <span v-for="(char, index) in titleChars" :key="index" :style="{ animationDelay: (index * 0.1) + 's' }">
+              {{ char }}
+            </span>
+          </h1>
+          <h2 class="splash-subtitle mt-2">
+            <span v-for="(char, index) in subtitleChars" :key="index" :style="{ animationDelay: (0.5 + index * 0.1) + 's' }">
+              {{ char }}
+            </span>
+          </h2>
+        </div>
+
+        <!-- Sleek Loading indicator -->
+        <div class="progress-wrapper">
+          <div class="loading-bar"></div>
+          <div class="loading-text mt-2">தயாராகிறது...</div>
+        </div>
       </div>
     </div>
   </transition>
@@ -14,11 +37,17 @@
 export default {
   name: "SplashScreen",
   props: {
-    duration: { type: Number, default: 2500 },
+    duration: { type: Number, default: 3500 },
   },
   data: () => ({
     show: true,
+    title: "தமிழக வெற்றி கழகம்",
+    subtitle: "எனது வெற்றி தமிழகம்"
   }),
+  computed: {
+    titleChars() { return Array.from(this.title); },
+    subtitleChars() { return Array.from(this.subtitle); }
+  },
   mounted() {
     setTimeout(() => {
       this.show = false;
@@ -35,44 +64,111 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #800000; /* TVK Maroon */
+  background: radial-gradient(circle at center, #a00000 0%, #800000 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  overflow: hidden;
+}
+
+.stars-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.1;
+  animation: bg-move 20s linear infinite;
+}
+
+@keyframes bg-move {
+  from { background-position: 0 0; }
+  to { background-position: 100px 100px; }
 }
 
 .logo-container {
+  position: relative;
   text-align: center;
+  z-index: 10;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
 }
 
 .pulse-logo {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  box-shadow: 0 0 50px rgba(255, 215, 0, 0.3);
-  animation: pulse-zoom 2s infinite ease-in-out;
+  position: relative;
+  z-index: 2;
+  border: 4px solid rgba(255, 215, 0, 0.5);
+  animation: logo-pop 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.logo-glow {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: glow-pulse 2s infinite ease-in-out;
 }
 
 .splash-title {
-  color: #ffd700; /* Gold */
-  margin-top: 30px;
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  color: #ffd700;
+  font-size: 2.8rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+
+.splash-title span {
+  display: inline-block;
   opacity: 0;
-  animation: fade-up 1s forwards 0.5s;
+  transform: translateY(20px) scale(0.5);
+  animation: char-reveal 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.splash-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.splash-subtitle span {
+  display: inline-block;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+}
+
+.shadow-text {
+  text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.progress-wrapper {
+  margin-top: 50px;
 }
 
 .loading-bar {
-  width: 100px;
-  height: 4px;
-  background: rgba(255, 215, 0, 0.2);
-  margin: 20px auto 0;
+  width: 200px;
+  height: 3px;
+  background: rgba(255, 215, 0, 0.1);
+  margin: 0 auto;
   position: relative;
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 2px;
 }
 
 .loading-bar::after {
@@ -82,47 +178,50 @@ export default {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #ffd700;
-  animation: loading 2s linear forwards;
+  background: linear-gradient(90deg, transparent, #ffd700, transparent);
+  animation: slide-loading 2.5s infinite ease-in-out;
 }
 
-@keyframes pulse-zoom {
-  0% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
+.loading-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-@keyframes fade-up {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+@keyframes logo-pop {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
-@keyframes loading {
-  to {
-    left: 100%;
-  }
+@keyframes glow-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+}
+
+@keyframes char-reveal {
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fade-in {
+  to { opacity: 1; }
+}
+
+@keyframes slide-loading {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
 }
 
 .fade-leave-active {
-  transition: opacity 0.8s ease;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .fade-leave-to {
   opacity: 0;
+  transform: scale(1.1);
 }
+
+.mt-8 { margin-top: 32px; }
+.mt-2 { margin-top: 8px; }
 </style>

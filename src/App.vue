@@ -16,11 +16,11 @@
           <v-list-item class="py-6">
             <template v-slot:prepend>
               <v-avatar size="48" class="mr-2 border-gold">
-                <v-img src="/favicon.png"></v-img>
+                <v-img src="./assets/tvk-logo.png"></v-img>
               </v-avatar>
             </template>
             <v-list-item-title class="text-h6 font-weight-bold"
-              >My Vetri Tamilnadu</v-list-item-title
+              >தமிழக வெற்றிக் கழகம்</v-list-item-title
             >
             <v-list-item-subtitle>தலைத்தமிழகம்</v-list-item-subtitle>
           </v-list-item>
@@ -32,7 +32,7 @@
             <v-list-item to="/create" title="போஸ்டர் உருவாக்கம்" class="mb-2 rounded-lg">
               <template v-slot:prepend>
                 <v-avatar size="24" class="mr-3">
-                  <v-img src="/favicon.png"></v-img>
+                  <v-img src="./assets/tvk-logo.png"></v-img>
                 </v-avatar>
               </template>
             </v-list-item>
@@ -57,7 +57,7 @@
         >
           <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
           <v-toolbar-title class="font-weight-bold"
-            >My Vetri Tamilnadu</v-toolbar-title
+            >தமிழக வெற்றிக் கழகம்</v-toolbar-title
           >
         </v-app-bar>
 

@@ -17,59 +17,87 @@
             clearable
             bg-color="white"
           ></v-text-field>
+
+          <!-- District Navigation -->
+          <div class="district-nav mt-6" v-if="Object.keys(groupedCandidates).length > 1">
+            <v-chip-group class="justify-center">
+              <v-chip
+                v-for="(district, index) in Object.keys(groupedCandidates)"
+                :key="index"
+                @click="scrollToDistrict(district)"
+                variant="tonal"
+                color="#800000"
+                class="font-weight-bold mx-1"
+                size="small"
+              >
+                {{ district }}
+              </v-chip>
+            </v-chip-group>
+          </div>
         </div>
 
-        <!-- Candidates Grid -->
-        <v-row>
-          <v-col 
-            v-for="candidate in filteredCandidates" 
-            :key="candidate.id" 
-            cols="12" 
-            sm="6" 
-            md="4"
-            lg="3"
-          >
-            <v-card 
-              class="candidate-card rounded-xl elevation-2 overflow-hidden border-maroon-thin"
-              @click="showDetails(candidate)"
-              hover
+        <!-- Candidates Grid by District -->
+        <div v-for="(districtCandidates, districtName) in groupedCandidates" :key="districtName" :id="'district-' + districtName" class="mb-12 district-section">
+          <div class="d-flex align-center mb-6 pa-2 border-left-maroon">
+            <h2 class="text-h4 font-weight-bold color-maroon mb-0">
+              {{ districtName }}
+            </h2>
+            <v-chip size="small" class="ml-4 font-weight-bold" color="#800000" variant="outlined">
+              {{ districtCandidates.length }} வேட்பாளர்கள்
+            </v-chip>
+          </div>
+          
+          <v-row>
+            <v-col 
+              v-for="candidate in districtCandidates" 
+              :key="candidate.id" 
+              cols="12" 
+              sm="6" 
+              md="4"
+              lg="3"
             >
-              <!-- Branded Header Placeholder -->
-              <div 
-                class="candidate-header-pattern d-flex flex-column align-center justify-center pt-8 pb-4"
-                :class="candidate.isPresident ? 'president-bg' : 'standard-bg'"
+              <v-card 
+                class="candidate-card rounded-xl elevation-2 overflow-hidden border-maroon-thin"
+                @click="showDetails(candidate)"
+                hover
               >
-                <v-avatar size="100" class="elevation-4 border-gold mb-3" :color="candidate.isPresident ? '#D4AF37' : 'white'">
-                  <span class="text-h4 font-weight-bold" :class="candidate.isPresident ? 'white--text' : 'maroon--text'">
-                    {{ getInitials(candidate.nameEn || candidate.name) }}
-                  </span>
-                </v-avatar>
-                <v-chip size="x-small" :color="candidate.isPresident ? 'white' : '#800000'" variant="flat" class="font-weight-bold mb-1">
-                  {{ candidate.isPresident ? 'தலைவர்' : 'வேட்பாளர்' }}
-                </v-chip>
-              </div>
-
-              <v-card-text class="text-center pa-4">
-                <div class="text-body-1 font-weight-black color-maroon mb-1 line-clamp-1">{{ candidate.name }}</div>
-                <div class="text-caption font-weight-bold color-gold mb-2 line-clamp-1">{{ candidate.constituency }}</div>
-                
-                <!-- Quick Stats Footer -->
-                <v-divider class="my-2 opacity-10"></v-divider>
-                <div class="d-flex justify-space-between align-center px-2">
-                   <div class="text-caption text-grey-darken-1">
-                      <v-icon size="14" color="red">mdi-alert-circle-outline</v-icon> {{ candidate.criminalCases || '0' }}
-                   </div>
-                   <div class="text-caption text-grey-darken-1">
-                      <v-icon size="14" color="green">mdi-cash-multiple</v-icon> {{ candidate.assets || '-' }}
-                   </div>
+                <!-- Branded Header Placeholder -->
+                <div 
+                  class="candidate-header-pattern d-flex flex-column align-center justify-center pt-8 pb-4"
+                  :class="candidate.isPresident ? 'president-bg' : 'standard-bg'"
+                >
+                  <v-avatar size="100" class="elevation-4 border-gold mb-3" :color="candidate.isPresident ? '#D4AF37' : 'white'">
+                    <span class="text-h4 font-weight-bold" :class="candidate.isPresident ? 'white--text' : 'maroon--text'">
+                      {{ getInitials(candidate.nameEn || candidate.name) }}
+                    </span>
+                  </v-avatar>
+                  <v-chip size="x-small" :color="candidate.isPresident ? 'white' : '#800000'" variant="flat" class="font-weight-bold mb-1">
+                    {{ candidate.isPresident ? 'தலைவர்' : 'வேட்பாளர்' }}
+                  </v-chip>
                 </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
+
+                <v-card-text class="text-center pa-4">
+                  <div class="text-body-1 font-weight-black color-maroon mb-1 line-clamp-1">{{ candidate.name }}</div>
+                  <div class="text-caption font-weight-bold color-gold mb-2 line-clamp-1">{{ candidate.constituency }}</div>
+                  
+                  <!-- Quick Stats Footer -->
+                  <v-divider class="my-2 opacity-10"></v-divider>
+                  <div class="d-flex justify-space-between align-center px-2">
+                     <div class="text-caption text-grey-darken-1">
+                        <v-icon size="14" color="red">mdi-alert-circle-outline</v-icon> {{ candidate.criminalCases || '0' }}
+                     </div>
+                     <div class="text-caption text-grey-darken-1">
+                        <v-icon size="14" color="green">mdi-cash-multiple</v-icon> {{ candidate.assets || '-' }}
+                     </div>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </div>
 
         <!-- Empty State -->
-        <div v-if="filteredCandidates.length === 0" class="text-center py-16">
+        <div v-if="Object.keys(groupedCandidates).length === 0" class="text-center py-16">
           <v-icon size="64" color="grey-lighten-2">mdi-account-search-outline</v-icon>
           <div class="text-h6 text-grey-darken-1 mt-4">வேட்பாளர்கள் யாரும் கிடைக்கவில்லை</div>
         </div>
@@ -86,10 +114,10 @@
           <v-avatar size="120" class="elevation-10 border-gold mb-4" color="white">
             <span class="text-h3 font-weight-black maroon--text">{{ getInitials(selectedCandidate.nameEn || selectedCandidate.name) }}</span>
           </v-avatar>
-          <h2 class="text-h4 font-weight-black mb-1" :class="selectedCandidate.isPresident ? 'maroon--text' : 'white--text'">
+          <h2 class="text-h4 font-weight-black mb-1" :style="{ color: selectedCandidate.isPresident ? '#800000' : 'white' }">
             {{ selectedCandidate.name }}
           </h2>
-          <v-chip :color="selectedCandidate.isPresident ? '#800000' : '#D4AF37'" theme="dark" class="font-weight-bold">
+          <v-chip :color="selectedCandidate.isPresident ? '#800000' : 'white'" :class="selectedCandidate.isPresident ? 'text-white' : 'maroon--text'" class="font-weight-bold">
             {{ selectedCandidate.constituency }} ({{ selectedCandidate.district }})
           </v-chip>
         </div>
@@ -153,9 +181,34 @@ export default {
         (c.nameEn && c.nameEn.toLowerCase().includes(s)) ||
         (c.constituency && c.constituency.toLowerCase().includes(s))
       );
+    },
+    groupedCandidates() {
+      const filtered = this.filteredCandidates;
+      const groups = {};
+      
+      filtered.forEach(c => {
+        const district = c.district || 'Other';
+        if (!groups[district]) groups[district] = [];
+        groups[district].push(c);
+      });
+      
+      // Sort districts alphabetically
+      const sortedKeys = Object.keys(groups).sort((a, b) => a.localeCompare(b));
+      const sortedGroups = {};
+      sortedKeys.forEach(key => {
+        sortedGroups[key] = groups[key];
+      });
+      
+      return sortedGroups;
     }
   },
   methods: {
+    scrollToDistrict(id) {
+      const el = document.getElementById('district-' + id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    },
     getInitials(name) {
       if (!name) return "TVK";
       const parts = name.split(/[. \s]+/);
@@ -203,4 +256,15 @@ export default {
 .white--text { color: white !important; }
 .line-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
 .lh-relaxed { line-height: 1.8; }
+.border-left-maroon {
+  border-left: 6px solid #800000;
+  border-radius: 4px;
+}
+.district-section {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 </style>
