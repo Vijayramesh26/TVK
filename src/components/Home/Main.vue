@@ -82,20 +82,24 @@
 
           <v-col
             cols="12"
-            md="5"
-            lg="6"
-            class="d-none d-md-flex justify-center align-end position-relative"
+            md="4"
+            lg="5"
+            class="d-none d-md-flex justify-center position-relative"
           >
-            <!-- Redesigned Hero Leader Image -->
-            <div class="hero-leader-wrapper">
+            <!-- Central Avatar holding the logo or leader image if available -->
+            <v-avatar
+              size="320"
+              class="hero-avatar elevation-16 border-gold-thick"
+              color="white"
+            >
               <v-img
                 :src="heroImage"
-                class="hero-leader-img"
-                width="600"
+                cover
                 alt="தமிழக வெற்றிக் கழகம் தலைவர் தளபதி விஜய்"
               ></v-img>
-              <div class="hero-leader-fade"></div>
-            </div>
+            </v-avatar>
+            <!-- Decorative circle behind avatar -->
+            <div class="hero-avatar-ring"></div>
           </v-col>
         </v-row>
       </v-container>
@@ -739,29 +743,26 @@ export default {
   border-radius: 2px;
 }
 
-/* Redesigned Hero Leader */
-.hero-leader-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+/* Hero Section Leader */
+.hero-avatar {
+  border: 12px solid #D4AF37 !important;
+  background: white;
   z-index: 2;
 }
 
-.hero-leader-img {
-  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
+.hero-avatar-ring {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border: 2px dashed rgba(212, 175, 55, 0.4);
+  border-radius: 50%;
+  z-index: 1;
+  animation: rotate 20s linear infinite;
 }
 
-.hero-leader-fade {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 150px;
-  background: linear-gradient(to bottom, transparent, rgba(128, 0, 0, 0.7));
-  z-index: 3;
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* Leader Guides */
@@ -801,10 +802,6 @@ export default {
 @media (max-width: 600px) {
   .hero-title {
     font-size: 2.5rem !important;
-  }
-  .hero-leader-wrapper {
-    max-width: 100%;
-    margin-top: 2rem;
   }
 }
 </style>
