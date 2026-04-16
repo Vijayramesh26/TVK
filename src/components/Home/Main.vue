@@ -253,10 +253,7 @@
                <h2 class="text-h3 font-weight-black color-maroon mb-4">{{ t('sections.social') }}</h2>
                <div class="title-divider bg-gold mb-8"></div>
                <p class="text-h6 text-grey-darken-2 mb-8 lh-relaxed">
-                  {{ currentLang() === 'ta' 
-                    ? 'நமது கட்சியின் அதிகாரப்பூர்வ அறிவிப்புகள் மற்றும் தளபதி விஜய் அவர்களின் நேரடிச் செய்திகளை உடனுக்குடன் சமூக வலைதளங்கள் மூலம் அறிய இணைந்திருங்கள்.' 
-                    : 'Stay connected with official party announcements and direct updates from Thalapathy Vijay through our social media channels.' 
-                  }}
+                  {{ t('sections.socialDesc') }}
                </p>
                <div class="d-flex gap-4">
                   <v-btn icon="mdi-facebook" size="large" color="#1877F2" theme="dark"></v-btn>
@@ -266,7 +263,7 @@
                </div>
             </v-col>
             <v-col cols="12" md="6" class="mt-10 mt-md-0">
-               <div class="twitter-feed-container rounded-xl elevation-4 border-gold-thin overflow-hidden bg-grey-lighten-4 d-flex justify-center" style="max-height: 500px; overflow-y: auto;">
+               <div class="twitter-feed-container rounded-xl elevation-4 border-gold-thin bg-grey-lighten-4 d-flex justify-center">
                   <a 
                     class="twitter-timeline" 
                     data-height="500"
@@ -370,15 +367,18 @@ export default {
       return num.toLocaleString();
     },
     loadTwitterScript() {
-      if (!document.getElementById('twitter-wjs')) {
-        const script = document.createElement('script');
-        script.id = 'twitter-wjs';
-        script.src = 'https://platform.twitter.com/widgets.js';
-        script.async = true;
-        document.body.appendChild(script);
-      } else if (window.twttr) {
-        window.twttr.widgets.load();
-      }
+      // Small timeout to ensure DOM is ready
+      setTimeout(() => {
+        if (!document.getElementById('twitter-wjs')) {
+          const script = document.createElement('script');
+          script.id = 'twitter-wjs';
+          script.src = 'https://platform.twitter.com/widgets.js';
+          script.async = true;
+          document.body.appendChild(script);
+        } else if (window.twttr) {
+          window.twttr.widgets.load();
+        }
+      }, 100);
     }
   }
 };
@@ -624,6 +624,13 @@ export default {
   28% { transform: scale(1); }
   42% { transform: scale(1.1); }
   70% { transform: scale(1); }
+}
+
+/* Twitter Feed */
+.twitter-feed-container {
+  min-height: 500px;
+  height: 500px;
+  overflow: hidden;
 }
 
 /* Responsive */

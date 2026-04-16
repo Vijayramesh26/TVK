@@ -19,6 +19,7 @@ export const translations = {
       news: "சமீபத்திய செய்திகள்",
       gallery: "புகைப்பட தொகுப்பு",
       social: "சமூக ஊடகங்கள்",
+      socialDesc: "நமது கட்சியின் அதிகாரப்பூர்வ அறிவிப்புகள் மற்றும் தளபதி விஜய் அவர்களின் நேரடிச் செய்திகளை உடனுக்குடன் சமூக வலைதளங்கள் மூலம் அறிய இணைந்திருங்கள்.",
       viewAll: "அனைத்தையும் காண்க",
     },
     news: {
@@ -102,6 +103,7 @@ export const translations = {
       news: "Latest News & Press",
       gallery: "Media Gallery",
       social: "Social Connect",
+      socialDesc: "Stay connected with official party announcements and direct updates from Thalapathy Vijay through our social media channels.",
       viewAll: "View All",
     },
     news: {
