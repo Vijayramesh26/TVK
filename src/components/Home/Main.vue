@@ -263,11 +263,32 @@
                </div>
             </v-col>
             <v-col cols="12" md="6" class="mt-10 mt-md-0">
-               <div ref="twitterContainer" class="twitter-feed-container rounded-xl elevation-4 border-gold-thin bg-grey-lighten-4 d-flex justify-center">
+               <div ref="twitterContainer" class="twitter-feed-container rounded-xl elevation-4 border-gold-thin bg-grey-lighten-4 d-flex align-center justify-center position-relative">
+                  <!-- Fallback UI when widget is blocked/loading -->
+                  <div v-if="!isTwitterLoaded" class="twitter-fallback pa-8 text-center d-flex flex-column align-center justify-center fade-in">
+                     <v-avatar size="64" color="#800000" class="mb-4">
+                        <v-icon color="white" size="32">mdi-twitter</v-icon>
+                     </v-avatar>
+                     <h4 class="text-h5 font-weight-bold color-maroon mb-2">@tvkvijayhq</h4>
+                     <p class="text-body-2 text-grey-darken-1 mb-6">Stay informed with direct updates on X (Twitter)</p>
+                     <v-btn
+                       color="#800000"
+                       prepend-icon="mdi-twitter"
+                       class="px-8 rounded-pill font-weight-bold"
+                       href="https://twitter.com/tvkvijayhq"
+                       target="_blank"
+                       variant="flat"
+                     >
+                        Follow on X
+                     </v-btn>
+                  </div>
+                  
+                  <!-- The actual widget -->
                   <a 
+                    v-show="isTwitterLoaded"
                     class="twitter-timeline" 
                     data-height="500"
-                    href="https://twitter.com/tvkvijayhq?ref_src=twsrc%5Etfw">
+                    href="https://twitter.com/tvkvijayhq">
                     Tweets by tvkvijayhq
                   </a>
                </div>
