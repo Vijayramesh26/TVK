@@ -341,6 +341,13 @@
 <script>
 import heroImage from "../../assets/16170916.png";
 import sectionImage from "../../assets/16170924.png";
+import rallyImg from "../../assets/generated/rally_scene.png";
+import governanceImg from "../../assets/generated/governance.png";
+import villageImg from "../../assets/generated/village.png";
+import visionImg from "../../assets/generated/vision.png";
+import periyarImg from "../../assets/leaders/periyar.png";
+import kamarajarImg from "../../assets/leaders/kamarajar.png";
+import whistleImg from "../../assets/voteForWhistle.jpg";
 
 export default {
   name: "Home",
@@ -355,46 +362,49 @@ export default {
       {
         id: 1,
         tag: "Official",
-        image:
-          "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=800",
+        image: whistleImg,
       },
       {
         id: 2,
         tag: "Campaign",
-        image:
-          "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800",
+        image: rallyImg,
       },
       {
         id: 3,
         tag: "Events",
-        image:
-          "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800",
+        image: villageImg,
       },
     ],
     gallery: [
       {
         id: 1,
         title: "State Conference",
-        image:
-          "https://images.unsplash.com/photo-1540575861501-7ad05823c93b?q=80&w=800",
+        image: rallyImg,
       },
       {
         id: 2,
-        title: "Youth Meet",
-        image:
-          "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800",
+        title: "Future Vision",
+        image: visionImg,
       },
       {
         id: 3,
-        title: "Vijay HQ",
-        image:
-          "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+        title: "Thanthai Periyar",
+        image: periyarImg,
       },
       {
         id: 4,
-        title: "Village Tour",
-        image:
-          "https://images.unsplash.com/photo-1464692805480-a69dfaafdb0d?q=80&w=800",
+        title: "Perunthalaivar Kamarajar",
+        image: kamarajarImg,
+      },
+      {
+        id: 5,
+        title: "Governance Hub",
+        image: governanceImg,
+      },
+      {
+        id: 6,
+        title: "Village Progress",
+        image: villageImg,
       },
     ],
     pillars: [
