@@ -317,6 +317,7 @@ export default {
     sectionImage,
     displayCount: 0,
     targetCount: 15428670,
+    isTwitterLoaded: false,
     news: [
       { id: 1, tag: 'Official', image: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=800' },
       { id: 2, tag: 'Campaign', image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800' },
@@ -370,22 +371,37 @@ export default {
       const checkAndLoad = () => {
         if (window.twttr && window.twttr.widgets) {
           window.twttr.widgets.load(this.$refs.twitterContainer);
+          
+          // Poll to see if the iframe was actually created
+          let attempts = 0;
+          const poll = setInterval(() => {
+            attempts++;
+            const iframe = this.$refs.twitterContainer.querySelector('iframe');
+            if (iframe) {
+              this.isTwitterLoaded = true;
+              clearInterval(poll);
+            } else if (attempts > 30) { // 3 seconds timeout
+              clearInterval(poll);
+              console.log('Twitter widget failed to load after 3s');
+            }
+          }, 100);
         }
       };
 
-      // Small timeout to ensure DOM is ready
+      // Ensure script with cache-buster
       setTimeout(() => {
-        if (!document.getElementById('twitter-wjs')) {
+        const scriptId = 'twitter-wjs-resilient';
+        if (!document.getElementById(scriptId)) {
           const script = document.createElement('script');
-          script.id = 'twitter-wjs';
-          script.src = 'https://platform.twitter.com/widgets.js';
+          script.id = scriptId;
+          script.src = `https://platform.twitter.com/widgets.js?t=${Date.now()}`;
           script.async = true;
           script.onload = checkAndLoad;
           document.body.appendChild(script);
         } else {
           checkAndLoad();
         }
-      }, 100);
+      }, 150);
     }
   }
 };
@@ -638,6 +654,21 @@ export default {
   min-height: 500px;
   height: 500px;
   overflow: hidden;
+  background: white !important;
+}
+
+.twitter-fallback {
+  width: 100%;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Responsive */
