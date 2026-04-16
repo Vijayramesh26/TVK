@@ -109,13 +109,13 @@
       <v-container class="py-10">
         <div class="text-center mb-16">
           <h2 class="text-h3 font-weight-black color-maroon mb-4">
-            {{ currentLang === 'ta' ? 'நமது தொலைநோக்கு' : 'Our Vision & Mission' }}
+            {{ currentLang() === 'ta' ? 'நமது தொலைநோக்கு' : 'Our Vision & Mission' }}
           </h2>
           <div class="title-divider mx-auto bg-gold mb-6"></div>
           <p
             class="text-h6 text-grey-darken-2 font-weight-regular max-width-800 mx-auto"
           >
-            {{ currentLang === 'ta' 
+            {{ currentLang() === 'ta' 
               ? 'ஊழலற்ற, நேர்மையான, வெளிப்படையான, சாதிமத சார்பற்ற அரசாங்கத்தை தமிழக மக்களுக்கு வழங்குவதே எங்கள் தலையாய நோக்கம்.' 
               : 'Our primary goal is to provide the people of Tamil Nadu with a corruption-free, honest, transparent, and secular government.' 
             }}
@@ -131,13 +131,13 @@
                 <v-icon :icon="pillar.icon" size="40" color="#800000"></v-icon>
               </div>
               <h3 class="text-h5 font-weight-bold color-maroon mb-3">
-                {{ currentLang === 'ta' 
+                {{ currentLang() === 'ta' 
                   ? (pillar.id === 'equality' ? 'சமத்துவம்' : pillar.id === 'governance' ? 'நேர்மையான நிர்வாகம்' : 'மக்களுக்கான அரசு')
                   : (pillar.id === 'equality' ? 'Equality' : pillar.id === 'governance' ? 'Honest Governance' : 'People\'s Government')
                 }}
               </h3>
               <p class="text-body-1 text-grey-darken-2 lh-relaxed">
-                {{ currentLang === 'ta'
+                {{ currentLang() === 'ta'
                   ? (pillar.id === 'equality' ? 'பிறப்பொக்கும் எல்லா உயிர்க்கும் என்ற உயரிய தத்துவத்தின் அடிப்படையில் அனைவருக்கும் சம உரிமை, சம வாய்ப்பு உறுதி செய்தல்.' : pillar.id === 'governance' ? 'தடை இல்லாத, வெளிப்படையான, ஊழலற்ற நல்லாட்சியை மக்களிடத்தில் கொண்டு சேர்ப்பது.' : 'அடித்தட்டு மக்கள், விவசாயிகள் மற்றும் இளைஞர்களின் நலனை முன்னிறுத்தும் மக்கள் நல அரசு.')
                   : (pillar.id === 'equality' ? 'Ensuring equal rights and opportunities for all based on the noble principle "All are born equal".' : pillar.id === 'governance' ? 'Delivering transparent, corruption-free, and seamless good governance to the people.' : 'A welfare government focused on the well-being of the common man, farmers, and youth.')
                 }}
@@ -169,7 +169,7 @@
             <p
               class="text-h6 text-grey-darken-2 font-weight-regular mb-8 lh-relaxed"
             >
-              {{ currentLang === 'ta' 
+              {{ currentLang() === 'ta' 
                 ? 'எதிர்வரும் 2026 தமிழ்நாடு சட்டமன்றத் தேர்தலில் த.வெ.க சார்பாக போட்டியிடும் வேட்பாளர்களின் அதிகாரப்பூர்வ பட்டியலை இங்கே காணலாம்.' 
                 : 'Official list of TVK candidates contesting in the upcoming 2026 Tamil Nadu Assembly Elections.' 
               }}
@@ -253,7 +253,7 @@
                <h2 class="text-h3 font-weight-black color-maroon mb-4">{{ t('sections.social') }}</h2>
                <div class="title-divider bg-gold mb-8"></div>
                <p class="text-h6 text-grey-darken-2 mb-8 lh-relaxed">
-                  {{ currentLang === 'ta' 
+                  {{ currentLang() === 'ta' 
                     ? 'நமது கட்சியின் அதிகாரப்பூர்வ அறிவிப்புகள் மற்றும் தளபதி விஜய் அவர்களின் நேரடிச் செய்திகளை உடனுக்குடன் சமூக வலைதளங்கள் மூலம் அறிய இணைந்திருங்கள்.' 
                     : 'Stay connected with official party announcements and direct updates from Thalapathy Vijay through our social media channels.' 
                   }}
@@ -287,15 +287,12 @@
       <div class="cta-overlay absolute-inset"></div>
       <v-container class="position-relative z-10 py-10">
         <h2 class="text-h3 text-md-h2 font-weight-black text-white mb-6">
-          {{ currentLang === 'ta' ? 'மாற்றத்திற்கான நேரமிது!' : 'Time for Change!' }}
+          {{ t('ctaHome.title') }}
         </h2>
         <p
           class="text-h6 text-white opacity-90 max-width-800 mx-auto mb-10 lh-relaxed"
         >
-          {{ currentLang === 'ta' 
-            ? 'இனி ஒரு விதி செய்வோம்! தமிழக அரசியலில் புதிய சகாப்தத்தை உருவாக்க எங்களுடன் இணையுங்கள்.' 
-            : 'Let us make a new rule! Join us in creating a new era in Tamil Nadu politics.' 
-          }}
+          {{ t('ctaHome.subtitle') }}
         </p>
         <v-btn
           color="#D4AF37"
@@ -600,6 +597,33 @@ export default {
 }
 .gallery-card:hover .gallery-overlay {
   opacity: 1 !important;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #800000;
+  background-image: url("../../assets/voteForWhistle.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 400px;
+}
+.cta-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(128, 0, 0, 0.85),
+    rgba(128, 0, 0, 0.95)
+  );
+}
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
 }
 
 /* Responsive */

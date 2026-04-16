@@ -76,6 +76,10 @@ export const translations = {
       close: "மூடுக",
       noResults: "வேட்பாளர்கள் யாரும் கிடைக்கவில்லை",
       constituency: "தொகுதி"
+    },
+    ctaHome: {
+      title: "மாற்றத்திற்கான நேரமிது!",
+      subtitle: "இனி ஒரு விதி செய்வோம்! தமிழக அரசியலில் புதிய சகாப்தத்தை உருவாக்க எங்களுடன் இணையுங்கள்."
     }
   },
   en: {
@@ -155,6 +159,10 @@ export const translations = {
       close: "Close",
       noResults: "No candidates found",
       constituency: "Constituency"
+    },
+    ctaHome: {
+      title: "Time for Change!",
+      subtitle: "Let us make a new rule! Join us in creating a new era in Tamil Nadu politics."
     }
   }
 };
