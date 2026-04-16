@@ -369,7 +369,7 @@
 </template>
 
 <script>
-import heroImage from "../../assets/generated/designer_leader.png";
+import heroImage from "../../assets/16170916.png";
 import sectionImage from "../../assets/16170924.png";
 import rallyImg from "../../assets/generated/refined_rally.png";
 import governanceImg from "../../assets/generated/visionary_hub.png";
