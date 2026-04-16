@@ -5,20 +5,20 @@
       <div class="logo-container">
         <!-- Main Logo with Glow -->
         <div class="logo-wrapper">
-          <img src="./assets/tvk-logo.png" alt="TVK Logo" class="pulse-logo" />
+          <img src="../assets/tvk-logo.png" alt="TVK Logo" class="pulse-logo" />
           <div class="logo-glow"></div>
         </div>
 
         <!-- Animated Tamil Text -->
         <div class="text-wrapper mt-8">
           <h1 class="splash-title shadow-text">
-            <span v-for="(char, index) in titleChars" :key="index" :style="{ animationDelay: (index * 0.1) + 's' }">
-              {{ char }}
+            <span v-for="(char, index) in titleChars" :key="index" :style="{ animationDelay: (index * 0.1) + 's' }" :class="{ 'char-space': char === ' ' }">
+              {{ char === ' ' ? '\u00A0' : char }}
             </span>
           </h1>
           <h2 class="splash-subtitle mt-2">
-            <span v-for="(char, index) in subtitleChars" :key="index" :style="{ animationDelay: (0.5 + index * 0.1) + 's' }">
-              {{ char }}
+            <span v-for="(char, index) in subtitleChars" :key="index" :style="{ animationDelay: (0.5 + index * 0.1) + 's' }" :class="{ 'char-space': char === ' ' }">
+              {{ char === ' ' ? '\u00A0' : char }}
             </span>
           </h2>
         </div>
@@ -41,12 +41,24 @@ export default {
   },
   data: () => ({
     show: true,
-    title: "தமிழக வெற்றி கழகம்",
-    subtitle: "எனது வெற்றி தமிழகம்"
+    title: "தமிழக வெற்றிக் கழகம்",
+    subtitle: "எனது வெற்றிக் தமிழகம்"
   }),
   computed: {
-    titleChars() { return Array.from(this.title); },
-    subtitleChars() { return Array.from(this.subtitle); }
+    titleChars() {
+      if (window.Intl && window.Intl.Segmenter) {
+        const segmenter = new Intl.Segmenter('ta', { granularity: 'grapheme' });
+        return Array.from(segmenter.segment(this.title)).map(s => s.segment);
+      }
+      return Array.from(this.title);
+    },
+    subtitleChars() {
+      if (window.Intl && window.Intl.Segmenter) {
+        const segmenter = new Intl.Segmenter('ta', { granularity: 'grapheme' });
+        return Array.from(segmenter.segment(this.subtitle)).map(s => s.segment);
+      }
+      return Array.from(this.subtitle);
+    }
   },
   mounted() {
     setTimeout(() => {
@@ -93,12 +105,14 @@ export default {
   position: relative;
   text-align: center;
   z-index: 10;
+  width: 90%;
+  max-width: 800px;
 }
 
 .logo-wrapper {
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: clamp(120px, 30vw, 180px);
+  height: clamp(120px, 30vw, 180px);
   margin: 0 auto;
 }
 
@@ -125,10 +139,13 @@ export default {
 
 .splash-title {
   color: #ffd700;
-  font-size: 2.8rem;
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
   font-weight: 900;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  line-height: 1.2;
 }
 
 .splash-title span {
@@ -139,12 +156,14 @@ export default {
 }
 
 .splash-subtitle {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1rem, 3vw, 1.4rem);
   font-weight: 600;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
 }
 
 .splash-subtitle span {
@@ -153,8 +172,12 @@ export default {
   animation: fade-in 0.5s forwards;
 }
 
+.char-space {
+  min-width: 0.4em;
+}
+
 .shadow-text {
-  text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .progress-wrapper {

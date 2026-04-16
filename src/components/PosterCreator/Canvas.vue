@@ -23,6 +23,8 @@ export default {
     date: { type: String, default: '' },
     headerSrc: { type: String, default: '' },
     candidateUrl: { type: String, default: '' },
+    vattarUrl: { type: String, default: '' },
+    badgeUrl: { type: String, default: '' },
   },
   data: () => ({
     ctx: null,
@@ -40,6 +42,8 @@ export default {
     partNo: 'draw',
     streetName: 'draw',
     date: 'draw',
+    vattarUrl: 'draw',
+    badgeUrl: 'draw',
   },
   mounted() {
     this.ctx = this.$refs.canvas.getContext('2d');
@@ -120,33 +124,32 @@ export default {
 
       // 3. Draw Main Images Grid
       if (this.imageUrls && this.imageUrls.length > 0) {
-        const availableHeight = this.height - headerHeight - footerH - 1200;
-        const startY = headerHeight + 1000;
+        // Reduced gap and expanded vertical area to fill the screen better
+        const startY = headerHeight + 850; 
+        const availableHeight = this.height - startY - footerH - 120;
         
         const count = this.imageUrls.length;
         let cols = 1;
-        
         if (count >= 2 && count <= 4) cols = 2;
         else if (count >= 5) cols = 3;
         
         const rows = Math.ceil(count / cols);
-
-        const cellWidth = (this.width * 0.9) / cols;
+        const cellWidth = this.width / cols;
         const cellHeight = availableHeight / rows;
-        const padding = 40;
+        const padding = 0; // Seamless fill as requested
 
         for (let i = 0; i < count; i++) {
           const col = i % cols;
           const row = Math.floor(i / cols);
-          const x = (this.width * 0.05) + col * cellWidth + padding;
-          const y = startY + row * cellHeight + padding;
+          const x = col * cellWidth;
+          const y = startY + row * cellHeight;
           
           const img = await this.loadImage(this.imageUrls[i]);
           
-          const drawW = cellWidth - padding * 2;
-          const drawH = cellHeight - padding * 2;
+          const drawW = cellWidth;
+          const drawH = cellHeight;
           
-          // 'Contain' logic: show full image inside the cell
+          // 'Contain' logic: fit entire image without cropping
           const scale = Math.min(drawW / img.width, drawH / img.height);
           const finalW = img.width * scale;
           const finalH = img.height * scale;
@@ -154,6 +157,10 @@ export default {
           const offX = (drawW - finalW) / 2;
           const offY = (drawH - finalH) / 2;
 
+          // Fill cell background
+          this.ctx.fillStyle = "#FFFFFF";
+          this.ctx.fillRect(x, y, drawW, drawH);
+          // Draw the full image centered in the cell
           this.ctx.drawImage(img, x + offX, y + offY, finalW, finalH);
         }
       }
@@ -189,6 +196,40 @@ export default {
       this.ctx.font = '64px "Inter", sans-serif';
       this.ctx.fillStyle = '#800000'; // Maroon text in gold bar
       this.ctx.fillText(`இடம்: ${this.streetName} | தேதி: ${this.date}`, this.width / 2, this.height - 40);
+
+      // --- NEW: Bottom Right Badge (155.png) ---
+      if (this.badgeUrl) {
+        try {
+          const badgeImg = await this.loadImage(this.badgeUrl);
+          const bW = 400;
+          const bH = bW * (badgeImg.height / badgeImg.width);
+          this.ctx.drawImage(badgeImg, this.width - bW - 50, this.height - bH - 150, bW, bH);
+        } catch (e) { console.error("Badge load error", e); }
+      }
+
+      // --- NEW: Vattaraseyalalar (Leader) Photo ---
+      if (this.vattarUrl) {
+        try {
+          const vImg = await this.loadImage(this.vattarUrl);
+          const vSize = 400;
+          const vX = 100;
+          const vY = this.height - vSize - 150;
+
+          this.ctx.save();
+          this.ctx.beginPath();
+          this.ctx.arc(vX + vSize/2, vY + vSize/2, vSize/2, 0, Math.PI * 2);
+          this.ctx.clip();
+          
+          this.ctx.fillStyle = 'white';
+          this.ctx.fill();
+          
+          const scale = Math.max(vSize / vImg.width, vSize / vImg.height);
+          const dW = vImg.width * scale;
+          const dH = vImg.height * scale;
+          this.ctx.drawImage(vImg, vX + (vSize - dW)/2, vY + (vSize - dH)/2, dW, dH);
+          this.ctx.restore();
+        } catch (e) { console.error("Leader photo error", e); }
+      }
     },
     loadImage(src) {
       return new Promise((resolve) => {
@@ -225,14 +266,20 @@ export default {
 .poster-canvas-container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   background: #f5f5f5;
   border-radius: 12px;
   box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
 }
 .poster-canvas {
   max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
+  object-fit: contain;
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
