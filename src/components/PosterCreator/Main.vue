@@ -244,6 +244,9 @@ import veluNachiyarImg from "../../assets/leaders/velunachiyar.png";
 import anjalaiAmmalImg from "../../assets/leaders/anjalaiammal.png";
 
 import { doc, setDoc, increment } from "firebase/firestore";
+import { db } from "../../firebase";
+import { constituenciesMap } from "../../data/constituencies";
+import badge155 from "../../assets/155.png";
 
 export default {
   name: "PosterCreator",

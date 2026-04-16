@@ -15,10 +15,10 @@
         >
           <div class="pa-6 text-center">
             <v-avatar size="80" class="mb-4 border-gold border-3 elevation-4">
-              <v-img :src="logo"></v-img>
+              <v-img :src="logo" alt="தமிழக வெற்றிக் கழகம் லோகோ"></v-img>
             </v-avatar>
             <div class="text-h6 font-weight-black color-gold">த.வெ.க</div>
-            <div class="text-caption opacity-70 mt-1">தமிழக வெற்றிக் கழகம்</div>
+            <div class="text-caption opacity-70 mt-1">{{ t('hero.title') }}</div>
           </div>
 
           <v-divider color="#d4af37" class="mb-2"></v-divider>
@@ -70,14 +70,14 @@
             @click="$router.push('/')"
           >
             <v-avatar size="38" class="mr-3 border-gold elevation-2">
-              <v-img :src="logo"></v-img>
+              <v-img :src="logo" alt="தமிழக வெற்றிக் கழகம் சின்னம்"></v-img>
             </v-avatar>
             <div class="d-flex flex-column">
               <!-- Show short name on mobile, full name on desktop -->
               <span class="text-h6 font-weight-black lh-1 mb-0 d-sm-none">த.வெ.க</span>
-              <span class="text-subtitle-1 font-weight-black lh-1 mb-0 d-none d-sm-block">தமிழக வெற்றிக் கழகம்</span>
+              <span class="text-subtitle-1 font-weight-black lh-1 mb-0 d-none d-sm-block">{{ t('hero.title') }}</span>
               <span class="text-caption opacity-70 lh-1 mt-1 d-none d-sm-block">
-                பிறப்பொக்கும் எல்லா உயிர்க்கும்!
+                {{ t('hero.subtitle') }}!
               </span>
             </div>
           </div>
@@ -100,7 +100,14 @@
             </v-btn>
           </div>
 
-          <div class="mr-2"></div>
+          <v-btn
+            variant="tonal"
+            color="#D4AF37"
+            class="ml-4 rounded-lg font-weight-black"
+            @click="toggleLang"
+          >
+            {{ currentLang === 'ta' ? 'EN' : 'தமிழ்' }}
+          </v-btn>
         </v-app-bar>
 
         <v-main>
@@ -125,11 +132,11 @@
                     </v-avatar>
                     <div>
                       <h3 class="text-h6 font-weight-black lh-1" style="color: #D4AF37;">த.வெ.க</h3>
-                      <div class="text-caption opacity-70">தலைமையகம்</div>
+                      <div class="text-caption opacity-70">{{ t('footer.headquarters') }}</div>
                     </div>
                   </div>
                   <p class="text-body-2 text-grey-lighten-1 mb-4 pr-md-6 lh-relaxed">
-                    தமிழக வெற்றிக் கழகம், பிறப்பொக்கும் எல்லா உயிர்க்கும் என்ற அடிப்படை கொள்கையுடன் செயல்படும் அரசியல் கட்சி.
+                    {{ t('hero.tagline') }}
                   </p>
                   <div class="d-flex" style="gap: 8px;">
                     <v-btn icon="mdi-facebook" variant="text" size="small" color="#D4AF37"></v-btn>
@@ -141,13 +148,11 @@
 
                 <!-- Contact Info -->
                 <v-col cols="12" md="4" class="mb-6 mb-md-0">
-                  <h3 class="text-subtitle-1 font-weight-bold mb-4 pb-2 d-inline-block footer-title">தொடர்புக்கு</h3>
+                  <h3 class="text-subtitle-1 font-weight-bold mb-4 pb-2 d-inline-block footer-title">{{ t('footer.contact') }}</h3>
                   <div class="d-flex align-start mb-3">
                     <v-icon color="#D4AF37" class="mr-3 mt-1">mdi-map-marker</v-icon>
                     <div class="text-body-2 text-grey-lighten-1">
-                      எண் 12, பனையூர் பிரதான சாலை,<br>
-                      பனையூர், சென்னை - 600119<br>
-                      தமிழ்நாடு, இந்தியா.
+                      {{ t('footer.address') }}
                     </div>
                   </div>
                   <div class="d-flex align-center mb-3">
@@ -162,19 +167,19 @@
 
                 <!-- Useful Links -->
                 <v-col cols="12" md="4">
-                  <h3 class="text-subtitle-1 font-weight-bold mb-4 pb-2 d-inline-block footer-title">முக்கிய இணைப்புகள்</h3>
+                  <h3 class="text-subtitle-1 font-weight-bold mb-4 pb-2 d-inline-block footer-title">{{ t('footer.links') }}</h3>
                   <div class="d-flex flex-column" style="gap: 12px;">
-                    <router-link to="/kolgai" class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none">கட்சியின் கொள்கைகள்</router-link>
-                    <router-link to="/candidates" class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none">வேட்பாளர்கள் பட்டியல்</router-link>
-                    <router-link to="/dashboard" class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none">நிர்வாகம்</router-link>
-                    <a href="https://tvk.party" target="_blank" class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none">உறுப்பினர் சேர்க்கை</a>
+                    <router-link to="/kolgai" class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none">{{ t('nav.kolgai') }}</router-link>
+                    <router-link to="/candidates" class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none">{{ t('nav.candidates') }}</router-link>
+                    <router-link to="/dashboard" class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none">{{ t('nav.dashboard') }}</router-link>
+                    <a href="https://tvk.party" target="_blank" class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none">{{ t('hero.join') }}</a>
                   </div>
                 </v-col>
               </v-row>
             </div>
 
             <div class="w-100 py-4 text-center text-caption mx-auto" style="background-color: #111;">
-              <span class="text-grey">&copy; 2026 தமிழக வெற்றிக் கழகம். All rights reserved.</span>
+              <span class="text-grey">&copy; 2026 {{ t('footer.rights') }}</span>
             </div>
           </v-footer>
         </v-main>
@@ -186,23 +191,53 @@
 <script>
 import SplashScreen from "./components/SplashScreen.vue";
 import logo from "./assets/tvk-logo.png";
+import { translations } from "./data/translations";
 
 export default {
   name: "App",
   components: {
     SplashScreen,
   },
+  provide() {
+    return {
+      currentLang: () => this.currentLang,
+      t: this.t
+    }
+  },
   data: () => ({
     logo,
     ready: false,
     drawer: false,
-    navItems: [
-      { text: "முகப்பு", to: "/", icon: "mdi-home" },
-      { text: "கொள்கைகள்", to: "/kolgai", icon: "mdi-script-text" },
-      { text: "வேட்பாளர்கள்", to: "/candidates", icon: "mdi-account-group" },
-      { text: "நிர்வாகம்", to: "/dashboard", icon: "mdi-view-dashboard-outline" },
-    ]
+    currentLang: 'ta',
   }),
+  computed: {
+    navItems() {
+      return [
+        { text: this.t('nav.home'), to: "/", icon: "mdi-home" },
+        { text: this.t('nav.poster'), to: "/create", icon: "mdi-palette-outline" },
+        { text: this.t('nav.kolgai'), to: "/kolgai", icon: "mdi-script-text" },
+        { text: this.t('nav.candidates'), to: "/candidates", icon: "mdi-account-group" },
+        { text: this.t('nav.dashboard'), to: "/dashboard", icon: "mdi-view-dashboard-outline" },
+      ]
+    }
+  },
+  methods: {
+    t(path) {
+      const keys = path.split('.');
+      let result = translations[this.currentLang];
+      for (const key of keys) {
+        if (result[key]) {
+          result = result[key];
+        } else {
+          return path;
+        }
+      }
+      return result;
+    },
+    toggleLang() {
+      this.currentLang = this.currentLang === 'ta' ? 'en' : 'ta';
+    }
+  }
 };
 </script>
 

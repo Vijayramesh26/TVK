@@ -12,10 +12,10 @@
           <v-img :src="logo"></v-img>
         </v-avatar>
         <h1 class="text-h2 font-weight-black color-gold mb-2 title-main">
-          கொள்கைகள்
+          {{ t('ideology.title') }}
         </h1>
         <p class="text-h5 font-weight-medium color-white italic opacity-90">
-          "பிறப்பொக்கும் எல்லா உயிர்க்கும்"
+          "{{ t('hero.subtitle') }}"
         </p>
         <v-divider color="#d4af37" class="mt-4 mx-auto" width="100" thickness="3"></v-divider>
       </div>
@@ -26,11 +26,10 @@
       <v-card class="elevation-12 rounded-xl glass-card pa-8 mb-12 border-gold-subtle">
         <div class="d-flex align-center mb-6">
           <v-icon color="#800000" size="40" class="mr-4">mdi-star-shooting</v-icon>
-          <h2 class="text-h4 font-weight-black color-maroon">அடிப்படை சித்தாந்தம்</h2>
+          <h2 class="text-h4 font-weight-black color-maroon">{{ t('ideology.philosophy') }}</h2>
         </div>
         <p class="text-h6 font-weight-medium line-height-relaxed color-grey">
-          தமிழக வெற்றிக் கழகம், <strong class="color-maroon">"மதச்சார்பற்ற சமூக நீதி"</strong> எனும் உயரிய கருத்தியலைத் தனது முதன்மைக் கொள்கையாகக் கொண்டுள்ளது. 
-          அனைத்துத் துறைகளிலும் சமத்துவத்தையும், சமூக நீதியையும் நிலைநாட்டுவதே எமது கட்சியின் லட்சியம்.
+          {{ t('ideology.philosophyDesc').split(',')[0] }}, <strong class="color-maroon">"{{ isTamil ? 'மதச்சார்பற்ற சமூக நீதி' : 'Secular Social Justice' }}"</strong> {{ t('ideology.philosophyDesc').split(',')[1] }}
         </p>
       </v-card>
 
@@ -58,8 +57,8 @@
 
       <!-- Manifesto Section -->
       <div class="text-center mt-16 mb-8">
-        <h2 class="text-h4 font-weight-black color-maroon mb-2">தேர்தல் வாக்குறுதிகள் 2026</h2>
-        <p class="color-grey italic">தமிழகத்தின் ஒளிமயமான எதிர்காலத்திற்கான எமது திட்டங்கள்</p>
+        <h2 class="text-h4 font-weight-black color-maroon mb-2">{{ t('ideology.manifestoTitle') }}</h2>
+        <p class="color-grey italic">{{ t('ideology.manifestoDesc') }}</p>
       </div>
 
       <v-card class="rounded-xl elevation-8 mb-16 overflow-hidden border-gold-subtle glass-card">
@@ -71,22 +70,22 @@
           class="manifesto-tabs"
         >
           <v-tab value="women" class="font-weight-black">
-            <v-icon start>mdi-face-woman</v-icon> மகளிர்
+            <v-icon start>mdi-face-woman</v-icon> {{ t('ideology.tabs.women') }}
           </v-tab>
           <v-tab value="youth" class="font-weight-black">
-            <v-icon start>mdi-account-school</v-icon> இளைஞர்கள்
+            <v-icon start>mdi-account-school</v-icon> {{ t('ideology.tabs.youth') }}
           </v-tab>
           <v-tab value="farmers" class="font-weight-black">
-            <v-icon start>mdi-sprout</v-icon> விவசாயம்
+            <v-icon start>mdi-sprout</v-icon> {{ t('ideology.tabs.farmers') }}
           </v-tab>
           <v-tab value="admin" class="font-weight-black">
-            <v-icon start>mdi-shield-crown</v-icon> நிர்வாகம்
+            <v-icon start>mdi-shield-crown</v-icon> {{ t('ideology.tabs.admin') }}
           </v-tab>
           <v-tab value="tech" class="font-weight-black">
-            <v-icon start>mdi-robot</v-icon> AI
+            <v-icon start>mdi-robot</v-icon> {{ t('ideology.tabs.tech') }}
           </v-tab>
           <v-tab value="fishers" class="font-weight-black">
-            <v-icon start>mdi-anchor</v-icon> மீனவர்கள்
+            <v-icon start>mdi-anchor</v-icon> {{ t('ideology.tabs.fishers') }}
           </v-tab>
         </v-tabs>
 
@@ -94,7 +93,7 @@
           <v-window-item value="women">
             <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
               <v-icon color="#800000" class="mr-2">mdi-butterfly</v-icon>
-              மகளிர் நலன் மற்றும் அதிகாரம்
+              {{ t('ideology.tabs.women') }} {{ isTamil ? 'நலன் மற்றும் அதிகாரம்' : 'Welfare & Empowerment' }}
             </h3>
             <v-row>
               <v-col v-for="(item, i) in manifesto.women" :key="i" cols="12" md="6">
@@ -115,7 +114,7 @@
           <v-window-item value="youth">
             <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
               <v-icon color="#800000" class="mr-2">mdi-lightning-bolt</v-icon>
-              இளைஞர் மற்றும் வேலைவாய்ப்பு
+              {{ t('ideology.tabs.youth') }} {{ isTamil ? 'மற்றும் வேலைவாய்ப்பு' : '& Employment' }}
             </h3>
             <v-row>
               <v-col v-for="(item, i) in manifesto.youth" :key="i" cols="12" md="6">
@@ -136,7 +135,7 @@
           <v-window-item value="farmers">
              <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
               <v-icon color="#800000" class="mr-2">mdi-tractor</v-icon>
-              விவசாயிகள் மேம்பாடு
+              {{ t('ideology.tabs.farmers') }} {{ isTamil ? 'மேம்பாடு' : 'Development' }}
             </h3>
             <v-row>
               <v-col v-for="(item, i) in manifesto.farmers" :key="i" cols="12" md="6">
@@ -157,7 +156,7 @@
           <v-window-item value="admin">
             <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
               <v-icon color="#800000" class="mr-2">mdi-gavel</v-icon>
-              நிர்வாக சீர்திருத்தம்
+              {{ t('ideology.tabs.admin') }} {{ isTamil ? 'சீர்திருத்தம்' : 'Reform' }}
             </h3>
             <v-row>
               <v-col v-for="(item, i) in manifesto.societyAdmin" :key="i" cols="12" md="6">
@@ -178,7 +177,7 @@
           <v-window-item value="tech">
             <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
               <v-icon color="#800000" class="mr-2">mdi-robot</v-icon>
-              தொழில்நுட்பம் (AI)
+              {{ t('ideology.tabs.tech') }} (AI)
             </h3>
             <v-row>
               <v-col v-for="(item, i) in manifesto.tech" :key="i" cols="12" md="6">
@@ -199,7 +198,7 @@
           <v-window-item value="fishers">
             <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
               <v-icon color="#800000" class="mr-2">mdi-anchor</v-icon>
-              மீனவர்கள் நலன்
+              {{ t('ideology.tabs.fishers') }} {{ isTamil ? 'நலன்' : 'Welfare' }}
             </h3>
             <v-row>
               <v-col v-for="(item, i) in manifesto.fishers" :key="i" cols="12" md="6">
@@ -221,8 +220,8 @@
 
       <!-- Ideological Leaders Section -->
       <div class="text-center mt-16 mb-8">
-        <h2 class="text-h4 font-weight-black color-maroon mb-2">எமது கருத்தியல் வழிகாட்டிகள்</h2>
-        <p class="color-grey italic">அவர்கள் காட்டிய வழியில் மக்கள் பணி தொடரும்</p>
+        <h2 class="text-h4 font-weight-black color-maroon mb-2">{{ t('ideology.leadersTitle') }}</h2>
+        <p class="color-grey italic">{{ t('ideology.leadersDesc') }}</p>
       </div>
 
       <v-row class="mb-16" justify="center">
@@ -230,7 +229,7 @@
           <v-hover v-slot="{ isHovering, props }">
             <div v-bind="props" :class="{ 'leader-scale': isHovering }" class="transition-all">
               <v-avatar size="130" class="elevation-10 mb-4 leader-avatar border-gold">
-                <v-img :src="leader.img" cover></v-img>
+                <v-img :src="leader.img" cover :alt="leader.name + ' - ' + leader.legacy"></v-img>
               </v-avatar>
               <h4 class="text-subtitle font-weight-bold color-maroon line-height-tight mb-1">{{ leader.name }}</h4>
               <p class="text-caption font-weight-bold color-gold text-uppercase">{{ leader.legacy }}</p>
@@ -241,8 +240,8 @@
 
       <!-- Call to Action -->
       <v-card color="#800000" class="rounded-xl pa-10 text-center mb-16 CTA-banner" dark>
-        <h2 class="text-h3 font-weight-black color-gold mb-4">புதியதொரு தமிழகம் செய்வோம்!</h2>
-        <p class="text-h6 mb-6 opacity-80">இனைவோம் தமிழக வெற்றிக் கழகத்தில் - மக்கள் உரிமைகளை மீட்டெடுக்க</p>
+        <h2 class="text-h3 font-weight-black color-gold mb-4">{{ t('ideology.ctaTitle') }}</h2>
+        <p class="text-h6 mb-6 opacity-80">{{ t('ideology.ctaDesc') }}</p>
         <v-btn
           color="#d4af37"
           rounded="pill"
@@ -250,7 +249,7 @@
           class="font-weight-black elevation-8 text-black px-10"
           to="/create"
         >
-          கழக போஸ்டர் உருவாக்க
+          {{ isTamil ? 'கழக போஸ்டர் உருவாக்க' : 'Create Party Poster' }}
         </v-btn>
       </v-card>
     </v-container>
@@ -267,99 +266,206 @@ import anjalaiAmmalImg from "../../assets/leaders/anjalaiammal.png";
 
 export default {
   name: "IdeologyPage",
+  inject: ['t', 'currentLang'],
   data: () => ({
     logo,
     manifestoTab: "women",
-    principles: [
-      {
-        title: "மதச்சார்பற்ற சமூக நீதி",
-        icon: "mdi-balance-scale",
-        desc: "சாதி, மதம், மொழி கடந்த மனிதநேயமே எமது கட்சியின் அடித்தளம். அனைவருக்கும் சமமான வாய்ப்பு மற்றும் அதிகாரம்."
-      },
-      {
-        title: "சமத்துவம்",
-        icon: "mdi-account-group",
-        desc: "'பிறப்பொக்கும் எல்லா உயிர்க்கும்' என்ற வள்ளுவர் வாக்குப்படி எவ்வித ஏற்றத்தாழ்வுகளும் அற்ற சமுதாயம்."
-      },
-      {
-        title: "பெண்கள் மேம்பாடு",
-        icon: "mdi-face-woman",
-        desc: "பெண்களின் கல்வி, அரசியல் அதிகாரம் மற்றும் பொருளாதார சுதந்திரத்திற்கு முழு முதலுரிமை."
-      },
-      {
-        title: "மாநில சுயாட்சி",
-        icon: "mdi-map-marker-radius",
-        desc: "கூட்டாட்சி தத்துவத்தின் அடிப்படையில் மாநிலங்களின் உரிமைகளை மீட்டெடுத்தல் மற்றும் கல்வி மாநிலப் பட்டியலுக்கு."
-      },
-      {
-        title: "மொழி உணர்வு",
-        icon: "mdi-translate",
-        desc: "அன்னைத் தமிழைப் பாதுகாத்தல் மற்றும் இருமொழிக் கொள்கையில் உறுதியான நிலைப்பாடு."
-      },
-      {
-        title: "ஊழலற்ற நிர்வாகம்",
-        icon: "mdi-shield-check",
-        desc: "மக்களுக்கான அதிகாரத்தை மக்களுக்கே வழங்கும் வெளிப்படையான மற்றும் ஊழலற்ற நேர்மையான ஆட்சி."
-      }
-    ],
-    manifesto: {
-      women: [
-        "குடும்பத் தலைவிகளுக்கு மாதம் ரூ.2,500 உதவித்தொகை மற்றும் 6 இலவச சிலிண்டர்கள்.",
-        "திருமணத்தின் போது ஒரு பவுன் தங்கம் மற்றும் பட்டுப் புடவை உதவி.",
-        "புதிதாக கருவுற்ற பெண்களுக்கு சத்துணவு பெட்டகம் மற்றும் நிதியுதவி.",
-        "அரசுப் பேருந்துகளில் பெண்களுக்கு 100% இலவசப் பயணம் மற்றும் முன்னுரிமை.",
-        "பெண்கள் பாதுகாப்பிற்காக அனைத்துக் காவல் நிலையங்களிலும் சிறப்புப் பிரிவு.",
-        "பெண்கள் சுயஉதவி குழுக்களின் கடன்கள் முழுமையாகத் தள்ளுபடி செய்யப்படும்.",
-        "கைவிடப்பட்ட பெண்கள் மற்றும் விதவைகளுக்கு முன்னுரிமை அடிப்படையில் அரசு வேலை."
-      ],
-      youth: [
-        "பட்டதாரிகளுக்கு மாதம் ரூ.4,000 மற்றும் டிப்ளோமா மாணவர்களுக்கு ரூ.2,000 உதவித்தொகை.",
-        "வேலை வாய்ப்பில் 75% தமிழர்களுக்கே முன்னுரிமை வழங்க சட்டம் இயற்றப்படும்.",
-        "ரூ.20 லட்சம் வரை பிணையமில்லா (Collateral-free) வட்டி இல்லாக் கல்வி கடன்.",
-        "தொழில் தொடங்க ரூ.25 லட்சம் வரை வட்டி இல்லாக் அரசு கடன் உதவி.",
-        "ஆண்டுக்கு 5 லட்சம் இளைஞர்களுக்கு தரமான பயிற்சி (Internship) மற்றும் உதவித்தொகை.",
-        "அனைத்து மாவட்டங்களிலும் உயர்மட்ட விளையாட்டு மைதானங்கள் மற்றும் பயிற்சி மையங்கள்.",
-        "அரசு காலிப் பணியிடங்கள் 100% வெளிப்படையான முறையில் நிரப்பப்படும்."
-      ],
-      farmers: [
-        "நெல்லுக்கு குவிண்டாலுக்கு ரூ.3,500 மற்றும் கரும்புக்கு டன்னுக்கு ரூ.4,500 விலை.",
-        "5 ஏக்கருக்கும் குறைவான விவசாயிகளின் கூட்டுறவு வங்கிக் கடன்கள் முழுமையாகத் தள்ளுபடி.",
-        "சிறு மற்றும் குறு விவசாயிகள் குடும்பத்தின் உயர்கல்விச் செலவை அரசே ஏற்கும்.",
-        "விவசாயத்திற்கு தடையற்ற 24 மணிநேர மும்முனை மின்சாரம் இலவசமாக வழங்கப்படும்.",
-        "நெசவாளர்களுக்கு 50% நூல் மற்றும் சாயம் மானியம், 5 ஆண்டுகள் மின்வரி விலக்கு.",
-        "நெசவாளர் கடன் உதவிக்காக ரூ.15,000 கோடி அரசு உத்தரவாத நிதி."
-      ],
-      societyAdmin: [
-        "போதைப்பொருள் அற்ற தமிழகத்தை உருவாக்க 'Zero Tolerance' கொள்கை மற்றும் கண்காணிப்பு.",
-        "5 ஆண்டுகளுக்கும் மேலாக பணியாற்றும் தற்காலிக ஆசிரியர்கள் மற்றும் பணியாளர்கள் பணி நிரந்தரம்.",
-        "காவல்துறை பணியாளர்களுக்கு ஊதிய உயர்வு மற்றும் தனியான மருத்துவமனை வசதி.",
-        "மாநில சுயாட்சி - கல்வி அதிகாரத்தை மீண்டும் மாநிலப் பட்டியலுக்கு மாற்ற முயற்சி.",
-        "வெளிப்படையான மற்றும் ஊழலற்ற நேர்மையான 'Paperless' அரசு நிர்வாகம்.",
-        "ஆளுநர் பதவி நீக்கம் மற்றும் மக்கள் நலத் திட்டங்களுக்கு நேரடி நிதி ஒதுக்கீடு."
-      ],
-      tech: [
-        "நாட்டிலேயே முதல்முறையாக செயற்கை நுண்ணறிவுக்கென (AI) தனி அமைச்சகம் அமல்.",
-        "தமிழகத்தை டிஜிட்டல் தலைநகராக மாற்ற 'AI சிட்டி' (AI City) மற்றும் ஹப் உருவாக்கம்.",
-        "அனைத்து அரசு சேவைகளையும் ஒரே இடத்தில் பெற 'வெற்றி தமிழ்நாடு சூப்பர் ஆப்'.",
-        "நிர்வாக வெளிப்படைத்தன்மைக்கு 'Real-time Governance Dashboard' வசதி.",
-        "மதுரை, கோவை உள்ளிட்ட நகரங்களில் 1,000 தொழில்நுட்ப புத்தாக்க மையங்கள்.",
-        "அரசுத் தேர்வுகள் உரிய காலத்தில் எவ்வித முறைகேடும் இன்றி நடத்தப்படும்."
-      ],
-      fishers: [
-        "கச்சத்தீவை மீட்டெடுத்து மீனவர்களின் பாரம்பரிய மீன்பிடி உரிமைகள் காக்கப்படும்.",
-        "மீனவர்களின் விசைப்படகு மற்றும் வலைகளுக்கு 50% மானியம் வழங்கப்படும்.",
-        "கடலோரப் பகுதிகளில் மீனவக் கிராமங்களில் சுனாமி மற்றும் புயல் பாதுகாப்பு இல்லங்கள்.",
-        "மீன்பிடித் தடைக்கால நிவாரணத் தொகை ரூ.10,000 ஆக உயர்த்தப்படும்."
+  }),
+  computed: {
+    isTamil() {
+      return this.currentLang() === 'ta';
+    },
+    principles() {
+      return [
+        {
+          title: this.isTamil ? "மதச்சார்பற்ற சமூக நீதி" : "Secular Social Justice",
+          icon: "mdi-balance-scale",
+          desc: this.isTamil 
+            ? "சாதி, மதம், மொழி கடந்த மனிதநேயமே எமது கட்சியின் அடித்தளம். அனைவருக்கும் சமமான வாய்ப்பு மற்றும் அதிகாரம்."
+            : "Humanity beyond caste, religion, and language is the foundation of our party. Equal opportunity and power for all."
+        },
+        {
+          title: this.isTamil ? "விகிதாச்சார இடப்பங்கீடு" : "Proportional Representation",
+          icon: "mdi-chart-pie",
+          desc: this.isTamil
+            ? "சாதி ஒழியும் வரை அனைத்துப் பிரிவினருக்கும் அனைத்துத் துறைகளிலும் விகிதாச்சார அடிப்படையில் பிரதிநிதித்துவம் அளிப்பது."
+            : "Providing representation across all sectors based on population proportion until caste is abolished."
+        },
+        {
+          title: this.isTamil ? "மதச்சார்பின்மை" : "Secularism",
+          icon: "mdi-hands-pray",
+          desc: this.isTamil
+            ? "அனைத்து மதத்தவரையும் மத நம்பிக்கையற்றவரையும் சமமாக நடத்தும் அரசு நிர்வாகம். தனிப்பட்ட நம்பிக்கைகளில் தலையிடாமை."
+            : "A government administration that treats all religions and non-believers equally. Non-interference in personal beliefs."
+        },
+        {
+          title: this.isTamil ? "மாநிலத் தன்னாட்சி" : "State Autonomy",
+          icon: "mdi-map-marker-radius",
+          desc: this.isTamil
+            ? "கூட்டாட்சி தத்துவத்தின் அடிப்படையில் மாநிலங்களின் தன்னாட்சி உரிமைகளை மீட்டெடுத்தல் மற்றும் நிலைநாட்டுதல்."
+            : "Reclaiming and establishing the autonomous rights of states based on the principle of federalism."
+        },
+        {
+          title: this.isTamil ? "இருமொழிக் கொள்கை" : "Two-Language Policy",
+          icon: "mdi-translate",
+          desc: this.isTamil
+            ? "தாய்மொழியான தமிழ் மற்றும் உலக இணைப்பு மொழியான ஆங்கிலம் ஆகிய இரு மொழிக் கொள்கையில் உறுதியான நிலைப்பாடு."
+            : "A firm stand on the two-language policy: mother tongue Tamil and global link language English."
+        },
+        {
+          title: this.isTamil ? "தமிழ் ஆட்சி மொழி" : "Tamil as Official Language",
+          icon: "mdi-alphabet-latin",
+          desc: this.isTamil
+            ? "தமிழே ஆட்சிமொழி, நீதிமன்ற வழக்காடு மொழி மற்றும் வழிபாட்டு மொழியாக இருக்க வேண்டும் என்பதே எமது இலக்கு."
+            : "Our goal is for Tamil to be the official language, the language of the courts, and the language of worship."
+        },
+        {
+          title: this.isTamil ? "போதை இல்லாத் தமிழகம்" : "Drug-Free Tamil Nadu",
+          icon: "mdi-pill-off",
+          desc: this.isTamil
+            ? "போதைப்பொருள் அற்ற ஆரோக்கியமான தமிழகத்தை உருவாக்குவதற்கான 'Zero Tolerance' மற்றும் கடுமையான சட்ட அமுலாக்கம்."
+            : "Creating a healthy, drug-free Tamil Nadu through zero tolerance and strict law enforcement."
+        },
+        {
+          title: this.isTamil ? "பெண்கள் மேம்பாடு" : "Women’s Empowerment",
+          icon: "mdi-face-woman",
+          desc: this.isTamil
+            ? "பெண்களின் கல்வி, அரசியல் அதிகாரம் மற்றும் பொருளாதார சுதந்திரத்திற்கு முழு முதலுரிமை மற்றும் பாதுகாப்பு."
+            : "Top priority and protection for women's education, political power, and economic independence."
+        },
+        {
+          title: this.isTamil ? "ஊழலற்ற நிர்வாகம்" : "Corruption-Free Administration",
+          icon: "mdi-shield-check",
+          desc: this.isTamil
+            ? "லஞ்ச லாவண்யம் இல்லாத, அரசியல் தலையீடு அற்ற வெளிப்படையான மற்றும் நேர்மையான மக்கள் நல அரசு நிர்வாகம்."
+            : "A transparent and honest people's welfare administration free from bribes and political interference."
+        },
+        {
+          title: this.isTamil ? "சமநிலைச் சமூகம்" : "Egalitarian Society",
+          icon: "mdi-account-group",
+          desc: this.isTamil
+            ? "'பிறப்பொக்கும் எல்லா உயிர்க்கும்' என்ற தத்துவத்தின் அடிப்படையில் ஏற்றத்தாழ்வுகளற்ற சமமான சமுதாயம் படைத்தல்."
+            : "Creating an equal society without disparities based on the philosophy 'All are born equal'."
+        }
       ]
     },
-    leaders: [
-      { name: "பெரியார் ஈ.வெ.ரா", legacy: "சமூக நீதி", img: periyarImg },
-      { name: "அம்பேத்கர்", legacy: "சமத்துவம்", img: ambedkarImg },
-      { name: "கே. காமராஜர்", legacy: "கல்வித் தந்தை", img: kamarajarImg },
-      { name: "அஞ்சலை அம்மாள்", legacy: "சமூக வீரம்", img: anjalaiAmmalImg },
-      { name: "வேலு நாச்சியார்", legacy: "வீரமங்கை", img: veluNachiyarImg }
-    ]
-  })
+    manifesto() {
+      if (this.isTamil) {
+        return {
+          women: [
+            "குடும்பத் தலைவிகளுக்கு மாதம் ரூ.2,500 உதவித்தொகை மற்றும் 6 இலவச சிலிண்டர்கள்.",
+            "திருமணத்தின் போது ஒரு பவுன் தங்கம் மற்றும் பட்டுப் புடவை உதவி.",
+            "புதிதாகப் பிறக்கும் குழந்தைகளுக்குத் தங்க மோதிரத்துடன் கூடிய 'Newborn Kit'.",
+            "ஒவ்வொரு குடும்பத்திற்கும் ரூ.25 லட்சம் வரை விரிவான மருத்துவக் காப்பீடு.",
+            "அரசுப் பேருந்துகளில் பெண்களுக்கு 100% இலவசப் பயணம் மற்றும் முன்னுரிமை.",
+            "பெண்கள் பாதுகாப்பிற்காக அனைத்துக் காவல் நிலையங்களிலும் சிறப்புப் பிரிவு.",
+            "பெண்கள் சுயஉதவி குழுக்களின் கடன்கள் முழுமையாகத் தள்ளுபடி செய்யப்படும்.",
+            "கைவிடப்பட்ட பெண்கள் மற்றும் விதவைகளுக்கு முன்னுரிமை அடிப்படையில் அரசு வேலை."
+          ],
+          youth: [
+            "பட்டதாரிகளுக்கு மாதம் ரூ.4,000 மற்றும் டிப்ளோமா மாணவர்களுக்கு ரூ.2,000 உதவித்தொகை.",
+            "'முதலமைச்சரின் மக்கள் சேவை நண்பன்' திட்டம் மூலம் உள்ளூர் வேலைவாய்ப்பில் தமிழர்களுக்கு 75% முன்னுரிமை.",
+            "ரூ.20 லட்சம் வரை பிணையமில்லா (Collateral-free) வட்டி இல்லாக் கல்வி கடன்.",
+            "தொழில் தொடங்க ரூ.25 லட்சம் வரை வட்டி இல்லாக் அரசு கடன் உதவி.",
+            "ஆண்டுக்கு 5 லட்சம் இளைஞர்களுக்கு தரமான பயிற்சி (Internship) மற்றும் ஊக்கத்தொகை (பட்டதாரிகளுக்கு ரூ.10,000).",
+            "படைப்பாளர்களையும் புதிய தொழில்முனைவோரையும் ஊக்குவிக்க 'Creative Entrepreneurs Scheme'.",
+            "அரசு காலிப் பணியிடங்கள் 100% வெளிப்படையான முறையில் நிரப்பப்படும்."
+          ],
+          farmers: [
+            "நெல்லுக்கு குவிண்டாலுக்கு ரூ.3,500 மற்றும் கரும்புக்கு டன்னுக்கு ரூ.4,500 விலை.",
+            "5 ஏக்கருக்கும் குறைவான விவசாயிகளின் கூட்டுறவு வங்கிக் கடன்கள் முழுமையாகத் தள்ளுபடி.",
+            "2 ஏக்கருக்கும் குறைவாக நிலம் வைத்திருக்கும் விவசாயிகளின் பிள்ளைகளுக்கான முழு உயர்கல்விச் செலவையும் அரசே ஏற்கும்.",
+            "விவசாயத்திற்கு தடையற்ற 24 மணிநேர மும்முனை மின்சாரம் இலவசமாக வழங்கப்படும்.",
+            "நெசவாளர்களுக்கு 50% நூல் மற்றும் சாயம் மானியம், 5 ஆண்டுகள் மின்வரி விலக்கு.",
+            "நெசவாளர் கடன் உதவிக்காக ரூ.15,000 கோடி அரசு உத்தரவாத நிதி."
+          ],
+          societyAdmin: [
+            "போதைப்பொருள் அற்ற தமிழகத்தை உருவாக்க பள்ளி, கல்லூரிகளில் 'Anti-drug protection zones'.",
+            "5 ஆண்டுகளுக்கும் மேலாக பணியாற்றும் தற்காலிக ஆசிரியர்கள் மற்றும் பணியாளர்கள் பணி நிரந்தரம்.",
+            "காவல்துறை பணியாளர்களுக்கு ஊதிய உயர்வு மற்றும் தனியான மருத்துவமனை வசதி.",
+            "மாநில சுயாட்சி - கல்வி அதிகாரத்தை மீண்டும் மாநிலப் பட்டியலுக்கு மாற்ற தீவிர நடவடிக்கை.",
+            "வெளிப்படையான மற்றும் ஊழலற்ற நேர்மையான 'Paperless' அரசு நிர்வாகம்.",
+            "ஆளுநர் பதவி நீக்கம் மற்றும் மக்கள் நலத் திட்டங்களுக்கு நேரடி நிதி ஒதுக்கீடு."
+          ],
+          tech: [
+            "நாட்டிலேயே முதல்முறையாக செயற்கை நுண்ணறிவுக்கென (AI) தனி அமைச்சகம் அமல்.",
+            "தமிழகத்தை டிஜிட்டல் தலைநகராக மாற்ற 'AI சிட்டி' (AI City) மற்றும் ஹப் உருவாக்கம்.",
+            "அனைத்து அரசு சேவைகளையும் ஒரே இடத்தில் பெற 'வெற்றி தமிழ்நாடு சூப்பர் ஆப்'.",
+            "நிர்வாக வெளிப்படைத்தன்மைக்கு 'Real-time Governance Dashboard' வசதி.",
+            "மதுரை, கோவை உள்ளிட்ட நகரங்களில் 1,000 தொழில்நுட்ப புத்தாக்க மையங்கள்.",
+            "அரசுத் தேர்வுகள் உரிய காலத்தில் எவ்வித முறைகேடும் இன்றி நடத்தப்படும்."
+          ],
+          fishers: [
+            "கச்சத்தீவை மீட்டெடுத்து மீனவர்களின் பாரம்பரிய மீன்பிடி உரிமைகள் காக்கப்படும்.",
+            "மீனவர்களின் விசைப்படகு மற்றும் வலைகளுக்கு 50% மானியம் வழங்கப்படும்.",
+            "கடலோரப் பகுதிகளில் மீனவக் கிராமங்களில் சுனாமி மற்றும் புயல் பாதுகாப்பு இல்லங்கள்.",
+            "மீன்பிடித் தடைக்கால நிவாரணத் தொகை ரூ.10,000 ஆக உயர்த்தப்படும்."
+          ]
+        }
+      } else {
+        return {
+          women: [
+            "Monthly assistance of ₹2,500 for women breadwinners and 6 free LPG cylinders.",
+            "Marriage assistance providing one sovereign of gold and a silk saree.",
+            "'Newborn Kit' with a gold ring for every newborn child.",
+            "Comprehensive health insurance up to ₹25 lakh per family.",
+            "100% free travel and priority for women in government buses.",
+            "Special wings in all police stations specifically for women's safety.",
+            "Complete waiver of loans for women's self-help groups.",
+            "Government priority jobs for abandoned women and widows."
+          ],
+          youth: [
+            "Monthly stipend of ₹4,000 for graduates and ₹2,000 for diploma students.",
+            "75% priority for Tamils in local jobs through 'Chief Minister’s Public Service Friend' scheme.",
+            "Collateral-free, zero-interest education loans up to ₹20 lakh.",
+            "Interest-free government loan assistance up to ₹25 lakh to start businesses.",
+            "Quality internships and stipends (₹10,000 for graduates) for 5 lakh youth annually.",
+            "'Creative Entrepreneurs Scheme' to encourage creators and new entrepreneurs.",
+            "100% transparent filling of all government vacancies."
+          ],
+          farmers: [
+            "Procurement price of ₹3,500 per quintal for paddy and ₹4,500 per tonne for sugarcane.",
+            "Full waiver of cooperative bank loans for farmers with less than 5 acres.",
+            "The state will bear the full higher education costs for children of farmers with less than 2 acres.",
+            "Uninterrupted 24-hour free three-phase electricity for agriculture.",
+            "50% subsidy on yarn and dye for weavers, with a 5-year electricity tax exemption.",
+            "₹15,000 crore government guarantee fund for weaver loan assistance."
+          ],
+          societyAdmin: [
+            "Setting up 'Anti-drug protection zones' in schools and colleges for a drug-free TN.",
+            "Permanent employment for temporary teachers and staff working for over 5 years.",
+            "Salary hikes and separate hospital facilities for police personnel.",
+            "State Autonomy - Serious steps to move education back to the State List.",
+            "Transparent and corruption-free 'Paperless' government administration.",
+            "Removal of Governor's office and direct fund allocation for welfare schemes."
+          ],
+          tech: [
+            "Implementation of a separate ministry for Artificial Intelligence (AI) for the first time in India.",
+            "Creation of 'AI City' and Hub to transform Tamil Nadu into a digital capital.",
+            "'Vetri Tamil Nadu Super App' to access all government services in one place.",
+            "'Real-time Governance Dashboard' for administrative transparency.",
+            "1,000 technology innovation centers in cities like Madurai and Coimbatore.",
+            "Government exams conducted on time without any malpractices."
+          ],
+          fishers: [
+            "Reclaiming Katchatheevu to safeguard traditional fishing rights of fishermen.",
+            "50% subsidy for motorboats and fishing nets for fishermen.",
+            "Tsunami and cyclone shelters in fishing villages across coastal areas.",
+            "Fishing ban period relief fund increased to ₹10,000."
+          ]
+        }
+      }
+    },
+    leaders() {
+      return [
+        { name: this.isTamil ? "பெரியார் ஈ.வெ.ரா" : "Periyar E.V.R.", legacy: this.isTamil ? "சமூக நீதி" : "Social Justice", img: periyarImg },
+        { name: this.isTamil ? "அம்பேத்கர்" : "Ambedkar", legacy: this.isTamil ? "சமத்துவம்" : "Equality", img: ambedkarImg },
+        { name: this.isTamil ? "கே. காமராஜர்" : "K. Kamarajar", legacy: this.isTamil ? "கல்வித் தந்தை" : "Father of Education", img: kamarajarImg },
+        { name: this.isTamil ? "அஞ்சலை அம்மாள்" : "Anjalai Ammal", legacy: this.isTamil ? "சமூக வீரம்" : "Social Bravery", img: anjalaiAmmalImg },
+        { name: this.isTamil ? "வேலு நாச்சியார்" : "Velu Nachiyar", legacy: this.isTamil ? "வீரமங்கை" : "Brave Woman", img: veluNachiyarImg }
+      ]
+    }
+  }
 };
 </script>
 
