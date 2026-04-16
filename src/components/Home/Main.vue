@@ -245,55 +245,41 @@
       </v-container>
     </section>
 
-    <!-- Social Connect (Twitter Feed) -->
     <section class="py-16 bg-white overflow-hidden">
       <v-container>
-         <v-row>
-            <v-col cols="12" md="6" class="pr-md-16">
-               <h2 class="text-h3 font-weight-black color-maroon mb-4">{{ t('sections.social') }}</h2>
-               <div class="title-divider bg-gold mb-8"></div>
-               <p class="text-h6 text-grey-darken-2 mb-8 lh-relaxed">
-                  {{ t('sections.socialDesc') }}
-               </p>
-               <div class="d-flex gap-4">
-                  <v-btn icon="mdi-facebook" size="large" color="#1877F2" theme="dark"></v-btn>
-                  <v-btn icon="mdi-twitter" size="large" color="#1DA1F2" theme="dark"></v-btn>
-                  <v-btn icon="mdi-instagram" size="large" color="#E4405F" theme="dark"></v-btn>
-                  <v-btn icon="mdi-youtube" size="large" color="#FF0000" theme="dark"></v-btn>
-               </div>
-            </v-col>
-            <v-col cols="12" md="6" class="mt-10 mt-md-0">
-               <div ref="twitterContainer" class="twitter-feed-container rounded-xl elevation-4 border-gold-thin bg-grey-lighten-4 d-flex align-center justify-center position-relative">
-                  <!-- Fallback UI when widget is blocked/loading -->
-                  <div v-if="!isTwitterLoaded" class="twitter-fallback pa-8 text-center d-flex flex-column align-center justify-center fade-in">
-                     <v-avatar size="64" color="#800000" class="mb-4">
-                        <v-icon color="white" size="32">mdi-twitter</v-icon>
-                     </v-avatar>
-                     <h4 class="text-h5 font-weight-bold color-maroon mb-2">@tvkvijayhq</h4>
-                     <p class="text-body-2 text-grey-darken-1 mb-6">Stay informed with direct updates on X (Twitter)</p>
-                     <v-btn
-                       color="#800000"
-                       prepend-icon="mdi-twitter"
-                       class="px-8 rounded-pill font-weight-bold"
-                       href="https://twitter.com/tvkvijayhq"
-                       target="_blank"
-                       variant="flat"
-                     >
-                        Follow on X
-                     </v-btn>
-                  </div>
-                  
-                  <!-- The actual widget -->
-                  <a 
-                    v-show="isTwitterLoaded"
-                    class="twitter-timeline" 
-                    data-height="500"
-                    href="https://twitter.com/tvkvijayhq">
-                    Tweets by tvkvijayhq
-                  </a>
-               </div>
-            </v-col>
-         </v-row>
+        <div class="text-center mb-12">
+          <h2 class="text-h3 font-weight-black color-maroon mb-4">{{ t('sections.social') }}</h2>
+          <div class="title-divider mx-auto bg-gold mb-6"></div>
+          <p class="text-h6 text-grey-darken-2 max-width-800 mx-auto mb-10 lh-relaxed">
+            {{ t('sections.socialDesc') }}
+          </p>
+        </div>
+
+        <v-row>
+          <v-col v-for="platform in socialPlatforms" :key="platform.id" cols="12" sm="6" md="3">
+            <v-card 
+              class="social-platform-card h-100 rounded-xl pa-8 text-center elevation-3 hover-lift transition-all border-transparent"
+              :style="{ '--brand-color': platform.color }"
+              :href="platform.link"
+              target="_blank"
+            >
+              <div class="social-icon-box mb-6 mx-auto d-flex align-center justify-center rounded-circle elevation-5" :style="{ background: platform.color }">
+                <v-icon :icon="platform.icon" size="32" color="white"></v-icon>
+              </div>
+              <h3 class="text-h5 font-weight-black mb-2">{{ platform.name }}</h3>
+              <p class="text-body-2 text-grey-darken-1 mb-6 font-weight-bold opacity-70">{{ platform.handle }}</p>
+              <v-btn
+                block
+                :color="platform.color"
+                class="rounded-pill font-weight-bold"
+                variant="flat"
+                theme="dark"
+              >
+                {{ t('sections.follow') }}
+              </v-btn>
+            </v-card>
+          </v-col>
+        </v-row>
       </v-container>
     </section>
 
@@ -338,7 +324,12 @@ export default {
     sectionImage,
     displayCount: 0,
     targetCount: 15428670,
-    isTwitterLoaded: false,
+    socialPlatforms: [
+      { id: 'x', name: 'X (Twitter)', handle: '@tvkvijayhq', icon: 'mdi-twitter', color: '#000000', link: 'https://twitter.com/tvkvijayhq' },
+      { id: 'facebook', name: 'Facebook', handle: 'TVKVijayHQ', icon: 'mdi-facebook', color: '#1877F2', link: 'https://facebook.com/tvkvijayhq' },
+      { id: 'instagram', name: 'Instagram', handle: '@tvkvijayhq', icon: 'mdi-instagram', color: '#E4405F', link: 'https://instagram.com/tvkvijayhq' },
+      { id: 'youtube', name: 'YouTube', handle: 'TVK Official', icon: 'mdi-youtube', color: '#FF0000', link: 'https://youtube.com/@tvkvijayhq' },
+    ],
     news: [
       { id: 1, tag: 'Official', image: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=800' },
       { id: 2, tag: 'Campaign', image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800' },
@@ -367,7 +358,6 @@ export default {
   }),
   mounted() {
     this.animateCounter();
-    this.loadTwitterScript();
   },
   methods: {
     animateCounter() {
@@ -387,42 +377,6 @@ export default {
     },
     formatNumber(num) {
       return num.toLocaleString();
-    },
-    loadTwitterScript() {
-      const checkAndLoad = () => {
-        if (window.twttr && window.twttr.widgets) {
-          window.twttr.widgets.load(this.$refs.twitterContainer);
-          
-          // Poll to see if the iframe was actually created
-          let attempts = 0;
-          const poll = setInterval(() => {
-            attempts++;
-            const iframe = this.$refs.twitterContainer.querySelector('iframe');
-            if (iframe) {
-              this.isTwitterLoaded = true;
-              clearInterval(poll);
-            } else if (attempts > 30) { // 3 seconds timeout
-              clearInterval(poll);
-              console.log('Twitter widget failed to load after 3s');
-            }
-          }, 100);
-        }
-      };
-
-      // Ensure script with cache-buster
-      setTimeout(() => {
-        const scriptId = 'twitter-wjs-resilient';
-        if (!document.getElementById(scriptId)) {
-          const script = document.createElement('script');
-          script.id = scriptId;
-          script.src = `https://platform.twitter.com/widgets.js?t=${Date.now()}`;
-          script.async = true;
-          script.onload = checkAndLoad;
-          document.body.appendChild(script);
-        } else {
-          checkAndLoad();
-        }
-      }, 150);
     }
   }
 };
@@ -670,26 +624,34 @@ export default {
   70% { transform: scale(1); }
 }
 
-/* Twitter Feed */
-.twitter-feed-container {
-  min-height: 500px;
-  height: 500px;
-  overflow: hidden;
-  background: white !important;
+/* Social Platform Cards */
+.social-platform-card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  text-decoration: none !important;
 }
 
-.twitter-fallback {
-  width: 100%;
-  animation: fadeIn 0.8s ease-out;
+.social-platform-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--brand-color) !important;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.2) !important;
 }
 
-.fade-in {
-  animation: fadeIn 0.5s ease-in;
+.social-icon-box {
+  width: 64px;
+  height: 64px;
+  transition: transform 0.4s ease;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.social-platform-card:hover .social-icon-box {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.title-divider {
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
 }
 
 /* Responsive */
