@@ -263,7 +263,7 @@
                </div>
             </v-col>
             <v-col cols="12" md="6" class="mt-10 mt-md-0">
-               <div class="twitter-feed-container rounded-xl elevation-4 border-gold-thin bg-grey-lighten-4 d-flex justify-center">
+               <div ref="twitterContainer" class="twitter-feed-container rounded-xl elevation-4 border-gold-thin bg-grey-lighten-4 d-flex justify-center">
                   <a 
                     class="twitter-timeline" 
                     data-height="500"
@@ -367,6 +367,12 @@ export default {
       return num.toLocaleString();
     },
     loadTwitterScript() {
+      const checkAndLoad = () => {
+        if (window.twttr && window.twttr.widgets) {
+          window.twttr.widgets.load(this.$refs.twitterContainer);
+        }
+      };
+
       // Small timeout to ensure DOM is ready
       setTimeout(() => {
         if (!document.getElementById('twitter-wjs')) {
@@ -374,9 +380,10 @@ export default {
           script.id = 'twitter-wjs';
           script.src = 'https://platform.twitter.com/widgets.js';
           script.async = true;
+          script.onload = checkAndLoad;
           document.body.appendChild(script);
-        } else if (window.twttr) {
-          window.twttr.widgets.load();
+        } else {
+          checkAndLoad();
         }
       }, 100);
     }
