@@ -18,21 +18,23 @@
               variant="outlined"
               class="mb-6 font-weight-bold tracking-wide px-4 py-2 border-gold-thin text-uppercase"
             >
-              {{ t('hero.title') }}
+              {{ t("hero.title") }}
             </v-chip>
 
             <h1
               class="hero-title text-white font-weight-black mb-4 lh-base"
               style="font-size: clamp(3rem, 6vw, 5.5rem)"
             >
-              {{ t('hero.subtitle').split(' ')[0] }} <br />
-              <span class="color-gold">{{ t('hero.subtitle').split(' ').slice(1).join(' ') }}!</span>
+              {{ t("hero.subtitle").split(" ")[0] }} <br />
+              <span class="color-gold"
+                >{{ t("hero.subtitle").split(" ").slice(1).join(" ") }}!</span
+              >
             </h1>
 
             <p
               class="hero-subtitle text-white opacity-90 mb-10 text-h6 font-weight-regular max-w-lg mx-auto mx-md-0 lh-relaxed"
             >
-              {{ t('hero.tagline') }}
+              {{ t("hero.tagline") }}
             </p>
 
             <div
@@ -46,7 +48,7 @@
                 href="https://tvk.family"
                 target="_blank"
               >
-                {{ t('hero.join') }}
+                {{ t("hero.join") }}
               </v-btn>
               <v-btn
                 color="white"
@@ -55,18 +57,24 @@
                 class="rounded-pill font-weight-bold px-8"
                 to="/kolgai"
               >
-                {{ t('hero.principles') }}
+                {{ t("hero.principles") }}
               </v-btn>
             </div>
 
             <!-- Membership Counter -->
-            <div class="membership-counter d-flex align-center justify-center justify-md-start">
+            <div
+              class="membership-counter d-flex align-center justify-center justify-md-start"
+            >
               <div class="text-center text-md-left">
-                <div class="text-h3 font-weight-black text-white mb-1 glow-text">
+                <div
+                  class="text-h3 font-weight-black text-white mb-1 glow-text"
+                >
                   {{ formatNumber(displayCount) }}+
                 </div>
-                <div class="text-overline font-weight-bold color-gold tracking-widest">
-                  {{ t('hero.membersJoined') }}
+                <div
+                  class="text-overline font-weight-bold color-gold tracking-widest"
+                >
+                  {{ t("hero.membersJoined") }}
                 </div>
               </div>
             </div>
@@ -84,7 +92,11 @@
               class="hero-avatar elevation-16 border-gold-thick"
               color="white"
             >
-              <v-img :src="heroImage" cover alt="தமிழக வெற்றிக் கழகம் தலைவர் தளபதி விஜய்"></v-img>
+              <v-img
+                :src="heroImage"
+                cover
+                alt="தமிழக வெற்றிக் கழகம் தலைவர் தளபதி விஜய்"
+              ></v-img>
             </v-avatar>
             <!-- Decorative circle behind avatar -->
             <div class="hero-avatar-ring"></div>
@@ -109,15 +121,20 @@
       <v-container class="py-10">
         <div class="text-center mb-16">
           <h2 class="text-h3 font-weight-black color-maroon mb-4">
-            {{ currentLang() === 'ta' ? 'நமது தொலைநோக்கு' : 'Our Vision & Mission' }}
+            {{
+              currentLang() === "ta"
+                ? "நமது தொலைநோக்கு"
+                : "Our Vision & Mission"
+            }}
           </h2>
           <div class="title-divider mx-auto bg-gold mb-6"></div>
           <p
             class="text-h6 text-grey-darken-2 font-weight-regular max-width-800 mx-auto"
           >
-            {{ currentLang() === 'ta' 
-              ? 'ஊழலற்ற, நேர்மையான, வெளிப்படையான, சாதிமத சார்பற்ற அரசாங்கத்தை தமிழக மக்களுக்கு வழங்குவதே எங்கள் தலையாய நோக்கம்.' 
-              : 'Our primary goal is to provide the people of Tamil Nadu with a corruption-free, honest, transparent, and secular government.' 
+            {{
+              currentLang() === "ta"
+                ? "ஊழலற்ற, நேர்மையான, வெளிப்படையான, சாதிமத சார்பற்ற அரசாங்கத்தை தமிழக மக்களுக்கு வழங்குவதே எங்கள் தலையாய நோக்கம்."
+                : "Our primary goal is to provide the people of Tamil Nadu with a corruption-free, honest, transparent, and secular government."
             }}
           </p>
         </div>
@@ -131,15 +148,33 @@
                 <v-icon :icon="pillar.icon" size="40" color="#800000"></v-icon>
               </div>
               <h3 class="text-h5 font-weight-bold color-maroon mb-3">
-                {{ currentLang() === 'ta' 
-                  ? (pillar.id === 'equality' ? 'சமத்துவம்' : pillar.id === 'governance' ? 'நேர்மையான நிர்வாகம்' : 'மக்களுக்கான அரசு')
-                  : (pillar.id === 'equality' ? 'Equality' : pillar.id === 'governance' ? 'Honest Governance' : 'People\'s Government')
+                {{
+                  currentLang() === "ta"
+                    ? pillar.id === "equality"
+                      ? "சமத்துவம்"
+                      : pillar.id === "governance"
+                        ? "நேர்மையான நிர்வாகம்"
+                        : "மக்களுக்கான அரசு"
+                    : pillar.id === "equality"
+                      ? "Equality"
+                      : pillar.id === "governance"
+                        ? "Honest Governance"
+                        : "People's Government"
                 }}
               </h3>
               <p class="text-body-1 text-grey-darken-2 lh-relaxed">
-                {{ currentLang() === 'ta'
-                  ? (pillar.id === 'equality' ? 'பிறப்பொக்கும் எல்லா உயிர்க்கும் என்ற உயரிய தத்துவத்தின் அடிப்படையில் அனைவருக்கும் சம உரிமை, சம வாய்ப்பு உறுதி செய்தல்.' : pillar.id === 'governance' ? 'தடை இல்லாத, வெளிப்படையான, ஊழலற்ற நல்லாட்சியை மக்களிடத்தில் கொண்டு சேர்ப்பது.' : 'அடித்தட்டு மக்கள், விவசாயிகள் மற்றும் இளைஞர்களின் நலனை முன்னிறுத்தும் மக்கள் நல அரசு.')
-                  : (pillar.id === 'equality' ? 'Ensuring equal rights and opportunities for all based on the noble principle "All are born equal".' : pillar.id === 'governance' ? 'Delivering transparent, corruption-free, and seamless good governance to the people.' : 'A welfare government focused on the well-being of the common man, farmers, and youth.')
+                {{
+                  currentLang() === "ta"
+                    ? pillar.id === "equality"
+                      ? "பிறப்பொக்கும் எல்லா உயிர்க்கும் என்ற உயரிய தத்துவத்தின் அடிப்படையில் அனைவருக்கும் சம உரிமை, சம வாய்ப்பு உறுதி செய்தல்."
+                      : pillar.id === "governance"
+                        ? "தடை இல்லாத, வெளிப்படையான, ஊழலற்ற நல்லாட்சியை மக்களிடத்தில் கொண்டு சேர்ப்பது."
+                        : "அடித்தட்டு மக்கள், விவசாயிகள் மற்றும் இளைஞர்களின் நலனை முன்னிறுத்தும் மக்கள் நல அரசு."
+                    : pillar.id === "equality"
+                      ? 'Ensuring equal rights and opportunities for all based on the noble principle "All are born equal".'
+                      : pillar.id === "governance"
+                        ? "Delivering transparent, corruption-free, and seamless good governance to the people."
+                        : "A welfare government focused on the well-being of the common man, farmers, and youth."
                 }}
               </p>
             </v-card>
@@ -163,15 +198,16 @@
           </v-col>
           <v-col cols="12" md="6">
             <h2 class="text-h3 font-weight-black color-maroon mb-4">
-              {{ t('nav.candidates') }} 2026
+              {{ t("nav.candidates") }} 2026
             </h2>
             <div class="title-divider bg-gold mb-6"></div>
             <p
               class="text-h6 text-grey-darken-2 font-weight-regular mb-8 lh-relaxed"
             >
-              {{ currentLang() === 'ta' 
-                ? 'எதிர்வரும் 2026 தமிழ்நாடு சட்டமன்றத் தேர்தலில் த.வெ.க சார்பாக போட்டியிடும் வேட்பாளர்களின் அதிகாரப்பூர்வ பட்டியலை இங்கே காணலாம்.' 
-                : 'Official list of TVK candidates contesting in the upcoming 2026 Tamil Nadu Assembly Elections.' 
+              {{
+                currentLang() === "ta"
+                  ? "எதிர்வரும் 2026 தமிழ்நாடு சட்டமன்றத் தேர்தலில் த.வெ.க சார்பாக போட்டியிடும் வேட்பாளர்களின் அதிகாரப்பூர்வ பட்டியலை இங்கே காணலாம்."
+                  : "Official list of TVK candidates contesting in the upcoming 2026 Tamil Nadu Assembly Elections."
               }}
             </p>
             <v-btn
@@ -181,7 +217,7 @@
               prepend-icon="mdi-account-group"
               to="/candidates"
             >
-              {{ t('nav.candidates') }}
+              {{ t("nav.candidates") }}
             </v-btn>
           </v-col>
         </v-row>
@@ -193,28 +229,43 @@
       <v-container>
         <div class="d-flex justify-space-between align-end mb-10">
           <div>
-            <h2 class="text-h3 font-weight-black color-maroon mb-2">{{ t('sections.news') }}</h2>
+            <h2 class="text-h3 font-weight-black color-maroon mb-2">
+              {{ t("sections.news") }}
+            </h2>
             <div class="title-divider bg-gold"></div>
           </div>
-          <v-btn variant="text" color="#800000" class="font-weight-bold p-0" append-icon="mdi-chevron-right">
-            {{ t('sections.viewAll') }}
+          <v-btn
+            variant="text"
+            color="#800000"
+            class="font-weight-bold p-0"
+            append-icon="mdi-chevron-right"
+          >
+            {{ t("sections.viewAll") }}
           </v-btn>
         </div>
 
         <v-row>
           <v-col v-for="(item, i) in news" :key="i" cols="12" md="4">
-            <v-card class="news-card h-100 rounded-xl overflow-hidden hover-lift border-transparent">
+            <v-card
+              class="news-card h-100 rounded-xl overflow-hidden hover-lift border-transparent"
+            >
               <v-img :src="item.image" height="240" cover>
-                <div class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon">
+                <div
+                  class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon"
+                >
                   {{ item.tag }}
                 </div>
               </v-img>
               <v-card-text class="pa-6">
-                <div class="text-caption font-weight-bold text-grey-lighten-1 mb-2">
-                  {{ t(`news.item${i+1}.date`) }}
+                <div
+                  class="text-caption font-weight-bold text-grey-lighten-1 mb-2"
+                >
+                  {{ t(`news.item${i + 1}.date`) }}
                 </div>
-                <h3 class="text-h6 font-weight-bold color-maroon line-clamp-2 lh-tight">
-                  {{ t(`news.item${i+1}.title`) }}
+                <h3
+                  class="text-h6 font-weight-bold color-maroon line-clamp-2 lh-tight"
+                >
+                  {{ t(`news.item${i + 1}.title`) }}
                 </h3>
               </v-card-text>
             </v-card>
@@ -227,15 +278,26 @@
     <section class="py-16 bg-grey-lighten-4 overflow-hidden">
       <v-container>
         <div class="text-center mb-12">
-          <h2 class="text-h3 font-weight-black color-maroon mb-2">{{ t('sections.gallery') }}</h2>
+          <h2 class="text-h3 font-weight-black color-maroon mb-2">
+            {{ t("sections.gallery") }}
+          </h2>
           <div class="title-divider mx-auto bg-gold mb-6"></div>
         </div>
 
         <v-row>
           <v-col v-for="img in gallery" :key="img.id" cols="6" md="3">
-            <v-card class="gallery-card rounded-xl overflow-hidden elevation-2 cursor-pointer">
-              <v-img :src="img.image" aspect-ratio="1" cover class="transition-all hover-zoom">
-                <div class="gallery-overlay d-flex align-center justify-center text-white opacity-0 transition-all">
+            <v-card
+              class="gallery-card rounded-xl overflow-hidden elevation-2 cursor-pointer"
+            >
+              <v-img
+                :src="img.image"
+                aspect-ratio="1"
+                cover
+                class="transition-all hover-zoom"
+              >
+                <div
+                  class="gallery-overlay d-flex align-center justify-center text-white opacity-0 transition-all"
+                >
                   <v-icon size="32">mdi-magnify-plus</v-icon>
                 </div>
               </v-img>
@@ -245,43 +307,7 @@
       </v-container>
     </section>
 
-    <section class="py-16 bg-white overflow-hidden">
-      <v-container>
-        <div class="text-center mb-12">
-          <h2 class="text-h3 font-weight-black color-maroon mb-4">{{ t('sections.social') }}</h2>
-          <div class="title-divider mx-auto bg-gold mb-6"></div>
-          <p class="text-h6 text-grey-darken-2 max-width-800 mx-auto mb-10 lh-relaxed">
-            {{ t('sections.socialDesc') }}
-          </p>
-        </div>
 
-        <v-row>
-          <v-col v-for="platform in socialPlatforms" :key="platform.id" cols="12" sm="6" md="3">
-            <v-card 
-              class="social-platform-card h-100 rounded-xl pa-8 text-center elevation-3 hover-lift transition-all border-transparent"
-              :style="{ '--brand-color': platform.color }"
-              :href="platform.link"
-              target="_blank"
-            >
-              <div class="social-icon-box mb-6 mx-auto d-flex align-center justify-center rounded-circle elevation-5" :style="{ background: platform.color }">
-                <v-icon :icon="platform.icon" size="32" color="white"></v-icon>
-              </div>
-              <h3 class="text-h5 font-weight-black mb-2">{{ platform.name }}</h3>
-              <p class="text-body-2 text-grey-darken-1 mb-6 font-weight-bold opacity-70">{{ platform.handle }}</p>
-              <v-btn
-                block
-                :color="platform.color"
-                class="rounded-pill font-weight-bold"
-                variant="flat"
-                theme="dark"
-              >
-                {{ t('sections.follow') }}
-              </v-btn>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </section>
 
     <!-- Final Call to Action -->
     <section
@@ -291,12 +317,12 @@
       <div class="cta-overlay absolute-inset"></div>
       <v-container class="position-relative z-10 py-10">
         <h2 class="text-h3 text-md-h2 font-weight-black text-white mb-6">
-          {{ t('ctaHome.title') }}
+          {{ t("ctaHome.title") }}
         </h2>
         <p
           class="text-h6 text-white opacity-90 max-width-800 mx-auto mb-10 lh-relaxed"
         >
-          {{ t('ctaHome.subtitle') }}
+          {{ t("ctaHome.subtitle") }}
         </p>
         <v-btn
           color="#D4AF37"
@@ -305,7 +331,7 @@
           href="https://tvk.family"
           target="_blank"
         >
-          {{ t('hero.join') }}
+          {{ t("hero.join") }}
         </v-btn>
       </v-container>
     </section>
@@ -318,28 +344,58 @@ import sectionImage from "../../assets/16170924.png";
 
 export default {
   name: "Home",
-  inject: ['t', 'currentLang'],
+  inject: ["t", "currentLang"],
   data: () => ({
     heroImage,
     sectionImage,
     displayCount: 0,
     targetCount: 15428670,
-    socialPlatforms: [
-      { id: 'x', name: 'X (Twitter)', handle: '@tvkvijayhq', icon: 'mdi-twitter', color: '#000000', link: 'https://twitter.com/tvkvijayhq' },
-      { id: 'facebook', name: 'Facebook', handle: 'TVKVijayHQ', icon: 'mdi-facebook', color: '#1877F2', link: 'https://facebook.com/tvkvijayhq' },
-      { id: 'instagram', name: 'Instagram', handle: '@tvkvijayhq', icon: 'mdi-instagram', color: '#E4405F', link: 'https://instagram.com/tvkvijayhq' },
-      { id: 'youtube', name: 'YouTube', handle: 'TVK Official', icon: 'mdi-youtube', color: '#FF0000', link: 'https://youtube.com/@tvkvijayhq' },
-    ],
+
     news: [
-      { id: 1, tag: 'Official', image: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=800' },
-      { id: 2, tag: 'Campaign', image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800' },
-      { id: 3, tag: 'Events', image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800' },
+      {
+        id: 1,
+        tag: "Official",
+        image:
+          "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=800",
+      },
+      {
+        id: 2,
+        tag: "Campaign",
+        image:
+          "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800",
+      },
+      {
+        id: 3,
+        tag: "Events",
+        image:
+          "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800",
+      },
     ],
     gallery: [
-      { id: 1, title: 'State Conference', image: 'https://images.unsplash.com/photo-1540575861501-7ad05823c93b?q=80&w=800' },
-      { id: 2, title: 'Youth Meet', image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800' },
-      { id: 3, title: 'Vijay HQ', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800' },
-      { id: 4, title: 'Village Tour', image: 'https://images.unsplash.com/photo-1464692805480-a69dfaafdb0d?q=80&w=800' },
+      {
+        id: 1,
+        title: "State Conference",
+        image:
+          "https://images.unsplash.com/photo-1540575861501-7ad05823c93b?q=80&w=800",
+      },
+      {
+        id: 2,
+        title: "Youth Meet",
+        image:
+          "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800",
+      },
+      {
+        id: 3,
+        title: "Vijay HQ",
+        image:
+          "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+      },
+      {
+        id: 4,
+        title: "Village Tour",
+        image:
+          "https://images.unsplash.com/photo-1464692805480-a69dfaafdb0d?q=80&w=800",
+      },
     ],
     pillars: [
       {
@@ -377,8 +433,8 @@ export default {
     },
     formatNumber(num) {
       return num.toLocaleString();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -617,36 +673,24 @@ export default {
   animation: heartbeat 1.5s ease-in-out infinite;
 }
 @keyframes heartbeat {
-  0% { transform: scale(1); }
-  14% { transform: scale(1.1); }
-  28% { transform: scale(1); }
-  42% { transform: scale(1.1); }
-  70% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.1);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
 }
 
-/* Social Platform Cards */
-.social-platform-card {
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.05) !important;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
-  text-decoration: none !important;
-}
 
-.social-platform-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: var(--brand-color) !important;
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.2) !important;
-}
-
-.social-icon-box {
-  width: 64px;
-  height: 64px;
-  transition: transform 0.4s ease;
-}
-
-.social-platform-card:hover .social-icon-box {
-  transform: rotate(10deg) scale(1.1);
-}
 
 .title-divider {
   width: 60px;
