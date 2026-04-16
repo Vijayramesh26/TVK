@@ -82,24 +82,20 @@
 
           <v-col
             cols="12"
-            md="4"
-            lg="5"
-            class="d-none d-md-flex justify-center position-relative"
+            md="5"
+            lg="6"
+            class="d-none d-md-flex justify-center align-end position-relative"
           >
-            <!-- Central Avatar holding the logo or leader image if available -->
-            <v-avatar
-              size="320"
-              class="hero-avatar elevation-16 border-gold-thick"
-              color="white"
-            >
+            <!-- Redesigned Hero Leader Image -->
+            <div class="hero-leader-wrapper">
               <v-img
                 :src="heroImage"
-                cover
+                class="hero-leader-img"
+                width="600"
                 alt="தமிழக வெற்றிக் கழகம் தலைவர் தளபதி விஜய்"
               ></v-img>
-            </v-avatar>
-            <!-- Decorative circle behind avatar -->
-            <div class="hero-avatar-ring"></div>
+              <div class="hero-leader-fade"></div>
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -273,6 +269,40 @@
         </v-row>
       </v-container>
     </section>
+    
+    <!-- Ideological Guides Section -->
+    <section class="py-16 bg-white overflow-hidden border-top">
+      <v-container>
+        <div class="text-center mb-12">
+          <h2 class="text-h3 font-weight-black color-maroon mb-2">
+            {{ t("ideology.leadersTitle") }}
+          </h2>
+          <div class="title-divider mx-auto bg-gold mb-4"></div>
+          <p class="text-h6 text-grey-darken-1 font-weight-regular">
+            {{ t("ideology.leadersDesc") }}
+          </p>
+        </div>
+
+        <div class="d-flex justify-center flex-wrap" style="gap: 40px;">
+          <div v-for="leader in leaders" :key="leader.id" class="leader-guide-card text-center">
+            <v-hover v-slot="{ isHovering, props }">
+              <div v-bind="props" class="position-relative">
+                <v-avatar 
+                  size="160" 
+                  class="leader-avatar elevation-12 border-gold-thick mb-4 transition-all"
+                  :class="{ 'leader-avatar-hover': isHovering }"
+                >
+                  <v-img :src="leader.image" cover></v-img>
+                </v-avatar>
+                <div class="leader-name-label font-weight-black color-maroon text-subtitle-1">
+                  {{ leader.name }}
+                </div>
+              </div>
+            </v-hover>
+          </div>
+        </div>
+      </v-container>
+    </section>
 
     <!-- Gallery Section -->
     <section class="py-16 bg-grey-lighten-4 overflow-hidden">
@@ -339,14 +369,17 @@
 </template>
 
 <script>
-import heroImage from "../../assets/16170916.png";
+import heroImage from "../../assets/generated/designer_leader.png";
 import sectionImage from "../../assets/16170924.png";
-import rallyImg from "../../assets/generated/rally_scene.png";
-import governanceImg from "../../assets/generated/governance.png";
-import villageImg from "../../assets/generated/village.png";
+import rallyImg from "../../assets/generated/refined_rally.png";
+import governanceImg from "../../assets/generated/visionary_hub.png";
+import villageImg from "../../assets/generated/village_development.png";
 import visionImg from "../../assets/generated/vision.png";
 import periyarImg from "../../assets/leaders/periyar.png";
 import kamarajarImg from "../../assets/leaders/kamarajar.png";
+import ambedkarImg from "../../assets/leaders/ambedkar.png";
+import velunachiyarImg from "../../assets/leaders/velunachiyar.png";
+import anjalaiammalImg from "../../assets/leaders/anjalaiammal.png";
 import whistleImg from "../../assets/voteForWhistle.jpg";
 
 export default {
@@ -358,6 +391,14 @@ export default {
     displayCount: 0,
     targetCount: 15428670,
 
+    leaders: [
+      { id: "periyar", name: "தந்தை பெரியார்", image: periyarImg },
+      { id: "kamarajar", name: "பெருந்தலைவர் காமராஜர்", image: kamarajarImg },
+      { id: "ambedkar", name: "அண்ணல் அம்பேத்கர்", image: ambedkarImg },
+      { id: "velunachiyar", name: "வீரமங்கை வேலுநாச்சியார்", image: velunachiyarImg },
+      { id: "anjalaiammal", name: "கடலூர் அஞ்சலையம்மாள்", image: anjalaiammalImg },
+    ],
+
     news: [
       {
         id: 1,
@@ -366,12 +407,12 @@ export default {
       },
       {
         id: 2,
-        tag: "Campaign",
-        image: rallyImg,
+        tag: "Strategic",
+        image: governanceImg,
       },
       {
         id: 3,
-        tag: "Events",
+        tag: "Development",
         image: villageImg,
       },
     ],
@@ -388,21 +429,11 @@ export default {
       },
       {
         id: 3,
-        title: "Thanthai Periyar",
-        image: periyarImg,
-      },
-      {
-        id: 4,
-        title: "Perunthalaivar Kamarajar",
-        image: kamarajarImg,
-      },
-      {
-        id: 5,
-        title: "Governance Hub",
+        title: "Transparent Governance",
         image: governanceImg,
       },
       {
-        id: 6,
+        id: 4,
         title: "Village Progress",
         image: villageImg,
       },
@@ -708,10 +739,72 @@ export default {
   border-radius: 2px;
 }
 
+/* Redesigned Hero Leader */
+.hero-leader-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.hero-leader-img {
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
+}
+
+.hero-leader-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, rgba(128, 0, 0, 0.7));
+  z-index: 3;
+}
+
+/* Leader Guides */
+.leader-guide-card {
+  width: 180px;
+  transition: all 0.3s ease;
+}
+
+.leader-avatar {
+  border: 4px solid #D4AF37 !important;
+  background-color: white;
+}
+
+.leader-avatar-hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.4) !important;
+}
+
+.leader-name-label {
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.border-gold-thick {
+  border: 3px solid #D4AF37 !important;
+}
+
+.border-gold-thin {
+  border: 1px solid #D4AF37 !important;
+}
+
+.hover-zoom {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .hero-title {
     font-size: 2.5rem !important;
+  }
+  .hero-leader-wrapper {
+    max-width: 100%;
+    margin-top: 2rem;
   }
 }
 </style>
