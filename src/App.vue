@@ -139,10 +139,38 @@
                     {{ t('hero.tagline') }}
                   </p>
                   <div class="d-flex" style="gap: 8px;">
-                    <v-btn icon="mdi-facebook" variant="text" size="small" color="#D4AF37"></v-btn>
-                    <v-btn icon="mdi-twitter" variant="text" size="small" color="#D4AF37"></v-btn>
-                    <v-btn icon="mdi-instagram" variant="text" size="small" color="#D4AF37"></v-btn>
-                    <v-btn icon="mdi-youtube" variant="text" size="small" color="#D4AF37"></v-btn>
+                    <v-btn
+                      icon="mdi-facebook"
+                      variant="text"
+                      size="small"
+                      color="#D4AF37"
+                      href="https://facebook.com/tvkvijayhq"
+                      target="_blank"
+                    ></v-btn>
+                    <v-btn
+                      icon="mdi-twitter"
+                      variant="text"
+                      size="small"
+                      color="#D4AF37"
+                      href="https://twitter.com/tvkvijayhq"
+                      target="_blank"
+                    ></v-btn>
+                    <v-btn
+                      icon="mdi-instagram"
+                      variant="text"
+                      size="small"
+                      color="#D4AF37"
+                      href="https://instagram.com/tvkvijayhq"
+                      target="_blank"
+                    ></v-btn>
+                    <v-btn
+                      icon="mdi-youtube"
+                      variant="text"
+                      size="small"
+                      color="#D4AF37"
+                      href="https://youtube.com/@TVKVijayHQ-Offl"
+                      target="_blank"
+                    ></v-btn>
                   </div>
                 </v-col>
 
