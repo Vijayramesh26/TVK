@@ -35,6 +35,10 @@ export const translations = {
       item3: {
         title: "பெண்கள் மற்றும் இளைஞர்களுக்கான சிறப்பு நலத்திட்டங்கள் அறிவிப்பு",
         date: "ஏப்ரல் 12, 2026",
+      },
+      manifesto: {
+        title: "தமிழக வெற்றிக் கழகம் - தேர்தல் அறிக்கை 2026 வெளியிடப்பட்டது!",
+        date: "ஏப்ரல் 16, 2026",
       }
     },
     footer: {
@@ -61,7 +65,8 @@ export const translations = {
             admin: "நிர்வாகம்",
             tech: "தொழில்நுட்பம்",
             fishers: "மீனவர்கள்"
-        }
+        },
+        downloadManifesto: "தேர்தல் அறிக்கை 2026 பதிவிறக்கம் (PDF)"
     },
     candidates: {
       title: "வேட்பாளர் விவரங்கள் 2026",
@@ -120,6 +125,10 @@ export const translations = {
       item3: {
         title: "Special Welfare Schemes Announced for Women and Youth",
         date: "April 12, 2026",
+      },
+      manifesto: {
+        title: "Tamilaga Vettri Kazhagam - Election Manifesto 2026 Released!",
+        date: "April 16, 2026",
       }
     },
     footer: {
@@ -145,8 +154,9 @@ export const translations = {
             farmers: "Agriculture",
             admin: "Administration",
             tech: "Technology",
-            fishers: "Fishermen"
-        }
+            fishers: "Fisherman"
+        },
+        downloadManifesto: "Download Election Manifesto 2026 (PDF)"
     },
     candidates: {
       title: "Candidate Directory 2026",

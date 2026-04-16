@@ -59,6 +59,17 @@
               >
                 {{ t("hero.principles") }}
               </v-btn>
+              <v-btn
+                color="#800000"
+                size="x-large"
+                class="rounded-pill font-weight-bold px-8 text-white elevation-4"
+                prepend-icon="mdi-file-pdf-box"
+                href="/TVK_MANIFESTO_2026.pdf"
+                target="_blank"
+                download
+              >
+                {{ t("ideology.downloadManifesto").split("(")[0] }}
+              </v-btn>
             </div>
 
             <!-- Membership Counter -->
@@ -404,6 +415,12 @@ export default {
     ],
 
     news: [
+      {
+        id: 0,
+        tag: "Breaking",
+        image: visionImg,
+        isManifesto: true
+      },
       {
         id: 1,
         tag: "Official",

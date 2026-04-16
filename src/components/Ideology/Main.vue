@@ -218,6 +218,21 @@
         </v-window>
       </v-card>
 
+      <!-- Download Manifesto PDF Button -->
+      <div class="text-center mb-16">
+        <v-btn
+          color="#800000"
+          size="x-large"
+          class="rounded-pill font-weight-black px-12 elevation-10"
+          prepend-icon="mdi-file-pdf-box"
+          href="/TVK_MANIFESTO_2026.pdf"
+          target="_blank"
+          download
+        >
+          {{ t('ideology.downloadManifesto') }}
+        </v-btn>
+      </div>
+
       <!-- Ideological Leaders Section -->
       <div class="text-center mt-16 mb-8">
         <h2 class="text-h4 font-weight-black color-maroon mb-2">{{ t('ideology.leadersTitle') }}</h2>
@@ -353,18 +368,6 @@ export default {
       if (this.isTamil) {
         return {
           women: [
-            "குடும்பத் தலைவிகளுக்கு மாதம் ரூ.2,500 உதவித்தொகை மற்றும் 6 இலவச சிலிண்டர்கள்.",
-            "திருமணத்தின் போது ஒரு பவுன் தங்கம் மற்றும் பட்டுப் புடவை உதவி.",
-            "புதிதாகப் பிறக்கும் குழந்தைகளுக்குத் தங்க மோதிரத்துடன் கூடிய 'Newborn Kit'.",
-            "ஒவ்வொரு குடும்பத்திற்கும் ரூ.25 லட்சம் வரை விரிவான மருத்துவக் காப்பீடு.",
-            "அரசுப் பேருந்துகளில் பெண்களுக்கு 100% இலவசப் பயணம் மற்றும் முன்னுரிமை.",
-            "பெண்கள் பாதுகாப்பிற்காக அனைத்துக் காவல் நிலையங்களிலும் சிறப்புப் பிரிவு.",
-            "பெண்கள் சுயஉதவி குழுக்களின் கடன்கள் முழுமையாகத் தள்ளுபடி செய்யப்படும்.",
-            "கைவிடப்பட்ட பெண்கள் மற்றும் விதவைகளுக்கு முன்னுரிமை அடிப்படையில் அரசு வேலை."
-          ],
-          youth: [
-            "பட்டதாரிகளுக்கு மாதம் ரூ.4,000 மற்றும் டிப்ளோமா மாணவர்களுக்கு ரூ.2,000 உதவித்தொகை.",
-            "'முதலமைச்சரின் மக்கள் சேவை நண்பன்' திட்டம் மூலம் உள்ளூர் வேலைவாய்ப்பில் தமிழர்களுக்கு 75% முன்னுரிமை.",
             "ரூ.20 லட்சம் வரை பிணையமில்லா (Collateral-free) வட்டி இல்லாக் கல்வி கடன்.",
             "தொழில் தொடங்க ரூ.25 லட்சம் வரை வட்டி இல்லாக் அரசு கடன் உதவி.",
             "ஆண்டுக்கு 5 லட்சம் இளைஞர்களுக்கு தரமான பயிற்சி (Internship) மற்றும் ஊக்கத்தொகை (பட்டதாரிகளுக்கு ரூ.10,000).",
@@ -372,28 +375,29 @@ export default {
             "அரசு காலிப் பணியிடங்கள் 100% வெளிப்படையான முறையில் நிரப்பப்படும்."
           ],
           farmers: [
-            "நெல்லுக்கு குவிண்டாலுக்கு ரூ.3,500 மற்றும் கரும்புக்கு டன்னுக்கு ரூ.4,500 விலை.",
-            "5 ஏக்கருக்கும் குறைவான விவசாயிகளின் கூட்டுறவு வங்கிக் கடன்கள் முழுமையாகத் தள்ளுபடி.",
-            "2 ஏக்கருக்கும் குறைவாக நிலம் வைத்திருக்கும் விவசாயிகளின் பிள்ளைகளுக்கான முழு உயர்கல்விச் செலவையும் அரசே ஏற்கும்.",
-            "விவசாயத்திற்கு தடையற்ற 24 மணிநேர மும்முனை மின்சாரம் இலவசமாக வழங்கப்படும்.",
-            "நெசவாளர்களுக்கு 50% நூல் மற்றும் சாயம் மானியம், 5 ஆண்டுகள் மின்வரி விலக்கு.",
-            "நெசவாளர் கடன் உதவிக்காக ரூ.15,000 கோடி அரசு உத்தரவாத நிதி."
+            "நெல் குவிண்டாலுக்கு ரூ.3,500 மற்றும் கரும்பு டன்னுக்கு ரூ.4,500 கொள்முதல் விலை.",
+            "5 ஏக்கருக்குக் குறைவான விவசாயிகளின் கூட்டுறவு வங்கிக் கடன்கள் முழுமையாகத் தள்ளுபடி.",
+            "விவசாயத்திற்கு தடையற்ற 24 மணிநேர மும்முனை மின்சாரம் இலவசம்.",
+            "விவசாயிகளின் பிள்ளைகளுக்கான முழு உயர்கல்விச் செலவையும் அரசே ஏற்கும்.",
+            "விவசாய காப்பீடு மற்றும் தொழில்நுட்பப் பண்ணை மையங்கள் உருவாக்கம்.",
+            "மீனவர்களுக்கு மீன்பிடித் தடைக்கால நிவாரணம் ரூ.27,000 ஆக உயர்வு.",
+            "மீனவர்களுக்கான ஆயுள் காப்பீடு ரூ.25 லட்சம் உறுதி."
           ],
           societyAdmin: [
-            "போதைப்பொருள் அற்ற தமிழகத்தை உருவாக்க பள்ளி, கல்லூரிகளில் 'Anti-drug protection zones'.",
-            "5 ஆண்டுகளுக்கும் மேலாக பணியாற்றும் தற்காலிக ஆசிரியர்கள் மற்றும் பணியாளர்கள் பணி நிரந்தரம்.",
-            "காவல்துறை பணியாளர்களுக்கு ஊதிய உயர்வு மற்றும் தனியான மருத்துவமனை வசதி.",
-            "மாநில சுயாட்சி - கல்வி அதிகாரத்தை மீண்டும் மாநிலப் பட்டியலுக்கு மாற்ற தீவிர நடவடிக்கை.",
-            "வெளிப்படையான மற்றும் ஊழலற்ற நேர்மையான 'Paperless' அரசு நிர்வாகம்.",
-            "ஆளுநர் பதவி நீக்கம் மற்றும் மக்கள் நலத் திட்டங்களுக்கு நேரடி நிதி ஒதுக்கீடு."
+            "கல்வி மற்றும் உயர்பார்வையில் மாநில சுயாட்சியை மீட்டெடுக்க தீவிர நடவடிக்கை.",
+            "பள்ளி, கல்லூரிகளில் 'போதை அற்ற மண்டலங்கள்' மற்றும் கடுமையான சட்ட அமுலாக்கம்.",
+            "ஊழலற்ற, வெளிப்படையான, முழுமையான 'Paperless' டிஜிட்டல் அரசு நிர்வாகம்.",
+            "ஆண்டுக்கு 200 யூனிட் வரை இலவச மின்சாரம் மற்றும் அனைவருக்கும் கான்கிரீட் வீடுகள்.",
+            "சுற்றுச்சூழல் பாதுகாப்பு மற்றும் 'பசுமைத் தமிழகம்' - 100 கோடி மரக்கன்றுகள்.",
+            "காவல்துறை மற்றும் அரசுப் பணியாளர்களுக்கு ஊதிய உயர்வு மற்றும் சலுகைகள்."
           ],
           tech: [
-            "நாட்டிலேயே முதல்முறையாக செயற்கை நுண்ணறிவுக்கென (AI) தனி அமைச்சகம் அமல்.",
-            "தமிழகத்தை டிஜிட்டல் தலைநகராக மாற்ற 'AI சிட்டி' (AI City) மற்றும் ஹப் உருவாக்கம்.",
-            "அனைத்து அரசு சேவைகளையும் ஒரே இடத்தில் பெற 'வெற்றி தமிழ்நாடு சூப்பர் ஆப்'.",
-            "நிர்வாக வெளிப்படைத்தன்மைக்கு 'Real-time Governance Dashboard' வசதி.",
-            "மதுரை, கோவை உள்ளிட்ட நகரங்களில் 1,000 தொழில்நுட்ப புத்தாக்க மையங்கள்.",
-            "அரசுத் தேர்வுகள் உரிய காலத்தில் எவ்வித முறைகேடும் இன்றி நடத்தப்படும்."
+            "இந்தியாவிலேயே முதல்முறையாக செயற்கை நுண்ணறிவுக்கான (AI) தனி அமைச்சகம்.",
+            "தமிழகத்தை உலக தொழில்நுட்ப மையமாக மாற்ற 'AI சிட்டி' (AI City) உருவாக்கம்.",
+            "அனைத்து அரசு சேவைகளையும் அணுக 'வெற்றி தமிழ்நாடு சூப்பர் ஆப்'.",
+            "1,000 தொழில்நுட்பப் புத்தாக்க மையங்கள் மற்றும் 'Startup Hub'.",
+            "பிளாக்செயின் (Blockchain) மூலம் வெளிப்படையான டெண்டர் மற்றும் நிர்வாகம்.",
+            "அரசுப் பள்ளிகளில் உலகத்தரம் வாய்ந்த கணினி மற்றும் கோடிங் பயிற்சி."
           ],
           fishers: [
             "கச்சத்தீவை மீட்டெடுத்து மீனவர்களின் பாரம்பரிய மீன்பிடி உரிமைகள் காக்கப்படும்.",
@@ -405,53 +409,53 @@ export default {
       } else {
         return {
           women: [
-            "Monthly assistance of ₹2,500 for women breadwinners and 6 free LPG cylinders.",
-            "Marriage assistance providing one sovereign of gold and a silk saree.",
-            "'Newborn Kit' with a gold ring for every newborn child.",
-            "Comprehensive health insurance up to ₹25 lakh per family.",
-            "100% free travel and priority for women in government buses.",
-            "Special wings in all police stations specifically for women's safety.",
-            "Complete waiver of loans for women's self-help groups.",
-            "Government priority jobs for abandoned women and widows."
+            "Monthly assistance of ₹2,500 for women breadwinners (Vettri Magalir scheme).",
+            "One sovereign of gold and a silk saree marriage assistance for poor families.",
+            "6 free LPG cooking cylinders annually for every family.",
+            "Interest-free loans up to ₹5 lakh for women's Self-Help Groups (SHGs).",
+            "₹15,000 annual assistance for childcare and education for mothers.",
+            "100% free and safe travel for women in government buses.",
+            "Full fee exemption for girls in higher education to encourage learning."
           ],
           youth: [
             "Monthly stipend of ₹4,000 for graduates and ₹2,000 for diploma students.",
-            "75% priority for Tamils in local jobs through 'Chief Minister’s Public Service Friend' scheme.",
-            "Collateral-free, zero-interest education loans up to ₹20 lakh.",
-            "Interest-free government loan assistance up to ₹25 lakh to start businesses.",
-            "Quality internships and stipends (₹10,000 for graduates) for 5 lakh youth annually.",
-            "'Creative Entrepreneurs Scheme' to encourage creators and new entrepreneurs.",
-            "100% transparent filling of all government vacancies."
+            "Reservation of 75% of local jobs for Tamil residents by legislation.",
+            "Collateral-free, zero-interest loans up to ₹25 lakh for young entrepreneurs.",
+            "Quality internships with ₹10,000 stipend for 5 lakh youth annually.",
+            "Setting up 'Kamarajar Schools of Excellence' (Residential) in every district.",
+            "Zero-interest education loans up to ₹20 lakh and frequent job fairs.",
+            "Filling of all government job vacancies within 6 months."
           ],
           farmers: [
             "Procurement price of ₹3,500 per quintal for paddy and ₹4,500 per tonne for sugarcane.",
-            "Full waiver of cooperative bank loans for farmers with less than 5 acres.",
-            "The state will bear the full higher education costs for children of farmers with less than 2 acres.",
+            "Full waiver of cooperative bank loans for farmers owning less than 5 acres.",
             "Uninterrupted 24-hour free three-phase electricity for agriculture.",
-            "50% subsidy on yarn and dye for weavers, with a 5-year electricity tax exemption.",
-            "₹15,000 crore government guarantee fund for weaver loan assistance."
+            "Full support for higher education costs of children from small farming families.",
+            "Creation of crop insurance and technology-based farm support centers.",
+            "Increased fishing ban period relief fund to ₹27,000.",
+            "Life insurance coverage of ₹25 lakh for every fisherman."
           ],
           societyAdmin: [
-            "Setting up 'Anti-drug protection zones' in schools and colleges for a drug-free TN.",
-            "Permanent employment for temporary teachers and staff working for over 5 years.",
-            "Salary hikes and separate hospital facilities for police personnel.",
-            "State Autonomy - Serious steps to move education back to the State List.",
-            "Transparent and corruption-free 'Paperless' government administration.",
-            "Removal of Governor's office and direct fund allocation for welfare schemes."
+            "Serious measures to reclaim State Autonomy in Education and Governance.",
+            "Establishment of 'Anti-drug Protection Zones' in schools and colleges.",
+            "A fully transparent, corruption-free, and 'Paperless' digital administration.",
+            "200 units of free electricity and concrete houses for all homeless citizens.",
+            "Environment protection and 'Green Tamil Nadu' - planting 100 crore saplings.",
+            "Salary hikes and better welfare benefits for Police and Government staff."
           ],
           tech: [
-            "Implementation of a separate ministry for Artificial Intelligence (AI) for the first time in India.",
-            "Creation of 'AI City' and Hub to transform Tamil Nadu into a digital capital.",
-            "'Vetri Tamil Nadu Super App' to access all government services in one place.",
-            "'Real-time Governance Dashboard' for administrative transparency.",
-            "1,000 technology innovation centers in cities like Madurai and Coimbatore.",
-            "Government exams conducted on time without any malpractices."
+            "India's first-ever separate Ministry for Artificial Intelligence (AI).",
+            "Development of 'AI City' to transform TN into a global technology hub.",
+            "'Vetri Tamil Nadu Super App' to provide all government services in one place.",
+            "Establishment of 1,000 technology innovation centers and a 'Startup Hub'.",
+            "Blockchain-based administration for transparent tenders and governance.",
+            "World-class computer science and coding training in government schools."
           ],
           fishers: [
-            "Reclaiming Katchatheevu to safeguard traditional fishing rights of fishermen.",
-            "50% subsidy for motorboats and fishing nets for fishermen.",
-            "Tsunami and cyclone shelters in fishing villages across coastal areas.",
-            "Fishing ban period relief fund increased to ₹10,000."
+            "Separate Ministry and modern cold-storage facilities for fisherman welfare.",
+            "50% subsidy on trawlers and nets for deep-sea fishing.",
+            "Comprehensive accident insurance and permanent medical aid for fishers.",
+            "Diplomatic measures to reclaim Katchatheevu and traditional fishing rights."
           ]
         }
       }
