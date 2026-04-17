@@ -12,24 +12,41 @@
           <v-img :src="logo"></v-img>
         </v-avatar>
         <h1 class="text-h2 font-weight-black color-gold mb-2 title-main">
-          {{ t('ideology.title') }}
+          {{ t("ideology.title") }}
         </h1>
         <p class="text-h5 font-weight-medium color-white italic opacity-90">
-          "{{ t('hero.subtitle') }}"
+          "{{ t("hero.subtitle") }}"
         </p>
-        <v-divider color="#d4af37" class="mt-4 mx-auto" width="100" thickness="3"></v-divider>
+        <v-divider
+          color="#d4af37"
+          class="mt-4 mx-auto"
+          width="100"
+          thickness="3"
+        ></v-divider>
       </div>
     </v-sheet>
 
     <v-container class="mt-n16">
       <!-- Main Philosophy Card -->
-      <v-card class="elevation-12 rounded-xl glass-card pa-8 mb-12 border-gold-subtle">
+      <v-card
+        class="elevation-12 rounded-xl glass-card pa-8 mb-12 border-gold-subtle"
+      >
         <div class="d-flex align-center mb-6">
-          <v-icon color="#800000" size="40" class="mr-4">mdi-star-shooting</v-icon>
-          <h2 class="text-h4 font-weight-black color-maroon">{{ t('ideology.philosophy') }}</h2>
+          <v-icon color="#800000" size="40" class="mr-4"
+            >mdi-star-shooting</v-icon
+          >
+          <h2 class="text-h4 font-weight-black color-maroon">
+            {{ t("ideology.philosophy") }}
+          </h2>
         </div>
         <p class="text-h6 font-weight-medium line-height-relaxed color-grey">
-          {{ t('ideology.philosophyDesc').split(',')[0] }}, <strong class="color-maroon">"{{ isTamil ? 'மதச்சார்பற்ற சமூக நீதி' : 'Secular Social Justice' }}"</strong> {{ t('ideology.philosophyDesc').split(',')[1] }}
+          {{ t("ideology.philosophyDesc").split(",")[0] }},
+          <strong class="color-maroon"
+            >"{{
+              isTamil ? "மதச்சார்பற்ற சமூக நீதி" : "Secular Social Justice"
+            }}"</strong
+          >
+          {{ t("ideology.philosophyDesc").split(",")[1] }}
         </p>
       </v-card>
 
@@ -49,7 +66,9 @@
             <div class="circle-icon mb-4">
               <v-icon color="white" size="30">{{ principle.icon }}</v-icon>
             </div>
-            <h3 class="text-h5 font-weight-bold color-maroon mb-3">{{ principle.title }}</h3>
+            <h3 class="text-h5 font-weight-bold color-maroon mb-3">
+              {{ principle.title }}
+            </h3>
             <p class="color-grey-darken-1">{{ principle.desc }}</p>
           </v-card>
         </v-col>
@@ -57,11 +76,15 @@
 
       <!-- Manifesto Section -->
       <div class="text-center mt-16 mb-8">
-        <h2 class="text-h4 font-weight-black color-maroon mb-2">{{ t('ideology.manifestoTitle') }}</h2>
-        <p class="color-grey italic">{{ t('ideology.manifestoDesc') }}</p>
+        <h2 class="text-h4 font-weight-black color-maroon mb-2">
+          {{ t("ideology.manifestoTitle") }}
+        </h2>
+        <p class="color-grey italic">{{ t("ideology.manifestoDesc") }}</p>
       </div>
 
-      <v-card class="rounded-xl elevation-8 mb-16 overflow-hidden border-gold-subtle glass-card">
+      <v-card
+        class="rounded-xl elevation-8 mb-16 overflow-hidden border-gold-subtle glass-card"
+      >
         <v-tabs
           v-model="manifestoTab"
           bg-color="transparent"
@@ -70,40 +93,56 @@
           class="manifesto-tabs"
         >
           <v-tab value="women" class="font-weight-black">
-            <v-icon start>mdi-face-woman</v-icon> {{ t('ideology.tabs.women') }}
+            <v-icon start>mdi-face-woman</v-icon> {{ t("ideology.tabs.women") }}
           </v-tab>
           <v-tab value="youth" class="font-weight-black">
-            <v-icon start>mdi-account-school</v-icon> {{ t('ideology.tabs.youth') }}
+            <v-icon start>mdi-account-school</v-icon>
+            {{ t("ideology.tabs.youth") }}
           </v-tab>
           <v-tab value="farmers" class="font-weight-black">
-            <v-icon start>mdi-sprout</v-icon> {{ t('ideology.tabs.farmers') }}
+            <v-icon start>mdi-sprout</v-icon> {{ t("ideology.tabs.farmers") }}
           </v-tab>
           <v-tab value="admin" class="font-weight-black">
-            <v-icon start>mdi-shield-crown</v-icon> {{ t('ideology.tabs.admin') }}
+            <v-icon start>mdi-shield-crown</v-icon>
+            {{ t("ideology.tabs.admin") }}
           </v-tab>
           <v-tab value="tech" class="font-weight-black">
-            <v-icon start>mdi-robot</v-icon> {{ t('ideology.tabs.tech') }}
+            <v-icon start>mdi-robot</v-icon> {{ t("ideology.tabs.tech") }}
           </v-tab>
           <v-tab value="fishers" class="font-weight-black">
-            <v-icon start>mdi-anchor</v-icon> {{ t('ideology.tabs.fishers') }}
+            <v-icon start>mdi-anchor</v-icon> {{ t("ideology.tabs.fishers") }}
           </v-tab>
         </v-tabs>
 
         <v-window v-model="manifestoTab" class="pa-6">
           <v-window-item value="women">
-            <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
+            <h3
+              class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center"
+            >
               <v-icon color="#800000" class="mr-2">mdi-butterfly</v-icon>
-              {{ t('ideology.tabs.women') }} {{ isTamil ? 'நலன் மற்றும் அதிகாரம்' : 'Welfare & Empowerment' }}
+              {{ t("ideology.tabs.women") }}
+              {{ isTamil ? "நலன் மற்றும் அதிகாரம்" : "Welfare & Empowerment" }}
             </h3>
             <v-row>
-              <v-col v-for="(item, i) in manifesto.women" :key="i" cols="12" md="6">
+              <v-col
+                v-for="(item, i) in manifesto.women"
+                :key="i"
+                cols="12"
+                md="6"
+              >
                 <v-list-item class="manifesto-item rounded-lg mb-3">
                   <template v-slot:prepend>
-                    <v-avatar color="#800000" size="32" class="mr-3 shadow-small">
+                    <v-avatar
+                      color="#800000"
+                      size="32"
+                      class="mr-3 shadow-small"
+                    >
                       <v-icon color="white" size="18">mdi-check-bold</v-icon>
                     </v-avatar>
                   </template>
-                  <v-list-item-title class="font-weight-bold color-grey-darken-3 text-wrap">
+                  <v-list-item-title
+                    class="font-weight-bold color-grey-darken-3 text-wrap"
+                  >
                     {{ item }}
                   </v-list-item-title>
                 </v-list-item>
@@ -112,19 +151,33 @@
           </v-window-item>
 
           <v-window-item value="youth">
-            <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
+            <h3
+              class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center"
+            >
               <v-icon color="#800000" class="mr-2">mdi-lightning-bolt</v-icon>
-              {{ t('ideology.tabs.youth') }} {{ isTamil ? 'மற்றும் வேலைவாய்ப்பு' : '& Employment' }}
+              {{ t("ideology.tabs.youth") }}
+              {{ isTamil ? "மற்றும் வேலைவாய்ப்பு" : "& Employment" }}
             </h3>
             <v-row>
-              <v-col v-for="(item, i) in manifesto.youth" :key="i" cols="12" md="6">
+              <v-col
+                v-for="(item, i) in manifesto.youth"
+                :key="i"
+                cols="12"
+                md="6"
+              >
                 <v-list-item class="manifesto-item rounded-lg mb-3">
                   <template v-slot:prepend>
-                    <v-avatar color="#800000" size="32" class="mr-3 shadow-small">
+                    <v-avatar
+                      color="#800000"
+                      size="32"
+                      class="mr-3 shadow-small"
+                    >
                       <v-icon color="white" size="18">mdi-star</v-icon>
                     </v-avatar>
                   </template>
-                  <v-list-item-title class="font-weight-bold color-grey-darken-3 text-wrap">
+                  <v-list-item-title
+                    class="font-weight-bold color-grey-darken-3 text-wrap"
+                  >
                     {{ item }}
                   </v-list-item-title>
                 </v-list-item>
@@ -133,19 +186,33 @@
           </v-window-item>
 
           <v-window-item value="farmers">
-             <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
+            <h3
+              class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center"
+            >
               <v-icon color="#800000" class="mr-2">mdi-tractor</v-icon>
-              {{ t('ideology.tabs.farmers') }} {{ isTamil ? 'மேம்பாடு' : 'Development' }}
+              {{ t("ideology.tabs.farmers") }}
+              {{ isTamil ? "மேம்பாடு" : "Development" }}
             </h3>
             <v-row>
-              <v-col v-for="(item, i) in manifesto.farmers" :key="i" cols="12" md="6">
+              <v-col
+                v-for="(item, i) in manifesto.farmers"
+                :key="i"
+                cols="12"
+                md="6"
+              >
                 <v-list-item class="manifesto-item rounded-lg mb-3">
                   <template v-slot:prepend>
-                    <v-avatar color="#800000" size="32" class="mr-3 shadow-small">
+                    <v-avatar
+                      color="#800000"
+                      size="32"
+                      class="mr-3 shadow-small"
+                    >
                       <v-icon color="white" size="18">mdi-leaf</v-icon>
                     </v-avatar>
                   </template>
-                  <v-list-item-title class="font-weight-bold color-grey-darken-3 text-wrap">
+                  <v-list-item-title
+                    class="font-weight-bold color-grey-darken-3 text-wrap"
+                  >
                     {{ item }}
                   </v-list-item-title>
                 </v-list-item>
@@ -154,19 +221,33 @@
           </v-window-item>
 
           <v-window-item value="admin">
-            <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
+            <h3
+              class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center"
+            >
               <v-icon color="#800000" class="mr-2">mdi-gavel</v-icon>
-              {{ t('ideology.tabs.admin') }} {{ isTamil ? 'சீர்திருத்தம்' : 'Reform' }}
+              {{ t("ideology.tabs.admin") }}
+              {{ isTamil ? "சீர்திருத்தம்" : "Reform" }}
             </h3>
             <v-row>
-              <v-col v-for="(item, i) in manifesto.societyAdmin" :key="i" cols="12" md="6">
+              <v-col
+                v-for="(item, i) in manifesto.societyAdmin"
+                :key="i"
+                cols="12"
+                md="6"
+              >
                 <v-list-item class="manifesto-item rounded-lg mb-3">
                   <template v-slot:prepend>
-                    <v-avatar color="#800000" size="32" class="mr-3 shadow-small">
+                    <v-avatar
+                      color="#800000"
+                      size="32"
+                      class="mr-3 shadow-small"
+                    >
                       <v-icon color="white" size="18">mdi-check-all</v-icon>
                     </v-avatar>
                   </template>
-                  <v-list-item-title class="font-weight-bold color-grey-darken-3 text-wrap">
+                  <v-list-item-title
+                    class="font-weight-bold color-grey-darken-3 text-wrap"
+                  >
                     {{ item }}
                   </v-list-item-title>
                 </v-list-item>
@@ -175,19 +256,32 @@
           </v-window-item>
 
           <v-window-item value="tech">
-            <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
+            <h3
+              class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center"
+            >
               <v-icon color="#800000" class="mr-2">mdi-robot</v-icon>
-              {{ t('ideology.tabs.tech') }} (AI)
+              {{ t("ideology.tabs.tech") }} (AI)
             </h3>
             <v-row>
-              <v-col v-for="(item, i) in manifesto.tech" :key="i" cols="12" md="6">
+              <v-col
+                v-for="(item, i) in manifesto.tech"
+                :key="i"
+                cols="12"
+                md="6"
+              >
                 <v-list-item class="manifesto-item rounded-lg mb-3">
                   <template v-slot:prepend>
-                    <v-avatar color="#800000" size="32" class="mr-3 shadow-small">
+                    <v-avatar
+                      color="#800000"
+                      size="32"
+                      class="mr-3 shadow-small"
+                    >
                       <v-icon color="white" size="18">mdi-molecule</v-icon>
                     </v-avatar>
                   </template>
-                  <v-list-item-title class="font-weight-bold color-grey-darken-3 text-wrap">
+                  <v-list-item-title
+                    class="font-weight-bold color-grey-darken-3 text-wrap"
+                  >
                     {{ item }}
                   </v-list-item-title>
                 </v-list-item>
@@ -196,19 +290,33 @@
           </v-window-item>
 
           <v-window-item value="fishers">
-            <h3 class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center">
+            <h3
+              class="text-h5 color-maroon font-weight-black mb-4 d-flex align-center"
+            >
               <v-icon color="#800000" class="mr-2">mdi-anchor</v-icon>
-              {{ t('ideology.tabs.fishers') }} {{ isTamil ? 'நலன்' : 'Welfare' }}
+              {{ t("ideology.tabs.fishers") }}
+              {{ isTamil ? "நலன்" : "Welfare" }}
             </h3>
             <v-row>
-              <v-col v-for="(item, i) in manifesto.fishers" :key="i" cols="12" md="6">
+              <v-col
+                v-for="(item, i) in manifesto.fishers"
+                :key="i"
+                cols="12"
+                md="6"
+              >
                 <v-list-item class="manifesto-item rounded-lg mb-3">
                   <template v-slot:prepend>
-                    <v-avatar color="#800000" size="32" class="mr-3 shadow-small">
+                    <v-avatar
+                      color="#800000"
+                      size="32"
+                      class="mr-3 shadow-small"
+                    >
                       <v-icon color="white" size="18">mdi-waves</v-icon>
                     </v-avatar>
                   </template>
-                  <v-list-item-title class="font-weight-bold color-grey-darken-3 text-wrap">
+                  <v-list-item-title
+                    class="font-weight-bold color-grey-darken-3 text-wrap"
+                  >
                     {{ item }}
                   </v-list-item-title>
                 </v-list-item>
@@ -218,45 +326,80 @@
         </v-window>
       </v-card>
 
-      <!-- Download Manifesto PDF Button -->
-      <div class="text-center mb-16">
-        <v-btn
-          color="#800000"
-          size="x-large"
-          class="rounded-pill font-weight-black px-12 elevation-10"
-          prepend-icon="mdi-file-pdf-box"
-          href="/TVK_MANIFESTO_2026.pdf"
-          target="_blank"
-          download
-        >
-          {{ t('ideology.downloadManifesto') }}
-        </v-btn>
-      </div>
+      <!-- PDF Download Button -->
+      <v-fade-transition>
+        <div class="pdf-download-bar mb-8">
+          <v-btn
+            color="#800000"
+            size="large"
+            block
+            variant="elevated"
+            class="rounded-xl font-weight-black elevation-8 manifesto-btn"
+            @click="generatePDF"
+          >
+            <v-icon start class="mr-2">mdi-file-pdf-box</v-icon>
+            {{ t("kolgai.download_pdf") }}
+          </v-btn>
+        </div>
+      </v-fade-transition>
 
       <!-- Ideological Leaders Section -->
       <div class="text-center mt-16 mb-8">
-        <h2 class="text-h4 font-weight-black color-maroon mb-2">{{ t('ideology.leadersTitle') }}</h2>
-        <p class="color-grey italic">{{ t('ideology.leadersDesc') }}</p>
+        <h2 class="text-h4 font-weight-black color-maroon mb-2">
+          {{ t("ideology.leadersTitle") }}
+        </h2>
+        <p class="color-grey italic">{{ t("ideology.leadersDesc") }}</p>
       </div>
 
       <v-row class="mb-16" justify="center">
-        <v-col v-for="leader in leaders" :key="leader.name" cols="6" md="2" class="text-center px-2">
+        <v-col
+          v-for="leader in leaders"
+          :key="leader.name"
+          cols="6"
+          md="2"
+          class="text-center px-2"
+        >
           <v-hover v-slot="{ isHovering, props }">
-            <div v-bind="props" :class="{ 'leader-scale': isHovering }" class="transition-all">
-              <v-avatar size="130" class="elevation-10 mb-4 leader-avatar border-gold">
-                <v-img :src="leader.img" cover :alt="leader.name + ' - ' + leader.legacy"></v-img>
+            <div
+              v-bind="props"
+              :class="{ 'leader-scale': isHovering }"
+              class="transition-all"
+            >
+              <v-avatar
+                size="130"
+                class="elevation-10 mb-4 leader-avatar border-gold"
+              >
+                <v-img
+                  :src="leader.img"
+                  cover
+                  :alt="leader.name + ' - ' + leader.legacy"
+                ></v-img>
               </v-avatar>
-              <h4 class="text-subtitle font-weight-bold color-maroon line-height-tight mb-1">{{ leader.name }}</h4>
-              <p class="text-caption font-weight-bold color-gold text-uppercase">{{ leader.legacy }}</p>
+              <h4
+                class="text-subtitle font-weight-bold color-maroon line-height-tight mb-1"
+              >
+                {{ leader.name }}
+              </h4>
+              <p
+                class="text-caption font-weight-bold color-gold text-uppercase"
+              >
+                {{ leader.legacy }}
+              </p>
             </div>
           </v-hover>
         </v-col>
       </v-row>
 
       <!-- Call to Action -->
-      <v-card color="#800000" class="rounded-xl pa-10 text-center mb-16 CTA-banner" dark>
-        <h2 class="text-h3 font-weight-black color-gold mb-4">{{ t('ideology.ctaTitle') }}</h2>
-        <p class="text-h6 mb-6 opacity-80">{{ t('ideology.ctaDesc') }}</p>
+      <v-card
+        color="#800000"
+        class="rounded-xl pa-10 text-center mb-16 CTA-banner"
+        dark
+      >
+        <h2 class="text-h3 font-weight-black color-gold mb-4">
+          {{ t("ideology.ctaTitle") }}
+        </h2>
+        <p class="text-h6 mb-6 opacity-80">{{ t("ideology.ctaDesc") }}</p>
         <v-btn
           color="#d4af37"
           rounded="pill"
@@ -264,9 +407,86 @@
           class="font-weight-black elevation-8 text-black px-10"
           to="/create"
         >
-          {{ isTamil ? 'கழக போஸ்டர் உருவாக்க' : 'Create Party Poster' }}
+          {{ isTamil ? "கழக போஸ்டர் உருவாக்க" : "Create Party Poster" }}
         </v-btn>
       </v-card>
+
+      <!-- HIDDEN PRINTABLE CONTENT (PDF VERSION) -->
+      <div id="printable-manifesto" class="d-none-screen">
+        <!-- Page 1: Cover/Header -->
+        <div class="print-header text-center">
+          <v-img
+            :src="logo"
+            width="120"
+            height="120"
+            class="mx-auto mb-4"
+          ></v-img>
+          <h1 class="print-title">{{ t("hero.title") }}</h1>
+          <h2 class="print-subtitle">{{ t("hero.subtitle") }}</h2>
+          <div class="print-divider"></div>
+          <h3 class="print-doc-type">{{ t("kolgai.download_pdf") }}</h3>
+        </div>
+
+        <!-- Philosophy -->
+        <div class="print-section">
+          <h2 class="print-section-title">
+            {{ t("kolgai.philosophy.title") }}
+          </h2>
+          <p class="print-text">{{ t("kolgai.philosophy.desc") }}</p>
+        </div>
+
+        <!-- Principles -->
+        <div class="print-section">
+          <h2 class="print-section-title">
+            {{ t("kolgai.principles.title") }}
+          </h2>
+          <div class="print-principles-grid">
+            <div
+              v-for="(p, i) in principles"
+              :key="i"
+              class="print-principle-item"
+            >
+              <span class="print-principle-no">{{ i + 1 }}.</span>
+              <span class="print-principle-text">{{ p.text }}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Manifesto Sections -->
+        <div
+          v-for="(cat, idx) in manifesto"
+          :key="idx"
+          class="print-section page-break-before"
+        >
+          <h2 class="print-section-title">{{ cat.title }}</h2>
+          <ul class="print-list">
+            <li
+              v-for="(point, pIdx) in cat.points"
+              :key="pIdx"
+              class="print-list-item"
+            >
+              {{ point }}
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="print-footer">
+          <div class="print-divider"></div>
+          <div class="d-flex justify-space-between align-center">
+            <div>
+              <p class="mb-0">
+                <strong>{{ t("footer.headquarters") }}</strong>
+              </p>
+              <p class="text-caption mb-0">{{ t("footer.address") }}</p>
+            </div>
+            <div class="text-right">
+              <p class="mb-0">© 2026 தமிழக வெற்றிக் கழகம்</p>
+              <p class="text-caption mb-0">உறுதி! வெற்றி! மாற்றம்!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </v-container>
   </v-container>
 </template>
@@ -281,88 +501,96 @@ import anjalaiAmmalImg from "../../assets/leaders/anjalaiammal.png";
 
 export default {
   name: "IdeologyPage",
-  inject: ['t', 'currentLang'],
+  inject: ["t", "currentLang"],
   data: () => ({
     logo,
     manifestoTab: "women",
   }),
   computed: {
     isTamil() {
-      return this.currentLang() === 'ta';
+      return this.currentLang() === "ta";
     },
     principles() {
       return [
         {
-          title: this.isTamil ? "மதச்சார்பற்ற சமூக நீதி" : "Secular Social Justice",
+          title: this.isTamil
+            ? "மதச்சார்பற்ற சமூக நீதி"
+            : "Secular Social Justice",
           icon: "mdi-balance-scale",
-          desc: this.isTamil 
+          desc: this.isTamil
             ? "சாதி, மதம், மொழி கடந்த மனிதநேயமே எமது கட்சியின் அடித்தளம். அனைவருக்கும் சமமான வாய்ப்பு மற்றும் அதிகாரம்."
-            : "Humanity beyond caste, religion, and language is the foundation of our party. Equal opportunity and power for all."
+            : "Humanity beyond caste, religion, and language is the foundation of our party. Equal opportunity and power for all.",
         },
         {
-          title: this.isTamil ? "விகிதாச்சார இடப்பங்கீடு" : "Proportional Representation",
+          title: this.isTamil
+            ? "விகிதாச்சார இடப்பங்கீடு"
+            : "Proportional Representation",
           icon: "mdi-chart-pie",
           desc: this.isTamil
             ? "சாதி ஒழியும் வரை அனைத்துப் பிரிவினருக்கும் அனைத்துத் துறைகளிலும் விகிதாச்சார அடிப்படையில் பிரதிநிதித்துவம் அளிப்பது."
-            : "Providing representation across all sectors based on population proportion until caste is abolished."
+            : "Providing representation across all sectors based on population proportion until caste is abolished.",
         },
         {
           title: this.isTamil ? "மதச்சார்பின்மை" : "Secularism",
           icon: "mdi-hands-pray",
           desc: this.isTamil
             ? "அனைத்து மதத்தவரையும் மத நம்பிக்கையற்றவரையும் சமமாக நடத்தும் அரசு நிர்வாகம். தனிப்பட்ட நம்பிக்கைகளில் தலையிடாமை."
-            : "A government administration that treats all religions and non-believers equally. Non-interference in personal beliefs."
+            : "A government administration that treats all religions and non-believers equally. Non-interference in personal beliefs.",
         },
         {
           title: this.isTamil ? "மாநிலத் தன்னாட்சி" : "State Autonomy",
           icon: "mdi-map-marker-radius",
           desc: this.isTamil
             ? "கூட்டாட்சி தத்துவத்தின் அடிப்படையில் மாநிலங்களின் தன்னாட்சி உரிமைகளை மீட்டெடுத்தல் மற்றும் நிலைநாட்டுதல்."
-            : "Reclaiming and establishing the autonomous rights of states based on the principle of federalism."
+            : "Reclaiming and establishing the autonomous rights of states based on the principle of federalism.",
         },
         {
           title: this.isTamil ? "இருமொழிக் கொள்கை" : "Two-Language Policy",
           icon: "mdi-translate",
           desc: this.isTamil
             ? "தாய்மொழியான தமிழ் மற்றும் உலக இணைப்பு மொழியான ஆங்கிலம் ஆகிய இரு மொழிக் கொள்கையில் உறுதியான நிலைப்பாடு."
-            : "A firm stand on the two-language policy: mother tongue Tamil and global link language English."
+            : "A firm stand on the two-language policy: mother tongue Tamil and global link language English.",
         },
         {
-          title: this.isTamil ? "தமிழ் ஆட்சி மொழி" : "Tamil as Official Language",
+          title: this.isTamil
+            ? "தமிழ் ஆட்சி மொழி"
+            : "Tamil as Official Language",
           icon: "mdi-alphabet-latin",
           desc: this.isTamil
             ? "தமிழே ஆட்சிமொழி, நீதிமன்ற வழக்காடு மொழி மற்றும் வழிபாட்டு மொழியாக இருக்க வேண்டும் என்பதே எமது இலக்கு."
-            : "Our goal is for Tamil to be the official language, the language of the courts, and the language of worship."
+            : "Our goal is for Tamil to be the official language, the language of the courts, and the language of worship.",
         },
         {
           title: this.isTamil ? "போதை இல்லாத் தமிழகம்" : "Drug-Free Tamil Nadu",
           icon: "mdi-pill-off",
           desc: this.isTamil
             ? "போதைப்பொருள் அற்ற ஆரோக்கியமான தமிழகத்தை உருவாக்குவதற்கான 'Zero Tolerance' மற்றும் கடுமையான சட்ட அமுலாக்கம்."
-            : "Creating a healthy, drug-free Tamil Nadu through zero tolerance and strict law enforcement."
+            : "Creating a healthy, drug-free Tamil Nadu through zero tolerance and strict law enforcement.",
         },
         {
           title: this.isTamil ? "பெண்கள் மேம்பாடு" : "Women’s Empowerment",
           icon: "mdi-face-woman",
           desc: this.isTamil
             ? "பெண்களின் கல்வி, அரசியல் அதிகாரம் மற்றும் பொருளாதார சுதந்திரத்திற்கு முழு முதலுரிமை மற்றும் பாதுகாப்பு."
-            : "Top priority and protection for women's education, political power, and economic independence."
+            : "Top priority and protection for women's education, political power, and economic independence.",
         },
         {
-          title: this.isTamil ? "ஊழலற்ற நிர்வாகம்" : "Corruption-Free Administration",
+          title: this.isTamil
+            ? "ஊழலற்ற நிர்வாகம்"
+            : "Corruption-Free Administration",
           icon: "mdi-shield-check",
           desc: this.isTamil
             ? "லஞ்ச லாவண்யம் இல்லாத, அரசியல் தலையீடு அற்ற வெளிப்படையான மற்றும் நேர்மையான மக்கள் நல அரசு நிர்வாகம்."
-            : "A transparent and honest people's welfare administration free from bribes and political interference."
+            : "A transparent and honest people's welfare administration free from bribes and political interference.",
         },
         {
           title: this.isTamil ? "சமநிலைச் சமூகம்" : "Egalitarian Society",
           icon: "mdi-account-group",
           desc: this.isTamil
             ? "'பிறப்பொக்கும் எல்லா உயிர்க்கும்' என்ற தத்துவத்தின் அடிப்படையில் ஏற்றத்தாழ்வுகளற்ற சமமான சமுதாயம் படைத்தல்."
-            : "Creating an equal society without disparities based on the philosophy 'All are born equal'."
-        }
-      ]
+            : "Creating an equal society without disparities based on the philosophy 'All are born equal'.",
+        },
+      ];
     },
     manifesto() {
       if (this.isTamil) {
@@ -372,7 +600,7 @@ export default {
             "தொழில் தொடங்க ரூ.25 லட்சம் வரை வட்டி இல்லாக் அரசு கடன் உதவி.",
             "ஆண்டுக்கு 5 லட்சம் இளைஞர்களுக்கு தரமான பயிற்சி (Internship) மற்றும் ஊக்கத்தொகை (பட்டதாரிகளுக்கு ரூ.10,000).",
             "படைப்பாளர்களையும் புதிய தொழில்முனைவோரையும் ஊக்குவிக்க 'Creative Entrepreneurs Scheme'.",
-            "அரசு காலிப் பணியிடங்கள் 100% வெளிப்படையான முறையில் நிரப்பப்படும்."
+            "அரசு காலிப் பணியிடங்கள் 100% வெளிப்படையான முறையில் நிரப்பப்படும்.",
           ],
           farmers: [
             "நெல் குவிண்டாலுக்கு ரூ.3,500 மற்றும் கரும்பு டன்னுக்கு ரூ.4,500 கொள்முதல் விலை.",
@@ -381,7 +609,7 @@ export default {
             "விவசாயிகளின் பிள்ளைகளுக்கான முழு உயர்கல்விச் செலவையும் அரசே ஏற்கும்.",
             "விவசாய காப்பீடு மற்றும் தொழில்நுட்பப் பண்ணை மையங்கள் உருவாக்கம்.",
             "மீனவர்களுக்கு மீன்பிடித் தடைக்கால நிவாரணம் ரூ.27,000 ஆக உயர்வு.",
-            "மீனவர்களுக்கான ஆயுள் காப்பீடு ரூ.25 லட்சம் உறுதி."
+            "மீனவர்களுக்கான ஆயுள் காப்பீடு ரூ.25 லட்சம் உறுதி.",
           ],
           societyAdmin: [
             "கல்வி மற்றும் உயர்பார்வையில் மாநில சுயாட்சியை மீட்டெடுக்க தீவிர நடவடிக்கை.",
@@ -389,7 +617,7 @@ export default {
             "ஊழலற்ற, வெளிப்படையான, முழுமையான 'Paperless' டிஜிட்டல் அரசு நிர்வாகம்.",
             "ஆண்டுக்கு 200 யூனிட் வரை இலவச மின்சாரம் மற்றும் அனைவருக்கும் கான்கிரீட் வீடுகள்.",
             "சுற்றுச்சூழல் பாதுகாப்பு மற்றும் 'பசுமைத் தமிழகம்' - 100 கோடி மரக்கன்றுகள்.",
-            "காவல்துறை மற்றும் அரசுப் பணியாளர்களுக்கு ஊதிய உயர்வு மற்றும் சலுகைகள்."
+            "காவல்துறை மற்றும் அரசுப் பணியாளர்களுக்கு ஊதிய உயர்வு மற்றும் சலுகைகள்.",
           ],
           tech: [
             "இந்தியாவிலேயே முதல்முறையாக செயற்கை நுண்ணறிவுக்கான (AI) தனி அமைச்சகம்.",
@@ -397,15 +625,15 @@ export default {
             "அனைத்து அரசு சேவைகளையும் அணுக 'வெற்றி தமிழ்நாடு சூப்பர் ஆப்'.",
             "1,000 தொழில்நுட்பப் புத்தாக்க மையங்கள் மற்றும் 'Startup Hub'.",
             "பிளாக்செயின் (Blockchain) மூலம் வெளிப்படையான டெண்டர் மற்றும் நிர்வாகம்.",
-            "அரசுப் பள்ளிகளில் உலகத்தரம் வாய்ந்த கணினி மற்றும் கோடிங் பயிற்சி."
+            "அரசுப் பள்ளிகளில் உலகத்தரம் வாய்ந்த கணினி மற்றும் கோடிங் பயிற்சி.",
           ],
           fishers: [
             "கச்சத்தீவை மீட்டெடுத்து மீனவர்களின் பாரம்பரிய மீன்பிடி உரிமைகள் காக்கப்படும்.",
             "மீனவர்களின் விசைப்படகு மற்றும் வலைகளுக்கு 50% மானியம் வழங்கப்படும்.",
             "கடலோரப் பகுதிகளில் மீனவக் கிராமங்களில் சுனாமி மற்றும் புயல் பாதுகாப்பு இல்லங்கள்.",
-            "மீன்பிடித் தடைக்கால நிவாரணத் தொகை ரூ.10,000 ஆக உயர்த்தப்படும்."
-          ]
-        }
+            "மீன்பிடித் தடைக்கால நிவாரணத் தொகை ரூ.10,000 ஆக உயர்த்தப்படும்.",
+          ],
+        };
       } else {
         return {
           women: [
@@ -415,7 +643,7 @@ export default {
             "Interest-free loans up to ₹5 lakh for women's Self-Help Groups (SHGs).",
             "₹15,000 annual assistance for childcare and education for mothers.",
             "100% free and safe travel for women in government buses.",
-            "Full fee exemption for girls in higher education to encourage learning."
+            "Full fee exemption for girls in higher education to encourage learning.",
           ],
           youth: [
             "Monthly stipend of ₹4,000 for graduates and ₹2,000 for diploma students.",
@@ -424,7 +652,7 @@ export default {
             "Quality internships with ₹10,000 stipend for 5 lakh youth annually.",
             "Setting up 'Kamarajar Schools of Excellence' (Residential) in every district.",
             "Zero-interest education loans up to ₹20 lakh and frequent job fairs.",
-            "Filling of all government job vacancies within 6 months."
+            "Filling of all government job vacancies within 6 months.",
           ],
           farmers: [
             "Procurement price of ₹3,500 per quintal for paddy and ₹4,500 per tonne for sugarcane.",
@@ -433,7 +661,7 @@ export default {
             "Full support for higher education costs of children from small farming families.",
             "Creation of crop insurance and technology-based farm support centers.",
             "Increased fishing ban period relief fund to ₹27,000.",
-            "Life insurance coverage of ₹25 lakh for every fisherman."
+            "Life insurance coverage of ₹25 lakh for every fisherman.",
           ],
           societyAdmin: [
             "Serious measures to reclaim State Autonomy in Education and Governance.",
@@ -441,7 +669,7 @@ export default {
             "A fully transparent, corruption-free, and 'Paperless' digital administration.",
             "200 units of free electricity and concrete houses for all homeless citizens.",
             "Environment protection and 'Green Tamil Nadu' - planting 100 crore saplings.",
-            "Salary hikes and better welfare benefits for Police and Government staff."
+            "Salary hikes and better welfare benefits for Police and Government staff.",
           ],
           tech: [
             "India's first-ever separate Ministry for Artificial Intelligence (AI).",
@@ -449,34 +677,54 @@ export default {
             "'Vetri Tamil Nadu Super App' to provide all government services in one place.",
             "Establishment of 1,000 technology innovation centers and a 'Startup Hub'.",
             "Blockchain-based administration for transparent tenders and governance.",
-            "World-class computer science and coding training in government schools."
+            "World-class computer science and coding training in government schools.",
           ],
           fishers: [
             "Separate Ministry and modern cold-storage facilities for fisherman welfare.",
             "50% subsidy on trawlers and nets for deep-sea fishing.",
             "Comprehensive accident insurance and permanent medical aid for fishers.",
-            "Diplomatic measures to reclaim Katchatheevu and traditional fishing rights."
-          ]
-        }
+            "Diplomatic measures to reclaim Katchatheevu and traditional fishing rights.",
+          ],
+        };
       }
     },
     leaders() {
       return [
-        { name: this.isTamil ? "பெரியார் ஈ.வெ.ரா" : "Periyar E.V.R.", legacy: this.isTamil ? "சமூக நீதி" : "Social Justice", img: periyarImg },
-        { name: this.isTamil ? "அம்பேத்கர்" : "Ambedkar", legacy: this.isTamil ? "சமத்துவம்" : "Equality", img: ambedkarImg },
-        { name: this.isTamil ? "கே. காமராஜர்" : "K. Kamarajar", legacy: this.isTamil ? "கல்வித் தந்தை" : "Father of Education", img: kamarajarImg },
-        { name: this.isTamil ? "அஞ்சலை அம்மாள்" : "Anjalai Ammal", legacy: this.isTamil ? "சமூக வீரம்" : "Social Bravery", img: anjalaiAmmalImg },
-        { name: this.isTamil ? "வேலு நாச்சியார்" : "Velu Nachiyar", legacy: this.isTamil ? "வீரமங்கை" : "Brave Woman", img: veluNachiyarImg }
-      ]
-    }
-  }
+        {
+          name: this.isTamil ? "பெரியார் ஈ.வெ.ரா" : "Periyar E.V.R.",
+          legacy: this.isTamil ? "சமூக நீதி" : "Social Justice",
+          img: periyarImg,
+        },
+        {
+          name: this.isTamil ? "அம்பேத்கர்" : "Ambedkar",
+          legacy: this.isTamil ? "சமத்துவம்" : "Equality",
+          img: ambedkarImg,
+        },
+        {
+          name: this.isTamil ? "கே. காமராஜர்" : "K. Kamarajar",
+          legacy: this.isTamil ? "கல்வித் தந்தை" : "Father of Education",
+          img: kamarajarImg,
+        },
+        {
+          name: this.isTamil ? "அஞ்சலை அம்மாள்" : "Anjalai Ammal",
+          legacy: this.isTamil ? "சமூக வீரம்" : "Social Bravery",
+          img: anjalaiAmmalImg,
+        },
+        {
+          name: this.isTamil ? "வேலு நாச்சியார்" : "Velu Nachiyar",
+          legacy: this.isTamil ? "வீரமங்கை" : "Brave Woman",
+          img: veluNachiyarImg,
+        },
+      ];
+    },
+  },
 };
 </script>
 
 <style scoped>
 .ideology-page {
   background-color: #fcfbf9;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .hero-banner {
@@ -492,7 +740,11 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 80%);
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(212, 175, 55, 0.1) 0%,
+    transparent 80%
+  );
   pointer-events: none;
 }
 
@@ -530,10 +782,18 @@ export default {
   box-shadow: 0 4px 10px rgba(128, 0, 0, 0.2);
 }
 
-.color-maroon { color: #800000; }
-.color-gold { color: #d4af37; }
-.color-white { color: #ffffff; }
-.color-grey { color: #555555; }
+.color-maroon {
+  color: #800000;
+}
+.color-gold {
+  color: #d4af37;
+}
+.color-white {
+  color: #ffffff;
+}
+.color-grey {
+  color: #555555;
+}
 
 .border-maroon-thin {
   border: 1px solid rgba(128, 0, 0, 0.1);
@@ -580,12 +840,13 @@ export default {
 }
 
 .CTA-banner {
-  background: linear-gradient(rgba(128, 0, 0, 0.9), rgba(128, 0, 0, 0.9)), 
-              url('https://www.transparenttextures.com/patterns/cubes.png');
+  background:
+    linear-gradient(rgba(128, 0, 0, 0.9), rgba(128, 0, 0, 0.9)),
+    url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 .shadow-small {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 600px) {
@@ -594,6 +855,139 @@ export default {
   }
   .hero-banner {
     height: 350px;
+  }
+}
+/* PRINT STYLES FOR PDF */
+@media screen {
+  .d-none-screen {
+    display: none !important;
+  }
+}
+
+@media print {
+  /* Hide UI elements */
+  nav,
+  .v-navigation-drawer,
+  .v-app-bar,
+  .v-footer,
+  .v-btn,
+  .pdf-download-bar,
+  .v-tabs,
+  .sidebar-card,
+  .mobile-active-section,
+  .scroll-to-top,
+  .v-main {
+    display: none !important;
+  }
+
+  /* Force display of printable content */
+  .d-none-screen {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Reset layout for print */
+  body {
+    background: white !important;
+    color: #333 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #printable-manifesto {
+    padding: 2.5cm;
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    background: white;
+  }
+
+  .print-header {
+    margin-bottom: 2cm;
+    border-bottom: 2px solid #800000;
+    padding-bottom: 1cm;
+  }
+
+  .print-title {
+    color: #800000;
+    font-size: 28pt;
+    font-weight: 900;
+    margin-bottom: 5pt;
+  }
+
+  .print-subtitle {
+    color: #d4af37;
+    font-size: 16pt;
+    font-style: italic;
+    margin-bottom: 15pt;
+  }
+
+  .print-doc-type {
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10pt;
+    color: #555;
+  }
+
+  .print-section {
+    margin-bottom: 1.5cm;
+    page-break-inside: avoid;
+  }
+
+  .print-section-title {
+    color: #800000;
+    font-size: 20pt;
+    border-left: 10px solid #d4af37;
+    padding-left: 15pt;
+    margin-bottom: 15pt;
+  }
+
+  .print-text {
+    font-size: 12pt;
+    text-align: justify;
+  }
+
+  .print-principles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15pt;
+  }
+
+  .print-principle-item {
+    font-size: 11pt;
+    padding: 8pt;
+    border: 1px solid #eee;
+    background: #fcfcfc;
+  }
+
+  .print-principle-no {
+    font-weight: bold;
+    color: #d4af37;
+    margin-right: 5pt;
+  }
+
+  .print-list {
+    padding-left: 20pt;
+  }
+
+  .print-list-item {
+    margin-bottom: 8pt;
+    font-size: 11.5pt;
+  }
+
+  .print-footer {
+    margin-top: 2cm;
+    color: #777;
+  }
+
+  .print-divider {
+    height: 1px;
+    background: #eee;
+    margin: 1cm 0;
+  }
+
+  .page-break-before {
+    page-break-before: always;
   }
 }
 </style>

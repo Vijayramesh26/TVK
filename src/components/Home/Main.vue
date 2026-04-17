@@ -255,10 +255,13 @@
           </v-btn>
         </div>
 
-        <v-row>
-          <v-col v-for="(item, i) in news" :key="i" cols="12" md="4">
+        <div class="news-scroll-container pb-6 hide-scrollbar">
+          <div class="news-flex-row">
             <v-card
-              class="news-card h-100 rounded-xl overflow-hidden hover-lift border-transparent"
+              v-for="(item, i) in sortedNews"
+              :key="item.id"
+              class="news-scroll-card rounded-xl overflow-hidden hover-lift border-transparent elevation-6 mx-3"
+              @click="$router.push(`/news/${item.id}`)"
             >
               <v-img :src="item.image" height="240" cover>
                 <div
@@ -271,17 +274,26 @@
                 <div
                   class="text-caption font-weight-bold text-grey-lighten-1 mb-2"
                 >
-                  {{ t(`news.item${i + 1}.date`) }}
+                  {{ t(`news.item${item.id + 1}.date`) }}
                 </div>
                 <h3
                   class="text-h6 font-weight-bold color-maroon line-clamp-2 lh-tight"
                 >
-                  {{ t(`news.item${i + 1}.title`) }}
+                  {{ t(`news.item${item.id + 1}.title`) }}
                 </h3>
               </v-card-text>
             </v-card>
-          </v-col>
-        </v-row>
+          </div>
+        </div>
+        
+        <!-- Scroll Indicators for Desktop -->
+        <div class="text-center mt-4 d-none d-md-block">
+          <div class="d-flex align-center justify-center gap-2">
+            <v-icon icon="mdi-chevron-left" class="color-grey opacity-50"></v-icon>
+            <span class="text-caption font-weight-bold color-grey">{{ isTamil ? 'கிடைமட்டமாக உருட்டவும்' : 'Scroll Horizontally' }}</span>
+            <v-icon icon="mdi-chevron-right" class="color-grey opacity-50"></v-icon>
+          </div>
+        </div>
       </v-container>
     </section>
     
@@ -351,8 +363,8 @@
         </v-row>
       </v-container>
     </section>
-
-
+    <!-- Party Anthems Section -->
+    <Anthems />
 
     <!-- Final Call to Action -->
     <section
@@ -396,13 +408,19 @@ import ambedkarImg from "../../assets/leaders/ambedkar.png";
 import velunachiyarImg from "../../assets/leaders/velunachiyar.png";
 import anjalaiammalImg from "../../assets/leaders/anjalaiammal.png";
 import whistleImg from "../../assets/voteForWhistle.jpg";
+import { newsData } from "../../data/newsData";
+import Anthems from "../Media/Anthems.vue";
 
 export default {
   name: "Home",
+  components: {
+    Anthems
+  },
   inject: ["t", "currentLang"],
   data: () => ({
     heroImage,
     sectionImage,
+    newsData,
     displayCount: 0,
     targetCount: 15428670,
 
@@ -414,29 +432,6 @@ export default {
       { id: "anjalaiammal", name: "கடலூர் அஞ்சலையம்மாள்", image: anjalaiammalImg },
     ],
 
-    news: [
-      {
-        id: 0,
-        tag: "Breaking",
-        image: visionImg,
-        isManifesto: true
-      },
-      {
-        id: 1,
-        tag: "Official",
-        image: whistleImg,
-      },
-      {
-        id: 2,
-        tag: "Strategic",
-        image: governanceImg,
-      },
-      {
-        id: 3,
-        tag: "Development",
-        image: villageImg,
-      },
-    ],
     gallery: [
       {
         id: 1,
@@ -474,6 +469,14 @@ export default {
       },
     ],
   }),
+  computed: {
+    isTamil() {
+      return this.currentLang() === "ta";
+    },
+    sortedNews() {
+      return [...this.newsData].sort((a, b) => b.id - a.id);
+    }
+  },
   mounted() {
     this.animateCounter();
   },
@@ -685,16 +688,41 @@ export default {
   letter-spacing: 3px !important;
 }
 
-/* News Section */
-.news-card {
-  transition: all 0.4s ease;
+/* News Section Horizontal Scroll */
+.news-scroll-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin: 0 -15px;
+  padding: 0 15px;
 }
-.news-tag {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  border-radius: 4px;
+
+.news-flex-row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  padding-bottom: 20px;
 }
+
+.news-scroll-card {
+  min-width: 380px;
+  width: 380px;
+  flex: 0 0 auto;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 600px) {
+  .news-scroll-card {
+    min-width: 300px;
+    width: 300px;
+  }
+}
+
 .bg-maroon {
   background-color: #800000;
 }
