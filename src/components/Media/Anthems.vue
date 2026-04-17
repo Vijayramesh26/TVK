@@ -13,36 +13,25 @@
 
       <v-row>
         <v-col v-for="n in 4" :key="n" cols="12" sm="6" lg="3">
-          <v-hover v-slot="{ isHovering, props }">
-            <v-card
-              v-bind="props"
-              :elevation="isHovering ? 24 : 6"
-              class="song-card rounded-xl overflow-hidden transition-swing"
-              :class="{ 'on-hover': isHovering }"
-            >
-              <v-img
-                :src="anthemsCover"
-                height="300"
-                cover
-                class="align-end"
-                :style="{ filter: isHovering ? 'brightness(0.7)' : 'brightness(0.9)' }"
-              >
-                <div class="d-flex flex-column pa-6 bg-gradient-overlay">
-                  <h3 class="text-h5 font-weight-black text-white mb-2">
-                    {{ t(`anthems.song${n}`) }}
-                  </h3>
-                  <v-btn
-                    color="#D4AF37"
-                    class="rounded-pill font-weight-black text-maroon mt-auto shadow-gold"
-                    append-icon="mdi-play-circle"
-                    @click="playSong(n)"
-                  >
-                    {{ t('anthems.play') }}
-                  </v-btn>
-                </div>
-              </v-img>
-            </v-card>
-          </v-hover>
+          <v-card
+            elevation="6"
+            class="song-card rounded-xl overflow-hidden"
+          >
+            <div class="video-container">
+              <iframe 
+                :src="getEmbedUrl(links[n-1])" 
+                title="TVK Party Anthem" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+              ></iframe>
+            </div>
+            <v-card-text class="pa-4 bg-maroon-dark text-center">
+              <h3 class="text-subtitle-1 font-weight-black text-white line-clamp-1">
+                {{ t(`anthems.song${n}`) }}
+              </h3>
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -50,13 +39,10 @@
 </template>
 
 <script>
-import anthemsCover from '../../assets/generated/anthems_cover.png';
-
 export default {
   name: 'Anthems',
   inject: ['t'],
   data: () => ({
-    anthemsCover,
     links: [
       'https://youtu.be/as86Klk5qUE?si=8f9JU-yUQ09zXKJY',
       'https://youtu.be/JHJmFbLeK-Y?si=Y7bZLbWzBA8NGDuD',
@@ -65,8 +51,13 @@ export default {
     ]
   }),
   methods: {
-    playSong(index) {
-      window.open(this.links[index - 1], '_blank');
+    getEmbedUrl(url) {
+      if (!url) return '';
+      // Extract video ID from youtu.be link
+      const regExp = /^https:\/\/youtu\.be\/([^?]+)/;
+      const match = url.match(regExp);
+      const videoId = match ? match[1] : '';
+      return `https://www.youtube.com/embed/${videoId}`;
     }
   }
 }
@@ -79,16 +70,31 @@ export default {
 
 .song-card {
   border: 1px solid rgba(212, 175, 55, 0.2);
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 0.3s ease;
 }
 
-.song-card.on-hover {
-  transform: translateY(-12px) scale(1.02);
+.song-card:hover {
+  transform: translateY(-5px);
 }
 
-.bg-gradient-overlay {
-  background: linear-gradient(to top, rgba(128, 0, 0, 0.9) 0%, rgba(128, 0, 0, 0.4) 50%, transparent 100%);
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.bg-maroon-dark {
+  background: #600000;
 }
 
 .color-maroon { color: #800000; }
@@ -98,13 +104,5 @@ export default {
   width: 80px;
   height: 4px;
   border-radius: 2px;
-}
-
-.shadow-gold {
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4) !important;
-}
-
-.text-maroon {
-  color: #800000 !important;
 }
 </style>
