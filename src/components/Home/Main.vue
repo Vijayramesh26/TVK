@@ -127,6 +127,43 @@
       </div>
     </section>
 
+    <!-- Election Alert Banner -->
+    <section class="election-banner position-relative py-16 text-white overflow-hidden elevation-10">
+      <v-parallax :src="electionBg" class="absolute-inset" scale="1.1"></v-parallax>
+      <div class="banner-overlay absolute-inset"></div>
+      
+      <v-container class="position-relative z-10 py-8">
+        <v-row align="center">
+          <v-col cols="12" md="8" class="text-center text-md-left">
+            <v-chip color="#D4AF37" class="mb-4 font-weight-bold px-6 py-2 elevation-4" variant="elevated">
+              {{ t('election.title') }} 2026
+            </v-chip>
+            <h2 class="display-promo font-weight-black mb-4 glow-text">
+              {{ t('election.date') }}
+            </h2>
+            <div class="voter-slogan d-flex align-center justify-center justify-md-start mb-6">
+              <v-icon icon="mdi-whistle" size="48" color="#D4AF37" class="mr-4 whistle-pulse"></v-icon>
+              <span class="text-h4 font-weight-bold letter-spacing-1 text-uppercase">
+                {{ t('election.voterForChange') }}
+              </span>
+            </div>
+            <p class="text-h6 opacity-90 max-width-600 mb-0 font-italic">
+              "{{ t('election.countdown') }}"
+            </p>
+          </v-col>
+          <v-col cols="12" md="4" class="text-center pt-8 pt-md-0">
+             <div class="voting-badge mx-auto">
+               <div class="inner-badge">
+                 <span class="text-caption font-weight-black uppercase color-gold">{{ t('election.symbolName') }}</span>
+                 <v-icon icon="mdi-whistle-outline" size="80" color="white" class="my-2"></v-icon>
+                 <span class="text-h5 font-weight-black uppercase">{{ isTamil ? 'வெற்றி' : 'VICTORY' }}</span>
+               </div>
+             </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+
     <!-- Vision & Mission Stats / Pillars -->
     <section class="py-16 bg-white position-relative overflow-hidden">
       <v-container class="py-10">
@@ -408,6 +445,7 @@ import ambedkarImg from "../../assets/leaders/ambedkar.png";
 import velunachiyarImg from "../../assets/leaders/velunachiyar.png";
 import anjalaiammalImg from "../../assets/leaders/anjalaiammal.png";
 import whistleImg from "../../assets/voteForWhistle.jpg";
+import electionBg from "../../assets/generated/election_bg.png";
 import { newsData } from "../../data/newsData";
 import Anthems from "../Media/Anthems.vue";
 
@@ -420,6 +458,7 @@ export default {
   data: () => ({
     heroImage,
     sectionImage,
+    electionBg,
     newsData,
     displayCount: 0,
     targetCount: 15428670,
@@ -848,5 +887,62 @@ export default {
   .hero-title {
     font-size: 2.5rem !important;
   }
+}
+.election-banner {
+  min-height: 400px;
+  background-color: #800000;
+}
+
+.banner-overlay {
+  background: linear-gradient(135deg, rgba(128, 0, 0, 0.95) 0%, rgba(128, 0, 0, 0.7) 100%);
+}
+
+.display-promo {
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 1;
+}
+
+.whistle-pulse {
+  animation: pulse-gold 2s infinite;
+}
+
+@keyframes pulse-gold {
+  0% { transform: scale(1); filter: drop-shadow(0 0 0px #D4AF37); }
+  50% { transform: scale(1.1); filter: drop-shadow(0 0 15px #D4AF37); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 0px #D4AF37); }
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.voting-badge {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #D4AF37;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-center: center;
+  justify-content: center;
+  background: rgba(212, 175, 55, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.inner-badge {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-center: center;
+  justify-content: center;
+}
+
+.color-gold { color: #D4AF37 !important; }
+
+.on-hover {
+  transform: translateY(-8px);
 }
 </style>

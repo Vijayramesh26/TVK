@@ -23,6 +23,13 @@ export const translations = {
       follow: "தொடரவும்",
       viewAll: "அனைத்தையும் காண்க",
     },
+    election: {
+      title: "2026 சட்டமன்றத் தேர்தல்",
+      date: "ஏப்ரல் 23, 2026",
+      voterForChange: "மாற்றத்திற்கான வாக்கு: சின்னம் விசில்",
+      symbolName: "வெற்றி விசில்",
+      countdown: "இனி ஒரு விதி செய்வோம்!",
+    },
     news: {
       item1: {
         title: "வரலாற்றுச் சிறப்புமிக்க விக்கிரவாண்டி மாநில மாநாடு வெற்றி - தவெக-வின் கொள்கைப் பிரகடனம்!",
@@ -157,12 +164,19 @@ export const translations = {
       membersJoined: "Members Joined",
     },
     sections: {
-      news: "Latest News & Press",
-      gallery: "Media Gallery",
-      social: "Social Connect",
-      socialDesc: "Stay connected with official party announcements and direct updates from Thalapathy Vijay through our social media channels.",
+      news: "Latest News",
+      gallery: "Gallery",
+      social: "Social Media",
+      socialDesc: "Stay connected through our official social media handles for immediate updates and direct messages from Thalapathy Vijay.",
       follow: "Follow Us",
-      viewAll: "View All",
+      viewAll: "View All Articles",
+    },
+    election: {
+      title: "2026 Assembly Election",
+      date: "April 23, 2026",
+      voterForChange: "Voter for Change: Symbol is Whistle",
+      symbolName: "Victory Whistle",
+      countdown: "Time for a New Law!",
     },
     news: {
       item1: {
