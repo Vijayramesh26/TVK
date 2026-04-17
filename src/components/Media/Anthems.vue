@@ -58,10 +58,10 @@ export default {
   data: () => ({
     anthemsCover,
     links: [
-      'https://www.youtube.com/watch?v=tvk_flag_song',
-      'https://www.youtube.com/watch?v=tvk_whistle_song',
-      'https://www.youtube.com/watch?v=tvk_unga_vijay',
-      'https://www.youtube.com/watch?v=tvk_kolgai_song'
+      'https://youtu.be/as86Klk5qUE?si=8f9JU-yUQ09zXKJY',
+      'https://youtu.be/JHJmFbLeK-Y?si=Y7bZLbWzBA8NGDuD',
+      'https://youtu.be/UVgMRd76Bbo?si=Z20SAdxg28tf9lP1',
+      'https://youtu.be/NHM1Y_lll6o?si=p2iTf_m1zu7z_q4f'
     ]
   }),
   methods: {
