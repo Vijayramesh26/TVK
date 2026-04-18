@@ -95,7 +95,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Madhavaram தொகுதி மக்களின் நலனுக்காக உழைப்பவர்.",
   },
   {
@@ -175,7 +175,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Egmore தொகுதியில் சமூக நீதி மற்றும் சமத்துவத்தை நிலைநாட்ட உழைப்பவர்.",
   },
   {
@@ -186,7 +186,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Royapuram தொகுதியில் பாரம்பரிய விழுமியங்களை காக்க பாடுபடுபவர்.",
   },
   {
@@ -197,7 +197,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Harbour தொகுதியில் வர்த்தகம் மற்றும் தொழில் வளர்ச்சியை ஊக்குவிக்க உழைப்பவர்.",
   },
   {
@@ -286,7 +286,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Velachery தொகுதியில் மழைநீர் வடிகால் மற்றும் அடிப்படை வசதிகளை மேம்படுத்த உழைப்பார்.",
   },
   {
@@ -297,7 +297,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "IT தலைநகரான Sholinganallur தொகுதியில் உள்கட்டமைப்பு மற்றும் பாதுகாப்பை மேம்படுத்துவார்.",
   },
   {
@@ -319,7 +319,7 @@ export const candidatesData = [
     district: "Kanchipuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "தொழிற்துறை மையமான Sriperumbudur தொகுதியில் வேலைவாய்ப்பை உறுதி செய்வார்.",
   },
   {
@@ -330,7 +330,7 @@ export const candidatesData = [
     district: "Chengalpattu",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Pallavaram தொகுதி மக்களின் தேவைகளை உடனுக்குடன் பூர்த்தி செய்ய பாடுபடுவார்.",
   },
   {
@@ -352,7 +352,7 @@ export const candidatesData = [
     district: "Chengalpattu",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Chengalpattu மாவட்டத்தின் தலைநகர் தொகுதியை முன்மாதிரியாக மாற்றுவார்.",
   },
   {
@@ -407,7 +407,7 @@ export const candidatesData = [
     district: "Kanchipuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "கோயில் நகரமான Kancheepuram தொகுதியின் நெசவாளர்கள் மற்றும் மக்களின் நலனுக்காக பாடுபடுவார்.",
   },
   {
@@ -451,7 +451,7 @@ export const candidatesData = [
     district: "Ranipet",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Ranipet மாவட்டத்தின் தொழில் மற்றும் சுற்றுச்சூழல் பாதுகாப்பிற்கு முக்கியத்துவம் கொடுப்பார்.",
   },
   {
@@ -462,7 +462,7 @@ export const candidatesData = [
     district: "Ranipet",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Arcot தொகுதியின் வரலாற்று பெருமையை காக்க பாடுபடுவார்.",
   },
   {
@@ -484,7 +484,7 @@ export const candidatesData = [
     district: "Vellore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "மலை சார்ந்த Anaikattu தொகுதி மக்களின் உரிமைகளுக்காக பாடுபடுவார்.",
   },
   {
@@ -495,7 +495,7 @@ export const candidatesData = [
     district: "Vellore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "K.V. Kuppam தொகுதி மக்களின் விவசாய மற்றும் வாழ்வாதார மேம்பாட்டிற்கு பாடுபடுவார்.",
   },
   {
@@ -506,7 +506,7 @@ export const candidatesData = [
     district: "Vellore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Gudiyattam தொகுதியின் சிறு தொழில்களை மேம்படுத்த பாடுபடுவார்.",
   },
   {
@@ -539,7 +539,7 @@ export const candidatesData = [
     district: "Tirupathur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Jolarpet தொகுதி மக்களின் ரயில்வே மற்றும் பிற வசதிகளை மேம்படுத்த பாடுபடுவார்.",
   },
   {
@@ -572,7 +572,7 @@ export const candidatesData = [
     district: "Krishnagiri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Bargur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -583,7 +583,7 @@ export const candidatesData = [
     district: "Krishnagiri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Krishnagiri தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -594,7 +594,7 @@ export const candidatesData = [
     district: "Krishnagiri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Veppanahalli தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -605,7 +605,7 @@ export const candidatesData = [
     district: "Krishnagiri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Hosur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -616,7 +616,7 @@ export const candidatesData = [
     district: "Krishnagiri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thalli தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -627,7 +627,7 @@ export const candidatesData = [
     district: "Dharmapuri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Palacode தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -638,7 +638,7 @@ export const candidatesData = [
     district: "Dharmapuri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Pennagaram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -649,7 +649,7 @@ export const candidatesData = [
     district: "Dharmapuri",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Dharmapuri தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -704,7 +704,7 @@ export const candidatesData = [
     district: "Tiruvannamalai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Kilpennathur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -715,7 +715,7 @@ export const candidatesData = [
     district: "Tiruvannamalai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Kalasapakkam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -726,7 +726,7 @@ export const candidatesData = [
     district: "Tiruvannamalai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Polur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -836,7 +836,7 @@ export const candidatesData = [
     district: "Viluppuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Tirukkoyilur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -858,7 +858,7 @@ export const candidatesData = [
     district: "Kallakurichi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Rishivandiyam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -869,7 +869,7 @@ export const candidatesData = [
     district: "Kallakurichi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Sankarapuram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -902,7 +902,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Attur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -913,7 +913,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Yercaud தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -935,7 +935,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Mettur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -957,7 +957,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Sangagiri தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -968,7 +968,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Salem (West) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -990,7 +990,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Salem (South) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1001,7 +1001,7 @@ export const candidatesData = [
     district: "Salem",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Veerapandi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1023,7 +1023,7 @@ export const candidatesData = [
     district: "Namakkal",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Senthamangalam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1034,7 +1034,7 @@ export const candidatesData = [
     district: "Namakkal",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Namakkal தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1045,7 +1045,7 @@ export const candidatesData = [
     district: "Namakkal",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Paramathi-Velur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1111,7 +1111,7 @@ export const candidatesData = [
     district: "Tiruppur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Dharapuram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1133,7 +1133,7 @@ export const candidatesData = [
     district: "Erode",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Perundurai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1144,7 +1144,7 @@ export const candidatesData = [
     district: "Erode",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Bhavani தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1188,7 +1188,7 @@ export const candidatesData = [
     district: "Nilgiris",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Udhagamandalam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1199,7 +1199,7 @@ export const candidatesData = [
     district: "Nilgiris",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Gudalur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1210,7 +1210,7 @@ export const candidatesData = [
     district: "Nilgiris",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Coonoor தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1221,7 +1221,7 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Mettupalayam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1232,7 +1232,7 @@ export const candidatesData = [
     district: "Tiruppur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Avanashi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1265,7 +1265,7 @@ export const candidatesData = [
     district: "Tiruppur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Palladam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1276,7 +1276,7 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Sulur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1298,7 +1298,7 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Coimbatore (North) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1309,7 +1309,7 @@ export const candidatesData = [
     district: "Coimbatore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thondamuthur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1321,7 +1321,7 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBA",
-    bio: "Coimbatore (North) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
+    bio: "Coimbatore (South) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
     id: 121,
@@ -1375,7 +1375,7 @@ export const candidatesData = [
     district: "Tiruppur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Udumalaipettai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1386,7 +1386,7 @@ export const candidatesData = [
     district: "Tiruppur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Madathukulam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1408,7 +1408,7 @@ export const candidatesData = [
     district: "Dindigul",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Oddanchatram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1419,7 +1419,7 @@ export const candidatesData = [
     district: "Dindigul",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Athoor தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1441,7 +1441,7 @@ export const candidatesData = [
     district: "Dindigul",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Natham தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1452,7 +1452,7 @@ export const candidatesData = [
     district: "Dindigul",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Dindigul தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1474,7 +1474,7 @@ export const candidatesData = [
     district: "Karur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Aravakurichi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1485,7 +1485,7 @@ export const candidatesData = [
     district: "Karur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Karur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1496,7 +1496,7 @@ export const candidatesData = [
     district: "Karur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Krishnarayapuram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1507,7 +1507,7 @@ export const candidatesData = [
     district: "Karur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Kulithalai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1518,7 +1518,7 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Manapaarai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1529,7 +1529,7 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Srirangam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1540,7 +1540,7 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Tiruchirappalli (West) தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1563,7 +1563,7 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thiruverumbur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1574,7 +1574,7 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Lalgudi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1585,7 +1585,7 @@ export const candidatesData = [
     district: "Tiruchirappalli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Manachanallur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1618,7 +1618,7 @@ export const candidatesData = [
     district: "Perambalur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Perambalur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1629,7 +1629,7 @@ export const candidatesData = [
     district: "Perambalur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Kunnam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1640,7 +1640,7 @@ export const candidatesData = [
     district: "Ariyalur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Ariyalur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1651,7 +1651,7 @@ export const candidatesData = [
     district: "Ariyalur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Jayankondam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1662,7 +1662,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Tittakudi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1695,7 +1695,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Panruti தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1739,7 +1739,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Chidambaram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1750,7 +1750,7 @@ export const candidatesData = [
     district: "Cuddalore",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Kattumannarkoil தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1761,7 +1761,7 @@ export const candidatesData = [
     district: "Mayiladuthurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Sirkazhi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1772,7 +1772,7 @@ export const candidatesData = [
     district: "Mayiladuthurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Mayiladuturai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1783,7 +1783,7 @@ export const candidatesData = [
     district: "Mayiladuthurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Poompuhar தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1794,7 +1794,7 @@ export const candidatesData = [
     district: "Nagapattinam",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Nagapattinam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1805,7 +1805,7 @@ export const candidatesData = [
     district: "Nagapattinam",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Kilvelur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1816,7 +1816,7 @@ export const candidatesData = [
     district: "Nagapattinam",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Vedaranyam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1849,7 +1849,7 @@ export const candidatesData = [
     district: "Tiruvarur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thiruvarur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1860,7 +1860,7 @@ export const candidatesData = [
     district: "Tiruvarur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Nannilam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1871,7 +1871,7 @@ export const candidatesData = [
     district: "Thanjavur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thiruvidaimarudur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1893,7 +1893,7 @@ export const candidatesData = [
     district: "Thanjavur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Papanasam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1904,7 +1904,7 @@ export const candidatesData = [
     district: "Thanjavur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thiruvaiyaru தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1948,7 +1948,7 @@ export const candidatesData = [
     district: "Thanjavur",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Peravurani தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1959,7 +1959,7 @@ export const candidatesData = [
     district: "Pudukkottai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Gandarvakottai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1970,7 +1970,7 @@ export const candidatesData = [
     district: "Pudukkottai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Viralimalai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1981,7 +1981,7 @@ export const candidatesData = [
     district: "Pudukkottai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Pudukkottai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -1992,7 +1992,7 @@ export const candidatesData = [
     district: "Pudukkottai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thirumayam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2014,7 +2014,7 @@ export const candidatesData = [
     district: "Pudukkottai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Aranthangi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2036,7 +2036,7 @@ export const candidatesData = [
     district: "Sivaganga",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Tiruppattur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2047,7 +2047,7 @@ export const candidatesData = [
     district: "Sivaganga",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Sivaganga தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2058,7 +2058,7 @@ export const candidatesData = [
     district: "Sivaganga",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Manamadurai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2069,7 +2069,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Melur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2091,7 +2091,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Sholavandan தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2102,7 +2102,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Madurai North தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2113,7 +2113,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Madurai South தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2124,7 +2124,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Madurai Central தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2135,7 +2135,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Madurai West தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2157,7 +2157,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thirumangalam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2168,7 +2168,7 @@ export const candidatesData = [
     district: "Madurai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Usilampatti தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2179,7 +2179,7 @@ export const candidatesData = [
     district: "Theni",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Andipatti தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2190,7 +2190,7 @@ export const candidatesData = [
     district: "Theni",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Periyakulam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2201,7 +2201,7 @@ export const candidatesData = [
     district: "Theni",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Bodinayakanur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2212,7 +2212,7 @@ export const candidatesData = [
     district: "Theni",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Cumbum தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2223,7 +2223,7 @@ export const candidatesData = [
     district: "Virudhunagar",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Rajapalayam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2234,7 +2234,7 @@ export const candidatesData = [
     district: "Virudhunagar",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Srivilliputhur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2245,7 +2245,7 @@ export const candidatesData = [
     district: "Virudhunagar",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Sattur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2278,7 +2278,7 @@ export const candidatesData = [
     district: "Virudhunagar",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Aruppukkottai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2289,7 +2289,7 @@ export const candidatesData = [
     district: "Virudhunagar",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Tiruchuli தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2333,7 +2333,7 @@ export const candidatesData = [
     district: "Ramanathapuram",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Mudhukulathur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2344,7 +2344,7 @@ export const candidatesData = [
     district: "Thoothukudi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Vilathikulam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2355,7 +2355,7 @@ export const candidatesData = [
     district: "Thoothukudi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Thoothukkudi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2377,7 +2377,7 @@ export const candidatesData = [
     district: "Thoothukudi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Srivaikuntam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2388,7 +2388,7 @@ export const candidatesData = [
     district: "Thoothukudi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Ottapidaram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2421,7 +2421,7 @@ export const candidatesData = [
     district: "Tenkasi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Vasudevanallur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2432,7 +2432,7 @@ export const candidatesData = [
     district: "Tenkasi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Kadayanallur தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2443,7 +2443,7 @@ export const candidatesData = [
     district: "Tenkasi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Tenkasi தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2454,7 +2454,7 @@ export const candidatesData = [
     district: "Tenkasi",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Alangulam தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2465,7 +2465,7 @@ export const candidatesData = [
     district: "Tirunelveli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Tirunelveli தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2476,7 +2476,7 @@ export const candidatesData = [
     district: "Tirunelveli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Ambasamudram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2487,7 +2487,7 @@ export const candidatesData = [
     district: "Tirunelveli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Palayamkottai தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2509,7 +2509,7 @@ export const candidatesData = [
     district: "Tirunelveli",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Radhapuram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2531,7 +2531,7 @@ export const candidatesData = [
     district: "Kanyakumari",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Nagercoil தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2553,7 +2553,7 @@ export const candidatesData = [
     district: "Kanyakumari",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Padmanabhapuram தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
   {
@@ -2575,7 +2575,7 @@ export const candidatesData = [
     district: "Kanyakumari",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "தவெக சமூக சேவகர் (TVK Social Worker)",
     bio: "Killiyoor தொகுதியின் முன்னேற்றத்திற்காக பாடுபடும் மக்கள் சேவகர்.",
   },
 ];
