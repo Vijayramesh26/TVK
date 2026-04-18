@@ -216,11 +216,17 @@ export default {
     getInitials(name) {
       if (!name) return "TVK";
       const parts = name.split(/[. \s]+/);
-      const filtered = parts.filter(p => !['Thiru', 'சி', 'ஆர்', 'ஏ'].includes(p));
-      if (filtered.length > 1) {
+      
+      // Filter out honorifics in both languages
+      const filtered = parts.filter(p => !['Thiru', 'திரு', 'Dr', 'Mr', 'Mrs', 'Ms', 'டாக்டர்', 'திருமதி', 'சி', 'ஆர்', 'ஏ', 'எஸ்', 'எம்', 'கே', 'ஜி', 'என்', 'வி', 'டி', 'பி', 'ஜே'].includes(p));
+      
+      if (filtered.length >= 2) {
         return (filtered[0][0] + filtered[filtered.length-1][0]).toUpperCase();
       }
-      return name.slice(0, 2).toUpperCase();
+      if (filtered.length === 1) {
+        return filtered[0].slice(0, 2).toUpperCase();
+      }
+      return "TVK";
     },
     showDetails(candidate) {
       this.selectedCandidate = candidate;
