@@ -106,7 +106,7 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    degree: "தமிழக வெற்றி கழகம்",
+    degree: "B.E., B.L.",
     bio: "Thiruvottiyur தொகுதியில் மீனவர் நலன் மற்றும் தொழில் வளர்ச்சிக்காக பாடுபடுகிறார்.",
   },
   {
