@@ -1,6 +1,6 @@
 <template>
-  <v-container class="news-detail-page py-16" fluid>
-    <v-container>
+  <v-container class="news-detail-page py-8 py-md-16 px-0 px-md-4" fluid>
+    <v-container :fluid="!$vuetify.display.mdAndUp" class="px-0 px-md-4">
       <!-- Back Button -->
       <v-btn
         prepend-icon="mdi-arrow-left"
@@ -12,8 +12,8 @@
         {{ isTamil ? 'முகப்புக்குச் செல்க' : 'Back to Home' }}
       </v-btn>
 
-      <v-row v-if="article">
-        <v-col cols="12" lg="8" class="mx-auto">
+      <v-row v-if="article" no-gutters>
+        <v-col cols="12" lg="10" class="mx-auto px-0 px-md-3">
           <!-- Article Header -->
           <div class="article-header mb-8 text-center text-md-left">
             <v-chip color="#800000" class="mb-4 font-weight-bold text-white px-4">
@@ -36,7 +36,7 @@
             :src="articleData.image"
             aspect-ratio="16/9"
             cover
-            class="rounded-xl elevation-10 mb-10 article-hero position-relative"
+            class="rounded-0 rounded-md-xl elevation-10 mb-0 mb-md-10 article-hero position-relative"
           >
             <!-- Poster Overlay -->
             <div class="poster-gradient absolute-inset"></div>
@@ -79,7 +79,7 @@
           </v-img>
 
           <!-- Article Content & Transcript -->
-          <v-card class="pa-8 pa-md-12 rounded-xl glass-article border-gold-subtle mb-10 overflow-hidden">
+          <v-card class="pa-6 pa-md-12 rounded-0 rounded-md-xl glass-article border-gold-subtle mb-10 overflow-hidden">
             <!-- Article Summary/Body -->
             <div class="article-body text-h6 font-weight-medium color-grey-darken-3 mb-12">
               <p v-for="(paragraph, i) in articleContent" :key="i" class="mb-6 lh-relaxed">
