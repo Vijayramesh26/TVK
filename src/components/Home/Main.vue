@@ -297,14 +297,44 @@
             <v-card
               v-for="(item, i) in sortedNews"
               :key="item.id"
-              class="news-scroll-card rounded-xl overflow-hidden hover-lift border-transparent elevation-6 mx-3"
+              class="news-scroll-card rounded-xl overflow-hidden hover-lift border-transparent elevation-10 mx-3"
               @click="$router.push(`/news/${item.id}`)"
             >
-              <v-img :src="item.image" height="240" cover>
-                <div
-                  class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon"
-                >
-                  {{ item.tag }}
+              <v-img :src="item.image" height="260" cover class="position-relative">
+                <!-- Poster Gradient Overlay -->
+                <div class="poster-gradient absolute-inset"></div>
+                
+                <!-- Dynamic Poster Overlay -->
+                <div class="news-poster-overlay absolute-inset overflow-hidden">
+                  <!-- Large Vijay Portrait (Standardized) -->
+                  <v-img 
+                    :src="heroImage" 
+                    alt="Vijay" 
+                    class="poster-vijay-portrait"
+                    width="140"
+                    cover
+                  ></v-img>
+
+                  <!-- Poster Content -->
+                  <div class="absolute-inset d-flex flex-column justify-space-between pa-4 z-10">
+                    <div class="d-flex justify-start">
+                      <div
+                        class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon rounded-pill elevation-4"
+                      >
+                        {{ item.tag }}
+                      </div>
+                    </div>
+                    
+                    <!-- Official Area Label -->
+                    <div class="news-official-label pa-3 rounded-lg elevation-10">
+                      <div class="text-caption font-weight-black color-gold text-uppercase tracking-widest mb-1">
+                        {{ isTamil ? "தளபதி விஜய்" : "THALAPATHY VIJAY" }}
+                      </div>
+                      <div class="text-h5 font-weight-black text-white letter-spacing-2">
+                        {{ isTamil ? item.location : item.locationEn }}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </v-img>
               <v-card-text class="pa-6">
@@ -513,11 +543,17 @@ export default {
       return this.currentLang() === "ta";
     },
     sortedNews() {
-      return [...this.newsData].sort((a, b) => b.id - a.id);
+      return [...this.newsData].sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
+    }
+  },
+  watch: {
+    'currentLang'() {
+      this.updateSEO();
     }
   },
   mounted() {
     this.animateCounter();
+    this.updateSEO();
   },
   methods: {
     animateCounter() {
@@ -537,6 +573,22 @@ export default {
     },
     formatNumber(num) {
       return num.toLocaleString();
+    },
+    updateSEO() {
+      const title = this.isTamil 
+        ? "Watch Now: தளபதி விஜய்யின் தவெக உரைகள் | 2026 தேர்தல் அறிக்கை & வேட்பாளர்கள்"
+        : "Exclusive: Thalapathy Vijay TVK Speeches, 234 Candidate List & 2026 Manifesto";
+      
+      document.title = title;
+
+      const description = this.isTamil
+        ? "தமிழக வெற்றிக் கழகத்தின் அதிகாரப்பூர்வ இணையதளம். தளபதி விஜய்யின் எழுச்சிமிகு உரைகள், 2026 தேர்தல் அறிக்கை மற்றும் 234 வேட்பாளர்கள் பட்டியல் இப்போதே காண்க."
+        : "Official TVK Platform: Access Thalapathy Vijay's powerful speeches, the 2026 Election Manifesto, and the full list of 234 assembly candidates.";
+
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute('content', description);
+      }
     },
   },
 };
@@ -944,5 +996,72 @@ export default {
 
 .on-hover {
   transform: translateY(-8px);
+}
+
+/* News Poster Overlay Styles */
+.poster-gradient {
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.news-poster-overlay {
+  z-index: 2;
+}
+
+.glass-effect-dark {
+  background: rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.zoom-on-hover {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.news-scroll-card:hover .zoom-on-hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.news-scroll-card:hover .news-poster-overlay {
+  background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+}
+
+.poster-vijay-portrait {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  height: 100% !important;
+  opacity: 0.95;
+  filter: drop-shadow(-10px 0 20px rgba(0,0,0,0.5));
+  z-index: 5;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.news-scroll-card:hover .poster-vijay-portrait {
+  transform: translateX(-10px) scale(1.05);
+}
+
+.news-official-label {
+  background: linear-gradient(135deg, rgba(128, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
+  border-left: 4px solid #D4AF37;
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 10;
+  max-width: 85%;
+}
+
+.news- आधिकारिक-label {
+  /* No changes needed here, just ensuring uniqueness */
+}
+
+.news-location-label {
+  transition: transform 0.3s ease;
+}
+
+.news-scroll-card:hover .news-location-label {
+  transform: translateX(5px);
 }
 </style>

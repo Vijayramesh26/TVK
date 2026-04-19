@@ -344,71 +344,80 @@
       </v-fade-transition>
 
       <!-- Ideological Leaders Section -->
-      <div class="text-center mt-16 mb-8">
-        <h2 class="text-h4 font-weight-black color-maroon mb-2">
+      <div class="text-center mt-16 mb-12">
+        <h2 class="text-h3 font-weight-black color-maroon mb-2">
           {{ t("ideology.leadersTitle") }}
         </h2>
-        <p class="color-grey italic">{{ t("ideology.leadersDesc") }}</p>
+        <p class="text-h6 color-grey italic opacity-80">{{ t("ideology.leadersDesc") }}</p>
+        <v-divider color="#d4af37" class="mt-4 mx-auto" width="80" thickness="4"></v-divider>
       </div>
 
-      <v-row class="mb-16" justify="center">
+      <v-row class="mb-16 justify-center leaders-hall">
         <v-col
           v-for="leader in leaders"
           :key="leader.name"
-          cols="6"
-          md="2"
-          class="text-center px-2"
+          cols="12"
+          sm="6"
+          md="4"
+          lg="2.4"
+          class="text-center px-4"
         >
           <v-hover v-slot="{ isHovering, props }">
-            <div
+            <v-card
               v-bind="props"
-              :class="{ 'leader-scale': isHovering }"
-              class="transition-all"
+              class="leader-frame rounded-xl elevation-0 bg-transparent transition-all"
+              :class="{ 'leader-active': isHovering }"
             >
-              <v-avatar
-                size="130"
-                class="elevation-10 mb-4 leader-avatar border-gold"
-              >
-                <v-img
-                  :src="leader.img"
-                  cover
-                  :alt="leader.name + ' - ' + leader.legacy"
-                ></v-img>
-              </v-avatar>
-              <h4
-                class="text-subtitle font-weight-bold color-maroon line-height-tight mb-1"
-              >
+              <div class="portrait-container mb-6">
+                <v-avatar
+                  size="180"
+                  class="leadership-avatar elevation-15 border-gold-premium"
+                >
+                  <v-img
+                    :src="leader.img"
+                    cover
+                    :alt="leader.name"
+                  >
+                    <template v-slot:placeholder>
+                       <v-row class="fill-height ma-0" align="center" justify="center">
+                         <v-progress-circular indeterminate color="#D4AF37"></v-progress-circular>
+                       </v-row>
+                    </template>
+                  </v-img>
+                </v-avatar>
+                <div class="legacy-badge">{{ leader.legacy }}</div>
+              </div>
+              <h4 class="text-h5 font-weight-black color-maroon mb-1 name-stack">
                 {{ leader.name }}
               </h4>
-              <p
-                class="text-caption font-weight-bold color-gold text-uppercase"
-              >
-                {{ leader.legacy }}
-              </p>
-            </div>
+              <v-divider width="40" class="mx-auto my-2" color="#D4AF37"></v-divider>
+            </v-card>
           </v-hover>
         </v-col>
       </v-row>
 
       <!-- Call to Action -->
       <v-card
-        color="#800000"
-        class="rounded-xl pa-10 text-center mb-16 CTA-banner"
-        dark
+        class="rounded-xl pa-12 text-center mb-16 CTA-premium-banner elevation-20"
       >
-        <h2 class="text-h3 font-weight-black color-gold mb-4">
-          {{ t("ideology.ctaTitle") }}
-        </h2>
-        <p class="text-h6 mb-6 opacity-80">{{ t("ideology.ctaDesc") }}</p>
-        <v-btn
-          color="#d4af37"
-          rounded="pill"
-          size="x-large"
-          class="font-weight-black elevation-8 text-black px-10"
-          to="/create"
-        >
-          {{ isTamil ? "கழக போஸ்டர் உருவாக்க" : "Create Party Poster" }}
-        </v-btn>
+        <div class="cta-overlay"></div>
+        <div class="cta-content position-relative">
+          <h2 class="text-h2 font-weight-black color-gold mb-6">
+            {{ t("ideology.ctaTitle") }}
+          </h2>
+          <p class="text-h5 color-white mb-10 opacity-90 max-width-800 mx-auto">
+            {{ t("ideology.ctaDesc") }}
+          </p>
+          <v-btn
+            color="#d4af37"
+            rounded="xl"
+            size="x-large"
+            class="font-weight-black elevation-10 text-black px-12 py-4 cta-btn-glow"
+            to="/create"
+          >
+            {{ isTamil ? "கழக போஸ்டர் உருவாக்க" : "Create Official Poster" }}
+          </v-btn>
+        </div>
       </v-card>
 
       <!-- HIDDEN PRINTABLE CONTENT (PDF VERSION) -->
@@ -693,27 +702,27 @@ export default {
         {
           name: this.isTamil ? "பெரியார் ஈ.வெ.ரா" : "Periyar E.V.R.",
           legacy: this.isTamil ? "சமூக நீதி" : "Social Justice",
-          img: periyarImg,
+          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/periyar_portrait_1776571076470.png",
         },
         {
           name: this.isTamil ? "அம்பேத்கர்" : "Ambedkar",
           legacy: this.isTamil ? "சமத்துவம்" : "Equality",
-          img: ambedkarImg,
+          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/ambedkar_portrait_1776571095353.png",
         },
         {
           name: this.isTamil ? "கே. காமராஜர்" : "K. Kamarajar",
           legacy: this.isTamil ? "கல்வித் தந்தை" : "Father of Education",
-          img: kamarajarImg,
+          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/kamarajar_portrait_1776571109775.png",
         },
         {
           name: this.isTamil ? "அஞ்சலை அம்மாள்" : "Anjalai Ammal",
           legacy: this.isTamil ? "சமூக வீரம்" : "Social Bravery",
-          img: anjalaiAmmalImg,
+          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/anjalaiammal_portrait_1776571154402.png",
         },
         {
           name: this.isTamil ? "வேலு நாச்சியார்" : "Velu Nachiyar",
           legacy: this.isTamil ? "வீரமங்கை" : "Brave Woman",
-          img: veluNachiyarImg,
+          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/velunachiyar_portrait_1776571124327.png",
         },
       ];
     },
@@ -797,6 +806,88 @@ export default {
 
 .border-maroon-thin {
   border: 1px solid rgba(128, 0, 0, 0.1);
+}
+
+.leadership-avatar {
+  border: 4px solid #D4AF37 !important;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: #800000;
+}
+
+.leader-frame {
+  cursor: pointer;
+  padding: 20px 0;
+}
+
+.leader-active .leadership-avatar {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 20px 50px rgba(128, 0, 0, 0.3) !important;
+  border-color: #fff !important;
+}
+
+.leader-active .name-stack {
+  color: #D4AF37 !important;
+  transform: translateY(-5px);
+}
+
+.portrait-container {
+  position: relative;
+  display: inline-block;
+}
+
+.legacy-badge {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  background: #D4AF37;
+  color: #800000;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.name-stack {
+  transition: all 0.3s ease;
+}
+
+.CTA-premium-banner {
+  background: linear-gradient(rgba(128, 0, 0, 0.9), rgba(128, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1540608808034-2ecd49c18154?q=80&w=2070&auto=format&fit=crop') center/cover;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.cta-btn-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.cta-btn-glow:hover {
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.6);
+  transform: scale(1.05);
+}
+
+.manifesto-tabs :deep(.v-tab--selected) {
+  background: rgba(128, 0, 0, 0.05);
+  border-bottom: 4px solid #800000;
+}
+
+.manifesto-item {
+  background: white;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.manifesto-item:hover {
+  background: #fffdf9;
+  border-color: #D4AF37;
+  transform: translateX(10px);
 }
 
 .border-gold {
