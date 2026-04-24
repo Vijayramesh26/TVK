@@ -11,12 +11,9 @@
             v-model="search"
             prepend-inner-icon="mdi-magnify"
             :label="t('candidates.searchPlaceholder')"
-            variant="solo"
-            class="mt-8 max-width-600 mx-auto rounded-pill search-bar"
-            hide-details
-            clearable
             bg-color="white"
           ></v-text-field>
+
 
           <!-- District Navigation -->
           <div class="district-nav mt-6" v-if="Object.keys(groupedCandidates).length > 1">
@@ -30,7 +27,7 @@
                 class="font-weight-bold mx-1"
                 size="small"
               >
-                {{ district }}
+                {{ translateDistrict(district) }}
               </v-chip>
             </v-chip-group>
           </div>
@@ -42,7 +39,7 @@
             <div class="d-flex align-center">
               <div class="district-shield mr-4"></div>
               <h2 class="text-h3 font-weight-black color-maroon mb-0">
-                {{ districtName }}
+                {{ translateDistrict(districtName) }}
               </h2>
             </div>
             <div class="d-flex align-center mt-2">
@@ -120,8 +117,8 @@
 
         <!-- Empty State -->
         <div v-if="Object.keys(groupedCandidates).length === 0" class="text-center py-16">
-          <v-icon size="64" color="grey-lighten-2">mdi-account-search-outline</v-icon>
-          <div class="text-h6 text-grey-darken-1 mt-4">{{ t('candidates.noResults') }}</div>
+          <v-icon size="100" color="grey-lighten-2" class="mb-6">mdi-account-search-outline</v-icon>
+          <h3 class="text-h5 text-grey-darken-1 font-weight-bold">{{ t('candidates.noResults') }}</h3>
         </div>
       </v-col>
     </v-row>
@@ -199,6 +196,7 @@
 
 <script>
 import { candidatesData } from '../../data/candidates';
+import { votingData } from '../../data/votingData';
 
 export default {
   name: "Candidates",
@@ -228,9 +226,10 @@ export default {
       const groups = {};
       
       filtered.forEach(c => {
-        const district = this.isTamil ? (c.district || 'பிற') : (c.districtEn || c.district || 'Other');
-        if (!groups[district]) groups[district] = [];
-        groups[district].push(c);
+        // ALWAYS use English as the key for reliable filtering of stats
+        const districtKey = c.districtEn || c.district || 'Other';
+        if (!groups[districtKey]) groups[districtKey] = [];
+        groups[districtKey].push(c);
       });
       
       const sortedKeys = Object.keys(groups).sort((a, b) => a.localeCompare(b));
@@ -243,6 +242,11 @@ export default {
     }
   },
   methods: {
+    translateDistrict(districtEn) {
+      // Find a candidate in this district to get the Tamil name
+      const candidate = this.candidates.find(c => c.districtEn === districtEn);
+      return this.isTamil && candidate ? candidate.district : districtEn;
+    },
     scrollToDistrict(id) {
       const el = document.getElementById('district-' + id);
       if (el) {
@@ -252,8 +256,6 @@ export default {
     getInitials(name) {
       if (!name) return "TVK";
       const parts = name.split(/[. \s]+/);
-      
-      // Filter out honorifics in both languages
       const filtered = parts.filter(p => !['Thiru', 'திரு', 'Dr', 'Mr', 'Mrs', 'Ms', 'டாக்டர்', 'திருமதி', 'சி', 'ஆர்', 'ஏ', 'எஸ்', 'எம்', 'கே', 'ஜி', 'என்', 'வி', 'டி', 'பி', 'ஜே'].includes(p));
       
       if (filtered.length >= 2) {
@@ -263,6 +265,9 @@ export default {
         return filtered[0].slice(0, 2).toUpperCase();
       }
       return "TVK";
+    },
+    formatNumber(num) {
+      return num ? num.toLocaleString() : '0';
     },
     showDetails(candidate) {
       this.selectedCandidate = candidate;
@@ -395,5 +400,42 @@ export default {
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.voting-stat-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.voting-stat-card:hover {
+  transform: translateY(-5px);
+  border-color: #D4AF37;
+  box-shadow: 0 12px 40px rgba(128, 0, 0, 0.1);
+}
+
+.voting-stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #D4AF37;
+  opacity: 0.5;
+}
+
+.view-toggle {
+  z-index: 5;
+}
+
+.gap-3 { gap: 12px; }
+
+@media (max-width: 600px) {
+  .power-card {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 </style>

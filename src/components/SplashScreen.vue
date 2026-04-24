@@ -12,13 +12,23 @@
         <!-- Animated Tamil Text -->
         <div class="text-wrapper mt-8">
           <h1 class="splash-title shadow-text">
-            <span v-for="(char, index) in titleChars" :key="index" :style="{ animationDelay: (index * 0.1) + 's' }" :class="{ 'char-space': char === ' ' }">
-              {{ char === ' ' ? '\u00A0' : char }}
+            <span
+              v-for="(char, index) in titleChars"
+              :key="index"
+              :style="{ animationDelay: index * 0.1 + 's' }"
+              :class="{ 'char-space': char === ' ' }"
+            >
+              {{ char === " " ? "\u00A0" : char }}
             </span>
           </h1>
           <h2 class="splash-subtitle mt-2">
-            <span v-for="(char, index) in subtitleChars" :key="index" :style="{ animationDelay: (0.5 + index * 0.1) + 's' }" :class="{ 'char-space': char === ' ' }">
-              {{ char === ' ' ? '\u00A0' : char }}
+            <span
+              v-for="(char, index) in subtitleChars"
+              :key="index"
+              :style="{ animationDelay: 0.5 + index * 0.1 + 's' }"
+              :class="{ 'char-space': char === ' ' }"
+            >
+              {{ char === " " ? "\u00A0" : char }}
             </span>
           </h2>
         </div>
@@ -42,23 +52,25 @@ export default {
   data: () => ({
     show: true,
     title: "தமிழக வெற்றிக் கழகம்",
-    subtitle: "எனது வெற்றிக் தமிழகம்"
+    subtitle: "எனது வெற்றிக் தமிழகம்",
   }),
   computed: {
     titleChars() {
       if (window.Intl && window.Intl.Segmenter) {
-        const segmenter = new Intl.Segmenter('ta', { granularity: 'grapheme' });
-        return Array.from(segmenter.segment(this.title)).map(s => s.segment);
+        const segmenter = new Intl.Segmenter("ta", { granularity: "grapheme" });
+        return Array.from(segmenter.segment(this.title)).map((s) => s.segment);
       }
       return Array.from(this.title);
     },
     subtitleChars() {
       if (window.Intl && window.Intl.Segmenter) {
-        const segmenter = new Intl.Segmenter('ta', { granularity: 'grapheme' });
-        return Array.from(segmenter.segment(this.subtitle)).map(s => s.segment);
+        const segmenter = new Intl.Segmenter("ta", { granularity: "grapheme" });
+        return Array.from(segmenter.segment(this.subtitle)).map(
+          (s) => s.segment,
+        );
       }
       return Array.from(this.subtitle);
-    }
+    },
   },
   mounted() {
     setTimeout(() => {
@@ -97,8 +109,12 @@ export default {
 }
 
 @keyframes bg-move {
-  from { background-position: 0 0; }
-  to { background-position: 100px 100px; }
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 100px;
+  }
 }
 
 .logo-container {
@@ -132,7 +148,11 @@ export default {
   left: -20px;
   right: -20px;
   bottom: -20px;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.4) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: glow-pulse 2s infinite ease-in-out;
 }
@@ -177,7 +197,9 @@ export default {
 }
 
 .shadow-text {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.5),
+    0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .progress-wrapper {
@@ -213,27 +235,51 @@ export default {
 }
 
 @keyframes logo-pop {
-  from { transform: scale(0); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes glow-pulse {
-  0%, 100% { transform: scale(1); opacity: 0.4; }
-  50% { transform: scale(1.2); opacity: 0.6; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
 }
 
 @keyframes char-reveal {
-  to { opacity: 1; transform: translateY(0) scale(1); }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @keyframes fade-in {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-loading {
-  0% { left: -100%; }
-  50% { left: 100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 
 .fade-leave-active {
@@ -245,6 +291,10 @@ export default {
   transform: scale(1.1);
 }
 
-.mt-8 { margin-top: 32px; }
-.mt-2 { margin-top: 8px; }
+.mt-8 {
+  margin-top: 32px;
+}
+.mt-2 {
+  margin-top: 8px;
+}
 </style>

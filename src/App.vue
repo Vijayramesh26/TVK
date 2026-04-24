@@ -274,7 +274,7 @@
 <script>
 import SplashScreen from "./components/SplashScreen.vue";
 import logo from "./assets/tvk-logo.png";
-import { translations } from "./data/translations";
+import translations from "./data/translations";
 
 export default {
   name: "App",
@@ -284,7 +284,7 @@ export default {
   provide() {
     return {
       currentLang: () => this.currentLang,
-      t: this.t,
+      t: this.t.bind(this),
     };
   },
   data: () => ({
@@ -303,6 +303,7 @@ export default {
           icon: "mdi-palette-outline",
         },
         { text: this.t("nav.kolgai"), to: "/kolgai", icon: "mdi-script-text" },
+        { text: this.t("nav.results"), to: "/results", icon: "mdi-poll" },
         {
           text: this.t("nav.candidates"),
           to: "/candidates",
@@ -318,16 +319,22 @@ export default {
   },
   methods: {
     t(path) {
+      if (!path) return '';
       const keys = path.split(".");
-      let result = translations[this.currentLang];
+      const lang = this.currentLang || 'ta';
+      
+      // Fallback to top-level object
+      let current = translations[lang];
+      if (!current) return path;
+
       for (const key of keys) {
-        if (result[key]) {
-          result = result[key];
+        if (current && typeof current === 'object' && key in current) {
+          current = current[key];
         } else {
           return path;
         }
       }
-      return result;
+      return typeof current === 'string' ? current : path;
     },
     toggleLang() {
       this.currentLang = this.currentLang === "ta" ? "en" : "ta";

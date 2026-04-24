@@ -1,11 +1,72 @@
-export const translations = {
+const translations = {
   ta: {
     nav: {
       home: "முகப்பு",
       kolgai: "கொள்கைகள்",
+      results: "தேர்தல் முடிவுகள்",
       candidates: "வேட்பாளர்கள்",
       dashboard: "நிர்வாகம்",
       poster: "போஸ்டர்",
+    },
+    election: {
+      title: "தமிழக சட்டமன்றத் தேர்தல்",
+      results: "தேர்தல் முடிவுகள் & புள்ளிவிவரங்கள்",
+      subtitle: "மக்களின் தீர்ப்பு வரும் மே 04 அன்று அதிகாரப்பூர்வமாக வெளியாகும். அதுவரை தொகுதி வாரியான வாக்குப்பதிவு விவரங்களைக் காணலாம்.",
+      totalElectors: "மொத்த வாக்காளர்கள்",
+      votesPolled: "பதிவான வாக்குகள்",
+      turnout: "வாக்குப்பதிவு சதவீதம்",
+      searchPlaceholder: "தொகுதி அல்லது மாவட்டம் மூலம் தேடுக...",
+      all: "அனைத்தும்",
+      officialData: "அதிகாரப்பூர்வ ECI தரவு",
+      estimatedData: "மதிப்பிடப்பட்ட தரவு",
+      date: "ஏப்ரல் 23, 2026",
+      voterForChange: "மாற்றத்திற்கான வாக்கு: சின்னம் விசில்",
+      symbolName: "வெற்றி விசில்",
+      countdown: "இனி ஒரு விதி செய்வோம்!",
+      resultsInfo: "தேர்தல் முடிவுகள்: மே 04, 2026 அன்று !",
+      votingSummary: "வாக்குப்பதிவு நிறைவுற்றது",
+      totalRegistered: "மொத்த வாக்காளர்கள்: 5.67 கோடி",
+      totalPolled: "பதிவான வாக்குகள்: 4.82 கோடி",
+    },
+    districts: {
+      "Ariyalur": "அரியலூர்",
+      "Chengalpattu": "செங்கல்பட்டு",
+      "Chennai": "சென்னை",
+      "Coimbatore": "கோயம்புத்தூர்",
+      "Cuddalore": "கடலூர்",
+      "Dharmapuri": "தருமபுரி",
+      "Dindigul": "திண்டுக்கல்",
+      "Erode": "ஈரோடு",
+      "Kallakurichi": "கள்ளக்குறிச்சி",
+      "Kanchipuram": "காஞ்சிபுரம்",
+      "Kanyakumari": "கன்னியாகுமரி",
+      "Karur": "கரூர்",
+      "Krishnagiri": "கிருஷ்ணகிரி",
+      "Madurai": "மதுரை",
+      "Mayiladuthurai": "மயிலாடுதுறை",
+      "Nagapattinam": "நாகப்பட்டினம்",
+      "Namakkal": "நாமக்கல்",
+      "Nilgiris": "நீலகிரி",
+      "Perambalur": "பெரம்பலூர்",
+      "Pudukkottai": "புதுக்கோட்டை",
+      "Ramanathapuram": "இராமநாதபுரம்",
+      "Ranipet": "இராணிப்பேட்டை",
+      "Salem": "சேலம்",
+      "Sivaganga": "சிவகங்கை",
+      "Tenkasi": "தென்காசி",
+      "Thanjavur": "தஞ்சாவூர்",
+      "Theni": "தேனி",
+      "Thoothukudi": "தூத்துக்குடி",
+      "Tiruchirappalli": "திருச்சிராப்பள்ளி",
+      "Tirunelveli": "திருநெல்வேலி",
+      "Tirupathur": "திருப்பத்தூர்",
+      "Tiruppur": "திருப்பூர்",
+      "Tiruvallur": "திருவள்ளூர்",
+      "Tiruvannamalai": "திருவண்ணாமலை",
+      "Thiruvarur": "திருவாரூர்",
+      "Vellore": "வேலூர்",
+      "Villupuram": "விழுப்புரம்",
+      "Virudhunagar": "விருதுநகர்"
     },
     hero: {
       title: "தமிழக வெற்றிக் கழகம்",
@@ -23,19 +84,14 @@ export const translations = {
       follow: "தொடரவும்",
       viewAll: "அனைத்தையும் காண்க",
     },
-    election: {
-      title: "2026 சட்டமன்றத் தேர்தல்",
-      date: "ஏப்ரல் 23, 2026",
-      voterForChange: "மாற்றத்திற்கான வாக்கு: சின்னம் விசில்",
-      symbolName: "வெற்றி விசில்",
-      countdown: "இனி ஒரு விதி செய்வோம்!",
-    },
+
     news: {
       item1: {
         title: "வரலாற்றுச் சிறப்புமிக்க விக்கிரவாண்டி மாநில மாநாடு வெற்றி - தவெக-வின் கொள்கைப் பிரகடனம்!",
         date: "அக்டோபர் 27, 2024",
         content: "தமிழக வெற்றிக் கழகத்தின் (தவெக) முதல் மாநில மாநாடு அக்டோபர் 27, 2024 அன்று விக்கிரவாண்டியில் எழுச்சியுடன் நடைபெற்றது. லட்சக்கணக்கான தொண்டர்கள் மற்றும் பொதுமக்கள் முன்னிலையில் நடைபெற்ற இந்த மாநாடு, தமிழக அரசியலில் ஒரு புதிய திருப்பத்தை ஏற்படுத்தியுள்ளது. மாநாட்டுத் திடல் முழுவதும் கட்சியின் கொடிகள் மற்றும் 'பிறப்பொக்கும் எல்லா உயிர்க்கும்' என்ற வாசகங்களுடன் கோலாகலமாகக் காணப்பட்டது.\n\nமாநாட்டில் சுமார் 45 நிமிடங்கள் உரையாற்றிய கட்சித் தலைவர் தளபதி விஜய் அவர்கள், கட்சியின் அடிப்படை கொள்கைகளை விவரித்தார். 'மதச்சார்பற்ற சமூக நீதி' என்ற பாதையில் தவெக பயணிக்கும் என்றும், பிரிவினைவாத அரசியலை முற்றிலும் எதிர்ப்போம் என்றும் அவர் உறுதியளித்தார். மாநில சுயாட்சி, சாதி வாரிக் கணக்கெடுப்பு மற்றும் ஆளுநர் பதவி ஒழிப்பு போன்ற முக்கியமான அரசியல் நிலைப்பாடுகளையும் அவர் இந்த மாநாட்டில் முன்வைத்தார்.\n\nஇந்த மாநாட்டின் மூலம் விஜய் தனது அரசியல் முதிர்ச்சியை வெளிப்படுத்தியுள்ளார். கட்டுக்கோப்பான முறையில் நடைபெற்ற இந்த நிகழ்வு, வரும் 2026 சட்டமன்றத் தேர்தலுக்கான தவெக-வின் பலத்தை உறுதிப்படுத்தும் வகையில் அமைந்தது. ஊழலற்ற நிர்வாகம் மற்றும் சமத்துவமே கட்சியின் இலக்கு என்று அவர் தனது உரையில் மீண்டும் மீண்டும் வலியுறுத்தினார்.",
         fullTranscript: "'என் நெஞ்சில் குடியிருக்கும் தோழர்களே...' எனத் தொடங்கி, ஒரு மணி நேரம் உணர்ச்சிகரமாக உரையாற்றினார் தளபதி விஜய். 'நாம் யாருக்கும் எதிரானவர்கள் அல்ல, ஆனால் பிளவுவாத அரசியலை ஒருபோதும் அனுமதிக்க மாட்டோம்' என்று அவர் முழங்கினார். சமூக நீதி, சமத்துவம், மற்றும் மாநில சுயாட்சி ஆகியவையே எமது கட்சியின் ஆணிவேர் என்று அவர் பலமுறை வலியுறுத்தினார். வரும் 2026 தேர்தல் ஒரு மாபெரும் மாற்றத்தை ஏற்படுத்தும் எனத் தொண்டர்களுக்கு நம்பிக்கை அளித்தார்.",
+        fullTranscriptEn: "Starting with 'My brothers and sisters who dwell in my heart...', Thalapathy Vijay delivered an emotional speech for an hour. 'We are not against anyone, but we will never allow divisive politics,' he thundered. He repeatedly emphasized that social justice, equality, and state autonomy are the roots of our party. He gave confidence to the cadres that the upcoming 2026 election will bring about a massive change.",
         sourceUrl: "https://www.youtube.com/watch?v=tvk_conference"
       },
       item2: {
@@ -162,7 +218,8 @@ export const translations = {
         title: "2026 தேர்தல் அறிக்கை வெளியீடு: 'மக்களுக்கான செயல் திட்டம்' - தளபதி விஜய் உரை!",
         date: "ஏப்ரல் 16, 2026",
         content: "தமிழக வெற்றிக் கழகத்தின் 2026 சட்டமன்றத் தேர்தலுக்கான முழுமையான தேர்தல் அறிக்கையைச் சென்னையில் நடைபெற்ற நிகழ்வில் தளபதி விஜய் அவர்கள் வெளியிட்டார். 'நாங்கள் சொல்வதைச் செய்வோம், செய்வதைச் சொல்வோம்' என்று அவர் தனது உரையைத் தொடங்கினார்.\n\nமகளிருக்கு மாதாந்திர உதவித்தொகை ₹2,500, 200 யூனிட் இலவச மின்சாரம், மற்றும் 6 இலவச எரிவாயு சிலிண்டர்கள் போன்ற முக்கியமான வாக்குறுதிகளை அவர் அறிவித்தார். கல்வி மற்றும் விவசாயத் துறையில் பெரும் புரட்சியை ஏற்படுத்தும் வகையில் பல்வேறு திட்டங்கள் இந்த அறிக்கையில் இடம்பெற்றுள்ளன. 'இது வெறும் காகிதமல்ல, தமிழக மக்களுக்கான ஒரு புனிதமான வாக்குறுதி' என்று அவர் தெரிவித்தார்.",
-        fullTranscript: "தமிழக வெற்றிக் கழகம் 2026 தேர்தல் அறிக்கை - முக்கிய உரையாற்றுகள்:\n\n- **மகளிர் மேம்பாடு**: குடும்பத் தலைவிகளுக்கு மாதம் ரூ.2,500 நிதியுதவி.\n- **மின்னணு புரட்சி**: அனைத்து வீடுகளுக்கும் 200 யூனிட் இலவச மின்சாரம்.\n- **வாழ்வாதாரம்**: விலையேற்றத்தைக் குறைக்க ஆண்டுக்கு 6 இலவச சிலிண்டர்கள்.\n- **இளைஞர் நலம்**: இளம் தொழில்முனைவோருக்கு வட்டி இல்லா கடன் மற்றும் 10 லட்சம் வேலைவாய்ப்புகள்.\n- **விவசாயம்**: எம்.எஸ். சுவாமிநாதன் குழுவின் பரிந்துரைகளை முழுமையாகச் செயல்படுத்துதல்.\n\nவிஜய் தனது உரையில், 'இந்த தேர்தல் அறிக்கை தவெக-வின் உயிர்நாடி. இதை வெறும் காகிதமாக அல்லாமல், மக்களின் வாழ்வை மாற்றும் கருவியாக நாங்கள் கருதுகிறோம்' என்றார்.",
+        fullTranscript: "தமிழக வெற்றிக் கழகம் 2026 தேர்தல் அறிக்கை - முக்கிய உரையாற்றுகள்:\n\n- **மகளிர் மேம்பாடு**: குடும்பத் தலைவிகளுக்கு மாதம் ரூ.2,500 நிதியுதவி.\n- **மின்னணு புரட்சி**: அனைத்து வீடுகளுக்கும் 200 யூனிட் இலவச மின்சாரம்.\n- **வாழ்வாதாரம்**: விலையேற்றத்தைக் குறைக்க ஆண்டுக்கு 6 இலவச சிலிண்டர்கள்.\n- **இளைஞர் நலம்**: இளம் தொழில்முனைவோருக்கு வட்டி இல்லா கடன் மற்றும் 10 லட்சம் வேலைவாய்ப்புகள்.\n- **விவசாயம்**: எம்.எஸ். சுவாமிநாதன் குழுவின் பரிந்துரைகளை முழுமையாகச் செயல்படுத்துதல்.\n\nவிஜய் தனது உரையில், 'இந்த தேர்தல் அறிக்கை தவெக-வின் உயிர்நாடி. இதை வெறும் காகிதமல்லாமல், மக்களின் வாழ்வை மாற்றும் கருவியாக நாங்கள் கருதுகிறோம்' என்றார்.",
+        fullTranscriptEn: "Tamilaga Vettri Kazhagam 2026 Election Manifesto - Key Highlights:\n\n- **Women Empowerment**: ₹2,500 monthly financial assistance for female heads of families.\n- **Digital Revolution**: 200 units of free electricity for all households.\n- **Livelihood**: 6 free gas cylinders per year to reduce price hikes.\n- **Youth Welfare**: Interest-free loans for young entrepreneurs and 10 lakh job opportunities.\n- **Agriculture**: Full implementation of M.S. Swaminathan committee recommendations.\n\nIn his speech, Vijay said, 'This election manifesto is the lifeline of TVK. We consider this not just as a piece of paper, but as a tool to transform the lives of the people.'",
         sourceUrl: "https://www.tvkvijay.org/manifesto2026"
       },
       item18: {
@@ -172,6 +229,13 @@ export const translations = {
         sourceUrl: "https://www.tvkvijay.org/final_appeal",
         fullTranscript: "தமிழக மக்களே... எமது நீண்ட பயணம் இன்று உங்கள் வாசல் தேடி வந்துள்ளது. 2026 தேர்தல் வெறும் அதிகார மாற்றம் அல்ல, அது ஒரு அறப்போராட்டம். உங்கள் கைகளில் உள்ள அந்த ஒரு வாக்கு தமிழகத்தின் அடுத்த 100 ஆண்டுகளின் தலையெழுத்தை மாற்றும் வலிமை கொண்டது. குடும்ப அரசியல் மற்றும் ஊழல் இல்லாத ஒரு தூய்மையான தமிழகத்தை உருவாக்க தவெக-விற்குக் கை கொடுங்கள். 'மாற்றம் ஒன்றே மாறாதது'. வெற்றி நமது கையில்!",
         fullTranscriptEn: "People of Tamil Nadu... our long journey has reached your doorstep today. The 2026 election isn't just a change of power; it is a moral struggle. That single vote in your hands has the power to change the destiny of Tamil Nadu for the next 100 years. Give your support to TVK to create a clean Tamil Nadu free from family politics and corruption. 'Change is the only constant'. Victory is in our hands!"
+      },
+      item19: {
+        title: "தவெக விஜய் — முழு பரப்புரை உரைகள் மற்றும் ரோடு ஷோக்கள் 2024–2026",
+        date: "ஏப்ரல் 19, 2026",
+        content: "2026 தமிழ்நாடு சட்டமன்றத் தேர்தலுக்கான தமிழக வெற்றிக் கழகம் (தவெக) தலைவர் விஜய் அவர்களின் உரைகள், ரோடு ஷோக்கள், மாநாடுகள் மற்றும் பரப்புரை நிகழ்வுகளின் விரிவான தொகுப்பு. அக்டோபர் 2024-ல் விக்கிரவாண்டியில் தொடங்கிய இந்த அரசியல் பயணம், மாநிலம் முழுவதும் மாபெரும் எழுச்சியை ஏற்படுத்தியுள்ளது.\n\nஇந்தத் தொகுப்பில் விக்கிரவாண்டி மாநில மாநாடு முதல் திருச்சிராப்பள்ளி இறுதி ரோடு ஷோ வரை விஜய் ஆற்றிய முக்கிய உரைகள், கொள்கை அறிவிப்புகள் மற்றும் அவரது அரசியல் நிலைப்பாடுகள் இடம்பெற்றுள்ளன. 'பிறப்பொக்கும் எல்லா உயிர்க்கும்' என்ற கொள்கையுடன், ஊழலற்ற நேர்மையான ஆட்சியை வழங்க அவர் அளித்துள்ள வாக்குறுதிகள் இதில் விரிவாகக் கொடுக்கப்பட்டுள்ளன.",
+        fullTranscript: "தமிழக வெற்றிக் கழகம் (தவெக) - தலைவர் விஜய் அவர்களின் அதிகாரப்பூர்வ பரப்புரைத் தொகுப்பு:\n\n1. தவெக முதல் மாநில மாநாடு — விக்கிரவாண்டி (27-10-2024)\nமுக்கிய முழக்கம்: 'சமூகத்தில் பிளவை உண்டுபண்ணுவோர் நமது முதல் எதிரி. திராவிட கொள்கை என்று சொல்லி தமிழ்நாட்டை குடும்பமாக கொள்ளையடிப்போர் நமது அடுத்த எதிரி.'\nஅறிவிப்பு: பெண்களுக்கு 1/3 இடஒதுக்கீடு, இரு மொழிக் கொள்கை, ஆளுநர் பதவி ஒழிப்பு.\n\n2. தவெக கோவை கட்சி கூட்டம் (26-04-2025)\nமுக்கிய முழக்கம்: 'தமிழ்நாட்டு மக்களுக்காக ஊழல் இல்லாத, வெளிப்படையான, பொறுப்பான அரசை தவெக நிறுவும்.'\n\n3. தவெக இரண்டாம் மாநாடு — மதுரை (21-08-2025)\nமுக்கிய முழக்கம்: 'பாஜக மற்றும் திமுக தமிழ்நாட்டு மக்களுக்கு எதிராக ஒரு இரகசிய கூட்டணியில் இயங்குகின்றன.'\n\n4. தவெக தேர்தல் பரப்புரை தொடக்கம் — திருச்சி (13-09-2025)\nமுக்கிய முழக்கம்: 'இந்த தேர்தல் மக்கள் சக்தி தவெக-விற்கும் நிலைபெற்ற அமைப்பிற்கும் இடையிலான நேரடி போர்.'\n\n5. தவெக வேலூர் பொதுக்கூட்டம் (பிப்ரவரி 2026)\nமுக்கிய முழக்கம்: 'இது தவெக-வின் தூய சக்திக்கும் திமுக-வின் தீய சக்திக்கும் இடையான போர். ஸ்டாலின் சாரோடு என் நேருக்கு நேர் மோதல்.'\n\n6. தவெக பெண்கள் தினம் — மாமல்லபுரம் (07-03-2026)\nஅறிவிப்பு: பெண்களுக்கு மாதம் ₹2,500 நிதி உதவி, இலவச LPG சிலிண்டர்கள், அரசு பேருந்தில் இலவச பயணம்.\n\n7. தவெக வேட்பாளர் பட்டியல் வெளியீடு — சென்னை (29-03-2026)\nமுக்கிய முழக்கம்: 'எங்கள் வேட்பாளர்கள் மக்களுடன் வாழ்கிறார்கள், மக்களுக்கு மேலே அல்ல.'\n\n8. பெரம்பூர் வேட்புமனு தாக்கல் (30-03-2026)\nமுக்கிய முழக்கம்: 'நான் ஒரு நடிகராக அல்ல, அவர்களின் சேவகனாக மக்களிடம் செல்கிறேன்.'\n\n9. திருநெல்வேலி பொதுக்கூட்டம் (08-04-2026)\nமுக்கிய முழக்கம்: 'திமுக கூட்டணி என்பது கேஷ் பாக்ர் கூட்டணி. ஒரு தலைவனை மக்களிடமிருந்து பிரிக்க முடியாது.'\n\n10. கன்னியாகுமரி ரோடு ஷோ (13-04-2026)\nஅறிவிப்பு: AI பல்கலைக்கழகம், AI நகரம், செயற்கை நுண்ணறிவுக்கான தனி அமைச்சகம்.\n\n11. திருப்பூர் ரோடு ஷோ (14-04-2026)\nஅறிவிப்பு: பழைய ஓய்வூதியத் திட்டம் (OPS), தற்காலிக ஊழியர்கள் நிரந்தரமாக்கம், விவசாயக் கடன் தள்ளுபடி.\n\n12. சென்னை தெற்கு ரோடு ஷோ (16-04-2026)\nமுக்கியத்துவம்: சென்னையின் வணிக மற்றும் நகர்ப்புற மையங்களில் தவெக-வின் பலத்தை உறுதிப்படுத்தியது.\n\n13. காரைக்குடி சைக்கிள் ரோடு ஷோ (ஏப்ரல் 2026)\nமுக்கியத்துவம்: விஜய்யின் குறியீட்டு சைக்கிள் சவாரி தவெக-வின் மக்கள் அடிமட்ட அணுகுமுறையை வெளிப்படுத்தியது.\n\n14. திருச்சி இறுதி பரப்புரை (19-04-2026)\nமுக்கிய முழக்கம்: 'திருச்சி மக்கள் எப்போதும் என் பலம். மாற்றத்திற்கான உங்கள் பிரதிநிதியாக சேவை செய்ய வந்தேன்.'",
+        sourceUrl: "https://www.tvkvijay.org/speeches"
       },
       manifesto: {
         title: "தமிழக வெற்றிக் கழகம் - தேர்தல் அறிக்கை 2026 வெளியிடப்பட்டது!",
@@ -228,7 +292,17 @@ export const translations = {
       share: "விவரங்களை பகிரவும்",
       close: "மூடுக",
       noResults: "வேட்பாளர்கள் யாரும் கிடைக்கவில்லை",
-      constituency: "தொகுதி"
+      constituency: "தொகுதி",
+      votingView: "வாக்குப்பதிவு விவரம்",
+      candidateView: "வேட்பாளர் பட்டியல்",
+      electors: "வாக்காளர்கள்",
+      turnout: "பதிவு %",
+      polled: "வாக்குகள்",
+      categories: {
+        GEN: "பொது",
+        SC: "தனி (SC)",
+        ST: "தனி (ST)",
+      }
     },
     ctaHome: {
       title: "மாற்றத்திற்கான நேரமிது!",
@@ -239,9 +313,30 @@ export const translations = {
     nav: {
       home: "Home",
       kolgai: "Ideology",
+      results: "Results",
       candidates: "Candidates",
       dashboard: "Admin",
       poster: "Poster",
+    },
+    election: {
+      title: "Tamil Nadu Assembly Election",
+      results: "Election Results & Statistics",
+      subtitle: "Official results will be announced on May 04. Meanwhile, explore the detailed constituency polling data below.",
+      totalElectors: "Total Electors",
+      votesPolled: "Votes Polled",
+      turnout: "Polling Percentage",
+      searchPlaceholder: "Search by Constituency or District...",
+      all: "All",
+      officialData: "Official ECI Data",
+      estimatedData: "Estimated Data",
+      date: "April 23, 2026",
+      voterForChange: "Voter for Change: Symbol is Whistle",
+      symbolName: "Victory Whistle",
+      countdown: "Time for a New Law!",
+      resultsInfo: "Election Results: May 04, 2026 !",
+      votingSummary: "Polling Completed Successfully",
+      totalRegistered: "Total Registered Voters: 5.67 Crores",
+      totalPolled: "Total Votes Polled: 4.82 Crores",
     },
     hero: {
       title: "Tamilaga Vettri Kazhagam",
@@ -259,13 +354,7 @@ export const translations = {
       follow: "Follow Us",
       viewAll: "View All Articles",
     },
-    election: {
-      title: "2026 Assembly Election",
-      date: "April 23, 2026",
-      voterForChange: "Voter for Change: Symbol is Whistle",
-      symbolName: "Victory Whistle",
-      countdown: "Time for a New Law!",
-    },
+
     news: {
       item1: {
         title: "Success of Historic Vikravandi State Conference - TVK's Ideological Declaration Released!",
@@ -377,6 +466,13 @@ export const translations = {
         content: "As the campaign for the Tamil Nadu Assembly elections reaches its conclusion, Thalapathy Vijay issued a final emotional appeal to the people. 'The power to create change is in your hands—in your single vote,' he said in a video message released today.\n\nHe reiterated TVK's commitment to providing a corruption-free, honest administration and urged the voters to give him a chance to serve the state. 'Our journey is for you, and our hard work is for you,' he said, concluding his campaign on a high spiritual and emotional note.",
         sourceUrl: "https://www.tvkvijay.org/final_appeal"
       },
+      item19: {
+        title: "TVK Vijay — Full Campaign Speeches & Roadshows 2024–2026",
+        date: "April 19, 2026",
+        content: "A comprehensive coverage of Tamilaga Vettri Kazhagam (TVK) President Vijay's speeches, roadshows, and campaign events for the 2026 Tamil Nadu Assembly Elections. Starting from the historic Vikravandi conference in October 2024, this collection documents the party's state-wide journey toward political transformation.\n\nThis archive captures the key messages delivered by Vijay, from foundational policy declarations to his direct challenges against the establishment. Guided by the vision of 'Secular Social Justice', these speeches outline TVK's blueprint for an honest, transparent, and technology-driven governance for the people of Tamil Nadu.",
+        fullTranscriptEn: "Tamilaga Vettri Kazhagam (TVK) - Official Campaign Archive:\n\n1. First State Conference — Vikravandi (Oct 27, 2024)\nKey Quote: 'The ones who are creating divisions are our first enemy. The ones claiming Dravidian ideology but looting Tamil Nadu as a family are our next rivals.'\nPolicy: 1/3 reservation for women, two-language policy, abolition of Governor post.\n\n2. Coimbatore Party Meeting (Apr 26, 2025)\nKey Quote: 'TVK will establish a corruption-free, transparent, and accountable government.'\n\n3. Second State Conference — Madurai (Aug 21, 2025)\nKey Quote: 'The BJP and DMK are operating in a secret alliance against the people of Tamil Nadu.'\n\n4. Campaign Launch — Tiruchirappalli (Sep 13, 2025)\nKey Quote: 'This election will be a straight fight between the people's force TVK and the entrenched establishment.'\n\n5. Vellore Public Meeting (Feb 2026)\nKey Quote: 'This is a battle between the pure force of TVK and the evil force of the DMK. The election will be a face-off between myself and Stalin.'\n\n6. Women's Day Event — Mahabalipuram (Mar 07, 2026)\nPolicy: ₹2,500 monthly assistance for women, free LPG cylinders, free bus travel.\n\n7. Candidate Announcement — Chennai (Mar 29, 2026)\nKey Quote: 'They say our people have no experience. But our candidates live among the people, not above them.'\n\n8. Perambur Nomination Filing (Mar 30, 2026)\nKey Quote: 'I go to the people not as an actor but as their servant.'\n\n9. Tirunelveli Public Meeting (Apr 08, 2026)\nKey Quote: 'The DMK bloc is a cash-box alliance. You cannot separate a leader from his people.'\n\n10. Kanyakumari Roadshow (Apr 13, 2026)\nPolicy: AI University, AI City, Dedicated Ministry of Artificial Intelligence.\n\n11. Tiruppur Roadshow (Apr 14, 2026)\nPolicy: Old Pension Scheme (OPS), regularisation of temp staff, complete crop loan waiver.\n\n12. South Chennai Roadshow (Apr 16, 2026)\nSignificance: Demonstrated TVK's massive urban support base in the heart of Chennai.\n\n13. Karaikudi Bicycle Roadshow (Apr 2026)\nSignificance: Symbolic bicycle ride communicating TVK's grassroots, accessible approach.\n\n14. Final Campaign Roadshow — Trichy (Apr 19, 2026)\nKey Quote: 'The people of Trichy have always been my strength. I am here to serve you as your representative for change.'",
+        sourceUrl: "https://www.tvkvijay.org/speeches"
+      },
       manifesto: {
         title: "Tamilaga Vettri Kazhagam - Election Manifesto 2026 Released!",
         date: "April 16, 2026",
@@ -432,7 +528,17 @@ export const translations = {
       share: "Share Details",
       close: "Close",
       noResults: "No candidates found",
-      constituency: "Constituency"
+      constituency: "Constituency",
+      votingView: "Voting Stats",
+      candidateView: "Candidates List",
+      electors: "Electors",
+      turnout: "Turnout %",
+      polled: "Polled",
+      categories: {
+        GEN: "General",
+        SC: "Scheduled Caste",
+        ST: "Scheduled Tribe",
+      }
     },
     ctaHome: {
       title: "Time for Change!",
@@ -440,3 +546,4 @@ export const translations = {
     }
   }
 };
+export default translations;

@@ -179,5 +179,14 @@ export const newsData = [
     location: "மாநிலம் தழுவியது",
     locationEn: "State-wide",
     sortDate: "2026-04-19"
+  },
+  {
+    id: 18,
+    tag: "Collection",
+    image: candidateIntroBg,
+    category: "Speech Archive",
+    location: "தமிழ்நாடு",
+    locationEn: "Tamil Nadu",
+    sortDate: "2026-04-19"
   }
 ];

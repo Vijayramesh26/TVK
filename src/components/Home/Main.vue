@@ -74,11 +74,11 @@
 
             <!-- Membership Counter -->
             <div
-              class="membership-counter d-flex align-center justify-center justify-md-start"
+              class="membership-counter d-flex align-center justify-center justify-md-start mt-10 mt-md-16 position-relative z-10"
             >
               <div class="text-center text-md-left">
                 <div
-                  class="text-h3 font-weight-black text-white mb-1 glow-text"
+                  class="text-h4 text-md-h3 font-weight-black text-white mb-1 glow-text"
                 >
                   {{ formatNumber(displayCount) }}+
                 </div>
@@ -127,41 +127,158 @@
       </div>
     </section>
 
-    <!-- Election Alert Banner -->
-    <section class="election-banner position-relative py-16 text-white overflow-hidden elevation-10">
-      <v-parallax :src="electionBg" class="absolute-inset" scale="1.1"></v-parallax>
-      <div class="banner-overlay absolute-inset"></div>
-      
-      <v-container class="position-relative z-10 py-8">
-        <v-row align="center">
-          <v-col cols="12" md="8" class="text-center text-md-left">
-            <v-chip color="#D4AF37" class="mb-4 font-weight-bold px-6 py-2 elevation-4" variant="elevated">
-              {{ t('election.title') }} 2026
-            </v-chip>
-            <h2 class="display-promo font-weight-black mb-4 glow-text">
-              {{ t('election.date') }}
-            </h2>
-            <div class="voter-slogan d-flex align-center justify-center justify-md-start mb-6">
-              <v-icon icon="mdi-whistle" size="48" color="#D4AF37" class="mr-4 whistle-pulse"></v-icon>
-              <span class="text-h4 font-weight-bold letter-spacing-1 text-uppercase">
-                {{ t('election.voterForChange') }}
-              </span>
-            </div>
-            <p class="text-h6 opacity-90 max-width-600 mb-0 font-italic">
-              "{{ t('election.countdown') }}"
-            </p>
-          </v-col>
-          <v-col cols="12" md="4" class="text-center pt-8 pt-md-0">
-             <div class="voting-badge mx-auto">
-               <div class="inner-badge">
-                 <span class="text-caption font-weight-black uppercase color-gold">{{ t('election.symbolName') }}</span>
-                 <v-icon icon="mdi-whistle-outline" size="80" color="white" class="my-2"></v-icon>
-                 <span class="text-h5 font-weight-black uppercase">{{ isTamil ? 'வெற்றி' : 'VICTORY' }}</span>
-               </div>
-             </div>
-          </v-col>
-        </v-row>
-      </v-container>
+    <!-- Election Status & Results Banner -->
+    <section
+      class="election-banner position-relative overflow-hidden elevation-20"
+    >
+      <v-parallax
+        :src="electionBg"
+        scale="1.1"
+        :height="isMobile ? 1100 : 850"
+        class="py-10"
+      >
+        <div class="banner-overlay absolute-inset"></div>
+
+        <v-container class="position-relative z-10 py-10">
+          <v-row align="center" justify="space-between">
+            <v-col cols="12" md="7" class="text-center text-md-left">
+              <div
+                class="d-flex align-center justify-center justify-md-start mb-6"
+              >
+                <v-chip
+                  color="#D4AF37"
+                  class="font-weight-black px-6 py-2 elevation-8 text-uppercase pulse-gold"
+                  variant="elevated"
+                >
+                  {{ t("election.votingSummary") }} 2026
+                </v-chip>
+                <v-chip
+                  variant="outlined"
+                  color="white"
+                  class="ml-4 border-white-thin d-none d-sm-flex"
+                >
+                  <v-icon start icon="mdi-shield-check"></v-icon>
+                  {{ t("election.officialData") }}
+                </v-chip>
+              </div>
+
+              <h2
+                class="display-promo font-weight-black mb-6 glow-text lh-tight text-white mb-8"
+                style="font-size: clamp(2.5rem, 6vw, 4.5rem); max-width: 900px"
+              >
+                {{ t("election.resultsInfo") }}
+              </h2>
+
+              <v-row class="mb-10 px-2" justify="center" justify-md="start">
+                <v-col cols="12" sm="6" lg="5">
+                  <div
+                    class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
+                  >
+                    <div class="text-overline color-gold font-weight-bold mb-1">
+                      {{ isTamil ? "பதிவான வாக்குகள்" : "Votes Polled" }}
+                    </div>
+                    <div class="text-h3 font-weight-black text-white">
+                      4.82 <span class="text-h5">Cr</span>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col cols="12" sm="6" lg="5">
+                  <div
+                    class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
+                  >
+                    <div class="text-overline color-gold font-weight-bold mb-1">
+                      {{ isTamil ? "மொத்த வாக்காளர்கள்" : "Total Voters" }}
+                    </div>
+                    <div class="text-h3 font-weight-black text-white">
+                      5.67 <span class="text-h5">Cr</span>
+                    </div>
+                  </div>
+                </v-col>
+              </v-row>
+
+              <div class="d-flex justify-center justify-md-start">
+                <v-btn
+                  to="/results"
+                  size="x-large"
+                  class="font-weight-black border-gold-thin rounded-pill px-10 elevation-12"
+                  prepend-icon="mdi-poll"
+                  color="#D4AF37"
+                >
+                  {{
+                    isTamil ? "தொகுதி வாரியாகக் காண்க" : "View Detailed Results"
+                  }}
+                </v-btn>
+              </div>
+            </v-col>
+
+            <v-col cols="12" md="5" class="d-none d-md-flex justify-end">
+              <v-card
+                variant="outlined"
+                color="#D4AF37"
+                class="rounded-circle pa-4 border-gold-thin pulse-gold"
+              >
+                <v-icon icon="mdi-vote" size="80" color="white"></v-icon>
+              </v-card>
+            </v-col>
+          </v-row>
+
+          <!-- Bottom Filling Area: Roadmap / Process -->
+          <v-divider
+            class="mt-16 mb-10 border-white-thin opacity-20"
+          ></v-divider>
+
+          <v-row class="px-4" justify="center">
+            <v-col
+              cols="12"
+              sm="4"
+              v-for="(phase, index) in [
+                {
+                  icon: 'mdi-vote',
+                  label: isTamil ? 'வாக்குப்பதிவு' : 'Polling',
+                  status: isTamil ? 'முடிந்தது' : 'Completed',
+                  color: 'success',
+                },
+                {
+                  icon: 'mdi-clipboard-list-outline',
+                  label: isTamil ? 'சரிபார்ப்பு' : 'Verification',
+                  status: isTamil ? 'நடைபெறுகிறது' : 'In Progress',
+                  color: 'warning',
+                },
+                {
+                  icon: 'mdi-trophy-variant',
+                  label: isTamil ? 'தேர்தல் முடிவு' : 'Final Results',
+                  status: 'May 04, 2026',
+                  color: 'info',
+                },
+              ]"
+              :key="index"
+            >
+              <div
+                class="glass-effect pa-4 rounded-xl d-flex align-center border-white-thin h-100"
+              >
+                <v-avatar
+                  size="48"
+                  :color="phase.color"
+                  variant="tonal"
+                  class="mr-4"
+                >
+                  <v-icon :icon="phase.icon"></v-icon>
+                </v-avatar>
+                <div>
+                  <div
+                    class="text-caption font-weight-bold color-gold uppercase opacity-80"
+                  >
+                    {{ phase.label }}
+                  </div>
+                  <div class="text-subtitle-2 font-weight-black text-white">
+                    {{ phase.status }}
+                  </div>
+                </div>
+              </div>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-parallax>
     </section>
 
     <!-- Vision & Mission Stats / Pillars -->
@@ -300,23 +417,30 @@
               class="news-scroll-card rounded-xl overflow-hidden hover-lift border-transparent elevation-10 mx-3"
               @click="$router.push(`/news/${item.id}`)"
             >
-              <v-img :src="item.image" height="260" cover class="position-relative">
+              <v-img
+                :src="item.image"
+                height="260"
+                cover
+                class="position-relative"
+              >
                 <!-- Poster Gradient Overlay -->
                 <div class="poster-gradient absolute-inset"></div>
-                
+
                 <!-- Dynamic Poster Overlay -->
                 <div class="news-poster-overlay absolute-inset overflow-hidden">
                   <!-- Large Vijay Portrait (Standardized) -->
-                  <v-img 
-                    :src="heroImage" 
-                    alt="Vijay" 
+                  <v-img
+                    :src="heroImage"
+                    alt="Vijay"
                     class="poster-vijay-portrait"
                     width="140"
                     cover
                   ></v-img>
 
                   <!-- Poster Content -->
-                  <div class="absolute-inset d-flex flex-column justify-space-between pa-4 z-10">
+                  <div
+                    class="absolute-inset d-flex flex-column justify-space-between pa-4 z-10"
+                  >
                     <div class="d-flex justify-start">
                       <div
                         class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon rounded-pill elevation-4"
@@ -324,13 +448,19 @@
                         {{ item.tag }}
                       </div>
                     </div>
-                    
+
                     <!-- Official Area Label -->
-                    <div class="news-official-label pa-3 rounded-lg elevation-10">
-                      <div class="text-caption font-weight-black color-gold text-uppercase tracking-widest mb-1">
+                    <div
+                      class="news-official-label pa-3 rounded-lg elevation-10"
+                    >
+                      <div
+                        class="text-caption font-weight-black color-gold text-uppercase tracking-widest mb-1"
+                      >
                         {{ isTamil ? "தளபதி விஜய்" : "THALAPATHY VIJAY" }}
                       </div>
-                      <div class="text-h5 font-weight-black text-white letter-spacing-2">
+                      <div
+                        class="text-h5 font-weight-black text-white letter-spacing-2"
+                      >
                         {{ isTamil ? item.location : item.locationEn }}
                       </div>
                     </div>
@@ -352,18 +482,26 @@
             </v-card>
           </div>
         </div>
-        
+
         <!-- Scroll Indicators for Desktop -->
         <div class="text-center mt-4 d-none d-md-block">
           <div class="d-flex align-center justify-center gap-2">
-            <v-icon icon="mdi-chevron-left" class="color-grey opacity-50"></v-icon>
-            <span class="text-caption font-weight-bold color-grey">{{ isTamil ? 'கிடைமட்டமாக உருட்டவும்' : 'Scroll Horizontally' }}</span>
-            <v-icon icon="mdi-chevron-right" class="color-grey opacity-50"></v-icon>
+            <v-icon
+              icon="mdi-chevron-left"
+              class="color-grey opacity-50"
+            ></v-icon>
+            <span class="text-caption font-weight-bold color-grey">{{
+              isTamil ? "கிடைமட்டமாக உருட்டவும்" : "Scroll Horizontally"
+            }}</span>
+            <v-icon
+              icon="mdi-chevron-right"
+              class="color-grey opacity-50"
+            ></v-icon>
           </div>
         </div>
       </v-container>
     </section>
-    
+
     <!-- Ideological Guides Section -->
     <section class="py-16 bg-white overflow-hidden border-top">
       <v-container>
@@ -377,18 +515,24 @@
           </p>
         </div>
 
-        <div class="d-flex justify-center flex-wrap" style="gap: 40px;">
-          <div v-for="leader in leaders" :key="leader.id" class="leader-guide-card text-center">
+        <div class="d-flex justify-center flex-wrap" style="gap: 40px">
+          <div
+            v-for="leader in leaders"
+            :key="leader.id"
+            class="leader-guide-card text-center"
+          >
             <v-hover v-slot="{ isHovering, props }">
               <div v-bind="props" class="position-relative">
-                <v-avatar 
-                  size="160" 
+                <v-avatar
+                  size="160"
                   class="leader-avatar elevation-12 border-gold-thick mb-4 transition-all"
                   :class="{ 'leader-avatar-hover': isHovering }"
                 >
                   <v-img :src="leader.image" cover></v-img>
                 </v-avatar>
-                <div class="leader-name-label font-weight-black color-maroon text-subtitle-1">
+                <div
+                  class="leader-name-label font-weight-black color-maroon text-subtitle-1"
+                >
                   {{ leader.name }}
                 </div>
               </div>
@@ -482,7 +626,7 @@ import Anthems from "../Media/Anthems.vue";
 export default {
   name: "Home",
   components: {
-    Anthems
+    Anthems,
   },
   inject: ["t", "currentLang"],
   data: () => ({
@@ -497,8 +641,16 @@ export default {
       { id: "periyar", name: "தந்தை பெரியார்", image: periyarImg },
       { id: "kamarajar", name: "பெருந்தலைவர் காமராஜர்", image: kamarajarImg },
       { id: "ambedkar", name: "அண்ணல் அம்பேத்கர்", image: ambedkarImg },
-      { id: "velunachiyar", name: "வீரமங்கை வேலுநாச்சியார்", image: velunachiyarImg },
-      { id: "anjalaiammal", name: "கடலூர் அஞ்சலையம்மாள்", image: anjalaiammalImg },
+      {
+        id: "velunachiyar",
+        name: "வீரமங்கை வேலுநாச்சியார்",
+        image: velunachiyarImg,
+      },
+      {
+        id: "anjalaiammal",
+        name: "கடலூர் அஞ்சலையம்மாள்",
+        image: anjalaiammalImg,
+      },
     ],
 
     gallery: [
@@ -543,13 +695,18 @@ export default {
       return this.currentLang() === "ta";
     },
     sortedNews() {
-      return [...this.newsData].sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
-    }
+      return [...this.newsData].sort(
+        (a, b) => new Date(b.sortDate) - new Date(a.sortDate),
+      );
+    },
+    isMobile() {
+      return this.$vuetify.display.xs || this.$vuetify.display.sm;
+    },
   },
   watch: {
-    'currentLang'() {
+    currentLang() {
       this.updateSEO();
-    }
+    },
   },
   mounted() {
     this.animateCounter();
@@ -575,10 +732,10 @@ export default {
       return num.toLocaleString();
     },
     updateSEO() {
-      const title = this.isTamil 
+      const title = this.isTamil
         ? "Watch Now: தளபதி விஜய்யின் தவெக உரைகள் | 2026 தேர்தல் அறிக்கை & வேட்பாளர்கள்"
         : "Exclusive: Thalapathy Vijay TVK Speeches, 234 Candidate List & 2026 Manifesto";
-      
+
       document.title = title;
 
       const description = this.isTamil
@@ -587,7 +744,7 @@ export default {
 
       let metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
-        metaDesc.setAttribute('content', description);
+        metaDesc.setAttribute("content", description);
       }
     },
   },
@@ -871,8 +1028,6 @@ export default {
   }
 }
 
-
-
 .title-divider {
   width: 60px;
   height: 4px;
@@ -881,7 +1036,7 @@ export default {
 
 /* Hero Section Leader */
 .hero-avatar {
-  border: 12px solid #D4AF37 !important;
+  border: 12px solid #d4af37 !important;
   background: white;
   z-index: 2;
 }
@@ -897,8 +1052,12 @@ export default {
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Leader Guides */
@@ -908,7 +1067,7 @@ export default {
 }
 
 .leader-avatar {
-  border: 4px solid #D4AF37 !important;
+  border: 4px solid #d4af37 !important;
   background-color: white;
 }
 
@@ -923,11 +1082,11 @@ export default {
 }
 
 .border-gold-thick {
-  border: 3px solid #D4AF37 !important;
+  border: 3px solid #d4af37 !important;
 }
 
 .border-gold-thin {
-  border: 1px solid #D4AF37 !important;
+  border: 1px solid #d4af37 !important;
 }
 
 .hover-zoom {
@@ -941,12 +1100,16 @@ export default {
   }
 }
 .election-banner {
-  min-height: 400px;
+  min-height: 250px;
   background-color: #800000;
 }
 
 .banner-overlay {
-  background: linear-gradient(135deg, rgba(128, 0, 0, 0.95) 0%, rgba(128, 0, 0, 0.7) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(128, 0, 0, 0.95) 0%,
+    rgba(128, 0, 0, 0.7) 100%
+  );
 }
 
 .display-promo {
@@ -959,40 +1122,99 @@ export default {
 }
 
 @keyframes pulse-gold {
-  0% { transform: scale(1); filter: drop-shadow(0 0 0px #D4AF37); }
-  50% { transform: scale(1.1); filter: drop-shadow(0 0 15px #D4AF37); }
-  100% { transform: scale(1); filter: drop-shadow(0 0 0px #D4AF37); }
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px #d4af37);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px #d4af37);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px #d4af37);
+  }
 }
 
 .glow-text {
   text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
 }
 
-.voting-badge {
-  width: 200px;
-  height: 200px;
-  border: 4px solid #D4AF37;
-  border-radius: 50%;
-  padding: 10px;
+.stats-grid {
   display: flex;
-  align-center: center;
+  width: 100%;
+}
+
+.stat-item {
+  min-width: 180px;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.border-white-thin {
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.whistle-icon-glow {
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
+}
+
+.pulse-gold {
+  animation: pulse-gold-box 2.5s infinite;
+}
+
+@keyframes pulse-gold-box {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 25px rgba(212, 175, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+.voting-badge {
+  width: 260px;
+  height: 260px;
+  border: 6px solid #d4af37;
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  background: rgba(212, 175, 55, 0.1);
-  backdrop-filter: blur(5px);
+  background: rgba(128, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 5;
 }
 
 .inner-badge {
   width: 100%;
   height: 100%;
-  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   display: flex;
   flex-direction: column;
-  align-center: center;
+  align-items: center;
   justify-content: center;
 }
 
-.color-gold { color: #D4AF37 !important; }
+.color-gold {
+  color: #d4af37 !important;
+}
 
 .on-hover {
   transform: translateY(-8px);
@@ -1000,7 +1222,12 @@ export default {
 
 /* News Poster Overlay Styles */
 .poster-gradient {
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    transparent 100%
+  );
   z-index: 1;
   transition: background 0.3s ease;
 }
@@ -1025,7 +1252,12 @@ export default {
 }
 
 .news-scroll-card:hover .news-poster-overlay {
-  background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.6) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   pointer-events: none;
 }
 
@@ -1035,7 +1267,7 @@ export default {
   bottom: 0;
   height: 100% !important;
   opacity: 0.95;
-  filter: drop-shadow(-10px 0 20px rgba(0,0,0,0.5));
+  filter: drop-shadow(-10px 0 20px rgba(0, 0, 0, 0.5));
   z-index: 5;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -1045,16 +1277,21 @@ export default {
 }
 
 .news-official-label {
-  background: linear-gradient(135deg, rgba(128, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
-  border-left: 4px solid #D4AF37;
+  background: linear-gradient(
+    135deg,
+    rgba(128, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  border-left: 4px solid #d4af37;
   backdrop-filter: blur(10px);
   position: relative;
   z-index: 10;
   max-width: 85%;
 }
 
-.news- आधिकारिक-label {
-  /* No changes needed here, just ensuring uniqueness */
+.news-official-label-alt {
+  /* Ensuring uniqueness and plain ASCII name */
+  opacity: 1;
 }
 
 .news-location-label {

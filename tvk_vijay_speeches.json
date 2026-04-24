@@ -1,0 +1,954 @@
+{
+  "meta": {
+    "title": "TVK Vijay — Full Campaign Speeches & Roadshows 2024–2026",
+    "title_ta": "தவெக விஜய் — முழு பரப்புரை உரைகள் மற்றும் ரோடு ஷோக்கள் 2024–2026",
+    "description": "Comprehensive bilingual coverage of Tamilaga Vettri Kazhagam (TVK) president Vijay's speeches, roadshows, conferences and campaign events across Tamil Nadu for the 2026 Assembly Elections.",
+    "description_ta": "2026 தமிழ்நாடு சட்டமன்றத் தேர்தலுக்கான தமிழக வெற்றிக் கழகம் (தவெக) தலைவர் விஜய் அவர்களின் உரைகள், ரோடு ஷோக்கள், மாநாடுகள் மற்றும் பரப்புரை நிகழ்வுகளின் விரிவான இரு மொழி தொகுப்பு.",
+    "party": "Tamilaga Vettri Kazhagam (TVK)",
+    "party_ta": "தமிழக வெற்றிக் கழகம் (தவெக)",
+    "party_symbol": "Whistle",
+    "party_symbol_ta": "விசில்",
+    "leader": "Vijay (C. Joseph Vijay)",
+    "leader_ta": "விஜய் (சி. ஜோசப் விஜய்)",
+    "election": "Tamil Nadu Legislative Assembly Election 2026",
+    "election_ta": "தமிழ்நாடு சட்டமன்றத் தேர்தல் 2026",
+    "election_date": "2026-04-23",
+    "results_date": "2026-05-04",
+    "total_constituencies": 234,
+    "vijay_constituencies": ["Perambur", "Tiruchirappalli East"],
+    "vijay_constituencies_ta": ["பெரம்பூர்", "திருச்சிராப்பள்ளி கிழக்கு"],
+    "published_at": "2026-04-19",
+    "source": "Compiled from PTI, Deccan Herald, The Federal, The Week, Filmibeat, ProKerala, News Today"
+  },
+
+  "party_overview": {
+    "founded": "2024-02-02",
+    "headquarters": "Panaiyur, Chennai",
+    "headquarters_ta": "பனையூர், சென்னை",
+    "ideology": ["Secular Social Justice", "Centre-Left", "Egalitarianism", "Two-Language Policy", "Democracy"],
+    "ideology_ta": ["மதசார்பற்ற சமூக நீதி", "மையம்-இடது", "சமத்துவம்", "இரு மொழிக் கொள்கை", "ஜனநாயகம்"],
+    "guiding_icons": ["B.R. Ambedkar", "Periyar E.V. Ramasamy", "K. Kamaraj"],
+    "guiding_icons_ta": ["பி.ஆர். அம்பேத்கர்", "பெரியார் ஈ.வெ. இராமசாமி", "கே. காமராஜ்"],
+    "opponents_defined": {
+      "ideological_opponent": "BJP (right-wing politics)",
+      "ideological_opponent_ta": "பாஜக (வலதுசாரி அரசியல்)",
+      "political_adversary": "DMK (alleged corruption and dynastic politics)",
+      "political_adversary_ta": "திமுக (ஊழல் மற்றும் குடும்ப அரசியல்)"
+    }
+  },
+
+  "speeches": [
+
+    {
+      "id": "speech_001",
+      "event_type": "State Conference",
+      "event_type_ta": "மாநில மாநாடு",
+      "title": "TVK First State Conference — Vikravandi",
+      "title_ta": "தவெக முதல் மாநில மாநாடு — விக்கிரவாண்டி",
+      "date": "2024-10-27",
+      "location": {
+        "area": "Vikravandi",
+        "area_ta": "விக்கிரவாண்டி",
+        "district": "Villupuram",
+        "district_ta": "விழுப்புரம்",
+        "region": "South Tamil Nadu",
+        "region_ta": "தென் தமிழ்நாடு"
+      },
+      "context": {
+        "en": "TVK's first-ever state-level political conference. Over 800,000 people attended. Vijay walked a 500-metre ramp to reach the stage. He laid flowers before portraits of Gandhi, Ambedkar, Periyar and Kamaraj, then raised the TVK flag.",
+        "ta": "தவெக-வின் முதல் மாநில அளவிலான அரசியல் மாநாடு. 8 லட்சத்திற்கும் அதிகமான மக்கள் கலந்துகொண்டனர். விஜய் 500 மீட்டர் நடைபாதை வழியாக மேடையை அடைந்தார். காந்தி, அம்பேத்கர், பெரியார், காமராஜ் படங்களுக்கு மலர் வணக்கம் செலுத்தி தவெக கொடியை ஏற்றினார்."
+      },
+      "attendance": "800000+",
+      "duration_minutes": null,
+      "key_quotes": [
+        {
+          "quote_en": "Some say Vijay doesn't take anyone's name because he is scared. I am not taking names because I am not here to throw dirt on anyone. I am not scared. That's not our politics — ours is a decent approach, decent attack, but we will go deep with our work.",
+          "quote_ta": "சிலர் சொல்கிறார்கள் — விஜய் பயந்து பெயர் சொல்லவில்லை என்று. நான் பயப்படவில்லை. யாரையும் அழுக்காக்க நான் இங்கே வரவில்லை. இது கண்ணியமான அரசியல் — கண்ணியமான தாக்குதல். ஆனால் வேலையில் ஆழமாக இறங்குவோம்.",
+          "context_en": "On being labelled as timid for not naming political opponents",
+          "context_ta": "அரசியல் எதிரிகளை பெயர் சொல்லாமல் விட்டது பற்றி"
+        },
+        {
+          "quote_en": "There is a group that has been creating divisions among the society. The ones who are creating divisions are our first enemy. The ones who are claiming Dravidian ideology but are looting Tamil Nadu as a family are our next rivals.",
+          "quote_ta": "சமூகத்தில் பிளவை உண்டுபண்ணுவோர் நமது முதல் எதிரி. திராவிட கொள்கை என்று சொல்லி தமிழ்நாட்டை குடும்பமாக கொள்ளையடிப்போர் நமது அடுத்த எதிரி.",
+          "context_en": "Targeting BJP and DMK without naming them directly",
+          "context_ta": "பாஜக மற்றும் திமுக-வை நேரடியாக பெயர் சொல்லாமல் குறிவைத்து"
+        },
+        {
+          "quote_en": "I am not the only one who was called 'koothadi'. Even MGR and NTR were called so. Movies are not just dance and songs.",
+          "quote_ta": "என்னை மட்டும் 'கூத்தாடி' என்று சொல்லவில்லை — MGR-ஐயும் NTR-ஐயும் அப்படி சொன்னார்கள். சினிமா என்பது நடனமும் பாடலும் மட்டுமல்ல.",
+          "context_en": "Responding to critics who mock actor-turned-politicians",
+          "context_ta": "நடிகர்-அரசியல்வாதிகளை கேலி செய்வோருக்கு பதிலளித்து"
+        },
+        {
+          "quote_en": "There are no others but us. There will be no difference between the functionaries and the cadres. Everyone is equal within TVK.",
+          "quote_ta": "நம்மை தவிர வேறு யாரும் இல்லை. TVK-வில் அனைவரும் சமம் — தொண்டர்களுக்கும் தலைவர்களுக்கும் வித்தியாசமில்லை.",
+          "context_en": "On party unity and equality within TVK",
+          "context_ta": "கட்சி ஒற்றுமை மற்றும் தவெக-வில் சமத்துவம் பற்றி"
+        },
+        {
+          "quote_en": "All are equal by birth. People should not be discriminated against based on caste, religion, race, language, and gender.",
+          "quote_ta": "பிறப்பால் அனைவரும் சமம். சாதி, மதம், இனம், மொழி, பாலினம் அடிப்படையில் மக்களை பாகுபடுத்தக் கூடாது.",
+          "context_en": "TVK's core social justice vision",
+          "context_ta": "தவெக-வின் முக்கிய சமூக நீதி தொலைநோக்கு"
+        },
+        {
+          "quote_en": "I am not worried because the results of my hard work rest in the tips of your fingers. At the peak of my career, I am taking this risk because I trust in the people of Tamil Nadu.",
+          "quote_ta": "என் உழைப்பின் பலன் உங்கள் விரல்நுனியில் உள்ளது — அதனால் நான் கவலைப்படவில்லை. என் திரைப்பட வாழ்க்கையின் உச்சத்தில், தமிழக மக்களை நம்பி இந்த ரிஸ்க் எடுக்கிறேன்.",
+          "context_en": "Emotional closing lines to the massive crowd",
+          "context_ta": "பிரம்மாண்டமான கூட்டத்திற்கு உணர்ச்சிமிகு இறுதி வரிகள்"
+        }
+      ],
+      "policy_announcements": [
+        {
+          "en": "Secular social justice as TVK's core ideology — guided by Ambedkar, Periyar, Kamaraj",
+          "ta": "மதசார்பற்ற சமூக நீதி தவெக-வின் அடிப்படை கொள்கை — அம்பேத்கர், பெரியார், காமராஜ் வழிகாட்டும்"
+        },
+        {
+          "en": "One-third of party and assembly seats reserved for women",
+          "ta": "கட்சி மற்றும் சட்டமன்ற இடங்களில் மூன்றில் ஒரு பங்கு பெண்களுக்கு ஒதுக்கீடு"
+        },
+        {
+          "en": "Two-language policy — Tamil as primary language in governance, judiciary and religious institutions",
+          "ta": "இரு மொழிக் கொள்கை — ஆட்சி, நீதிமன்றம், மத நிறுவனங்களில் தமிழுக்கு முன்னுரிமை"
+        },
+        {
+          "en": "Proportional representation replacing traditional reservation in elections",
+          "ta": "தேர்தல்களில் பாரம்பரிய ஒதுக்கீட்டிற்கு பதில் விகிதாசார பிரதிநிதித்துவம்"
+        },
+        {
+          "en": "New state secretariat branch to be established in Madurai for administrative decentralization",
+          "ta": "நிர்வாக பரவலாக்கத்திற்காக மதுரையில் புதிய மாநில செயலக கிளை"
+        },
+        {
+          "en": "Abolition of the Governor's post",
+          "ta": "ஆளுநர் பதவி ஒழிப்பு"
+        },
+        {
+          "en": "Education to be returned to State List from Concurrent List",
+          "ta": "கல்வி பாடத்தை கன்கரன்ட் லிஸ்ட்டிலிருந்து மாநில பட்டியலுக்கு திரும்பவும்"
+        },
+        {
+          "en": "26 resolutions passed criticising both central and state governments",
+          "ta": "மத்திய மற்றும் மாநில அரசுகளை கண்டிக்கும் 26 தீர்மானங்கள் நிறைவேற்றம்"
+        }
+      ],
+      "resolutions_passed": 26,
+      "significance": {
+        "en": "This was TVK's political debut on the state stage. The massive turnout of 800,000+ people established Vijay as a serious political force and shook both the DMK and AIADMK into reviewing their strategies.",
+        "ta": "இது மாநில அரங்கில் தவெக-வின் அரசியல் அறிமுகம். 8 லட்சத்திற்கும் அதிகமான கூட்டம் விஜய்யை ஒரு தீவிர அரசியல் சக்தியாக நிலைநிறுத்தியது மற்றும் திமுக மற்றும் அதிமுக இரண்டையும் தங்கள் உத்திகளை மறுஆய்வு செய்ய வைத்தது."
+      }
+    },
+
+    {
+      "id": "speech_002",
+      "event_type": "Party Functionaries Conference",
+      "event_type_ta": "கட்சி பொறுப்பாளர்கள் மாநாடு",
+      "title": "TVK Coimbatore Party Meeting",
+      "title_ta": "தவெக கோவை கட்சி கூட்டம்",
+      "date": "2025-04-26",
+      "location": {
+        "area": "Coimbatore",
+        "area_ta": "கோயம்புத்தூர்",
+        "district": "Coimbatore",
+        "district_ta": "கோயம்புத்தூர்",
+        "region": "Western Tamil Nadu",
+        "region_ta": "மேற்கு தமிழ்நாடு"
+      },
+      "context": {
+        "en": "A closed party functionaries meeting to discuss organizational strategy, booth-level planning and the party's internal hierarchy before the 2026 elections.",
+        "ta": "2026 தேர்தலுக்கு முன்பு அமைப்பு உத்தி, துறை அளவிலான திட்டமிடல் மற்றும் கட்சியின் உள் படிநிலை பற்றி விவாதிக்க மூடிய கட்சி பொறுப்பாளர்கள் கூட்டம்."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "TVK will establish a corruption-free, transparent, and accountable government for the people of Tamil Nadu.",
+          "quote_ta": "தமிழ்நாட்டு மக்களுக்காக ஊழல் இல்லாத, வெளிப்படையான, பொறுப்பான அரசை தவெக நிறுவும்.",
+          "context_en": "Core governance pledge to party workers",
+          "context_ta": "கட்சி பணியாளர்களுக்கு முக்கிய ஆட்சி உறுதிமொழி"
+        }
+      ],
+      "policy_announcements": [
+        {
+          "en": "Large-scale enrollment drive announced — plans to appoint over 70,000 booth agents",
+          "ta": "பெரிய அளவிலான சேர்க்கை இயக்கம் அறிவிப்பு — 70,000க்கும் மேற்பட்ட துறை முகவர்களை நியமிக்க திட்டம்"
+        },
+        {
+          "en": "Party hierarchy to be restructured for 2026 election preparedness",
+          "ta": "2026 தேர்தல் தயார்நிலைக்காக கட்சி படிநிலை மறுகட்டமைப்பு"
+        }
+      ],
+      "significance": {
+        "en": "This was Vijay's first major outreach to western Tamil Nadu's Coimbatore region, signalling TVK's intent to compete in the economically crucial belt.",
+        "ta": "இது மேற்கு தமிழ்நாட்டின் கோவை பகுதியில் விஜய்யின் முதல் முக்கியமான தொடர்பு ஆகும். பொருளாதாரத்தில் முக்கியமான பகுதியில் தவெக போட்டியிட உள்ளது என்ற சமிக்ஞை."
+      }
+    },
+
+    {
+      "id": "speech_003",
+      "event_type": "Second State Conference",
+      "event_type_ta": "இரண்டாம் மாநில மாநாடு",
+      "title": "TVK Second Conference — Madurai",
+      "title_ta": "தவெக இரண்டாம் மாநாடு — மதுரை",
+      "date": "2025-08-21",
+      "location": {
+        "area": "Madurai",
+        "area_ta": "மதுரை",
+        "district": "Madurai",
+        "district_ta": "மதுரை",
+        "region": "Southern Tamil Nadu",
+        "region_ta": "தென் தமிழ்நாடு"
+      },
+      "context": {
+        "en": "TVK's second state-level conference strengthened the party's footprint in southern Tamil Nadu ahead of the 2026 elections. Vijay continued his attacks on BJP and DMK while praising actor-turned-politician legacy.",
+        "ta": "2026 தேர்தலுக்கு முன்பு தென் தமிழ்நாட்டில் தவெக-வின் பாதிப்பை வலுப்படுத்திய இரண்டாம் மாநில மாநாடு. விஜய் பாஜக மற்றும் திமுக மீதான தாக்குதல்களை தொடர்ந்தார்."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "The BJP and DMK are operating in a secret alliance against the people of Tamil Nadu.",
+          "quote_ta": "பாஜக மற்றும் திமுக தமிழ்நாட்டு மக்களுக்கு எதிராக ஒரு இரகசிய கூட்டணியில் இயங்குகின்றன.",
+          "context_en": "Alleging hidden coordination between BJP and DMK",
+          "context_ta": "பாஜக மற்றும் திமுக இடையே மறைமுக ஒருங்கிணைப்பை குற்றஞ்சாட்டி"
+        }
+      ],
+      "policy_announcements": [
+        {
+          "en": "Reaffirmed centre-left ideology following Ambedkar, Periyar, Kamaraj",
+          "ta": "அம்பேத்கர், பெரியார், காமராஜ் வழி மையம்-இடது கொள்கையை மீண்டும் உறுதிப்படுத்தல்"
+        },
+        {
+          "en": "Strengthened TVK's outreach to Madurai, Theni, Virudhunagar, Tenkasi districts",
+          "ta": "மதுரை, தேனி, விருதுநகர், தென்காசி மாவட்டங்களில் தவெக-வின் தொடர்பை வலுப்படுத்தல்"
+        }
+      ],
+      "significance": {
+        "en": "Consolidating TVK's base in southern constituencies that have traditionally been AIADMK and DMK strongholds.",
+        "ta": "பாரம்பரியமாக அதிமுக மற்றும் திமுக கோட்டைகளாக இருந்த தென் தொகுதிகளில் தவெக-வின் அடித்தளத்தை உறுதிப்படுத்துதல்."
+      }
+    },
+
+    {
+      "id": "speech_004",
+      "event_type": "Election Campaign Launch",
+      "event_type_ta": "தேர்தல் பரப்புரை தொடக்கம்",
+      "title": "TVK Election Campaign Launch — Tiruchirappalli",
+      "title_ta": "தவெக தேர்தல் பரப்புரை தொடக்கம் — திருச்சிராப்பள்ளி",
+      "date": "2025-09-13",
+      "location": {
+        "area": "Tiruchirappalli",
+        "area_ta": "திருச்சிராப்பள்ளி",
+        "district": "Tiruchirappalli",
+        "district_ta": "திருச்சிராப்பள்ளி",
+        "region": "Central Tamil Nadu",
+        "region_ta": "மத்திய தமிழ்நாடு"
+      },
+      "context": {
+        "en": "TVK's first official election campaign rally. Vijay launched the campaign from Trichy — also one of his personal constituencies. The campaign was later suspended after the Karur stampede tragedy that killed 41 people.",
+        "ta": "தவெக-வின் முதல் அதிகாரப்பூர்வ தேர்தல் பரப்புரை கூட்டம். விஜய் திருச்சியிலிருந்து — தனது சொந்த தொகுதிகளில் ஒன்றிலிருந்து — பரப்புரையை தொடங்கினார். 41 பேர் இறந்த கரூர் நடமிடல் அழுத்த சோகத்திற்கு பிறகு பரப்புரை நிறுத்தி வைக்கப்பட்டது."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "This election will be a straight fight between the people's force TVK and the entrenched establishment. Tamil Nadu deserves a government that truly listens.",
+          "quote_ta": "இந்த தேர்தல் மக்கள் சக்தி தவெக-விற்கும் நிலைபெற்ற அமைப்பிற்கும் இடையிலான நேரடி போர். உண்மையாக கேட்கும் அரசை தமிழ்நாடு தகுதியுடையது.",
+          "context_en": "Framing the election contest at the launch",
+          "context_ta": "தொடக்க கூட்டத்தில் தேர்தல் போட்டியை வரையறுத்து"
+        }
+      ],
+      "note": {
+        "en": "Campaign was suspended following the Karur crowd crush incident (41 deaths, 80–120 injured) at a TVK rally. Vijay personally paid ₹2 lakh to the families of the deceased and ₹20,000 to the injured.",
+        "ta": "தவெக கூட்டத்தில் கரூர் நடமிடல் அழுத்த சம்பவத்திற்கு (41 இறப்புகள், 80–120 காயமடைந்தவர்கள்) பிறகு பரப்புரை நிறுத்தி வைக்கப்பட்டது. விஜய் தனிப்பட்ட முறையில் இறந்தவர்களின் குடும்பங்களுக்கு ₹2 லட்சமும் காயமடைந்தவர்களுக்கு ₹20,000-மும் வழங்கினார்."
+      },
+      "significance": {
+        "en": "First formal election campaign event establishing TVK as a contestant in all 234 seats.",
+        "ta": "அனைத்து 234 தொகுதிகளிலும் தவெக ஒரு போட்டியாளர் என நிலைநிறுத்திய முதல் அதிகாரப்பூர்வ தேர்தல் பரப்புரை நிகழ்வு."
+      }
+    },
+
+    {
+      "id": "speech_005",
+      "event_type": "Public Meeting",
+      "event_type_ta": "பொதுக்கூட்டம்",
+      "title": "TVK Vellore Public Meeting",
+      "title_ta": "தவெக வேலூர் பொதுக்கூட்டம்",
+      "date": "2026-02",
+      "location": {
+        "area": "Vellore",
+        "area_ta": "வேலூர்",
+        "district": "Vellore",
+        "district_ta": "வேலூர்",
+        "region": "North Tamil Nadu",
+        "region_ta": "வட தமிழ்நாடு"
+      },
+      "context": {
+        "en": "A major public meeting in Vellore with sharp attacks on DMK, defining the 2026 election as a two-sided contest. Vijay's anti-DMK messaging crystallised here.",
+        "ta": "திமுக மீதான கடுமையான தாக்குதல்களுடன் வேலூரில் முக்கியமான பொதுக்கூட்டம். 2026 தேர்தலை இரு முனை போட்டியாக வரையறுத்தனர். விஜய்யின் திமுக எதிர்ப்பு செய்தி இங்கே தெளிவடைந்தது."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "This election is not a contest between Tamil Nadu and national parties. It is a direct struggle between the state's people and the ruling party.",
+          "quote_ta": "இந்த தேர்தல் தமிழ்நாட்டுக்கும் தேசிய கட்சிகளுக்கும் இடையான போட்டியல்ல. இது மாநில மக்களுக்கும் ஆளும் கட்சிக்கும் இடையான நேரடி போர்.",
+          "context_en": "Rejecting the BJP vs state parties narrative",
+          "context_ta": "பாஜக எதிர்ப்பு மாநில கட்சிகள் என்ற கதையை நிராகரித்து"
+        },
+        {
+          "quote_en": "This is a battle between the pure force of TVK and the evil force of the DMK.",
+          "quote_ta": "இது தவெக-வின் தூய சக்திக்கும் திமுக-வின் தீய சக்திக்கும் இடையான போர்.",
+          "context_en": "Defining the moral dimension of the contest",
+          "context_ta": "போட்டியின் நெறிமுறை பரிமாணத்தை வரையறுத்து"
+        },
+        {
+          "quote_en": "Why are permissions and venues being denied to TVK if political leaders say they consider each other friends?",
+          "quote_ta": "அரசியல் தலைவர்கள் நண்பர்கள் என்று சொல்லும்போது, ஏன் தவெக-வுக்கு இடம் மற்றும் அனுமதி மறுக்கப்படுகிறது?",
+          "context_en": "Challenging DMK on alleged venue and permission denials",
+          "context_ta": "இட மற்றும் அனுமதி மறுப்பு குற்றஞ்சாட்டலில் திமுக-வை சவால் விட்டு"
+        },
+        {
+          "quote_en": "The next Assembly election will effectively be a face-off between myself and Stalin.",
+          "quote_ta": "அடுத்த சட்டமன்றத் தேர்தல் என்னவெனில் — ஸ்டாலின் சாரோடு என் நேருக்கு நேர் மோதல்.",
+          "context_en": "Personalising the contest between TVK and DMK leaders",
+          "context_ta": "தவெக மற்றும் திமுக தலைவர்களுக்கு இடையான போட்டியை தனிப்படுத்தி"
+        },
+        {
+          "quote_en": "Vote is for Whistle — and the Whistle will blow away corruption.",
+          "quote_ta": "வாக்கு விசிலுக்கு — விசில் ஊதி ஊழலை ஊதி விரட்டுவோம்.",
+          "context_en": "TVK's campaign symbol slogan",
+          "context_ta": "தவெக-வின் பரப்புரை சின்ன முழக்கம்"
+        }
+      ],
+      "significance": {
+        "en": "Vellore speech is widely considered the defining moment where Vijay crystallised his anti-DMK messaging and formally declared a head-to-head contest with CM Stalin.",
+        "ta": "வேலூர் பேச்சு விஜய் தனது திமுக எதிர்ப்பு செய்தியை தெளிவுபடுத்தி முதலமைச்சர் ஸ்டாலினுடன் நேரடி மோதலை அதிகாரப்பூர்வமாக அறிவித்த தீர்க்கமான தருணமாக பரவலாக கருதப்படுகிறது."
+      }
+    },
+
+    {
+      "id": "speech_006",
+      "event_type": "Women's Day Event",
+      "event_type_ta": "பெண்கள் தின நிகழ்வு",
+      "title": "TVK Women's Day — First Election Promises",
+      "title_ta": "தவெக பெண்கள் தினம் — முதல் தேர்தல் வாக்குறுதிகள்",
+      "date": "2026-03-07",
+      "location": {
+        "area": "Mahabalipuram",
+        "area_ta": "மாமல்லபுரம்",
+        "district": "Chengalpattu",
+        "district_ta": "செங்கல்பட்டு",
+        "region": "South Chennai / Chengalpattu",
+        "region_ta": "தென் சென்னை / செங்கல்பட்டு"
+      },
+      "context": {
+        "en": "TVK's International Women's Day celebration at Mahabalipuram. Vijay unveiled his first set of election promises, all women-centric. A massive gathering of women supporters attended.",
+        "ta": "மாமல்லபுரத்தில் தவெக-வின் சர்வதேச பெண்கள் தின கொண்டாட்டம். விஜய் தனது முதல் தேர்தல் வாக்குறுதிகளை அறிவித்தார் — அனைத்தும் பெண்கள் சார்ந்தவை. பெண் ஆதரவாளர்களின் பிரம்மாண்டமான கூட்டம் கலந்துகொண்டது."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "Women are not just voters — they are the architects of Tamil Nadu's future. TVK's government will ensure their security, dignity, and financial independence.",
+          "quote_ta": "பெண்கள் வெறும் வாக்காளர்கள் மட்டுமல்ல — அவர்கள் தமிழ்நாட்டின் எதிர்காலத்தின் சிற்பிகள். தவெக அரசு அவர்களின் பாதுகாப்பு, கண்ணியம் மற்றும் நிதி சுதந்திரத்தை உறுதி செய்யும்.",
+          "context_en": "Opening message at the Women's Day event",
+          "context_ta": "பெண்கள் தின நிகழ்வில் தொடக்க செய்தி"
+        }
+      ],
+      "policy_announcements": [
+        {
+          "en": "₹1,000 per month financial assistance for women (later revised to ₹2,500 in full manifesto)",
+          "ta": "பெண்களுக்கு மாதம் ₹1,000 நிதி உதவி (பிற்பாடு முழு அறிக்கையில் ₹2,500 ஆக திருத்தம்)"
+        },
+        {
+          "en": "Free LPG cylinders for every household",
+          "ta": "ஒவ்வொரு குடும்பத்திற்கும் இலவச LPG சிலிண்டர்கள்"
+        },
+        {
+          "en": "Free government bus travel for women",
+          "ta": "பெண்களுக்கு அரசு பேருந்தில் இலவச பயணம்"
+        },
+        {
+          "en": "One sovereign of gold and a silk saree for brides from poor families",
+          "ta": "ஏழை குடும்பங்களின் மணமகளிருக்கு ஒரு பவுன் தங்கம் மற்றும் பட்டுப் புடவை"
+        },
+        {
+          "en": "Gold ring and welcome kit for newborns from underprivileged families",
+          "ta": "வசதியற்ற குடும்பங்களின் புதுப்பிறந்த குழந்தைகளுக்கு தங்க மோதிரம் மற்றும் வரவேற்பு கிட்"
+        },
+        {
+          "en": "Dedicated women's safety teams across the state",
+          "ta": "மாநிலம் முழுவதும் பெண்கள் பாதுகாப்பு குழுக்கள்"
+        },
+        {
+          "en": "Educational assistance for poor students",
+          "ta": "ஏழை மாணவர்களுக்கு கல்வி உதவி"
+        }
+      ],
+      "significance": {
+        "en": "First concrete policy announcements of TVK's election campaign — entirely focused on women voters who form a crucial voting bloc in Tamil Nadu.",
+        "ta": "தவெக-வின் தேர்தல் பரப்புரையின் முதல் திட்டவட்டமான கொள்கை அறிவிப்புகள் — தமிழ்நாட்டில் முக்கியமான வாக்கு தொகுதியான பெண் வாக்காளர்களை மையமாக கொண்டவை."
+      }
+    },
+
+    {
+      "id": "speech_007",
+      "event_type": "Candidate Announcement Meet",
+      "event_type_ta": "வேட்பாளர் அறிவிப்பு மாநாடு",
+      "title": "TVK Candidate List Release & Election Declaration",
+      "title_ta": "தவெக வேட்பாளர் பட்டியல் வெளியீடு மற்றும் தேர்தல் அறிவிப்பு",
+      "date": "2026-03-29",
+      "location": {
+        "area": "Chennai",
+        "area_ta": "சென்னை",
+        "district": "Chennai",
+        "district_ta": "சென்னை",
+        "region": "Chennai",
+        "region_ta": "சென்னை"
+      },
+      "context": {
+        "en": "Vijay announced all 234 candidates for the Tamil Nadu Assembly elections. He declared himself as 'C. Joseph Vijay' contesting from Perambur and Tiruchirappalli East. He administered a zero-corruption oath to all candidates.",
+        "ta": "விஜய் தமிழ்நாடு சட்டமன்றத் தேர்தலுக்கான அனைத்து 234 வேட்பாளர்களையும் அறிவித்தார். பெரம்பூர் மற்றும் திருச்சிராப்பள்ளி கிழக்கிலிருந்து 'சி. ஜோசப் விஜய்' என்று போட்டியிடுவதாக அறிவித்தார். அனைத்து வேட்பாளர்களுக்கும் ஊழல் இல்லாத உறுதிமொழி ஏற்றினார்."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "This is not merely a meeting to introduce candidates — it is a meeting to introduce people's protectors (makkal kaappaalargal).",
+          "quote_ta": "இது வெறும் வேட்பாளர்களை அறிமுகப்படுத்தும் கூட்டமல்ல — இது மக்கள் காப்பாளர்களை அறிமுகப்படுத்தும் கூட்டம்.",
+          "context_en": "Opening the candidate introduction event",
+          "context_ta": "வேட்பாளர் அறிமுக நிகழ்வை தொடங்கி"
+        },
+        {
+          "quote_en": "They say our people have no experience. But our candidates live among the people, not above them.",
+          "quote_ta": "எங்கள் ஆட்களுக்கு அனுபவமில்லை என்கிறார்கள். ஆனால் எங்கள் வேட்பாளர்கள் மக்களுடன் வாழ்கிறார்கள், மக்களுக்கு மேலே அல்ல.",
+          "context_en": "Responding to critics who question TVK's inexperienced candidates",
+          "context_ta": "தவெக-வின் அனுபவமற்ற வேட்பாளர்களை கேள்வி கேட்கும் விமர்சகர்களுக்கு பதிலளித்து"
+        },
+        {
+          "quote_en": "Will this meeting turn into votes? To those asking out of sheer malice, I have only one thing to say — TVK will win.",
+          "quote_ta": "இந்த கூட்டம் வாக்காக மாறுமா என்று கேட்கிறார்கள். வன்மத்துடன் கேட்பவர்களுக்கு ஒரே ஒரு விஷயம் சொல்கிறேன் — தவெக வெல்லும்.",
+          "context_en": "Confident declaration to doubters",
+          "context_ta": "சந்தேகிப்பவர்களுக்கு நம்பிக்கை பேச்சு"
+        },
+        {
+          "quote_en": "This election is a two-front battle between TVK, which has formed an alliance with the people, and the DMK, which has only Stalin sir's alliance. The result is already known. The so-called People's Welfare Alliance is like a torn cloth stitched together, or a broken piece patched up.",
+          "quote_ta": "இந்த தேர்தல் மக்களுடன் கூட்டணி வைத்த தவெக, மற்றும் ஸ்டாலின் சார் மட்டும் உள்ள திமுக கூட்டணி இடையே இரண்டு முனை போர். முடிவு ஏற்கனவே தெரியும். மக்கள் நலக் கூட்டணி என்பது கிழிந்த துணியை தைத்தது போல், உடைந்த பாத்திரத்தை ஒட்டியது போல்.",
+          "context_en": "Defining the election as a direct two-sided contest",
+          "context_ta": "தேர்தலை நேரடி இரு முனை போட்டியாக வரையறுத்து"
+        },
+        {
+          "quote_en": "It is only a two-sided fight — between us the people's team and Stalin sir's team.",
+          "quote_ta": "இரண்டு முனை போர் மட்டுமே — நாம் மக்கள் அணி மற்றும் ஸ்டாலின் சார் அணி இடையே.",
+          "context_en": "Reiterating the two-sided contest narrative",
+          "context_ta": "இரு முனை போட்டி கதையை மீண்டும் வலியுறுத்தி"
+        }
+      ],
+      "policy_announcements": [
+        {
+          "en": "Contesting all 234 constituencies independently — no alliances",
+          "ta": "கூட்டணி இல்லாமல் அனைத்து 234 தொகுதிகளிலும் தனியாக போட்டி"
+        },
+        {
+          "en": "Zero-corruption oath administered to all 234 TVK candidates",
+          "ta": "அனைத்து 234 தவெக வேட்பாளர்களுக்கும் ஊழல் இல்லாத உறுதிமொழி"
+        },
+        {
+          "en": "Vijay filing nomination as 'C. Joseph Vijay' from Perambur and Trichy East",
+          "ta": "பெரம்பூர் மற்றும் திருச்சி கிழக்கிலிருந்து 'சி. ஜோசப் விஜய்' என விஜய் வேட்புமனு"
+        }
+      ],
+      "significance": {
+        "en": "The candidate announcement was the largest political move of Vijay's political career — formally launching TVK as a state-wide contestant in Tamil Nadu's most competitive election in decades.",
+        "ta": "வேட்பாளர் அறிவிப்பு விஜய்யின் அரசியல் வாழ்க்கையின் மிகப்பெரிய அரசியல் நடவடிக்கை — தமிழ்நாட்டின் தசாப்தங்களிலேயே மிகவும் போட்டித்தன்மையான தேர்தலில் தவெக-வை மாநில அளவிலான போட்டியாளராக முறையாக தொடங்கி வைத்தது."
+      }
+    },
+
+    {
+      "id": "speech_008",
+      "event_type": "Nomination Filing & Campaign",
+      "event_type_ta": "வேட்புமனு தாக்கல் மற்றும் பரப்புரை",
+      "title": "Perambur Nomination Filing Speech",
+      "title_ta": "பெரம்பூர் வேட்புமனு தாக்கல் பேச்சு",
+      "date": "2026-03-30",
+      "location": {
+        "area": "Perambur",
+        "area_ta": "பெரம்பூர்",
+        "district": "Chennai",
+        "district_ta": "சென்னை",
+        "region": "Chennai",
+        "region_ta": "சென்னை"
+      },
+      "context": {
+        "en": "Vijay filed his nomination from Perambur — his primary constituency as TVK's CM candidate. An FIR was later registered against him for alleged Model Code of Conduct violation during the post-filing campaign. A proxy candidate with a similar name surfaced in Perambur.",
+        "ta": "விஜய் பெரம்பூரிலிருந்து தனது வேட்புமனு தாக்கல் செய்தார் — தவெக-வின் முதலமைச்சர் வேட்பாளராக தனது முதன்மை தொகுதி. வேட்புமனு தாக்கலுக்கு பிறகான பரப்புரையில் தேர்தல் நடத்தை நெறிமுறை மீறல் குற்றஞ்சாட்டலில் பின்னர் FIR பதிவு செய்யப்பட்டது. பெரம்பூரில் ஒத்த பெயரில் போலி வேட்பாளர் தோன்றினார்."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "I go to the people not as an actor but as their servant. This election is the beginning of a new chapter for Tamil Nadu.",
+          "quote_ta": "நான் ஒரு நடிகராக அல்ல, அவர்களின் சேவகனாக மக்களிடம் செல்கிறேன். இந்த தேர்தல் தமிழ்நாட்டுக்கான புதிய அத்தியாயத்தின் தொடக்கம்.",
+          "context_en": "After filing nomination at Perambur",
+          "context_ta": "பெரம்பூரில் வேட்புமனு தாக்கலுக்கு பிறகு"
+        }
+      ],
+      "note": {
+        "en": "MCC violation FIR filed; objections raised over unpaid property tax later cleared. Also filed nomination from Tiruchirappalli East on same date — accepted without objection.",
+        "ta": "MCC மீறல் FIR பதிவு; நிலுவையிலுள்ள சொத்து வரி குறித்த ஆட்சேபங்கள் பின்னர் தெளிவுபடுத்தப்பட்டது. அதே தேதியில் திருச்சிராப்பள்ளி கிழக்கிலிருந்தும் வேட்புமனு தாக்கல் — ஆட்சேபம் இல்லாமல் ஏற்கப்பட்டது."
+      },
+      "significance": {
+        "en": "Official start of Vijay's personal election campaign as a contestant, not just a party president.",
+        "ta": "வெறும் கட்சி தலைவராக மட்டுமல்ல, ஒரு போட்டியாளராக விஜய்யின் தனிப்பட்ட தேர்தல் பரப்புரையின் அதிகாரப்பூர்வ தொடக்கம்."
+      }
+    },
+
+    {
+      "id": "speech_009",
+      "event_type": "Public Meeting & Roadshow",
+      "event_type_ta": "பொதுக்கூட்டம் மற்றும் ரோடு ஷோ",
+      "title": "Tirunelveli (Nellai) Public Meeting",
+      "title_ta": "திருநெல்வேலி (நெல்லை) பொதுக்கூட்டம்",
+      "date": "2026-04-08",
+      "location": {
+        "area": "KTC Nagar, Palayamkottai",
+        "area_ta": "KTC நகர், பாளையங்கோட்டை",
+        "district": "Tirunelveli",
+        "district_ta": "திருநெல்வேலி",
+        "region": "Southern Tamil Nadu",
+        "region_ta": "தென் தமிழ்நாடு",
+        "route": "Thalayuthu → Thachanallur → Vannarpettai → Market → Thoothukudi",
+        "route_ta": "தலையூது → தச்சனல்லூர் → வண்ணார்பேட்டை → மார்க்கெட் → தூத்துக்குடி"
+      },
+      "context": {
+        "en": "Vijay flew to Thoothukudi airport and travelled 30 km by road to reach KTC Nagar. The public meeting began at 1:00 PM and covered Tirunelveli and Tenkasi districts. Police granted permission under 51 strict conditions. Vijay spoke for 17 minutes.",
+        "ta": "விஜய் தூத்துக்குடி விமான நிலையத்திற்கு பறந்து 30 கிமீ சாலை வழியாக KTC நகரை அடைந்தார். பொதுக்கூட்டம் மதியம் 1:00 மணிக்கு தொடங்கி திருநெல்வேலி மற்றும் தென்காசி மாவட்டங்களை உள்ளடக்கியது. 51 கடுமையான நிபந்தனைகளில் போலீஸ் அனுமதி வழங்கியது. விஜய் 17 நிமிடங்கள் பேசினார்."
+      },
+      "duration_minutes": 17,
+      "police_conditions": 51,
+      "key_quotes": [
+        {
+          "quote_en": "Greetings to the people of Tirunelveli who live in my heart.",
+          "quote_ta": "என் இதயத்தில் வாழும் திருநெல்வேலி மக்களுக்கு வணக்கம்.",
+          "context_en": "Opening line of his Tirunelveli speech",
+          "context_ta": "திருநெல்வேலி பேச்சின் தொடக்க வரி"
+        },
+        {
+          "quote_en": "The CM would have put some kind of obstacle and prevented us from coming. But now, this is a 'caretaker government' — and he is a CM without authority.",
+          "quote_ta": "முதல்வர் ஏதோ ஒரு தடையை வைத்து நம்மை வர விடாமல் செய்திருப்பார். ஆனால் இப்போது இது 'கவனிப்பு அரசு' — அதிகாரமற்ற முதல்வர்.",
+          "context_en": "Calling CM Stalin a powerless caretaker CM",
+          "context_ta": "முதலமைச்சர் ஸ்டாலினை அதிகாரமற்ற கவனிப்பு முதல்வர் என்று அழைத்து"
+        },
+        {
+          "quote_en": "If the DMK had absolute power, they would have created obstacles to stop this programme.",
+          "quote_ta": "திமுகவுக்கு முழு அதிகாரம் இருந்தால் இந்த நிகழ்ச்சியை நடத்தவே விட்டிருக்க மாட்டார்கள்.",
+          "context_en": "On alleged DMK interference in TVK events",
+          "context_ta": "தவெக நிகழ்வுகளில் திமுக தலையீடு குறித்து"
+        },
+        {
+          "quote_en": "The DMK-led bloc is a 'cash-box alliance' — formed using looted money. People in the alliance won't even cast votes for each other.",
+          "quote_ta": "திமுக கூட்டணி என்பது 'கேஷ் பாக்ஸ் கூட்டணி' — கொள்ளையடித்த பணத்தால் உருவானது. கூட்டணியில் உள்ளோர் ஒருவருக்கொருவர் வாக்கு போடவும் மாட்டார்கள்.",
+          "context_en": "Attacking DMK's alliance as money-driven",
+          "context_ta": "திமுக கூட்டணியை பண ஆசை கூட்டணி என்று தாக்கி"
+        },
+        {
+          "quote_en": "The DMK had pocketed the Tamil Nadu Congress by giving crores. But the real Congress stands on TVK's side.",
+          "quote_ta": "கோடிகள் கொடுத்து தமிழ்நாடு காங்கிரஸை திமுக கையில் வைத்திருக்கிறது. ஆனால் உண்மையான காங்கிரஸ் தவெக பக்கம் நிற்கிறது.",
+          "context_en": "On the Congress-DMK alliance",
+          "context_ta": "காங்கிரஸ்-திமுக கூட்டணி பற்றி"
+        },
+        {
+          "quote_en": "When they couldn't stop me from meeting people, they tried to stop my film. They are drafting new rules and SOPs with me as the target. But you cannot separate a leader from his people.",
+          "quote_ta": "என்னை மக்களை சந்திக்க விடாமல் செய்ய முடியாமல் போனால், என் படத்தை தடுக்க முயற்சித்தார்கள். என்னை குறிவைத்து புதிய விதிகளும் SOPகளும் தயாரிக்கிறார்கள். ஆனால் ஒரு தலைவனை மக்களிடமிருந்து பிரிக்க முடியாது.",
+          "context_en": "On Jana Nayagan film being blocked by CBFC — alleging political conspiracy",
+          "context_ta": "ஜன நாயகன் படம் CBFC-ஆல் தடுக்கப்பட்டது மீது — அரசியல் சதி என குற்றஞ்சாட்டி"
+        },
+        {
+          "quote_en": "This is not a multi-cornered fight. It is a two-front battle — between the DMK and TVK.",
+          "quote_ta": "இது பலமுனை போட்டியல்ல — இது இரண்டு முனை போர். திமுக மற்றும் தவெக இடையே.",
+          "context_en": "Framing the election structure",
+          "context_ta": "தேர்தல் கட்டமைப்பை வரையறுத்து"
+        },
+        {
+          "quote_en": "For others, this might be just an election. For me and TVK, this is an emotion.",
+          "quote_ta": "மற்றவர்களுக்கு இது ஒரு தேர்தலாக இருக்கலாம். ஆனால் எனக்கும் தவெக-வுக்கும் இது ஒரு உணர்வு.",
+          "context_en": "Emotional closing declaration",
+          "context_ta": "உணர்ச்சிமிகு இறுதி அறிவிப்பு"
+        }
+      ],
+      "significance": {
+        "en": "One of Vijay's most content-rich campaign speeches, covering the film controversy, DMK attacks, personal emotion and the two-sided contest — all within 17 minutes.",
+        "ta": "திரைப்பட சர்ச்சை, திமுக தாக்குதல், தனிப்பட்ட உணர்வு மற்றும் இரு முனை போட்டை — எல்லாவற்றையும் 17 நிமிடங்களில் உள்ளடக்கிய விஜய்யின் மிகவும் உள்ளடக்கம் நிறைந்த பரப்புரை பேச்சுகளில் ஒன்று."
+      }
+    },
+
+    {
+      "id": "speech_010",
+      "event_type": "Roadshow",
+      "event_type_ta": "ரோடு ஷோ",
+      "title": "Kanyakumari Roadshow & Speech",
+      "title_ta": "கன்னியாகுமரி ரோடு ஷோ மற்றும் பேச்சு",
+      "date": "2026-04-13",
+      "location": {
+        "area": "Kanyakumari — Mahadhanapuram Roundabout to Zero Point",
+        "area_ta": "கன்னியாகுமரி — மகாதனபுரம் சுழற்சிச் சாலையிலிருந்து ஜீரோ பாயிண்ட் வரை",
+        "district": "Kanyakumari",
+        "district_ta": "கன்னியாகுமரி",
+        "region": "Southernmost Tamil Nadu",
+        "region_ta": "தமிழ்நாட்டின் தென்கோடி"
+      },
+      "constituencies_covered": [
+        "Kanyakumari", "Nagercoil", "Padmanabhapuram", "Vilavancode", "Kulachal", "Killiyoor"
+      ],
+      "constituencies_covered_ta": [
+        "கன்னியாகுமரி", "நாகர்கோவில்", "பத்மனாபபுரம்", "விளவங்கோடு", "குளச்சல்", "கில்லியூர்"
+      ],
+      "context": {
+        "en": "Planned public meeting at Vivekananda College grounds was cancelled at the last minute. Vijay switched to a roadshow instead. Flew Chennai to Thoothukudi, then drove to Kanyakumari. Major governance and technology announcements made.",
+        "ta": "விவேகானந்தா கல்லூரி மைதானத்தில் திட்டமிட்ட பொதுக்கூட்டம் கடைசி நிமிடத்தில் ரத்தானது. விஜய் பதிலாக ரோடு ஷோ நடத்தினார். சென்னையிலிருந்து தூத்துக்குடிக்கு பறந்து, பின்னர் சாலை வழியாக கன்னியாகுமரி வந்தார். முக்கியமான ஆட்சி மற்றும் தொழில்நுட்ப அறிவிப்புகள் செய்யப்பட்டன."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "Tamil Nadu will be positioned as India's AI and digital capital. Artificial intelligence will contribute $1.7 trillion to the Indian economy by 2035 — and Tamil Nadu must lead that charge.",
+          "quote_ta": "தமிழ்நாடு இந்தியாவின் AI மற்றும் டிஜிட்டல் தலைநகரமாக மாறும். 2035-ல் AI இந்திய பொருளாதாரத்தில் $1.7 ட்ரில்லியன் பங்களிக்கும் — தமிழ்நாடு அதில் முன்னணியில் இருக்கும்.",
+          "context_en": "On positioning Tamil Nadu as an AI hub",
+          "context_ta": "தமிழ்நாட்டை AI மையமாக நிலைநிறுத்துவது பற்றி"
+        },
+        {
+          "quote_en": "Tamil Nadu's debt has crossed ₹10.5 lakh crore. Rising interest payments are diverting funds from education, healthcare, and infrastructure. We will boost revenue and reduce debt — without imposing any new taxes.",
+          "quote_ta": "தமிழ்நாடின் கடன் ₹10.5 லட்சம் கோடியை தாண்டிவிட்டது. வட்டி கட்டுவதற்காக கல்வி, சுகாதாரம், கட்டமைப்பு நிதி திசைமாறுகிறது. புதிய வரி இல்லாமல் வருமானம் அதிகரித்து கடனை குறைப்போம்.",
+          "context_en": "On Tamil Nadu's debt crisis and TVK's fiscal plan",
+          "context_ta": "தமிழ்நாட்டின் கடன் நெருக்கடி மற்றும் தவெக-வின் நிதித் திட்டம் பற்றி"
+        }
+      ],
+      "policy_announcements": [
+        {
+          "en": "AI University to be established in Tamil Nadu",
+          "ta": "தமிழ்நாட்டில் AI பல்கலைக்கழகம் நிறுவல்"
+        },
+        {
+          "en": "Global-standard AI City to be developed",
+          "ta": "உலக தரத்திலான AI நகரம் உருவாக்கம்"
+        },
+        {
+          "en": "Innovation hubs in Madurai, Coimbatore, Salem, and Tiruchirappalli",
+          "ta": "மதுரை, கோயம்புத்தூர், சேலம் மற்றும் திருச்சிராப்பள்ளியில் புதுமை மையங்கள்"
+        },
+        {
+          "en": "Support for 1,000 deep-tech startups",
+          "ta": "1,000 டீப்-டெக் தொடக்க நிறுவனங்களுக்கு ஆதரவு"
+        },
+        {
+          "en": "Dedicated Ministry of Artificial Intelligence",
+          "ta": "செயற்கை நுண்ணறிவுக்கான தனி அமைச்சகம்"
+        },
+        {
+          "en": "Fishermen safety assistance increased from ₹8,000 to ₹20,000",
+          "ta": "மீனவர்களுக்கான பாதுகாப்பு உதவித்தொகை ₹8,000-லிருந்து ₹20,000-ஆக உயர்வு"
+        },
+        {
+          "en": "Housing scheme to replace dilapidated coastal dwellings of fishing families",
+          "ta": "மீனவர் குடும்பங்களின் பாழடைந்த கடலோர வீடுகளை புனர்நிர்மாணிக்கும் திட்டம்"
+        },
+        {
+          "en": "Revenue to be boosted without imposing additional taxes to reduce state debt",
+          "ta": "மாநில கடனை குறைக்க கூடுதல் வரி இல்லாமல் வருமானம் அதிகரிப்பு"
+        }
+      ],
+      "significance": {
+        "en": "The southernmost campaign event. Major tech and AI policy announcements made here. The last-minute shift from public meeting to roadshow drew significant media attention.",
+        "ta": "மிக தெற்கே நடந்த பரப்புரை நிகழ்வு. முக்கியமான தொழில்நுட்ப மற்றும் AI கொள்கை அறிவிப்புகள் இங்கே செய்யப்பட்டன. பொதுக்கூட்டத்திலிருந்து ரோடு ஷோவுக்கு கடைசி நிமிட மாற்றம் குறிப்பிடத்தக்க ஊடக கவனத்தை ஈர்த்தது."
+      }
+    },
+
+    {
+      "id": "speech_011",
+      "event_type": "Roadshow & Meeting",
+      "event_type_ta": "ரோடு ஷோ மற்றும் கூட்டம்",
+      "title": "Tiruppur Roadshow & Speech",
+      "title_ta": "திருப்பூர் ரோடு ஷோ மற்றும் பேச்சு",
+      "date": "2026-04-14",
+      "location": {
+        "area": "Tiruppur",
+        "area_ta": "திருப்பூர்",
+        "district": "Tiruppur",
+        "district_ta": "திருப்பூர்",
+        "region": "Western Tamil Nadu — Textile Belt",
+        "region_ta": "மேற்கு தமிழ்நாடு — ஜவுளி பட்டை"
+      },
+      "context": {
+        "en": "Major roadshow and public meeting in Tiruppur, the textile capital of India. Key economic and employment promises made to workers, government employees and farmers. Massive crowd turnout strengthened TVK's position in western Tamil Nadu.",
+        "ta": "இந்தியாவின் ஜவுளி தலைநகர் திருப்பூரில் பெரிய ரோடு ஷோ மற்றும் பொதுக்கூட்டம். தொழிலாளர்கள், அரசு ஊழியர்கள் மற்றும் விவசாயிகளுக்கு முக்கிய பொருளாதார மற்றும் வேலைவாய்ப்பு வாக்குறுதிகள். மேற்கு தமிழ்நாட்டில் தவெக-வின் நிலையை வலுப்படுத்திய பிரம்மாண்டமான கூட்டம்."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "We will implement the Old Pension Scheme for government employees. Their retirement security will not be a matter of market risk.",
+          "quote_ta": "அரசு ஊழியர்களுக்கு பழைய ஓய்வூதியத் திட்டத்தை செயல்படுத்துவோம். அவர்களின் ஓய்வூதிய பாதுகாப்பு சந்தை அபாயத்தின் விஷயமாக இருக்கக் கூடாது.",
+          "context_en": "Old Pension Scheme promise for government workers",
+          "context_ta": "அரசு ஊழியர்களுக்கு OPS வாக்குறுதி"
+        },
+        {
+          "quote_en": "Temporary teachers, nurses, and administrative staff who have served more than five years will be regularised. Their sacrifice will be recognised.",
+          "quote_ta": "5 ஆண்டுகளுக்கு மேல் பணிபுரிந்த தற்காலிக ஆசிரியர்கள், செவிலியர்கள், நிர்வாக ஊழியர்களை நிரந்தரப்படுத்துவோம். அவர்களின் தியாகத்தை அங்கீகரிப்போம்.",
+          "context_en": "Promise to regularise long-serving temporary government staff",
+          "context_ta": "நீண்டகாலம் பணிபுரிந்த தற்காலிக அரசு ஊழியர்களை நிரந்தரமாக்கும் வாக்குறுதி"
+        },
+        {
+          "quote_en": "We will end the bribery culture surrounding promotions and transfers in government service once and for all.",
+          "quote_ta": "அரசு சேவையில் பதவி உயர்வு மற்றும் பணி மாற்றங்களை சுற்றியுள்ள லஞ்ச கலாச்சாரத்தை முற்றிலும் ஒழிப்போம்.",
+          "context_en": "Zero tolerance for bribery in government transfers and promotions",
+          "context_ta": "அரசு பணி மாற்றங்கள் மற்றும் பதவி உயர்வுகளில் லஞ்சத்திற்கு பூஜ்ஜிய சகிப்புத்தன்மை"
+        }
+      ],
+      "policy_announcements": [
+        {
+          "en": "Old Pension Scheme for government employees",
+          "ta": "அரசு ஊழியர்களுக்கு பழைய ஓய்வூதியத் திட்டம்"
+        },
+        {
+          "en": "Regularisation of temporary teachers, nurses, admin staff with 5+ years of service",
+          "ta": "5 ஆண்டுகளுக்கு மேல் பணிபுரிந்த தற்காலிக ஆசிரியர்கள், செவிலியர்கள், நிர்வாக ஊழியர்கள் நிரந்தரமாக்கம்"
+        },
+        {
+          "en": "End bribery culture in government promotions and transfers",
+          "ta": "அரசு பதவி உயர்வு மற்றும் பணி மாற்றங்களில் லஞ்ச கலாச்சாரம் ஒழிப்பு"
+        },
+        {
+          "en": "Complete crop loan waiver for farmers owning less than 5 acres",
+          "ta": "5 ஏக்கருக்கு குறைவான விவசாயிகளுக்கு பயிர்க் கடன் முழு தள்ளுபடி"
+        },
+        {
+          "en": "Minimum Support Price of ₹4,500 per ton for sugarcane",
+          "ta": "கரும்புக்கு டன்னுக்கு ₹4,500 குறைந்தபட்ச ஆதார விலை"
+        }
+      ],
+      "significance": {
+        "en": "Tiruppur is an economically critical district. Vijay's visit and promises to government employees and farmers were seen as a significant push into the western Tamil Nadu voter base.",
+        "ta": "திருப்பூர் பொருளாதாரத்தில் முக்கியமான மாவட்டம். அரசு ஊழியர்கள் மற்றும் விவசாயிகளுக்கான விஜய்யின் வருகை மற்றும் வாக்குறுதிகள் மேற்கு தமிழ்நாடு வாக்காளர் தளத்தில் குறிப்பிடத்தக்க முன்னேற்றமாக பார்க்கப்பட்டது."
+      }
+    },
+
+    {
+      "id": "speech_012",
+      "event_type": "Roadshow (No Speech)",
+      "event_type_ta": "ரோடு ஷோ (பேச்சு இல்லை)",
+      "title": "Chennai South Roadshow — T. Nagar, Egmore, Aayiram Vilakku",
+      "title_ta": "சென்னை தெற்கு ரோடு ஷோ — தியாகராய நகர், எழும்பூர், ஆயிரம் விளக்கு",
+      "date": "2026-04-16",
+      "location": {
+        "area": "CIT Nagar to Kotturpuram via Valluvar Kottam",
+        "area_ta": "CIT நகரிலிருந்து கொட்டூர்புரம் வரை வள்ளுவர் கோட்டம் வழியாக",
+        "district": "Chennai",
+        "district_ta": "சென்னை",
+        "region": "South Chennai",
+        "region_ta": "தென் சென்னை"
+      },
+      "constituencies_covered": ["T. Nagar", "Egmore", "Aayiram Vilakku (Thousand Lights)"],
+      "constituencies_covered_ta": ["தியாகராய நகர்", "எழும்பூர்", "ஆயிரம் விளக்கு"],
+      "context": {
+        "en": "Vijay conducted a roadshow in south Chennai in support of TVK candidates. No speeches were given due to narrow Chennai roads. Route: CIT Nagar → Kannamma Pettai → Valluvar Kottam via Basulla Road → Kotturpuram. Campaign ended at 6 PM. Three FIRs were registered for MCC violations.",
+        "ta": "தவெக வேட்பாளர்களின் ஆதரவாக தென் சென்னையில் விஜய் ரோடு ஷோ நடத்தினார். சென்னையின் குறுகிய சாலைகள் காரணமாக பேச்சு ஏதும் இல்லை. பாதை: CIT நகர் → கண்ணம்மா பேட்டை → பசுல்லா சாலை வழியாக வள்ளுவர் கோட்டம் → கொட்டூர்புரம். பரப்புரை மாலை 6 மணிக்கு முடிந்தது. MCC மீறல்களுக்காக மூன்று FIRகள் பதிவு செய்யப்பட்டன."
+      },
+      "key_purpose": {
+        "en": "Campaigning for TVK candidate Bussy Anand (N. Anand) in T. Nagar constituency — one of Chennai's most prestigious seats.",
+        "ta": "சென்னையின் மிகவும் மதிப்புமிக்க தொகுதிகளில் ஒன்றான தியாகராய நகர் தொகுதியில் தவெக வேட்பாளர் Bussy Anand (N. ஆனந்த்) -க்காக பரப்புரை."
+      },
+      "fir_details": {
+        "stations": ["West Mambalam", "Nungambakkam", "Vepery"],
+        "stations_ta": ["மேற்கு மாம்பலம்", "நுங்கம்பாக்கம்", "வேப்பேரி"],
+        "reason_en": "Conducting roadshows in violation of Model Code of Conduct campaign permissions",
+        "reason_ta": "தேர்தல் நடத்தை நெறிமுறை பரப்புரை அனுமதிகளை மீறி ரோடு ஷோக்கள் நடத்தியதால்"
+      },
+      "significance": {
+        "en": "Despite no speeches, the roadshow drew massive crowds in Chennai's commercial heart — T. Nagar. Vijay's presence itself was seen as a significant boost for TVK's urban candidates.",
+        "ta": "பேச்சு இல்லாவிட்டாலும், சென்னையின் வணிக மையமான தியாகராய நகரில் ரோடு ஷோ பிரம்மாண்டமான கூட்டத்தை ஈர்த்தது. விஜய்யின் இருப்பே தவெக-வின் நகர்ப்புற வேட்பாளர்களுக்கு குறிப்பிடத்தக்க ஊக்கமாக பார்க்கப்பட்டது."
+      }
+    },
+
+    {
+      "id": "speech_013",
+      "event_type": "Roadshow (Symbolic)",
+      "event_type_ta": "ரோடு ஷோ (குறியீட்டு)",
+      "title": "Karaikudi Bicycle Roadshow",
+      "title_ta": "காரைக்குடி சைக்கிள் ரோடு ஷோ",
+      "date": "2026-04",
+      "location": {
+        "area": "Karaikudi",
+        "area_ta": "காரைக்குடி",
+        "district": "Sivaganga",
+        "district_ta": "சிவகங்கை",
+        "region": "Central Southern Tamil Nadu",
+        "region_ta": "மத்திய தென் தமிழ்நாடு"
+      },
+      "context": {
+        "en": "In a widely covered symbolic gesture, Vijay rode a bicycle through Karaikudi without delivering a speech, citing time constraints. The image became a major media talking point.",
+        "ta": "பரவலாக கவரப்பட்ட குறியீட்டு சைகையில், விஜய் நேர கட்டுப்பாட்டை காரணமாக கூறி பேச்சு இல்லாமல் காரைக்குடியில் சைக்கிள் ஓட்டினார். இந்த படம் முக்கிய ஊடக விவாத புள்ளியாக மாறியது."
+      },
+      "key_quotes": [
+        {
+          "quote_en": "(No speech delivered — time was up.)",
+          "quote_ta": "(பேச்சு ஏதும் இல்லை — நேரம் முடிந்தது.)",
+          "context_en": "Vijay chose not to speak; the symbolic bicycle ride communicated TVK's grassroots approach",
+          "context_ta": "விஜய் பேசவில்லை; குறியீட்டு சைக்கிள் சவாரி தவெக-வின் மக்கள் அடிமட்ட அணுகுமுறையை தெரிவித்தது"
+        }
+      ],
+      "significance": {
+        "en": "Vijay's deliberate strategy of 'less is more' — brief, high-impact appearances instead of marathon speechmaking. The bicycle image went viral and became one of the campaign's defining visual moments.",
+        "ta": "'குறைவு என்பதே அதிகம்' என்ற விஜய்யின் திட்டமிட்ட உத்தி — நீண்ட உரை நடத்துவதற்கு பதில் சுருக்கமான, அதிக தாக்கத்துடைய தோற்றங்கள். சைக்கிள் படம் வைரல் ஆனது மற்றும் பரப்புரையின் வரையறுக்கும் காட்சி தருணங்களில் ஒன்றாக மாறியது."
+      }
+    },
+
+    {
+      "id": "speech_014",
+      "event_type": "Roadshow",
+      "event_type_ta": "ரோடு ஷோ",
+      "title": "Tiruchirappalli Final Campaign Roadshow",
+      "title_ta": "திருச்சிராப்பள்ளி இறுதி பரப்புரை ரோடு ஷோ",
+      "date": "2026-04-19",
+      "location": {
+        "area": "Tiruchirappalli city",
+        "area_ta": "திருச்சிராப்பள்ளி நகர்",
+        "district": "Tiruchirappalli",
+        "district_ta": "திருச்சிராப்பள்ளி",
+        "region": "Central Tamil Nadu",
+        "region_ta": "மத்திய தமிழ்நாடு",
+        "route": "Airport → Wireless Road → KK Nagar → Kajamalai → Kozhipannai Road → Kottapattu → Airport",
+        "route_ta": "விமான நிலையம் → வயர்லெஸ் சாலை → KK நகர் → காஜாமலை → கோழிப்பண்ணை சாலை → கொட்டாபட்டு → விமான நிலையம்"
+      },
+      "context": {
+        "en": "Final push roadshow in one of Vijay's two personal constituencies — Tiruchirappalli East. Police granted permission under 27 strict conditions. One of the last major campaign events before the April 21 campaign deadline.",
+        "ta": "விஜய்யின் இரண்டு சொந்த தொகுதிகளில் ஒன்றான திருச்சிராப்பள்ளி கிழக்கில் இறுதி கட்ட ரோடு ஷோ. 27 கடுமையான நிபந்தனைகளில் போலீஸ் அனுமதி வழங்கியது. ஏப்ரல் 21 பரப்புரை காலக்கெடுவுக்கு முன் கடைசி முக்கிய பரப்புரை நிகழ்வுகளில் ஒன்று."
+      },
+      "police_conditions": 27,
+      "key_quotes": [
+        {
+          "quote_en": "The people of Trichy have always been my strength. I am here to serve you, not just as your candidate but as your representative for change.",
+          "quote_ta": "திருச்சி மக்கள் எப்போதும் என் பலம். உங்கள் வேட்பாளராக மட்டுமல்ல, மாற்றத்திற்கான உங்கள் பிரதிநிதியாக உங்களுக்கு சேவை செய்ய வந்தேன்.",
+          "context_en": "Addressing his personal constituency voters in Trichy",
+          "context_ta": "திருச்சியில் தனது சொந்த தொகுதி வாக்காளர்களை உரையாற்றி"
+        }
+      ],
+      "significance": {
+        "en": "Being one of the last campaign events, this Trichy roadshow was critical for Vijay's personal vote in Tiruchirappalli East constituency.",
+        "ta": "கடைசி பரப்புரை நிகழ்வுகளில் ஒன்றாக இருப்பதால், இந்த திருச்சி ரோடு ஷோ திருச்சிராப்பள்ளி கிழக்கு தொகுதியில் விஜய்யின் தனிப்பட்ட வாக்கிற்கு முக்கியமானதாக இருந்தது."
+      }
+    }
+
+  ],
+
+  "manifesto": {
+    "release_date": "2026-03-29",
+    "title": "TVK Election Manifesto 2026",
+    "title_ta": "தவெக தேர்தல் அறிக்கை 2026",
+    "description_en": "The TVK manifesto was built across three stages — the Women's Day promises (Mar 7), the Candidate Meet announcements (Mar 29), and the full manifesto release (Apr 16). It focuses on social welfare, youth empowerment, rural upliftment, technology, and anti-corruption governance.",
+    "description_ta": "தவெக தேர்தல் அறிக்கை மூன்று கட்டங்களாக உருவாக்கப்பட்டது — பெண்கள் தின வாக்குறுதிகள் (மார்ச் 7), வேட்பாளர் கூட்ட அறிவிப்புகள் (மார்ச் 29), மற்றும் முழு அறிக்கை வெளியீடு (ஏப்ரல் 16). சமூக நலன், இளைஞர் மேம்பாடு, கிராமப்புற உயர்வு, தொழில்நுட்பம் மற்றும் ஊழல் எதிர்ப்பு ஆட்சியில் கவனம் செலுத்துகிறது.",
+    "promises": [
+      {
+        "category": "Women Welfare",
+        "category_ta": "பெண்கள் நலன்",
+        "items": [
+          { "en": "₹2,500 per month financial assistance for women family heads under age 60", "ta": "60 வயதுக்கு குறைந்த பெண் குடும்பத் தலைவிகளுக்கு மாதம் ₹2,500 நிதி உதவி" },
+          { "en": "6 free LPG cylinders per year for every household", "ta": "ஒவ்வொரு குடும்பத்திற்கும் ஆண்டுக்கு 6 இலவச LPG சிலிண்டர்கள்" },
+          { "en": "Free government bus travel for women", "ta": "பெண்களுக்கு அரசு பேருந்தில் இலவச பயணம்" },
+          { "en": "1 sovereign of gold and silk saree for brides from poor families ('Mangalyam' scheme)", "ta": "ஏழை குடும்பங்களின் மணமகளிருக்கு 1 பவுன் தங்கம் + பட்டுப் புடவை ('மங்கல்யம்' திட்டம்)" },
+          { "en": "Gold ring and welcome kit for newborns from poor families", "ta": "ஏழை குடும்பங்களின் புதுப்பிறந்த குழந்தைகளுக்கு தங்க மோதிரம் + வரவேற்பு கிட்" },
+          { "en": "Dedicated women's safety teams across Tamil Nadu", "ta": "தமிழ்நாடு முழுவதும் பெண்கள் பாதுகாப்பு குழுக்கள்" }
+        ]
+      },
+      {
+        "category": "Youth & Education",
+        "category_ta": "இளைஞர் மற்றும் கல்வி",
+        "items": [
+          { "en": "₹4,000/month stipend for unemployed graduates", "ta": "வேலையில்லா பட்டதாரிகளுக்கு மாதம் ₹4,000 கொடுப்பனவு" },
+          { "en": "₹2,500/month stipend for unemployed diploma holders", "ta": "வேலையில்லா டிப்ளோமாவினருக்கு மாதம் ₹2,500 கொடுப்பனவு" },
+          { "en": "Interest-free education loans up to ₹20 lakh", "ta": "₹20 லட்சம் வரை வட்டியற்ற கல்விக் கடன்" },
+          { "en": "Free residential schools with modern facilities statewide", "ta": "மாநிலம் முழுவதும் நவீன வசதிகளுடன் கூடிய இலவச உறைவிடப் பள்ளிகள்" },
+          { "en": "5 lakh new jobs through industrial and economic strategy", "ta": "தொழில் மற்றும் பொருளாதார உத்தி மூலம் 5 லட்சம் புதிய வேலைகள்" }
+        ]
+      },
+      {
+        "category": "Health",
+        "category_ta": "சுகாதாரம்",
+        "items": [
+          { "en": "₹25 lakh family health insurance per family", "ta": "குடும்பத்திற்கு ₹25 லட்சம் மருத்துவக் காப்பீடு" },
+          { "en": "Welfare hospitals in 6 cities — Madurai, Coimbatore, Trichy, Salem, Tirunelveli, Vellore", "ta": "6 நகரங்களில் நலன் மருத்துவமனைகள் — மதுரை, கோவை, திருச்சி, சேலம், நெல்லை, வேலூர்" }
+        ]
+      },
+      {
+        "category": "Farmers",
+        "category_ta": "விவசாயிகள்",
+        "items": [
+          { "en": "Complete crop loan waiver for farmers owning less than 5 acres", "ta": "5 ஏக்கருக்கு குறைவான விவசாயிகளுக்கு பயிர்க் கடன் முழு தள்ளுபடி" },
+          { "en": "Minimum Support Price of ₹4,500 per ton for sugarcane", "ta": "கரும்புக்கு டன்னுக்கு ₹4,500 குறைந்தபட்ச ஆதார விலை" }
+        ]
+      },
+      {
+        "category": "Government Employees",
+        "category_ta": "அரசு ஊழியர்கள்",
+        "items": [
+          { "en": "Old Pension Scheme (OPS) for all government employees", "ta": "அனைத்து அரசு ஊழியர்களுக்கும் பழைய ஓய்வூதியத் திட்டம் (OPS)" },
+          { "en": "Regularisation of temporary staff with 5+ years of service", "ta": "5 ஆண்டுகளுக்கு மேல் பணிபுரிந்த தற்காலிக ஊழியர்கள் நிரந்தரமாக்கம்" },
+          { "en": "Welfare hospitals with separate restrooms and proper facilities for police personnel", "ta": "போலீஸ் பணியாளர்களுக்கு தனி கழிவறைகள் மற்றும் சரியான வசதிகளுடன் நலன் மருத்துவமனைகள்" },
+          { "en": "Rotation-based weekly offs for police working beyond stipulated hours", "ta": "நிர்ணயிக்கப்பட்ட நேரத்திற்கு அப்பால் பணிபுரியும் போலீஸ் பணியாளர்களுக்கு சுழற்சி அடிப்படையில் வாரந்த விடுமுறை" }
+        ]
+      },
+      {
+        "category": "Technology & Economy",
+        "category_ta": "தொழில்நுட்பம் மற்றும் பொருளாதாரம்",
+        "items": [
+          { "en": "AI University to be established in Tamil Nadu", "ta": "தமிழ்நாட்டில் AI பல்கலைக்கழகம் நிறுவல்" },
+          { "en": "Global-standard AI City to be developed", "ta": "உலக தரத்திலான AI நகரம் உருவாக்கம்" },
+          { "en": "Innovation hubs in Madurai, Coimbatore, Salem, Tiruchirappalli", "ta": "மதுரை, கோவை, சேலம், திருச்சியில் புதுமை மையங்கள்" },
+          { "en": "Support for 1,000 deep-tech startups", "ta": "1,000 டீப்-டெக் தொடக்க நிறுவனங்களுக்கு ஆதரவு" },
+          { "en": "Dedicated Ministry of Artificial Intelligence", "ta": "செயற்கை நுண்ணறிவுக்கான தனி அமைச்சகம்" }
+        ]
+      },
+      {
+        "category": "Fishermen",
+        "category_ta": "மீனவர்கள்",
+        "items": [
+          { "en": "Fishermen safety assistance increased from ₹8,000 to ₹20,000", "ta": "மீனவர்களுக்கான பாதுகாப்பு உதவித்தொகை ₹8,000-லிருந்து ₹20,000-ஆக உயர்வு" },
+          { "en": "New housing scheme to replace dilapidated coastal homes", "ta": "கடலோர பாழடைந்த வீடுகளை மாற்றும் புதிய வீட்டுத் திட்டம்" }
+        ]
+      },
+      {
+        "category": "Governance & Anti-Corruption",
+        "category_ta": "ஆட்சி மற்றும் ஊழல் எதிர்ப்பு",
+        "items": [
+          { "en": "Drug-free Tamil Nadu — zero-tolerance with comprehensive rehabilitation", "ta": "போதை இல்லா தமிழ்நாடு — முழுமையான மறுவாழ்வுடன் கடுமையான கொள்கை" },
+          { "en": "End bribery in government promotions and transfers", "ta": "அரசு பதவி உயர்வு மற்றும் பணி மாற்றங்களில் லஞ்சம் ஒழிப்பு" },
+          { "en": "Revenue increase without new taxes to reduce ₹10.5 lakh crore state debt", "ta": "₹10.5 லட்சம் கோடி மாநில கடனை குறைக்க புதிய வரி இல்லாமல் வருமான உயர்வு" },
+          { "en": "Proportional representation in elections replacing traditional reservation", "ta": "தேர்தல்களில் பாரம்பரிய ஒதுக்கீட்டிற்கு பதில் விகிதாசார பிரதிநிதித்துவம்" },
+          { "en": "Decentralised governance — new secretariat branch in Madurai", "ta": "பரவலாக்கப்பட்ட ஆட்சி — மதுரையில் புதிய செயலக கிளை" }
+        ]
+      }
+    ]
+  },
+
+  "campaign_summary": {
+    "total_events_confirmed": 14,
+    "districts_covered": [
+      "Villupuram", "Coimbatore", "Madurai", "Tiruchirappalli", "Vellore",
+      "Chengalpattu", "Chennai", "Tirunelveli", "Thoothukudi", "Tenkasi",
+      "Kanyakumari", "Tiruppur", "Sivaganga"
+    ],
+    "districts_covered_ta": [
+      "விழுப்புரம்", "கோயம்புத்தூர்", "மதுரை", "திருச்சிராப்பள்ளி", "வேலூர்",
+      "செங்கல்பட்டு", "சென்னை", "திருநெல்வேலி", "தூத்துக்குடி", "தென்காசி",
+      "கன்னியாகுமரி", "திருப்பூர்", "சிவகங்கை"
+    ],
+    "campaign_style": {
+      "en": "Vijay adopted a 'controlled, high-impact' campaign strategy — limited appearances that maximised attention rather than marathon daily speeches. Appearances in Tirunelveli lasted 17 minutes, Trichy East 15 minutes, and Karaikudi had no speech at all.",
+      "ta": "விஜய் 'கட்டுப்படுத்தப்பட்ட, அதிக தாக்கம்' பரப்புரை உத்தியை கையாண்டார் — நாள்தோறும் நீண்ட உரை நடத்துவதற்கு பதில் கவனத்தை அதிகரிக்கும் வரையறுக்கப்பட்ட தோற்றங்கள். திருநெல்வேலியில் 17 நிமிடங்கள், திருச்சி கிழக்கில் 15 நிமிடங்கள், காரைக்குடியில் பேச்சே இல்லை."
+    },
+    "key_themes": [
+      { "en": "Anti-DMK corruption", "ta": "திமுக எதிர்ப்பு ஊழல்" },
+      { "en": "Two-sided contest: TVK vs DMK", "ta": "இரு முனை போர்: தவெக vs திமுக" },
+      { "en": "Youth jobs and startup ecosystem", "ta": "இளைஞர் வேலைவாய்ப்பு மற்றும் தொடக்க நிறுவன சூழல்" },
+      { "en": "Women welfare and empowerment", "ta": "பெண்கள் நலன் மற்றும் அதிகாரமளிப்பு" },
+      { "en": "AI and digital Tamil Nadu", "ta": "AI மற்றும் டிஜிட்டல் தமிழ்நாடு" },
+      { "en": "Drug-free Tamil Nadu", "ta": "போதை இல்லா தமிழ்நாடு" },
+      { "en": "Farmer loan waiver", "ta": "விவசாயி கடன் தள்ளுபடி" },
+      { "en": "Secular social justice", "ta": "மதசார்பற்ற சமூக நீதி" },
+      { "en": "Fishermen welfare", "ta": "மீனவர் நலன்" },
+      { "en": "Fiscal discipline without new taxes", "ta": "புதிய வரி இல்லாமல் நிதி கட்டுப்பாடு" }
+    ],
+    "vijay_on_opposition": {
+      "on_dmk": {
+        "en": "Called DMK a 'cash-box alliance' built on looted money; described CM Stalin as a 'powerless caretaker CM'; accused DMK of systematic obstruction of TVK events and of pocketing Congress with crores.",
+        "ta": "திமுக-வை கொள்ளையடித்த பணத்தால் கட்டப்பட்ட 'கேஷ் பாக்ஸ் கூட்டணி' என்று அழைத்தார்; முதலமைச்சர் ஸ்டாலினை 'அதிகாரமற்ற கவனிப்பு முதல்வர்' என்று வர்ணித்தார்; தவெக நிகழ்வுகளை முறையாக தடுக்கவும் கோடிகள் கொடுத்து காங்கிரஸை கையிலெடுக்கவும் திமுக குற்றஞ்சாட்டினார்."
+      },
+      "on_bjp": {
+        "en": "Called BJP an 'ideological opponent' due to its right-wing politics. Alleged BJP and DMK operate in a 'secret alliance' against Tamil Nadu's interests.",
+        "ta": "வலதுசாரி அரசியல் காரணமாக பாஜக-வை 'கொள்கை எதிரி' என்று அழைத்தார். தமிழ்நாட்டின் நலனுக்கு எதிராக பாஜக மற்றும் திமுக 'இரகசிய கூட்டணியில்' இயங்குவதாக குற்றஞ்சாட்டினார்."
+      }
+    }
+  }
+}

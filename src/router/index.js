@@ -4,6 +4,7 @@ import Dashboard from '../components/Dashboard/Main.vue'
 import PosterCreator from '../components/PosterCreator/Main.vue'
 import Candidates from '../components/Candidates/Main.vue'
 import Ideology from '../components/Ideology/Main.vue'
+import Results from '../components/Results/Main.vue'
 
 const routes = [
   {
@@ -13,6 +14,15 @@ const routes = [
     meta: {
       title: 'TVK Official Page | தமிழக வெற்றிக் கழகம் | Thalapathy Vijay',
       description: 'The official website of TVK (தமிழக வெற்றிக் கழகம்). Led by Thalapathy Vijay, aiming for secular social justice and development. | தளபதி விஜய் அவர்களின் த.வெ.க அதிகாரப்பூர்வ தளம்.'
+    }
+  },
+  {
+    path: '/results',
+    name: 'Results',
+    component: Results,
+    meta: {
+      title: 'TVK Election Results 2026 | தேர்தல் முடிவுகள் | Official Polling Stats',
+      description: 'Official 2026 Tamil Nadu Election results and polling statistics for TVK. Explore constituency-wise voting data. | த.வெ.க 2026 தேர்தல் முடிவுகள் மற்றும் புள்ளிவிவரங்கள்.'
     }
   },
   {
