@@ -1,14 +1,17 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ta">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Official TVK Platform: Watch 18+ high-fidelity Thalapathy Vijay Speeches, read translated transcripts, and download the 2026 Manifesto. Create custom TVK posters and official press releases. | தமிழக வெற்றிக் கழகத்தின் அதிகாரப்பூர்வ இணையதளம்." />
-    <meta name="keywords" content="Vijay Speech Today, TVK Official Website, Thalapathy Vijay Political Speech, TVK Manifesto 2026 Download, TVK Candidate List 2026, Vijay Speech Translation, Vikravandi Conference Speech, TVK Poster Creator, TVK Letter Creator, தளபதி விஜய் உரை, தவெக கொள்கைகள், My Vetri Tamilnadu" />
+    <title>தமிழக வெற்றிக் கழகம் | TVK Official | Thalapathy Vijay</title>
+    
+    <meta name="description" content="அதிகாரப்பூர்வ தளம்: தமிழக வெற்றிக் கழகத்தின் 2026 தேர்தல் அறிக்கை, கொள்கை உரைகள் மற்றும் வளர்ச்சிப்பணிகள். Thalapathy Vijay's Vision for 2026." />
+    <meta name="keywords" content="TVK Official, Tamilaga Vettri Kazhagam Website, Thalapathy Vijay Party, TVK 2026 Manifesto, தவெக அதிகாரப்பூர்வ தளம், விஜய் அரசியல், My Vetri Tamilnadu" />
     <meta name="author" content="Tamilaga Vettri Kazhagam (TVK)" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://myvetritamilnadu.org/" />
+    <meta name="theme-color" content="#800000" />
 
     <link rel="alternate" hreflang="ta" href="https://myvetritamilnadu.org/" />
     <link rel="alternate" hreflang="en" href="https://myvetritamilnadu.org/" />
@@ -32,61 +35,56 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&family=Hind+Madurai:wght@400;500;600;700;900&family=Arima+Madurai:wght@700&family=Kavivanar&display=swap" rel="stylesheet">
     
-    <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD Official Schema -->
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "PoliticalParty",
-        "name": "தமிழக வெற்றிக் கழகம் (Tamilaga Vettri Kazhagam)",
-        "alternateName": ["TVK", "த.வெ.க", "Tamilaga Vettri Kazhagam"],
-        "url": "https://myvetritamilnadu.org/",
-        "logo": "https://myvetritamilnadu.org/favicon.png",
-        "founder": {
-          "@type": "Person",
-          "name": "தளபதி விஜய் (Thalapathy Vijay)",
-          "alternateName": ["Thalapathy Vijay", "Vijay"]
-        },
-        "description": "Tamilaga Vettri Kazhagam (TVK) is a secular social justice party founded by Thalapathy Vijay."
+    {
+      "@context": "https://schema.org",
+      "@type": "PoliticalParty",
+      "@id": "https://myvetritamilnadu.org/#organization",
+      "name": "தமிழக வெற்றிக் கழகம் (Tamilaga Vettri Kazhagam)",
+      "alternateName": ["TVK", "தவெக"],
+      "url": "https://myvetritamilnadu.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://myvetritamilnadu.org/favicon.png",
+        "width": "512",
+        "height": "512"
       },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [{
-          "@type": "Question",
-          "name": "தளபதி விஜய்யின் அரசியல் உரைகளை எங்கு காணலாம்? (Where to find Vijay's speeches?)",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "தமிழக வெற்றிக் கழகத்தின் அதிகாரப்பூர்வ இணையதளத்தில் தளபதி விஜய்யின் அனைத்து முக்கிய அரசியல் உரைகளையும் முழுமையாகக் காணலாம். (You can find all official Thalapathy Vijay speeches here.)"
-          }
-        }, {
-          "@type": "Question",
-          "name": "தவெக-வின் 2026 தேர்தல் அறிக்கை எப்போது வெளியாகும்? (When is TVK 2026 Manifesto release?)",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "தவெக-வின் முழுமையான 2026 தேர்தல் அறிக்கை தற்போது இந்த இணையதளத்தில் பதிவிறக்கம் செய்யக் கிடைக்கிறது. (The full 2026 TVK Manifesto is available for download on this platform.)"
-          }
-        }]
+      "image": "https://myvetritamilnadu.org/og-image.png",
+      "founder": {
+        "@type": "Person",
+        "name": "தளபதி விஜய் (Thalapathy Vijay)",
+        "sameAs": "https://en.wikipedia.org/wiki/Vijay_(actor)"
       },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://myvetritamilnadu.org/"
-        }, {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Speeches & News",
-          "item": "https://myvetritamilnadu.org/news"
-        }]
+      "foundingDate": "2024-02-02",
+      "description": "தமிழக வெற்றிக் கழகத்தின் (TVK) அதிகாரப்பூர்வ டிஜிட்டல் மையம். தளபதி விஜய்யின் 2026 தேர்தல் அறிக்கை மற்றும் கொள்கை உரைகளின் தொகுப்பு.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://x.com/tvkvijayhq",
+        "https://www.facebook.com/tvkvijayhq",
+        "https://www.instagram.com/tvkvijayhq"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://myvetritamilnadu.org/",
+      "name": "TVK Official Platform",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://myvetritamilnadu.org/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
-    ]
+    }
     </script>
 
-    <title>Watch Now: Latest Thalapathy Vijay Speeches & TVK Official 2026 Archive | தளபதி விஜய் உரைகள்</title>
   </head>
   <body>
     <div id="app"></div>
