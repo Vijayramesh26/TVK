@@ -6,10 +6,14 @@
         <div class="official-header mb-4">
           <div class="d-flex align-center justify-space-between mb-1">
             <div class="header-text-group">
-              <h1 class="party-name text-h6 font-weight-black color-maroon mb-0">
+              <h1
+                class="party-name text-h6 font-weight-black color-maroon mb-0"
+              >
                 தமிழக வெற்றிக் கழகம்
               </h1>
-              <div class="party-slogan text-caption color-gold font-weight-bold italic">
+              <div
+                class="party-slogan text-caption color-gold font-weight-bold italic"
+              >
                 பத்திரிகைச் செய்தி உருவாக்குநர்
               </div>
             </div>
@@ -57,7 +61,9 @@
         <!-- Primary Content Card -->
         <div class="content-group mb-4">
           <div class="section-title mb-3">
-            <v-icon color="#800000" size="small" class="mr-2">mdi-fountain-pen-tip</v-icon>
+            <v-icon color="#800000" size="small" class="mr-2"
+              >mdi-fountain-pen-tip</v-icon
+            >
             செய்தி விவரங்கள் / Details
           </div>
           <v-card variant="flat" border class="pa-4 bg-white rounded-lg">
@@ -85,7 +91,7 @@
                   hide-details
                 ></v-text-field>
               </v-col>
-              
+
               <v-col cols="6" class="mt-3">
                 <div class="field-label mb-1">வ.எண் / Ref</div>
                 <v-text-field
@@ -113,6 +119,30 @@
                   hide-details
                   @change="onLetterImageChange"
                 ></v-file-input>
+              </v-col>
+
+              <v-col cols="12" class="mt-3">
+                <div class="field-label mb-1">
+                  கையெழுத்து பெயர் / Signatory Name
+                </div>
+                <v-text-field
+                  v-model="letterSignatoryName"
+                  variant="outlined"
+                  density="compact"
+                  class="neat-field"
+                  hide-details
+                ></v-text-field>
+              </v-col>
+
+              <v-col cols="12" class="mt-3">
+                <div class="field-label mb-1">பதவி / Posting</div>
+                <v-text-field
+                  v-model="letterSignatoryPosting"
+                  variant="outlined"
+                  density="compact"
+                  class="neat-field"
+                  hide-details
+                ></v-text-field>
               </v-col>
 
               <v-col cols="12" class="mt-3">
@@ -148,12 +178,8 @@
       </v-col>
 
       <!-- Letter Preview Area -->
-      <v-col
-        cols="12"
-        md="8"
-        class="preview-area"
-      >
-        <div class="canvas-wrapper" style="max-height: 95%;">
+      <v-col cols="12" md="8" class="preview-area">
+        <div class="canvas-wrapper" style="max-height: 95%">
           <LetterCanvas
             ref="letterCanvas"
             :title="letterTitle"
@@ -163,6 +189,8 @@
             :image-url="letterImageUrl"
             :show-main-title="showPressReleaseTitle"
             :show-ref="showRef"
+            :signatory-name="letterSignatoryName"
+            :signatory-posting="letterSignatoryPosting"
           />
         </div>
       </v-col>
@@ -181,18 +209,21 @@ export default {
   data: () => ({
     logoPremium,
     letterTitle: "மதுரவாயல் தொகுதி தகவல்",
-    letterContent: "தமிழக வெற்றிக் கழகத்தின் சார்பாக நடைபெற உள்ள முக்கிய செய்திகள் இங்கே இடம்பெறும்...",
+    letterContent:
+      "தமிழக வெற்றிக் கழகத்தின் சார்பாக நடைபெற உள்ள முக்கிய செய்திகள் இங்கே இடம்பெறும்...",
     letterDate: new Date().toISOString().substr(0, 10),
     letterRef: "TVK/PR/2026/01",
     letterImageFile: null,
     letterImageUrl: null,
-    showPressReleaseTitle: true,
-    showRef: true,
+    showPressReleaseTitle: false,
+    showRef: false,
+    letterSignatoryName: "ஆகாஷ் R",
+    letterSignatoryPosting: "155-வது வட்டக் கழகச் செயலாளர்",
   }),
   computed: {
     isTamil() {
       return this.currentLang() === "ta";
-    }
+    },
   },
   methods: {
     async onLetterImageChange() {
@@ -246,9 +277,15 @@ export default {
   border: 1px solid #e8e4db;
 }
 
-.color-maroon { color: #800000; }
-.color-gold { color: #d4af37; }
-.color-white { color: white !important; }
+.color-maroon {
+  color: #800000;
+}
+.color-gold {
+  color: #d4af37;
+}
+.color-white {
+  color: white !important;
+}
 
 .field-label {
   font-size: 0.75rem;
@@ -257,7 +294,9 @@ export default {
   text-transform: uppercase;
 }
 
-.classic-field { border-radius: 6px; }
+.classic-field {
+  border-radius: 6px;
+}
 
 .section-title {
   font-size: 0.8rem;
@@ -292,7 +331,7 @@ export default {
     height: calc(100vh - 64px);
     overflow: hidden;
   }
-  
+
   .creator-row {
     height: 100%;
     overflow: hidden;
@@ -304,7 +343,7 @@ export default {
     scrollbar-width: thin;
     scrollbar-color: #800000 transparent;
   }
-  
+
   .preview-area {
     height: 100%;
     overflow-y: auto;

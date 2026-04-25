@@ -228,19 +228,29 @@ export default {
 
       // Top Headline (Large)
       if (this.textTop) {
-        this.ctx.font = 'bold 110px "Inter", sans-serif';
-        this.ctx.fillStyle = "#800000";
+        this.ctx.font = 'bold 110px "Hind Madurai", sans-serif';
+        
+        const headY = headerHeight + 320;
+        const headGradient = this.ctx.createLinearGradient(this.width/2, headY - 80, this.width/2, headY + 30);
+        headGradient.addColorStop(0, "#800000");     // Top Maroon
+        headGradient.addColorStop(0.45, "#800000");  // End Top Maroon
+        headGradient.addColorStop(0.45, "#FFD700");  // Start Thin Yellow
+        headGradient.addColorStop(0.55, "#FFD700");  // End Thin Yellow
+        headGradient.addColorStop(0.55, "#800000");  // Start Bottom Maroon
+        headGradient.addColorStop(1.0, "#800000");   // Bottom Maroon
+        
+        this.ctx.fillStyle = headGradient;
         this.ctx.fillText(
           this.textTop,
           this.width / 2,
-          headerHeight + 320,
+          headY,
           1400,
         );
       }
 
       // Content Description (Smaller, below headline)
       if (this.textContent) {
-        this.ctx.font = '62px "Inter", sans-serif';
+        this.ctx.font = '62px "Hind Madurai", sans-serif';
         this.ctx.fillStyle = "#444444";
         this.drawWrappedText(
           this.textContent,
@@ -256,13 +266,13 @@ export default {
 
       // Constituency Info (In the maroon footer area)
       const footerTextY = this.height - 220;
-      this.ctx.font = 'bold 72px "Inter", sans-serif';
+      this.ctx.font = 'bold 72px "Hind Madurai", sans-serif';
       this.ctx.fillStyle = "#FFD700"; // Gold text in maroon
       const details = `${this.constituency} - ${this.constituencyNo}வது வட்டம் | பாகம்: ${this.partNo}`;
       this.ctx.fillText(details, this.width / 2, footerTextY);
 
       // Street & Date (In the gold bar area or just above)
-      this.ctx.font = '64px "Inter", sans-serif';
+      this.ctx.font = '64px "Hind Madurai", sans-serif';
       this.ctx.fillStyle = "#800000"; // Maroon text in gold bar
       this.ctx.fillText(
         `இடம்: ${this.streetName} | தேதி: ${this.date}`,

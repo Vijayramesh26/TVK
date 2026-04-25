@@ -25,9 +25,13 @@ export default {
     referenceNo: { type: String, default: "" },
     showMainTitle: { type: Boolean, default: true },
     showRef: { type: Boolean, default: true },
+    signatoryName: { type: String, default: "" },
+    signatoryPosting: { type: String, default: "" },
   },
   data: () => ({
     ctx: null,
+    isDrawing: false,
+    pendingDraw: false,
   }),
   watch: {
     imageUrl: "draw",
@@ -37,6 +41,8 @@ export default {
     referenceNo: "draw",
     showMainTitle: "draw",
     showRef: "draw",
+    signatoryName: "draw",
+    signatoryPosting: "draw",
   },
   mounted() {
     this.ctx = this.$refs.canvas.getContext("2d");
@@ -45,6 +51,11 @@ export default {
   methods: {
     async draw() {
       if (!this.ctx) return;
+      if (this.isDrawing) {
+        this.pendingDraw = true;
+        return;
+      }
+      this.isDrawing = true;
 
       // Clear
       this.ctx.fillStyle = "#FFFFFF";
@@ -58,24 +69,36 @@ export default {
       const startY = hHeight + 50;
       if (this.showMainTitle) {
         this.ctx.textAlign = "center";
-        this.ctx.font = 'bold 80px "Inter", sans-serif';
-        this.ctx.fillStyle = "#800000";
+        const titleY = startY + 80;
+        this.ctx.font = 'bold 80px "Hind Madurai", sans-serif';
+        
+        // Flag Gradient for Main Title
+        const titleGradient = this.ctx.createLinearGradient(this.width/2, titleY - 60, this.width/2, titleY + 20);
+        titleGradient.addColorStop(0, "#800000");
+        titleGradient.addColorStop(0.45, "#800000");
+        titleGradient.addColorStop(0.45, "#FFD700");
+        titleGradient.addColorStop(0.55, "#FFD700");
+        titleGradient.addColorStop(0.55, "#800000");
+        titleGradient.addColorStop(1.0, "#800000");
+        
+        this.ctx.fillStyle = titleGradient;
         this.ctx.fillText(
           "பத்திரிகைச் செய்தி / PRESS RELEASE",
           this.width / 2,
-          startY + 80,
+          titleY,
         );
       }
 
       const contentBaseY = this.showMainTitle ? startY + 180 : startY;
 
       this.ctx.textAlign = "left";
-      this.ctx.font = '50px "Inter", sans-serif';
+      this.ctx.font = '500 50px "Hind Madurai", sans-serif';
       this.ctx.fillStyle = "#333333";
       this.ctx.fillText(`தேதி: ${this.date}`, 150, contentBaseY + 120);
 
       if (this.showRef) {
         this.ctx.textAlign = "right";
+        this.ctx.font = '500 45px "Hind Madurai", sans-serif';
         this.ctx.fillText(
           `வ.எண்: ${this.referenceNo}`,
           this.width - 150,
@@ -85,12 +108,22 @@ export default {
 
       // 4. Letter Title (Headline)
       this.ctx.textAlign = "center";
-      this.ctx.font = 'bold 72px "Inter", sans-serif';
-      this.ctx.fillStyle = "#800000";
+      this.ctx.font = 'bold 72px "Hind Madurai", sans-serif';
+      
+      const headlineY = contentBaseY + 280;
+      const headlineGradient = this.ctx.createLinearGradient(this.width/2, headlineY - 50, this.width/2, headlineY + 20);
+      headlineGradient.addColorStop(0, "#800000");
+      headlineGradient.addColorStop(0.45, "#800000");
+      headlineGradient.addColorStop(0.45, "#FFD700");
+      headlineGradient.addColorStop(0.55, "#FFD700");
+      headlineGradient.addColorStop(0.55, "#800000");
+      headlineGradient.addColorStop(1.0, "#800000");
+      
+      this.ctx.fillStyle = headlineGradient;
       this.drawWrappedText(
         this.title,
         this.width / 2,
-        contentBaseY + 280,
+        headlineY,
         this.width - 400,
         95,
       );
@@ -124,7 +157,7 @@ export default {
 
       // 6. Content Text
       this.ctx.textAlign = "left";
-      this.ctx.font = '56px "Inter", sans-serif';
+      this.ctx.font = '500 56px "Hind Madurai", sans-serif';
       this.ctx.fillStyle = "#1a1a1a";
       this.drawWrappedText(
         this.textContent,
@@ -135,22 +168,52 @@ export default {
       );
 
       // 7. Footer - Signature Area
-      const footerY = this.height - 200;
-      this.ctx.textAlign = "right";
-      this.ctx.font = 'bold 54px "Inter", sans-serif';
+      const footerY = this.height - 350;
       this.ctx.fillStyle = "#800000";
-      this.ctx.fillText("தலைமை அலுவலகம்,", this.width - 200, footerY);
-      this.ctx.fillText(
-        "தமிழக வெற்றிக் கழகம்.",
-        this.width - 200,
-        footerY + 80,
+      this.ctx.textAlign = "center";
+      const sigX = this.width - 550; 
+
+      // Styled Honorific (Script Style)
+      this.ctx.font = '55px "Kavivanar", cursive';
+      this.ctx.fillStyle = "#800000";
+      this.ctx.fillText("என்றும் தளபதி வழியில்...", sigX, footerY);
+
+      this.ctx.font = 'bold 90px "Hind Madurai", sans-serif';
+
+      // Create Flag Gradient for the Name (Maroon-Yellow-Maroon)
+      const nameY = footerY + 110;
+      const gradient = this.ctx.createLinearGradient(
+        sigX,
+        nameY - 60,
+        sigX,
+        nameY + 30,
       );
+
+      gradient.addColorStop(0, "#800000"); // Top Maroon
+      gradient.addColorStop(0.4, "#800000"); // End Top Maroon
+      gradient.addColorStop(0.4, "#FFD700"); // Start Thin Yellow
+      gradient.addColorStop(0.5, "#FFD700"); // End Thin Yellow
+      gradient.addColorStop(0.5, "#800000"); // Start Bottom Maroon
+      gradient.addColorStop(1.0, "#800000"); // Bottom Maroon
+
+      this.ctx.fillStyle = gradient;
+      this.ctx.fillText(this.signatoryName || "ஆகாஷ் R", sigX, nameY);
+
+      this.ctx.fillStyle = "#800000"; // Revert to Maroon for the rest
+      this.ctx.font = 'bold 50px "Hind Madurai", sans-serif';
+      this.ctx.fillText(this.signatoryPosting || "155-வது வட்டக் கழகச் செயலாளர்", sigX, footerY + 200);
 
       // Decorative bottom border
       this.ctx.fillStyle = "#800000";
       this.ctx.fillRect(0, this.height - 40, this.width, 40);
       this.ctx.fillStyle = "#D4AF37";
       this.ctx.fillRect(0, this.height - 80, this.width, 40);
+
+      this.isDrawing = false;
+      if (this.pendingDraw) {
+        this.pendingDraw = false;
+        this.draw();
+      }
     },
     loadImage(src) {
       return new Promise((resolve) => {
