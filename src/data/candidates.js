@@ -8,8 +8,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Sc., B.L.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 2,
@@ -20,8 +22,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS, MD (Cardiology)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 3,
@@ -32,8 +36,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "₹0.08 Cr",
     degree: "Ph.D., ACA, ACMA, ACS, LLM, MA (Eco)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 4,
@@ -44,8 +50,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS (MMC)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 5,
@@ -56,8 +64,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A., B.L.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 6,
@@ -68,8 +78,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A., B.L. (Hons), LLM (London)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 7,
@@ -80,8 +92,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "கல்வித் தரத்தை உயர்த்தவும், நீட் தேர்வுக்கு எதிராகத் தொடர்ந்து போராடவும், இளைஞர்களுக்கான வேலைவாய்ப்புப் பயிற்சியை உறுதி செய்யவும் உழைப்பார்.",
-    bioEn: "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
+    bioEn:
+      "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
   },
   {
     id: 8,
@@ -92,8 +106,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "DCT, ADCA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 9,
@@ -104,8 +120,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 10,
@@ -116,8 +134,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E., B.L.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 11,
@@ -127,10 +147,12 @@ export const candidatesData = [
     district: "Chennai",
     criminalCases: "0",
     assets: "-",
-    isPresident: true,
+    isPresident: false,
     degree: "B.Tech., MBA, Ph.D.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 12,
@@ -142,8 +164,10 @@ export const candidatesData = [
     assets: "₹548.82 Cr",
     isPresident: true,
     degree: "B.Sc. (Visual Communication)",
+    imageUrl: "https://tvkitwing.com/wp-content/uploads/2024/02/Thalapathy-Vijay-Official-TVK.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 13,
@@ -154,8 +178,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "கல்வித் தரத்தை உயர்த்தவும், நீட் தேர்வுக்கு எதிராகத் தொடர்ந்து போராடவும், இளைஞர்களுக்கான வேலைவாய்ப்புப் பயிற்சியை உறுதி செய்யவும் உழைப்பார்.",
-    bioEn: "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
+    bioEn:
+      "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
   },
   {
     id: 14,
@@ -167,8 +193,10 @@ export const candidatesData = [
     assets: "-",
     isPresident: true,
     degree: "M.A. Political Science (MCC)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 15,
@@ -179,8 +207,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "கல்வித் தரத்தை உயர்த்தவும், நீட் தேர்வுக்கு எதிராகத் தொடர்ந்து போராடவும், இளைஞர்களுக்கான வேலைவாய்ப்புப் பயிற்சியை உறுதி செய்யவும் உழைப்பார்.",
-    bioEn: "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
+    bioEn:
+      "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
   },
   {
     id: 16,
@@ -191,8 +221,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 17,
@@ -203,8 +235,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 18,
@@ -215,8 +249,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 19,
@@ -227,8 +263,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Com., LL.B.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 20,
@@ -239,8 +277,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A., B.L.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 21,
@@ -251,8 +291,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E., M.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 22,
@@ -263,8 +305,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 23,
@@ -275,8 +319,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Com.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 24,
@@ -288,8 +334,10 @@ export const candidatesData = [
     assets: "-",
     isPresident: true,
     degree: "9th Standard (Calve College)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 25,
@@ -300,8 +348,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Com., MBA, ML (Advocate)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 26,
@@ -312,8 +362,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 27,
@@ -324,8 +376,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 28,
@@ -336,8 +390,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E., LL.B.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 29,
@@ -348,8 +404,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 30,
@@ -360,8 +418,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 31,
@@ -372,8 +432,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 32,
@@ -384,8 +446,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 33,
@@ -396,8 +460,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "BA., LLB (Hons)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 34,
@@ -408,8 +474,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "ITI",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 35,
@@ -420,8 +488,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Sc., B.Ed.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 36,
@@ -432,8 +502,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "BBA, LLB",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 37,
@@ -444,8 +516,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 38,
@@ -456,8 +530,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "கல்வித் தரத்தை உயர்த்தவும், நீட் தேர்வுக்கு எதிராகத் தொடர்ந்து போராடவும், இளைஞர்களுக்கான வேலைவாய்ப்புப் பயிற்சியை உறுதி செய்யவும் உழைப்பார்.",
-    bioEn: "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
+    bioEn:
+      "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
   },
   {
     id: 39,
@@ -468,8 +544,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 40,
@@ -480,8 +558,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS, D.Diab.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 41,
@@ -492,8 +572,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மகளிர் நலன் மற்றும் பாதுகாப்பிற்கு முன்னுரிமை அளிக்கவும், பெண்களுக்கு மாதாந்திர நிதியுதவி மற்றும் வேலைவாய்ப்புகளை உறுதி செய்யவும் சட்டமன்றத்தில் பாடுபடுவார்.",
-    bioEn: "Will prioritize women's welfare and safety, ensuring monthly financial assistance and employment opportunities for women in the assembly.",
+    bioEn:
+      "Will prioritize women's welfare and safety, ensuring monthly financial assistance and employment opportunities for women in the assembly.",
   },
   {
     id: 42,
@@ -504,8 +586,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 43,
@@ -516,8 +600,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "₹0.01 Cr",
     degree: "BBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 44,
@@ -528,8 +614,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 45,
@@ -540,8 +628,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 46,
@@ -552,8 +642,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 47,
@@ -564,8 +656,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "BCA, LLB",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 48,
@@ -576,8 +670,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.S. (London)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 49,
@@ -588,8 +684,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 50,
@@ -600,8 +698,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Medical Professional",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 51,
@@ -612,8 +712,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Doctoral Degree",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 52,
@@ -624,8 +726,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 53,
@@ -636,8 +740,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 54,
@@ -648,8 +754,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 55,
@@ -660,8 +768,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 56,
@@ -672,8 +782,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 57,
@@ -684,8 +796,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 58,
@@ -696,8 +810,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 59,
@@ -708,8 +824,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 60,
@@ -720,8 +838,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MA, B.Ed.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 61,
@@ -732,8 +852,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Sc.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 62,
@@ -744,8 +866,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "கல்வித் தரத்தை உயர்த்தவும், நீட் தேர்வுக்கு எதிராகத் தொடர்ந்து போராடவும், இளைஞர்களுக்கான வேலைவாய்ப்புப் பயிற்சியை உறுதி செய்யவும் உழைப்பார்.",
-    bioEn: "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
+    bioEn:
+      "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
   },
   {
     id: 63,
@@ -756,8 +880,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 64,
@@ -768,8 +894,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 65,
@@ -780,8 +908,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 66,
@@ -792,8 +922,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 67,
@@ -804,8 +936,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Sc.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 68,
@@ -816,8 +950,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "12th Pass",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 69,
@@ -828,8 +964,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A., ITI",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 70,
@@ -840,8 +978,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Sc., B.Ed.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 71,
@@ -852,8 +992,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E., MBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 72,
@@ -864,8 +1006,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 73,
@@ -876,8 +1020,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "BBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 74,
@@ -888,8 +1034,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "SSLC",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 75,
@@ -900,8 +1048,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "SSLC",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 76,
@@ -912,8 +1062,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 77,
@@ -924,8 +1076,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Diploma in Civil Engineering",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 78,
@@ -936,8 +1090,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 79,
@@ -948,8 +1104,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 80,
@@ -960,8 +1118,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Sc.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 81,
@@ -972,8 +1132,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 82,
@@ -984,8 +1146,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 83,
@@ -996,8 +1160,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 84,
@@ -1008,8 +1174,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 85,
@@ -1020,8 +1188,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 86,
@@ -1032,8 +1202,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Nomination Rejected",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 87,
@@ -1044,8 +1216,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 88,
@@ -1056,8 +1230,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 89,
@@ -1068,8 +1244,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 90,
@@ -1080,8 +1258,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 91,
@@ -1092,8 +1272,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 92,
@@ -1104,8 +1286,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 93,
@@ -1116,8 +1300,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 94,
@@ -1128,8 +1314,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 95,
@@ -1140,8 +1328,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 96,
@@ -1152,8 +1342,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS (MMC), Former IRS",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 97,
@@ -1164,8 +1356,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Com",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 98,
@@ -1176,8 +1370,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Com",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 99,
@@ -1188,8 +1384,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 100,
@@ -1200,8 +1398,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 101,
@@ -1212,8 +1412,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 102,
@@ -1224,8 +1426,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Com",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 103,
@@ -1236,8 +1440,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 104,
@@ -1248,8 +1454,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 105,
@@ -1260,8 +1468,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 106,
@@ -1272,8 +1482,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "SSLC (10th Std)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 107,
@@ -1284,8 +1496,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MA, B.Lit",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 108,
@@ -1296,8 +1510,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 109,
@@ -1308,8 +1524,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 110,
@@ -1320,8 +1538,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 111,
@@ -1332,8 +1552,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 112,
@@ -1344,8 +1566,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 113,
@@ -1356,8 +1580,10 @@ export const candidatesData = [
     criminalCases: "6",
     assets: "₹0.58 Cr",
     degree: "M.A. (Annamalai University)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "கல்வித் தரத்தை உயர்த்தவும், நீட் தேர்வுக்கு எதிராகத் தொடர்ந்து போராடவும், இளைஞர்களுக்கான வேலைவாய்ப்புப் பயிற்சியை உறுதி செய்யவும் உழைப்பார்.",
-    bioEn: "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
+    bioEn:
+      "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
   },
   {
     id: 114,
@@ -1368,8 +1594,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Com",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 115,
@@ -1380,8 +1608,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 116,
@@ -1392,8 +1622,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 117,
@@ -1404,8 +1636,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Professional Astrologer",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 118,
@@ -1416,8 +1650,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 119,
@@ -1428,8 +1664,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 120,
@@ -1440,8 +1678,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 121,
@@ -1452,8 +1692,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Sc., B.L. (Hons)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 122,
@@ -1464,8 +1706,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Sc.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 123,
@@ -1476,8 +1720,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "DME",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 124,
@@ -1488,8 +1734,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS, DA, Ph.D.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 125,
@@ -1500,8 +1748,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 126,
@@ -1512,8 +1762,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 127,
@@ -1524,8 +1776,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Medical Doctor",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 128,
@@ -1536,8 +1790,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 129,
@@ -1548,8 +1804,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 130,
@@ -1560,8 +1818,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Com (CA)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 131,
@@ -1572,8 +1832,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 132,
@@ -1584,8 +1846,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 133,
@@ -1596,8 +1860,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.V.Sc. (Veterinary)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 134,
@@ -1608,8 +1874,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 135,
@@ -1620,8 +1888,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 136,
@@ -1632,8 +1902,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 137,
@@ -1644,8 +1916,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 138,
@@ -1656,8 +1930,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 139,
@@ -1668,8 +1944,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 140,
@@ -1680,8 +1958,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 141,
@@ -1693,8 +1973,10 @@ export const candidatesData = [
     assets: "-",
     isPresident: true,
     degree: "B.Sc. (Visual Communications)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 142,
@@ -1705,8 +1987,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 143,
@@ -1717,8 +2001,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 144,
@@ -1729,8 +2015,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 145,
@@ -1741,8 +2029,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E. (Civil)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 146,
@@ -1753,8 +2043,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "D.EEE",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 147,
@@ -1765,8 +2057,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 148,
@@ -1777,8 +2071,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 149,
@@ -1789,8 +2085,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 150,
@@ -1801,8 +2099,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 151,
@@ -1813,8 +2113,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 152,
@@ -1825,8 +2127,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Sc.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 153,
@@ -1837,8 +2141,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E. (Mechanical)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 154,
@@ -1849,8 +2155,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 155,
@@ -1861,8 +2169,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "DME",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 156,
@@ -1873,8 +2183,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Diploma",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 157,
@@ -1885,8 +2197,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.Com",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 158,
@@ -1897,8 +2211,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 159,
@@ -1909,8 +2225,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 160,
@@ -1921,8 +2239,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 161,
@@ -1933,8 +2253,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 162,
@@ -1945,8 +2267,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 163,
@@ -1957,8 +2281,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 164,
@@ -1969,8 +2295,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 165,
@@ -1981,8 +2309,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 166,
@@ -1993,8 +2323,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Diploma",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 167,
@@ -2005,8 +2337,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "DEEE",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 168,
@@ -2017,8 +2351,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 169,
@@ -2029,8 +2365,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 170,
@@ -2041,8 +2379,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 171,
@@ -2053,8 +2393,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 172,
@@ -2065,8 +2407,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 173,
@@ -2077,8 +2421,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 174,
@@ -2089,8 +2435,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "BBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 175,
@@ -2101,8 +2449,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 176,
@@ -2113,8 +2463,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "SSLC",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 177,
@@ -2125,8 +2477,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 178,
@@ -2137,8 +2491,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 179,
@@ -2149,8 +2505,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 180,
@@ -2161,8 +2519,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 181,
@@ -2173,8 +2533,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 182,
@@ -2185,8 +2547,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A., B.L.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 183,
@@ -2197,8 +2561,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 184,
@@ -2209,8 +2575,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MDS (Oral Implantology, Germany), MScD, BDS",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 185,
@@ -2221,8 +2589,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 186,
@@ -2233,8 +2603,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 187,
@@ -2245,8 +2617,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 188,
@@ -2257,8 +2631,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 189,
@@ -2269,8 +2645,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A., LLB",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 190,
@@ -2281,8 +2659,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 191,
@@ -2293,8 +2673,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 192,
@@ -2305,8 +2687,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 193,
@@ -2317,8 +2701,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மகளிர் நலன் மற்றும் பாதுகாப்பிற்கு முன்னுரிமை அளிக்கவும், பெண்களுக்கு மாதாந்திர நிதியுதவி மற்றும் வேலைவாய்ப்புகளை உறுதி செய்யவும் சட்டமன்றத்தில் பாடுபடுவார்.",
-    bioEn: "Will prioritize women's welfare and safety, ensuring monthly financial assistance and employment opportunities for women in the assembly.",
+    bioEn:
+      "Will prioritize women's welfare and safety, ensuring monthly financial assistance and employment opportunities for women in the assembly.",
   },
   {
     id: 194,
@@ -2329,8 +2715,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 195,
@@ -2341,8 +2729,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.E., LL.B., M.A. (Criminology)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 196,
@@ -2353,8 +2743,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 197,
@@ -2365,8 +2757,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 198,
@@ -2377,8 +2771,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 199,
@@ -2389,8 +2785,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 200,
@@ -2401,8 +2799,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 201,
@@ -2413,8 +2813,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 202,
@@ -2425,8 +2827,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 203,
@@ -2437,8 +2841,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 204,
@@ -2449,8 +2855,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 205,
@@ -2461,8 +2869,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.Sc.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 206,
@@ -2473,8 +2883,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "DCE (Diploma in Civil Engineering)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 207,
@@ -2485,8 +2897,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 208,
@@ -2497,8 +2911,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 209,
@@ -2509,8 +2925,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "M.A., M.Phil.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "கல்வித் தரத்தை உயர்த்தவும், நீட் தேர்வுக்கு எதிராகத் தொடர்ந்து போராடவும், இளைஞர்களுக்கான வேலைவாய்ப்புப் பயிற்சியை உறுதி செய்யவும் உழைப்பார்.",
-    bioEn: "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
+    bioEn:
+      "Striving to elevate educational standards, fighting against NEET, and ensuring skill development and employment opportunities for the youth.",
   },
   {
     id: 210,
@@ -2521,8 +2939,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS, PGTFS",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 211,
@@ -2533,8 +2953,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MBBS, MD",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 212,
@@ -2545,8 +2967,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 213,
@@ -2557,8 +2981,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 214,
@@ -2569,8 +2995,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 215,
@@ -2581,8 +3009,10 @@ export const candidatesData = [
     criminalCases: "6",
     assets: "₹0.42 Cr",
     degree: "BBA",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 216,
@@ -2593,8 +3023,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 217,
@@ -2605,8 +3037,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 218,
@@ -2617,8 +3051,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "ITI",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 219,
@@ -2629,8 +3065,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "MCA (Master of Computer Applications)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 220,
@@ -2641,8 +3079,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 221,
@@ -2653,8 +3093,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 222,
@@ -2665,8 +3107,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 223,
@@ -2677,8 +3121,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 224,
@@ -2689,8 +3135,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 225,
@@ -2701,8 +3149,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 226,
@@ -2713,8 +3163,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 227,
@@ -2725,8 +3177,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "SSLC",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 228,
@@ -2737,8 +3191,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 229,
@@ -2749,8 +3205,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "Diploma in Electrical மற்றும் Electronics Engineering (D.EEE)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "தொகுதியின் உட்கட்டமைப்பை நவீனமயமாக்கவும், டிஜிட்டல் தொழில்நுட்பம் மூலம் வெளிப்படையான நிர்வாகத்தை வழங்கவும், இளைஞர்களுக்குத் தொழில் நுட்ப வேலைவாய்ப்புகளை உருவாக்கவும் பாடுபடுவார்.",
-    bioEn: "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
+    bioEn:
+      "Committed to modernizing local infrastructure, providing transparent governance through digital technology, and creating technical job opportunities for youth.",
   },
   {
     id: 230,
@@ -2761,8 +3219,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 231,
@@ -2773,8 +3233,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "BDS, MDS, DICOI (USA)",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "அனைவருக்கும் உயர்தர இலவச மருத்துவம் கிடைப்பதை உறுதி செய்யவும், தொகுதி முழுவதும் நவீன மருத்துவக் கட்டமைப்பு வசதிகளை மேம்படுத்தவும் பாடுபடுவார்.",
-    bioEn: "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
+    bioEn:
+      "Dedicated to ensuring high-quality healthcare for all and modernizing medical infrastructure across the constituency.",
   },
   {
     id: 232,
@@ -2785,8 +3247,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
   {
     id: 233,
@@ -2797,8 +3261,10 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "B.A., B.L.",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "சட்டத்தின் மாண்பைக் காத்து, சமூக நீதியை நிலைநாட்டவும், விளிம்புநிலை மக்களின் உரிமைகளுக்காகவும் சட்டமன்றத்தில் உரக்கக் குரல் கொடுப்பார்.",
-    bioEn: "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
+    bioEn:
+      "Will be a strong voice in the assembly for social justice, upholding constitutional values and fighting for the rights of the underprivileged.",
   },
   {
     id: 234,
@@ -2809,7 +3275,9 @@ export const candidatesData = [
     criminalCases: "0",
     assets: "-",
     degree: "தமிழக வெற்றி கழகம்",
+    imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     bio: "மதச்சார்பற்ற சமத்துவ சமூகத்தை உருவாக்கவும், ஊழலற்ற நேர்மையான நிர்வாகத்தை வழங்கி தொகுதி மக்களின் அடிப்படைத் தேவைகளை நிறைவேற்றவும் பாடுபடுவார்.",
-    bioEn: "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
+    bioEn:
+      "Working to build a secular egalitarian society and providing honest, corruption-free administration to fulfill the basic needs of the people.",
   },
 ];

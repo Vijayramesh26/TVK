@@ -5,6 +5,7 @@ import PosterCreator from '../components/PosterCreator/Main.vue'
 import Candidates from '../components/Candidates/Main.vue'
 import Ideology from '../components/Ideology/Main.vue'
 import Results from '../components/Results/Main.vue'
+import LetterCreator from '../components/LetterCreator/Main.vue'
 
 const routes = [
   {
@@ -41,6 +42,15 @@ const routes = [
     meta: {
       title: 'TVK Canvas Poster Creator | போஸ்டர் உருவாக்கம் | Official Materials',
       description: 'Design official TVK campaign posters with our Canvas Creator. Supporting Thalapathy Vijay 2026. | த.வெ.க அதிகாரப்பூர்வ தேர்தல் போஸ்டர் உருவாக்கம்.'
+    }
+  },
+  {
+    path: '/letter',
+    name: 'LetterCreator',
+    component: LetterCreator,
+    meta: {
+      title: 'TVK Official Letter Creator | கடித உருவாக்கம் | Press Releases',
+      description: 'Draft and generate official TVK press releases and letters. Support Thalapathy Vijay. | த.வெ.க அதிகாரப்பூர்வ பத்திரிகைச் செய்தி உருவாக்கம்.'
     }
   },
   {

@@ -1,10 +1,10 @@
 <template>
-  <v-container class="candidates-container py-10" fluid>
+  <v-container class="candidates-container py-6 py-sm-10" fluid>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="11">
         <!-- Header Section -->
-        <div class="header-section mb-10 text-center px-4">
-          <h1 class="text-h3 font-weight-bold mb-2">{{ t('candidates.title') }}</h1>
+        <div class="header-section mb-6 mb-sm-10 text-center px-4">
+          <h1 class="text-h4 text-sm-h3 font-weight-bold mb-2">{{ t('candidates.title') }}</h1>
           <p class="text-subtitle-1 text-grey-darken-1">{{ t('candidates.subtitle') }}</p>
           
           <v-text-field
@@ -16,8 +16,8 @@
 
 
           <!-- District Navigation -->
-          <div class="district-nav mt-6" v-if="Object.keys(groupedCandidates).length > 1">
-            <v-chip-group class="justify-center">
+          <div class="district-nav mt-4 mt-sm-6" v-if="Object.keys(groupedCandidates).length > 1">
+            <v-chip-group class="district-chips-group">
               <v-chip
                 v-for="(district, index) in Object.keys(groupedCandidates)"
                 :key="index"
@@ -38,7 +38,7 @@
           <div class="district-header d-flex flex-column mb-10 pa-6">
             <div class="d-flex align-center">
               <div class="district-shield mr-4"></div>
-              <h2 class="text-h3 font-weight-black color-maroon mb-0">
+              <h2 class="text-h4 text-sm-h3 font-weight-black color-maroon mb-0">
                 {{ translateDistrict(districtName) }}
               </h2>
             </div>
@@ -71,8 +71,20 @@
                 >
                   <div class="district-label-overlay">{{ isTamil ? (candidate.constituency || candidate.constituencyEn) : (candidate.constituencyEn || candidate.constituency) }}</div>
                   
-                  <v-avatar size="110" class="elevation-10 border-gold-thick mb-4">
-                    <span class="text-h3 font-weight-black" :class="candidate.isPresident ? 'maroon--text' : 'white--text'">
+                  <v-avatar size="110" class="elevation-10 border-gold-thick mb-4 bg-white">
+                    <v-img
+                      v-if="candidate.imageUrl"
+                      :src="candidate.imageUrl"
+                      cover
+                      @error="candidate.imageUrl = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'"
+                    >
+                      <template v-slot:placeholder>
+                        <div class="d-flex align-center justify-center fill-height bg-grey-lighten-4">
+                          <v-progress-circular indeterminate color="#800000" size="24"></v-progress-circular>
+                        </div>
+                      </template>
+                    </v-img>
+                    <span v-else class="text-h3 font-weight-black color-maroon">
                       {{ getInitials(candidate.nameEn || candidate.name) }}
                     </span>
                   </v-avatar>
@@ -88,7 +100,7 @@
                 </div>
 
                 <v-card-text class="pa-6 text-center bg-white position-relative">
-                  <div class="card-action-hint">VIEW PROFILE</div>
+                  <div class="card-action-hint">{{ t('candidates.viewProfile') }}</div>
                   <div class="text-h6 font-weight-black color-maroon mb-1 line-clamp-1">
                     {{ isTamil ? candidate.name : (candidate.nameEn || candidate.name) }}
                   </div>
@@ -100,13 +112,13 @@
                     <div class="stat-item">
                       <v-icon size="16" color="#800000" class="mb-1">mdi-gavel</v-icon>
                       <div class="stat-val">{{ candidate.criminalCases || '0' }}</div>
-                      <div class="stat-label">CASES</div>
+                      <div class="stat-label">{{ t('candidates.criminalCases') }}</div>
                     </div>
                     <v-divider vertical class="mx-1"></v-divider>
                     <div class="stat-item">
                       <v-icon size="16" color="#D4AF37" class="mb-1">mdi-bank</v-icon>
                       <div class="stat-val">{{ candidate.assets && candidate.assets !== '-' ? candidate.assets : 'NA' }}</div>
-                      <div class="stat-label">ASSETS</div>
+                      <div class="stat-label">{{ t('candidates.assets') }}</div>
                     </div>
                   </div>
                 </v-card-text>
@@ -130,14 +142,26 @@
         <v-btn icon="mdi-close" position="absolute" style="top: 15px; right: 15px; z-index: 10;" color="white" variant="text" @click="dialog = false"></v-btn>
 
         <div 
-          class="profile-hero pa-10 text-center position-relative" 
+          class="profile-hero pa-6 pa-sm-10 text-center position-relative" 
           :class="selectedCandidate.isPresident ? 'president-gradient' : 'standard-gradient-deep'"
         >
           <div class="hero-pattern"></div>
-          <v-avatar size="140" class="elevation-20 border-gold-thick mb-6 bg-white">
-            <span class="text-h2 font-weight-black color-maroon">{{ getInitials(selectedCandidate.nameEn || selectedCandidate.name) }}</span>
+          <v-avatar size="100" size-sm="140" class="elevation-20 border-gold-thick mb-6 bg-white">
+            <v-img
+              v-if="selectedCandidate.imageUrl"
+              :src="selectedCandidate.imageUrl"
+              cover
+              @error="selectedCandidate.imageUrl = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'"
+            >
+              <template v-slot:placeholder>
+                <div class="d-flex align-center justify-center fill-height bg-grey-lighten-4">
+                  <v-progress-circular indeterminate color="#800000"></v-progress-circular>
+                </div>
+              </template>
+            </v-img>
+            <span v-else class="text-h4 text-sm-h2 font-weight-black color-maroon">{{ getInitials(selectedCandidate.nameEn || selectedCandidate.name) }}</span>
           </v-avatar>
-          <h2 class="text-h3 font-weight-black mb-1 color-white text-shadow-sm">
+          <h2 class="text-h4 text-sm-h3 font-weight-black mb-1 color-white text-shadow-sm">
             {{ isTamil ? selectedCandidate.name : (selectedCandidate.nameEn || selectedCandidate.name) }}
           </h2>
           <div class="d-flex justify-center ga-2 mt-2">
@@ -145,12 +169,12 @@
               {{ isTamil ? (selectedCandidate.constituency || selectedCandidate.constituencyEn) : (selectedCandidate.constituencyEn || selectedCandidate.constituency) }}
             </v-chip>
             <v-chip color="#D4AF37" variant="flat" class="font-weight-black color-white">
-              {{ isTamil ? (selectedCandidate.district || selectedCandidate.districtEn) : (selectedCandidate.districtEn || selectedCandidate.district) }}
+              {{ t('districts.' + selectedCandidate.district) }}
             </v-chip>
           </div>
         </div>
 
-        <v-card-text class="pa-10 pt-8 bg-paper">
+        <v-card-text class="pa-6 pa-sm-10 pt-4 pt-sm-8 bg-paper">
           <div class="stats-row d-flex justify-space-between mb-8">
              <div class="info-block border-gold-left pl-4">
                 <div class="text-overline font-weight-black text-grey-darken-1">{{ t('candidates.assets') }}</div>
@@ -191,6 +215,20 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+    <!-- Back to Top Button -->
+    <v-fade-transition>
+      <v-btn
+        v-if="showTopBtn"
+        icon
+        color="#800000"
+        size="large"
+        elevation="8"
+        class="back-to-top-btn"
+        @click="scrollToTop"
+      >
+        <v-icon color="white" size="32">mdi-chevron-up</v-icon>
+      </v-btn>
+    </v-fade-transition>
   </v-container>
 </template>
 
@@ -205,8 +243,15 @@ export default {
     search: "",
     dialog: false,
     selectedCandidate: null,
-    candidates: candidatesData
+    candidates: candidatesData,
+    showTopBtn: false
   }),
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
   computed: {
     isTamil() {
       return this.currentLang() === 'ta';
@@ -243,9 +288,7 @@ export default {
   },
   methods: {
     translateDistrict(districtEn) {
-      // Find a candidate in this district to get the Tamil name
-      const candidate = this.candidates.find(c => c.districtEn === districtEn);
-      return this.isTamil && candidate ? candidate.district : districtEn;
+      return this.t('districts.' + districtEn);
     },
     scrollToDistrict(id) {
       const el = document.getElementById('district-' + id);
@@ -272,6 +315,15 @@ export default {
     showDetails(candidate) {
       this.selectedCandidate = candidate;
       this.dialog = true;
+    },
+    handleScroll() {
+      this.showTopBtn = window.scrollY > 500;
+    },
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   }
 };
@@ -283,10 +335,92 @@ export default {
   min-height: 100vh;
   background-color: #fcfcfc;
 }
+
+.district-chips-group {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .district-chips-group {
+    justify-content: flex-start;
+  }
+}
 .max-width-600 { max-width: 600px; }
 .search-bar :deep(.v-field__outline) {
   --v-field-border-opacity: 0.1;
   border-width: 2px;
+}
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  width: 70px !important;
+  height: 70px !important;
+  background: #800000 !important;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Perfect Hexagon */
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3) !important;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.back-to-top-btn::before {
+  content: '';
+  position: absolute;
+  top: -5px; left: -5px; right: -5px; bottom: -5px;
+  border: 2px solid #D4AF37;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: orbit-rotate 4s linear infinite;
+}
+
+.back-to-top-btn::after {
+  content: 'TOP';
+  position: absolute;
+  font-size: 0.6rem;
+  font-weight: 900;
+  color: #D4AF37;
+  bottom: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes orbit-rotate {
+  0% { transform: scale(1) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.1) rotate(180deg); opacity: 0.5; }
+  100% { transform: scale(1) rotate(360deg); opacity: 1; }
+}
+
+.back-to-top-btn .v-icon {
+  transition: all 0.3s ease;
+  margin-top: -5px;
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(-10px) scale(1.1);
+  background: #aa0000 !important;
+}
+
+.back-to-top-btn:hover .v-icon {
+  transform: translateY(-5px);
+  margin-bottom: 10px;
+}
+
+.back-to-top-btn:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .back-to-top-btn {
+    bottom: 30px;
+    right: 20px;
+    width: 60px !important;
+    height: 60px !important;
+  }
 }
 
 /* Power Card Styling */
@@ -352,13 +486,12 @@ export default {
 .stat-val { font-weight: 900; color: #333; font-size: 0.9rem; }
 .stat-label { font-size: 0.6rem; font-weight: 700; color: #999; }
 
-/* District Header */
-.district-shield {
-  width: 12px;
-  height: 40px;
-  background: #800000;
-  border-radius: 4px;
+.district-header {
+  border-left: 8px solid #800000;
+  background: rgba(128, 0, 0, 0.03);
+  border-radius: 0 16px 16px 0;
 }
+.district-shield { display: none; }
 .h-line { height: 2px; background: rgba(128, 0, 0, 0.1); border-radius: 1px; }
 
 /* Premium Modal */

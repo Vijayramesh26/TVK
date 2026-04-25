@@ -302,6 +302,11 @@ export default {
           to: "/create",
           icon: "mdi-palette-outline",
         },
+        {
+          text: this.t("nav.letter"),
+          to: "/letter",
+          icon: "mdi-email-edit-outline",
+        },
         { text: this.t("nav.kolgai"), to: "/kolgai", icon: "mdi-script-text" },
         { text: this.t("nav.results"), to: "/results", icon: "mdi-poll" },
         {
