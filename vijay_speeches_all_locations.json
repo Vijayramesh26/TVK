@@ -1,0 +1,287 @@
+{
+  "title": "Thalapathy Vijay (TVK) Campaign Speeches - Complete Database",
+  "party": "Tamilaga Vettri Kazhagam (TVK)",
+  "description": "Comprehensive list of Vijay's political campaign speeches across Tamil Nadu with YouTube URLs and event locations",
+  "total_speeches_found": 25,
+  "data_last_updated": "2026-04-25",
+  "speeches": [
+    {
+      "id": 1,
+      "location": "Mahabalipuram/Mamallapuram (Chennai)",
+      "event": "International Women's Day 2026 Celebration",
+      "date": "2026-03-07",
+      "youtube_url": "https://www.youtube.com/watch?v=tHZc9nsedhw",
+      "description": "TVK's International Women's Day event with women-centric policy announcements",
+      "region": "Chennai Metropolitan Area"
+    },
+    {
+      "id": 2,
+      "location": "Nandanam YMCA Ground, Chennai",
+      "event": "Final Campaign Rally (Election Climax)",
+      "date": "2026-04-21",
+      "youtube_url": "https://www.youtube.com/watch?v=sw1Gk28g4VE",
+      "description": "Grand final TVK rally at YMCA Ground, Nandanam",
+      "region": "Chennai Metropolitan Area"
+    },
+    {
+      "id": 3,
+      "location": "Chennai",
+      "event": "Final Campaign Speech",
+      "date": "2026-04-21",
+      "youtube_url": "https://www.youtube.com/watch?v=mxLnCBmThwM",
+      "description": "Vijay's thundering speech in Chennai",
+      "region": "Chennai Metropolitan Area"
+    },
+    {
+      "id": 4,
+      "location": "Chennai",
+      "event": "Public Gathering Address",
+      "date": "2026-04-21",
+      "youtube_url": "https://www.youtube.com/watch?v=HdpNyjr_r2k",
+      "description": "TVK Chief Vijay addresses large public gathering in Chennai",
+      "region": "Chennai Metropolitan Area"
+    },
+    {
+      "id": 5,
+      "location": "Chennai",
+      "event": "Fiery Campaign Speech",
+      "date": "2026-04-21",
+      "youtube_url": "https://www.youtube.com/watch?v=FB_HbZISMIg",
+      "description": "TVK Vijay Mass Speech - Fiery speech in Chennai",
+      "region": "Chennai Metropolitan Area"
+    },
+    {
+      "id": 6,
+      "location": "Kanchipuram",
+      "event": "Indoor Public Meeting",
+      "date": "2025-11-23",
+      "youtube_url": "https://www.youtube.com/watch?v=dWjvfPwUWKE",
+      "description": "Vijay's explosive Kanchipuram speech addressing sand loot, ideology, and Parandur issues",
+      "region": "Kanchipuram District"
+    },
+    {
+      "id": 7,
+      "location": "Tiruppur",
+      "event": "Campaign Rally",
+      "date": "2026-04-10",
+      "youtube_url": "https://www.youtube.com/watch?v=4YZ9vvP43qw",
+      "description": "TVK Thalapathy Vijay Tiruppur Campaign Rally",
+      "region": "Coimbatore Region"
+    },
+    {
+      "id": 8,
+      "location": "Tiruppur",
+      "event": "Campaign Speech",
+      "date": "2026-04-10",
+      "youtube_url": "https://www.youtube.com/watch?v=9PMVgq7OZok",
+      "description": "Vijay Speech in Tiruppur",
+      "region": "Coimbatore Region"
+    },
+    {
+      "id": 9,
+      "location": "Tiruppur",
+      "event": "Fiery Campaign Speech",
+      "date": "2026-04-10",
+      "youtube_url": "https://www.youtube.com/watch?v=bNxKCZnf3Qo",
+      "description": "TVK Vijay Fiery Speech in Tiruppur",
+      "region": "Coimbatore Region"
+    },
+    {
+      "id": 10,
+      "location": "Kanyakumari/Kanniyakumari",
+      "event": "Campaign Rally",
+      "date": "2026-04-08",
+      "youtube_url": "https://www.youtube.com/watch?v=rSzwcFFx8X8",
+      "description": "TVK Vijay Full Speech in Kanyakumari with policy announcements",
+      "region": "Kanyakumari District"
+    },
+    {
+      "id": 11,
+      "location": "Kanyakumari/Kanniyakumari (Nagercoil)",
+      "event": "Campaign Rally",
+      "date": "2026-04-08",
+      "youtube_url": "https://www.youtube.com/watch?v=8jT00XoeorY",
+      "description": "TVK Thalapathy Vijay Kanniyakumari Campaign Rally in Nagercoil",
+      "region": "Kanyakumari District"
+    },
+    {
+      "id": 12,
+      "location": "Kanyakumari",
+      "event": "Campaign Rally",
+      "date": "2026-04-08",
+      "youtube_url": "https://www.youtube.com/watch?v=-Wf1hR8HfhY",
+      "description": "TVK Vijay Speech LIVE: Vijay Mass Rally in Kanyakumari",
+      "region": "Kanyakumari District"
+    },
+    {
+      "id": 13,
+      "location": "Kanyakumari",
+      "event": "Campaign Rally",
+      "date": "2026-04-08",
+      "youtube_url": "https://www.youtube.com/watch?v=YCIllo3WgRs",
+      "description": "TVK Vijay Campaign in Kanniyakumari",
+      "region": "Kanyakumari District"
+    },
+    {
+      "id": 14,
+      "location": "Kanyakumari",
+      "event": "Massive Campaign Rally",
+      "date": "2026-04-08",
+      "youtube_url": "https://www.youtube.com/watch?v=VfssVmfgeBc",
+      "description": "Vijay Speech LIVE: TVK Rally - Massive Rally in Kanyakumari",
+      "region": "Kanyakumari District"
+    },
+    {
+      "id": 15,
+      "location": "Kanyakumari",
+      "event": "Campaign Rally",
+      "date": "2026-04-08",
+      "youtube_url": "https://www.youtube.com/watch?v=7jtryo-Sikg",
+      "description": "TVK Vijay in Kanyakumari LIVE",
+      "region": "Kanyakumari District"
+    },
+    {
+      "id": 16,
+      "location": "Kanyakumari",
+      "event": "Campaign Speech",
+      "date": "2026-04-08",
+      "youtube_url": "https://www.youtube.com/watch?v=tTDyd0qomRM",
+      "description": "TVK Vijay Today Speech at Kanniyakumari",
+      "region": "Kanyakumari District"
+    },
+    {
+      "id": 17,
+      "location": "Trichy/Tiruchirappalli",
+      "event": "Campaign Speech",
+      "date": "2026-04-05",
+      "youtube_url": "https://www.youtube.com/watch?v=QN7XW0hbNtU",
+      "description": "Thalapathy Vijay Tirchy Speech - TVK Vijay Today Speech",
+      "region": "Tiruchirappalli District"
+    },
+    {
+      "id": 18,
+      "location": "Trichy/Tiruchirappalli",
+      "event": "Campaign Speech",
+      "date": "2026-04-05",
+      "youtube_url": "https://www.youtube.com/watch?v=4QjlH1GU0aw",
+      "description": "Vijay Trichy East Full Speech",
+      "region": "Tiruchirappalli District"
+    },
+    {
+      "id": 19,
+      "location": "Chennai",
+      "event": "Campaign Event",
+      "date": "2026-04-12",
+      "youtube_url": "https://www.youtube.com/watch?v=cvzfAEkDQWU",
+      "description": "TVK Vijay Campaign Event in Chennai",
+      "region": "Chennai Metropolitan Area"
+    },
+    {
+      "id": 20,
+      "location": "Election-related Speech",
+      "event": "Tamil Nadu Elections 2026",
+      "date": "2026-04-21",
+      "youtube_url": "https://www.youtube.com/watch?v=qbB7D-X0tQQ",
+      "description": "Vijay's Speech LIVE - Vijay Speech Ahead Of Tamil Nadu Elections",
+      "region": "Tamil Nadu"
+    },
+    {
+      "id": 21,
+      "location": "Vellore",
+      "event": "Public Address & Party Meeting",
+      "date": "2026-02-23",
+      "youtube_url": "Not available in search",
+      "description": "Vijay's emotional speech at Vellore rally (Kollamangalam, Vellore District)",
+      "region": "Vellore District",
+      "notes": "Vijay got visibly emotional and moved to tears during this public address"
+    },
+    {
+      "id": 22,
+      "location": "Coimbatore",
+      "event": "Party Functionaries Meeting",
+      "date": "2025-04-26",
+      "youtube_url": "Not available in search",
+      "description": "TVK party functionaries meeting in Coimbatore",
+      "region": "Coimbatore District"
+    },
+    {
+      "id": 23,
+      "location": "Vikravandi",
+      "event": "First Political Conference",
+      "date": "2024-10-27",
+      "youtube_url": "Not available in search",
+      "description": "TVK's first political conference with reportedly 800,000+ attendees",
+      "region": "Villupuram District"
+    },
+    {
+      "id": 24,
+      "location": "Madurai",
+      "event": "TVK State-Level Conference",
+      "date": "2025-08-22",
+      "youtube_url": "Not available in search",
+      "description": "TVK's second state-level conference where Vijay criticized DMK and BJP",
+      "region": "Madurai District"
+    },
+    {
+      "id": 25,
+      "location": "Malaysia",
+      "event": "Jana Nayagan Film Audio Launch & Farewell Event",
+      "date": "2025-12-27",
+      "youtube_url": "https://www.youtube.com/watch?v=UotT4YW2IlM",
+      "description": "Thalapathy Thiruvizha - Vijay's emotional farewell to cinema event in Malaysia",
+      "region": "International"
+    }
+  ],
+  "campaign_schedule_summary": {
+    "campaign_start": "September 2025",
+    "campaign_end": "April 2026",
+    "key_districts_covered": [
+      "Chennai",
+      "Kanchipuram",
+      "Tiruppur",
+      "Kanyakumari",
+      "Tiruchirappalli",
+      "Vellore",
+      "Coimbatore",
+      "Madurai",
+      "Salem",
+      "Villupuram",
+      "Cuddalore",
+      "Tenkasi",
+      "Virudunagar",
+      "Sivaganga",
+      "Ramanathapuram",
+      "Thanjavur",
+      "Pudukkottai",
+      "Namakkal",
+      "Karur",
+      "Dindigul",
+      "Theni"
+    ]
+  },
+  "playlist_collections": [
+    {
+      "title": "TVK Vijay Speech - Political Campaign Playlist",
+      "url": "https://www.youtube.com/playlist?list=PLPJNBVyYac5PG0mK59lVC9FnyrFhznstj",
+      "source": "Dinamalar",
+      "description": "Full live coverage of Thalapathy Vijay's political campaigns"
+    },
+    {
+      "title": "Thalapathy Vijay Motivational Speeches Playlist",
+      "url": "https://m.youtube.com/playlist?list=PLg5LzFMKwSFtNsfkee--Q2G81c4hFHO38",
+      "description": "Collection of Vijay's motivational speeches"
+    }
+  ],
+  "notes": {
+    "total_constituencies": 234,
+    "party": "Tamilaga Vettri Kazhagam (TVK)",
+    "election": "Tamil Nadu Assembly Elections 2026",
+    "vijay_constituencies": [
+      "Perambur (Chennai)",
+      "Trichy East (Tiruchirappalli)"
+    ],
+    "data_source": "YouTube search results and news reports",
+    "last_updated": "2026-04-25",
+    "campaign_status": "Concluded - Polling held on 2026-04-23"
+  }
+}
