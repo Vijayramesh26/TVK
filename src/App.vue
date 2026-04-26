@@ -270,10 +270,12 @@
                   >mdi-code-tags</v-icon
                 >
                 <span class="text-grey-darken-1">Designed & Managed by</span>
-                <span
-                  class="font-weight-black ml-1"
+                <a
+                  href="https://rameshvijay-portfolio.web.app/"
+                  target="_blank"
+                  class="font-weight-black ml-1 text-decoration-none"
                   style="color: #d4af37; letter-spacing: 0.5px"
-                  >VIJAY RAMESH</span
+                  >VIJAY RAMESH</a
                 >
               </div>
             </div>
