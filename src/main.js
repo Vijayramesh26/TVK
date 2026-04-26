@@ -3,7 +3,6 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import router from './router'
-import VueApexCharts from "vue3-apexcharts";
 
 import './style.css'
 
@@ -11,7 +10,6 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(vuetify)
-app.use(VueApexCharts)
 
 // Simple SEO management helper
 router.afterEach((to) => {
@@ -66,6 +64,17 @@ router.afterEach((to) => {
 
   // Update Scroll Position
   window.scrollTo(0, 0);
+});
+
+// Handle ChunkLoadError (common after new deployments)
+router.onError((error, to) => {
+  if (error.message.includes('Failed to fetch dynamically imported module') || 
+      error.message.includes('Importing a module script failed')) {
+    if (!window.location.hash.includes('reloaded')) {
+      window.location.hash = 'reloaded';
+      window.location.reload();
+    }
+  }
 });
 
 app.mount('#app')

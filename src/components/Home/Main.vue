@@ -106,6 +106,7 @@
               <v-img
                 :src="heroImage"
                 cover
+                eager
                 alt="தமிழக வெற்றிக் கழகம் தலைவர் தளபதி விஜய்"
               ></v-img>
             </v-avatar>

@@ -273,9 +273,13 @@ import {
 } from "firebase/firestore";
 import { db } from "../../firebase";
 import { candidatesData } from "../../data/candidates";
+import VueApexCharts from "vue3-apexcharts";
 
 export default {
   name: "Dashboard",
+  components: {
+    apexchart: VueApexCharts,
+  },
   data: () => ({
     loading: true,
     stats: [],
