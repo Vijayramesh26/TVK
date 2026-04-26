@@ -257,12 +257,25 @@
             </div>
 
             <div
-              class="w-100 py-4 text-center text-caption mx-auto"
+              class="w-100 py-4 text-center text-caption mx-auto d-flex flex-column align-center"
               style="background-color: #111"
             >
-              <span class="text-grey"
-                >&copy; 2026 {{ t("footer.rights") }}</span
-              >
+              <div class="mb-1">
+                <span class="text-grey"
+                  >&copy; 2026 {{ t("footer.rights") }}</span
+                >
+              </div>
+              <div class="d-flex align-center">
+                <v-icon size="14" color="#d4af37" class="mr-1"
+                  >mdi-code-tags</v-icon
+                >
+                <span class="text-grey-darken-1">Designed & Managed by</span>
+                <span
+                  class="font-weight-black ml-1"
+                  style="color: #d4af37; letter-spacing: 0.5px"
+                  >VIJAY RAMESH</span
+                >
+              </div>
             </div>
           </v-footer>
         </v-main>
