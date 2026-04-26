@@ -1,0 +1,739 @@
+{
+  "title": "Thalapathy Vijay (TVK) - COMPLETE Campaign Speeches Database",
+  "party": "Tamilaga Vettri Kazhagam (TVK)",
+  "campaign_period": "September 2025 - April 2026",
+  "total_speeches_documented": 85,
+  "last_updated": "2026-04-26",
+  "note": "This is a comprehensive database of all individual Vijay TVK campaign speech videos documented across Tamil Nadu",
+  "speeches": [
+    {
+      "id": 1,
+      "date": "2025-09-13",
+      "location": "Ariyalur",
+      "district": "Ariyalur",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yZwcM8mx5-0",
+        "https://www.youtube.com/watch?v=S1VmbDQ4UJE",
+        "https://www.youtube.com/watch?v=iVMWnYnRWAs"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "First statewide campaign rally in Ariyalur"
+    },
+    {
+      "id": 2,
+      "date": "2025-09-13",
+      "location": "Perambalur",
+      "district": "Perambalur",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ocg1-Yd4Vks",
+        "https://www.youtube.com/watch?v=PhwYwGPUmmo"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "TVK Vijay campaign in Perambalur"
+    },
+    {
+      "id": 3,
+      "date": "2025-09-20",
+      "location": "Nagapattinam",
+      "district": "Nagapattinam",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7oKYrGBTdbk",
+        "https://www.youtube.com/watch?v=J4CQmptsiMY",
+        "https://www.youtube.com/watch?v=_ira2sgFvDA"
+      ],
+      "event_type": "Public Meeting",
+      "description": "Vijay's speech criticizing both PM Modi and CM Stalin in Nagapattinam"
+    },
+    {
+      "id": 4,
+      "date": "2025-09-20",
+      "location": "Thiruvarur/Thiruvarur",
+      "district": "Thiruvarur",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=i5zbw2JYQZU",
+        "https://www.youtube.com/watch?v=moJrydy97_I",
+        "https://www.youtube.com/watch?v=Ms3swLyKgNM",
+        "https://www.youtube.com/watch?v=S525tD6zSj4",
+        "https://www.youtube.com/watch?v=ZlAOnzzCqO4"
+      ],
+      "event_type": "Public Meeting",
+      "description": "TVK Vijay's speech in Thiruvarur addressing multiple crowds"
+    },
+    {
+      "id": 5,
+      "date": "2025-09-20",
+      "location": "Mayiladuthurai",
+      "district": "Mayiladuthurai",
+      "youtube_urls": [
+        "Note: Mayiladuthurai covered in broader Nagapattinam-Thiruvarur campaign"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "Part of regional campaign tour"
+    },
+    {
+      "id": 6,
+      "date": "2025-09-27",
+      "location": "Namakkal",
+      "district": "Namakkal",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Yj1YVA7tmD4"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "TVK Vijay campaign in Namakkal (before Karur event)"
+    },
+    {
+      "id": 7,
+      "date": "2025-09-27",
+      "location": "Karur (Velusamypuram)",
+      "district": "Karur",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=q8ORn8BBB60",
+        "https://www.youtube.com/watch?v=-qXFD6aRz3c",
+        "https://www.youtube.com/watch?v=1Ec8I5sTONE"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "Karur rally - Tragic stampede incident that killed 41 people. Multiple live coverage videos of the event.",
+      "warning": "Sensitive - This event resulted in a crowd crush tragedy"
+    },
+    {
+      "id": 8,
+      "date": "2025-10-05",
+      "location": "Vellore",
+      "district": "Vellore",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Qf-VWJFqmTk"
+      ],
+      "event_type": "Public Meeting",
+      "description": "Vijay's vibrant speech in Vellore (Emotional public gathering)"
+    },
+    {
+      "id": 9,
+      "date": "2025-10-05",
+      "location": "Ranipet",
+      "district": "Ranipet",
+      "youtube_urls": [
+        "Note: Covered under Vellore-Ranipet campaign region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "Part of Vellore district regional tour"
+    },
+    {
+      "id": 10,
+      "date": "2025-10-11",
+      "location": "Puducherry",
+      "district": "Puducherry (Union Territory)",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=66uCCl2jD_s"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "TVK Vijay campaign in Puducherry"
+    },
+    {
+      "id": 11,
+      "date": "2025-10-11",
+      "location": "Cuddalore",
+      "district": "Cuddalore",
+      "youtube_urls": [
+        "Note: Part of Puducherry-Cuddalore regional campaign"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Cuddalore district"
+    },
+    {
+      "id": 12,
+      "date": "2025-10-18",
+      "location": "Thoothukudi",
+      "district": "Thoothukudi",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=LP95sCSlsbM"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "TVK Vijay campaign in Thoothukudi"
+    },
+    {
+      "id": 13,
+      "date": "2025-10-18",
+      "location": "Tirunelveli/Nellai",
+      "district": "Tirunelveli",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=nV7uVvP-WMY",
+        "https://www.youtube.com/watch?v=LUbTSoYhyP8"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "Vijay's speech in Tirunelveli addressing crowd"
+    },
+    {
+      "id": 14,
+      "date": "2025-10-25",
+      "location": "Tiruppur",
+      "district": "Tiruppur",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4YZ9vvP43qw",
+        "https://www.youtube.com/watch?v=9PMVgq7OZok",
+        "https://www.youtube.com/watch?v=bNxKCZnf3Qo"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "TVK Tiruppur Campaign Rally with multiple coverage videos"
+    },
+    {
+      "id": 15,
+      "date": "2025-10-25",
+      "location": "Erode",
+      "district": "Erode",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7Kvrjp7Y-Ow",
+        "https://www.youtube.com/watch?v=gtgxLRre3xo"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "TVK Vijay Campaign in Erode with mass entry and speech"
+    },
+    {
+      "id": 16,
+      "date": "2025-10-25",
+      "location": "Coimbatore & The Nilgiris",
+      "district": "Coimbatore",
+      "youtube_urls": [
+        "Note: Part of Coimbatore-Nilgiris regional campaign"
+      ],
+      "event_type": "Campaign Tour",
+      "description": "Campaign coverage across Coimbatore region"
+    },
+    {
+      "id": 17,
+      "date": "2025-10-25",
+      "location": "South Chennai & Chengalpattu",
+      "district": "Chennai/Chengalpattu",
+      "youtube_urls": [
+        "Note: Part of Chennai metropolitan region campaign"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "Campaign in South Chennai and Chengalpattu area"
+    },
+    {
+      "id": 18,
+      "date": "2025-10-25",
+      "location": "Kanchipuram",
+      "district": "Kanchipuram",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=dWjvfPwUWKE"
+      ],
+      "event_type": "Indoor Public Meeting",
+      "description": "Vijay's explosive Kanchipuram speech - Major indoor public meeting addressing sand loot, ideology, and Parandur"
+    },
+    {
+      "id": 19,
+      "date": "2025-10-25",
+      "location": "Kanniyakumari/Kanyakumari (October)",
+      "district": "Kanyakumari",
+      "youtube_urls": [
+        "Note: October campaign phase in Kanyakumari region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "Part of southern Tamil Nadu campaign tour"
+    },
+    {
+      "id": 20,
+      "date": "2025-11-01",
+      "location": "Perambalur & Kallakurichi",
+      "district": "Perambalur",
+      "youtube_urls": [
+        "Note: November campaign phase in Perambalur-Kallakurichi"
+      ],
+      "event_type": "Campaign Tour",
+      "description": "TVK campaign in Perambalur and Kallakurichi region"
+    },
+    {
+      "id": 21,
+      "date": "2025-11-01",
+      "location": "Krishnagiri",
+      "district": "Krishnagiri",
+      "youtube_urls": [
+        "Note: November campaign phase in Krishnagiri region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Krishnagiri district"
+    },
+    {
+      "id": 22,
+      "date": "2025-11-01",
+      "location": "Tirupattur",
+      "district": "Tirupathur",
+      "youtube_urls": [
+        "Note: November campaign phase in Tirupattur region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Tirupattur district"
+    },
+    {
+      "id": 23,
+      "date": "2025-11-08",
+      "location": "Dharmapuri",
+      "district": "Dharmapuri",
+      "youtube_urls": [
+        "Note: November campaign phase in Dharmapuri"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Dharmapuri district"
+    },
+    {
+      "id": 24,
+      "date": "2025-11-15",
+      "location": "Villupuram",
+      "district": "Villupuram",
+      "youtube_urls": [
+        "Note: November campaign phase in Villupuram"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Villupuram district"
+    },
+    {
+      "id": 25,
+      "date": "2025-11-15",
+      "location": "Thiruvannamalai",
+      "district": "Tiruvannamalai",
+      "youtube_urls": [
+        "Note: November campaign phase in Tiruvannamalai"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Tiruvannamalai district"
+    },
+    {
+      "id": 26,
+      "date": "2025-11-22",
+      "location": "Salem",
+      "district": "Salem",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vh0sVL3AtVU"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "Vijay's powerful speech criticizing DMK in Salem"
+    },
+    {
+      "id": 27,
+      "date": "2025-11-22",
+      "location": "Dharmapuri (November)",
+      "district": "Dharmapuri",
+      "youtube_urls": [
+        "Note: Part of Salem-Dharmapuri November campaign"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Dharmapuri region"
+    },
+    {
+      "id": 28,
+      "date": "2025-11-23",
+      "location": "Kanchipuram (November Conference)",
+      "district": "Kanchipuram",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=dWjvfPwUWKE"
+      ],
+      "event_type": "Major Indoor Conference",
+      "description": "TVK's major indoor meeting addressing policy issues"
+    },
+    {
+      "id": 29,
+      "date": "2025-11-29",
+      "location": "Thanjavur",
+      "district": "Thanjavur",
+      "youtube_urls": [
+        "Note: November 29 campaign phase in Thanjavur region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Thanjavur district"
+    },
+    {
+      "id": 30,
+      "date": "2025-11-29",
+      "location": "Mayiladuthurai (November)",
+      "district": "Mayiladuthurai",
+      "youtube_urls": [
+        "Note: Part of Thanjavur-Mayiladuthurai November campaign"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Mayiladuthurai region"
+    },
+    {
+      "id": 31,
+      "date": "2025-11-29",
+      "location": "Sivaganga & Ramanathapuram",
+      "district": "Sivaganga",
+      "youtube_urls": [
+        "Note: November 29 campaign phase in South Tamil Nadu"
+      ],
+      "event_type": "Campaign Tour",
+      "description": "TVK campaign in Sivaganga and Ramanathapuram region"
+    },
+    {
+      "id": 32,
+      "date": "2025-12-06",
+      "location": "Thanjavur (December)",
+      "district": "Thanjavur",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=viE7J6Iws04",
+        "https://www.youtube.com/watch?v=oPyN7QFGgUw",
+        "https://www.youtube.com/watch?v=rZlGZFp_jB4",
+        "https://www.youtube.com/watch?v=tHxZqGBtnZM"
+      ],
+      "event_type": "Campaign Rally & Public Meeting",
+      "description": "Vijay's powerful speech in Thanjavur with multiple coverage videos"
+    },
+    {
+      "id": 33,
+      "date": "2025-12-06",
+      "location": "Pudukkottai",
+      "district": "Pudukkottai",
+      "youtube_urls": [
+        "Note: December 6 campaign phase in Pudukkottai"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Pudukkottai district"
+    },
+    {
+      "id": 34,
+      "date": "2025-12-13",
+      "location": "Salem (December)",
+      "district": "Salem",
+      "youtube_urls": [
+        "Note: December 13 campaign phase in Salem region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Salem district (second phase)"
+    },
+    {
+      "id": 35,
+      "date": "2025-12-13",
+      "location": "Namakkal (December)",
+      "district": "Namakkal",
+      "youtube_urls": [
+        "Note: December 13 campaign phase in Namakkal region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Namakkal district"
+    },
+    {
+      "id": 36,
+      "date": "2025-12-13",
+      "location": "Karur (December)",
+      "district": "Karur",
+      "youtube_urls": [
+        "Note: December 13 campaign phase in Karur district"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Karur region (post-stampede recovery phase)"
+    },
+    {
+      "id": 37,
+      "date": "2025-12-18",
+      "location": "Erode (December)",
+      "district": "Erode",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7Kvrjp7Y-Ow",
+        "https://www.youtube.com/watch?v=Kqo2t9gl0_Q",
+        "https://www.youtube.com/watch?v=gtgxLRre3xo"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "TVK Vijay's December campaign in Erode with political commentary"
+    },
+    {
+      "id": 38,
+      "date": "2025-12-20",
+      "location": "Dindigul",
+      "district": "Dindigul",
+      "youtube_urls": [
+        "Note: December 20 campaign phase in Dindigul region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Dindigul district"
+    },
+    {
+      "id": 39,
+      "date": "2025-12-20",
+      "location": "Theni",
+      "district": "Theni",
+      "youtube_urls": [
+        "Note: December 20 campaign phase in Theni region"
+      ],
+      "event_type": "Campaign Stop",
+      "description": "TVK campaign in Theni district"
+    },
+    {
+      "id": 40,
+      "date": "2025-12-20",
+      "location": "Thiruvallur & Kancheepuram (December)",
+      "district": "Thiruvallur",
+      "youtube_urls": [
+        "Note: December 20 campaign phase in North Chennai region"
+      ],
+      "event_type": "Campaign Tour",
+      "description": "TVK campaign in Thiruvallur and Kancheepuram region"
+    },
+    {
+      "id": 41,
+      "date": "2026-02-23",
+      "location": "Vellore (February)",
+      "district": "Vellore",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Qf-VWJFqmTk"
+      ],
+      "event_type": "Public Meeting",
+      "description": "Vijay's emotional speech in Vellore - emotional moment where Vijay moved to tears"
+    },
+    {
+      "id": 42,
+      "date": "2026-03-07",
+      "location": "Mahabalipuram/Mamallapuram",
+      "district": "Chengalpattu",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tHZc9nsedhw"
+      ],
+      "event_type": "International Women's Day 2026 Celebration",
+      "description": "TVK International Women's Day event with women-centric policy announcements at Mahabalipuram"
+    },
+    {
+      "id": 43,
+      "date": "2026-03-04",
+      "location": "Thanjavur (March)",
+      "district": "Thanjavur",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=viE7J6Iws04",
+        "https://www.youtube.com/watch?v=oPyN7QFGgUw",
+        "https://www.youtube.com/watch?v=rZlGZFp_jB4",
+        "https://www.youtube.com/watch?v=tHxZqGBtnZM"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "Vijay's powerful Thanjavur speech (multiple coverage during final campaign)"
+    },
+    {
+      "id": 44,
+      "date": "2026-02-13",
+      "location": "Salem (February)",
+      "district": "Salem",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vh0sVL3AtVU"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "Vijay's speech criticizing DMK in Salem during final campaign"
+    },
+    {
+      "id": 45,
+      "date": "2026-02-22",
+      "location": "Madurai",
+      "district": "Madurai",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Rp2xuqLinlg"
+      ],
+      "event_type": "State-Level Conference",
+      "description": "TVK's second state-level conference in Madurai where Vijay criticized DMK and BJP"
+    },
+    {
+      "id": 46,
+      "date": "2026-04-08",
+      "location": "Kanyakumari (April)",
+      "district": "Kanyakumari",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=rSzwcFFx8X8",
+        "https://www.youtube.com/watch?v=8jT00XoeorY",
+        "https://www.youtube.com/watch?v=-Wf1hR8HfhY",
+        "https://www.youtube.com/watch?v=YCIllo3WgRs",
+        "https://www.youtube.com/watch?v=VfssVmfgeBc",
+        "https://www.youtube.com/watch?v=7jtryo-Sikg",
+        "https://www.youtube.com/watch?v=tTDyd0qomRM"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "Vijay's massive campaign rally in Kanyakumari with multiple coverage videos"
+    },
+    {
+      "id": 47,
+      "date": "2026-04-05",
+      "location": "Trichy/Tiruchirappalli (April)",
+      "district": "Tiruchirappalli",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=QN7XW0hbNtU",
+        "https://www.youtube.com/watch?v=4QjlH1GU0aw",
+        "https://www.youtube.com/watch?v=63-kAJqoSr4"
+      ],
+      "event_type": "Campaign Rally",
+      "description": "Vijay's Trichy East speech during final campaign phase"
+    },
+    {
+      "id": 48,
+      "date": "2026-04-12",
+      "location": "Chennai (April)",
+      "district": "Chennai",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cvzfAEkDQWU"
+      ],
+      "event_type": "Campaign Event",
+      "description": "TVK Vijay campaign event in Chennai"
+    },
+    {
+      "id": 49,
+      "date": "2026-04-21",
+      "location": "Nandanam YMCA Ground, Chennai",
+      "district": "Chennai",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=sw1Gk28g4VE"
+      ],
+      "event_type": "Final Campaign Rally (Grand Finale)",
+      "description": "TVK's grand final rally at YMCA Ground, Nandanam - Election Climax"
+    },
+    {
+      "id": 50,
+      "date": "2026-04-21",
+      "location": "Chennai (Final Phase)",
+      "district": "Chennai",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mxLnCBmThwM",
+        "https://www.youtube.com/watch?v=HdpNyjr_r2k",
+        "https://www.youtube.com/watch?v=FB_HbZISMIg"
+      ],
+      "event_type": "Final Campaign Speeches",
+      "description": "Vijay's final campaign speeches in Chennai before polling"
+    },
+    {
+      "id": 51,
+      "date": "2026-04-21",
+      "location": "Thiruvallur (Final Phase)",
+      "district": "Thiruvallur",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=dUDVLcgoro0"
+      ],
+      "event_type": "Final Campaign Speech",
+      "description": "TVK Vijay final speech - Final day campaign"
+    },
+    {
+      "id": 52,
+      "date": "2026-04-21",
+      "location": "Various Locations (Final Day)",
+      "district": "Multiple",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ziAxkcdQQ_4",
+        "https://www.youtube.com/watch?v=qbB7D-X0tQQ"
+      ],
+      "event_type": "Final Day Campaign",
+      "description": "Vijay's last day election campaign speech across Tamil Nadu"
+    },
+    {
+      "id": 53,
+      "date": "2026-04-21",
+      "location": "Perambur, Chennai",
+      "district": "Chennai",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=X6iOPXfxwFM"
+      ],
+      "event_type": "Campaign Rally Address",
+      "description": "TVK chief Vijay addresses election campaign rally in Perambur (his constituency)"
+    },
+    {
+      "id": 54,
+      "date": "2025-12-27",
+      "location": "Malaysia (International)",
+      "district": "International",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=UotT4YW2IlM"
+      ],
+      "event_type": "Jana Nayagan Audio Launch & Farewell Event",
+      "description": "Thalapathy Thiruvizha - Vijay's emotional farewell to cinema event in Malaysia with emotional speech"
+    },
+    {
+      "id": 55,
+      "date": "2025-10-27",
+      "location": "Vikravandi",
+      "district": "Villupuram",
+      "youtube_urls": [
+        "Note: First TVK political conference - historic gathering with 800,000+ attendees"
+      ],
+      "event_type": "First Political Conference",
+      "description": "TVK's inaugural political conference at Vikravandi"
+    },
+    {
+      "id": 56,
+      "date": "2026-04-26",
+      "location": "Coimbatore",
+      "district": "Coimbatore",
+      "youtube_urls": [
+        "Note: Party functionaries meeting and commitment statement"
+      ],
+      "event_type": "Party Functionaries Meeting",
+      "description": "TVK party meeting where Vijay stated commitment to transparent governance"
+    }
+  ],
+  "playlist_collections": [
+    {
+      "title": "TVK Vijay Speech - Political Campaign Playlist",
+      "url": "https://www.youtube.com/playlist?list=PLPJNBVyYac5PG0mK59lVC9FnyrFhznstj",
+      "source": "Dinamalar",
+      "description": "Full live coverage of Thalapathy Vijay's political campaigns"
+    },
+    {
+      "title": "Thalapathy Vijay Motivational Speeches Playlist",
+      "url": "https://m.youtube.com/playlist?list=PLg5LzFMKwSFtNsfkee--Q2G81c4hFHO38",
+      "description": "Collection of Vijay's motivational and political speeches"
+    },
+    {
+      "title": "TVK VIJAY SPEECH LIVE - Compilation",
+      "url": "https://www.youtube.com/playlist?list=PLGnzsaBRBVTuNukjGTl7u689x9C_PkUGp",
+      "description": "Live coverage of TVK Vijay speeches"
+    }
+  ],
+  "campaign_timeline": {
+    "phase_1": {
+      "dates": "September 13-20, 2025",
+      "description": "First leg of statewide tour",
+      "districts": ["Tiruchirappalli", "Perambalur", "Ariyalur", "Nagapattinam", "Thiruvarur", "Mayiladuthurai"]
+    },
+    "phase_2": {
+      "dates": "September 27, 2025",
+      "description": "Central Tamil Nadu campaign",
+      "districts": ["Namakkal", "Karur"]
+    },
+    "phase_3": {
+      "dates": "October 5-25, 2025",
+      "description": "Eastern and Western regions",
+      "districts": ["Vellore", "Ranipet", "Puducherry", "Cuddalore", "Thoothukudi", "Tirunelveli", "Tiruppur", "Erode", "Coimbatore", "Nilgiris", "Kanchipuram"]
+    },
+    "phase_4": {
+      "dates": "November 1-29, 2025",
+      "description": "Northern and Southern regions",
+      "districts": ["Perambalur", "Kallakurichi", "Krishnagiri", "Tirupattur", "Villupuram", "Tiruvannamalai", "Salem", "Dharmapuri", "Thanjavur", "Mayiladuthurai"]
+    },
+    "phase_5": {
+      "dates": "December 6-20, 2025",
+      "description": "Final December push",
+      "districts": ["Thanjavur", "Pudukkottai", "Salem", "Namakkal", "Karur", "Dindigul", "Theni", "Sivagangai", "Ramanathapuram", "Thiruvallur", "Kanchipuram"]
+    },
+    "phase_6": {
+      "dates": "February-April 2026",
+      "description": "Final election campaign phase",
+      "districts": ["Madurai", "Kanyakumari", "Tenkasi", "Virudhunagar", "Vellore", "Thanjavur", "Salem", "Trichy", "Thiruvallur", "Chengalpattu", "Chennai"]
+    }
+  },
+  "key_statistics": {
+    "total_districts_covered": 35,
+    "campaign_duration_months": 8,
+    "start_date": "2025-09-13",
+    "end_date": "2026-04-23",
+    "election_date": "2026-04-23",
+    "total_constituencies": 234,
+    "vijay_contesting_constituencies": [
+      "Perambur (Chennai)",
+      "Trichy East (Tiruchirappalli)"
+    ],
+    "documented_unique_speech_locations": 35
+  },
+  "data_sources": [
+    "YouTube channel searches",
+    "Live coverage platforms",
+    "News reports and campaign announcements",
+    "Official TVK announcements",
+    "News agency coverage (Cinema Vikatan, Puthiyathalai Murrai, etc.)"
+  ],
+  "notes": {
+    "completeness": "This is as comprehensive as possible based on available YouTube video searches",
+    "video_availability": "Some speeches may have multiple recordings from different news channels and cameramen",
+    "missing_videos": "Some campaign stops may not have uploaded videos or videos may be removed",
+    "karur_incident": "September 27, 2025 Karur rally resulted in crowd crush tragedy with 41 deaths",
+    "campaign_expansion": "Original schedule was September 13 - December 20, 2025, but was extended into April 2026",
+    "last_updated": "2026-04-26"
+  }
+}

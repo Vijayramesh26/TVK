@@ -415,67 +415,53 @@
               v-for="(item, i) in sortedNews"
               :key="item.id"
               class="news-scroll-card rounded-xl overflow-hidden hover-lift border-transparent elevation-10 mx-3"
-              @click="$router.push(`/news/${item.id}`)"
             >
+              <!-- Video Embed (Anthems Style) -->
+              <div v-if="item.youtubeId" class="video-container">
+                <iframe 
+                  :src="`https://www.youtube.com/embed/${item.youtubeId}`" 
+                  title="TVK News Video" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <!-- Poster Image (Fallback if no video) -->
               <v-img
+                v-else
                 :src="item.image"
                 height="260"
                 cover
                 class="position-relative"
+                @click="$router.push(`/news/${item.id}`)"
               >
-                <!-- Poster Gradient Overlay -->
                 <div class="poster-gradient absolute-inset"></div>
-
-                <!-- Dynamic Poster Overlay -->
                 <div class="news-poster-overlay absolute-inset overflow-hidden">
-                  <!-- Large Vijay Portrait (Standardized) -->
-                  <v-img
-                    :src="heroImage"
-                    alt="Vijay"
-                    class="poster-vijay-portrait"
-                    width="140"
-                    cover
-                  ></v-img>
-
-                  <!-- Poster Content -->
-                  <div
-                    class="absolute-inset d-flex flex-column justify-space-between pa-4 z-10"
-                  >
+                  <v-img :src="heroImage" alt="Vijay" class="poster-vijay-portrait" width="140" cover></v-img>
+                  <div class="absolute-inset d-flex flex-column justify-space-between pa-4 z-10">
                     <div class="d-flex justify-start">
-                      <div
-                        class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon rounded-pill elevation-4"
-                      >
+                      <div class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon rounded-pill elevation-4">
                         {{ item.tag }}
                       </div>
                     </div>
-
-                    <!-- Official Area Label -->
-                    <div
-                      class="news-official-label pa-3 rounded-lg elevation-10"
-                    >
-                      <div
-                        class="text-caption font-weight-black color-gold text-uppercase tracking-widest mb-1"
-                      >
+                    <div class="news-official-label pa-3 rounded-lg elevation-10">
+                      <div class="text-caption font-weight-black color-gold text-uppercase tracking-widest mb-1">
                         {{ isTamil ? "தளபதி விஜய்" : "THALAPATHY VIJAY" }}
                       </div>
-                      <div
-                        class="text-h5 font-weight-black text-white letter-spacing-2"
-                      >
+                      <div class="text-h5 font-weight-black text-white letter-spacing-2">
                         {{ isTamil ? item.location : item.locationEn }}
                       </div>
                     </div>
                   </div>
                 </div>
               </v-img>
-              <v-card-text class="pa-6">
-                <div
-                  class="text-caption font-weight-bold text-grey-lighten-1 mb-2"
-                >
+
+              <v-card-text class="pa-6" @click="$router.push(`/news/${item.id}`)">
+                <div class="text-caption font-weight-bold text-grey-lighten-1 mb-2">
                   {{ t(`news.item${item.id + 1}.date`) }}
                 </div>
-                <h3
-                  class="text-h6 font-weight-bold color-maroon line-clamp-2 lh-tight"
-                >
+                <h3 class="text-h6 font-weight-bold color-maroon line-clamp-2 lh-tight">
                   {{ t(`news.item${item.id + 1}.title`) }}
                 </h3>
               </v-card-text>
@@ -695,9 +681,15 @@ export default {
       return this.currentLang() === "ta";
     },
     sortedNews() {
-      return [...this.newsData].sort(
-        (a, b) => new Date(b.sortDate) - new Date(a.sortDate),
-      );
+      return [...this.newsData].sort((a, b) => {
+        const dateA = new Date(a.sortDate);
+        const dateB = new Date(b.sortDate);
+        if (dateB - dateA !== 0) {
+          return dateB - dateA;
+        }
+        // Fallback to id descending for items on the same date
+        return b.id - a.id;
+      });
     },
     isMobile() {
       return this.$vuetify.display.xs || this.$vuetify.display.sm;
@@ -1288,6 +1280,26 @@ export default {
   z-index: 10;
   max-width: 85%;
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Animations */
 
 .news-official-label-alt {
   /* Ensuring uniqueness and plain ASCII name */

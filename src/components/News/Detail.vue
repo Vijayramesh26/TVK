@@ -80,6 +80,19 @@
 
           <!-- Article Content & Transcript -->
           <v-card class="pa-6 pa-md-12 rounded-0 rounded-md-xl glass-article border-gold-subtle mb-10 overflow-hidden">
+            <!-- YouTube Video Embed -->
+            <div v-if="articleData.youtubeId" class="video-container mb-12 elevation-10 rounded-lg overflow-hidden">
+              <iframe
+                width="100%"
+                height="500"
+                :src="`https://www.youtube.com/embed/${articleData.youtubeId}`"
+                title="TVK Official Speech"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
             <!-- Article Summary/Body -->
             <div class="article-body text-h6 font-weight-medium color-grey-darken-3 mb-12">
               <p v-for="(paragraph, i) in articleContent" :key="i" class="mb-6 lh-relaxed">
@@ -299,6 +312,23 @@ export default {
 
 .article-body p {
   text-align: justify;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  background: black;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media (max-width: 600px) {
