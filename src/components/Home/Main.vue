@@ -132,10 +132,156 @@
     <section
       class="election-banner position-relative overflow-hidden elevation-20"
     >
+      <!-- Use static div for mobile, parallax for desktop to save memory -->
+      <div v-if="isMobile" class="py-10 banner-static-bg" :style="{ backgroundImage: `url(${electionBg})` }">
+        <div class="banner-overlay absolute-inset"></div>
+        <v-container class="position-relative z-10 py-10">
+          <!-- Content remains the same -->
+          <v-row align="center" justify="space-between">
+            <v-col cols="12" md="7" class="text-center text-md-left">
+              <div
+                class="d-flex align-center justify-center justify-md-start mb-6"
+              >
+                <v-chip
+                  color="#D4AF37"
+                  class="font-weight-black px-6 py-2 elevation-8 text-uppercase pulse-gold"
+                  variant="elevated"
+                >
+                  {{ t("election.votingSummary") }} 2026
+                </v-chip>
+                <v-chip
+                  variant="outlined"
+                  color="white"
+                  class="ml-4 border-white-thin d-none d-sm-flex"
+                >
+                  <v-icon start icon="mdi-shield-check"></v-icon>
+                  {{ t("election.officialData") }}
+                </v-chip>
+              </div>
+
+              <h2
+                class="display-promo font-weight-black mb-6 glow-text lh-tight text-white mb-8"
+                style="font-size: clamp(2.5rem, 6vw, 4.5rem); max-width: 900px"
+              >
+                {{ t("election.resultsInfo") }}
+              </h2>
+
+              <v-row class="mb-10 px-2" justify="center" justify-md="start">
+                <v-col cols="12" sm="6" lg="5">
+                  <div
+                    class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
+                  >
+                    <div class="text-overline color-gold font-weight-bold mb-1">
+                      {{ isTamil ? "பதிவான வாக்குகள்" : "Votes Polled" }}
+                    </div>
+                    <div class="text-h3 font-weight-black text-white">
+                      4.82 <span class="text-h5">Cr</span>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col cols="12" sm="6" lg="5">
+                  <div
+                    class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
+                  >
+                    <div class="text-overline color-gold font-weight-bold mb-1">
+                      {{ isTamil ? "மொத்த வாக்காளர்கள்" : "Total Voters" }}
+                    </div>
+                    <div class="text-h3 font-weight-black text-white">
+                      5.67 <span class="text-h5">Cr</span>
+                    </div>
+                  </div>
+                </v-col>
+              </v-row>
+
+              <div class="d-flex justify-center justify-md-start">
+                <v-btn
+                  to="/results"
+                  size="x-large"
+                  class="font-weight-black border-gold-thin rounded-pill px-10 elevation-12"
+                  prepend-icon="mdi-poll"
+                  color="#D4AF37"
+                >
+                  {{
+                    isTamil ? "தொகுதி வாரியாகக் காண்க" : "View Detailed Results"
+                  }}
+                </v-btn>
+              </div>
+            </v-col>
+
+            <v-col cols="12" md="5" class="d-none d-md-flex justify-end">
+              <v-card
+                variant="outlined"
+                color="#D4AF37"
+                class="rounded-circle pa-4 border-gold-thin pulse-gold"
+              >
+                <v-icon icon="mdi-vote" size="80" color="white"></v-icon>
+              </v-card>
+            </v-col>
+          </v-row>
+
+          <!-- Bottom Filling Area: Roadmap / Process -->
+          <v-divider
+            class="mt-16 mb-10 border-white-thin opacity-20"
+          ></v-divider>
+
+          <v-row class="px-4" justify="center">
+            <v-col
+              cols="12"
+              sm="4"
+              v-for="(phase, index) in [
+                {
+                  icon: 'mdi-vote',
+                  label: isTamil ? 'வாக்குப்பதிவு' : 'Polling',
+                  status: isTamil ? 'முடிந்தது' : 'Completed',
+                  color: 'success',
+                },
+                {
+                  icon: 'mdi-clipboard-list-outline',
+                  label: isTamil ? 'சரிபார்ப்பு' : 'Verification',
+                  status: isTamil ? 'நடைபெறுகிறது' : 'In Progress',
+                  color: 'warning',
+                },
+                {
+                  icon: 'mdi-trophy-variant',
+                  label: isTamil ? 'தேர்தல் முடிவு' : 'Final Results',
+                  status: 'May 04, 2026',
+                  color: 'info',
+                },
+              ]"
+              :key="index"
+            >
+              <div
+                class="glass-effect pa-4 rounded-xl d-flex align-center border-white-thin h-100"
+              >
+                <v-avatar
+                  size="48"
+                  :color="phase.color"
+                  variant="tonal"
+                  class="mr-4"
+                >
+                  <v-icon :icon="phase.icon"></v-icon>
+                </v-avatar>
+                <div>
+                  <div
+                    class="text-caption font-weight-bold color-gold uppercase opacity-80"
+                  >
+                    {{ phase.label }}
+                  </div>
+                  <div class="text-subtitle-2 font-weight-black text-white">
+                    {{ phase.status }}
+                  </div>
+                </div>
+              </div>
+            </v-col>
+          </v-row>
+        </v-container>
+      </div>
+
       <v-parallax
+        v-else
         :src="electionBg"
         scale="1.1"
-        :height="isMobile ? 1100 : 850"
+        height="850"
         class="py-10"
       >
         <div class="banner-overlay absolute-inset"></div>
@@ -745,6 +891,13 @@ export default {
 </script>
 
 <style scoped>
+.banner-static-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .home-container {
   overflow-x: hidden;
 }
