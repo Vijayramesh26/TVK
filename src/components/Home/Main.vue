@@ -172,10 +172,10 @@
                     class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
                   >
                     <div class="text-overline color-gold font-weight-bold mb-1">
-                      {{ isTamil ? "பதிவான வாக்குகள்" : "Votes Polled" }}
+                      {{ isTamil ? 'த.வெ.க வென்ற இடங்கள்' : 'TVK Seats Won' }}
                     </div>
                     <div class="text-h3 font-weight-black text-white">
-                      4.82 <span class="text-h5">Cr</span>
+                      108 <span class="text-h5">/ 234</span>
                     </div>
                   </div>
                 </v-col>
@@ -184,10 +184,10 @@
                     class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
                   >
                     <div class="text-overline color-gold font-weight-bold mb-1">
-                      {{ isTamil ? "மொத்த வாக்காளர்கள்" : "Total Voters" }}
+                      {{ isTamil ? 'வாக்குப்பதிவு சதவீதம்' : 'Voter Turnout' }}
                     </div>
                     <div class="text-h3 font-weight-black text-white">
-                      5.67 <span class="text-h5">Cr</span>
+                      85.15 <span class="text-h5">%</span>
                     </div>
                   </div>
                 </v-col>
@@ -237,15 +237,15 @@
                 },
                 {
                   icon: 'mdi-clipboard-list-outline',
-                  label: isTamil ? 'சரிபார்ப்பு' : 'Verification',
-                  status: isTamil ? 'நடைபெறுகிறது' : 'In Progress',
-                  color: 'warning',
+                  label: isTamil ? 'சரிபார்ப்பு' : 'Counting',
+                  status: isTamil ? 'முடிந்தது' : 'Completed',
+                  color: 'success',
                 },
                 {
                   icon: 'mdi-trophy-variant',
-                  label: isTamil ? 'தேர்தல் முடிவு' : 'Final Results',
-                  status: 'May 04, 2026',
-                  color: 'info',
+                  label: isTamil ? 'தேர்தல் முடிவு' : 'Results Declared',
+                  status: isTamil ? 'த.வெ.க வெற்றி!' : 'TVK Wins!',
+                  color: 'success',
                 },
               ]"
               :key="index"
@@ -322,10 +322,10 @@
                     class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
                   >
                     <div class="text-overline color-gold font-weight-bold mb-1">
-                      {{ isTamil ? "பதிவான வாக்குகள்" : "Votes Polled" }}
+                      {{ isTamil ? 'த.வெ.க வென்ற இடங்கள்' : 'TVK Seats Won' }}
                     </div>
                     <div class="text-h3 font-weight-black text-white">
-                      4.82 <span class="text-h5">Cr</span>
+                      108 <span class="text-h5">/ 234</span>
                     </div>
                   </div>
                 </v-col>
@@ -334,10 +334,10 @@
                     class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
                   >
                     <div class="text-overline color-gold font-weight-bold mb-1">
-                      {{ isTamil ? "மொத்த வாக்காளர்கள்" : "Total Voters" }}
+                      {{ isTamil ? 'வாக்குப்பதிவு சதவீதம்' : 'Voter Turnout' }}
                     </div>
                     <div class="text-h3 font-weight-black text-white">
-                      5.67 <span class="text-h5">Cr</span>
+                      85.15 <span class="text-h5">%</span>
                     </div>
                   </div>
                 </v-col>
@@ -387,15 +387,15 @@
                 },
                 {
                   icon: 'mdi-clipboard-list-outline',
-                  label: isTamil ? 'சரிபார்ப்பு' : 'Verification',
-                  status: isTamil ? 'நடைபெறுகிறது' : 'In Progress',
-                  color: 'warning',
+                  label: isTamil ? 'சரிபார்ப்பு' : 'Counting',
+                  status: isTamil ? 'முடிந்தது' : 'Completed',
+                  color: 'success',
                 },
                 {
                   icon: 'mdi-trophy-variant',
-                  label: isTamil ? 'தேர்தல் முடிவு' : 'Final Results',
-                  status: 'May 04, 2026',
-                  color: 'info',
+                  label: isTamil ? 'தேர்தல் முடிவு' : 'Results Declared',
+                  status: isTamil ? 'த.வெ.க வெற்றி!' : 'TVK Wins!',
+                  color: 'success',
                 },
               ]"
               :key="index"

@@ -1,5 +1,10 @@
 export const constituencyTranslations = {
   // Chennai
+  "Ambattur": "அம்பத்தூர்",
+  "Madhavaram": "மாதவரம்",
+  "Madavaram": "மாதவரம்",
+  "Thiruvottiyur": "திருவொற்றியூர்",
+  "Tiruvottiyur": "திருவொற்றியூர்",
   "Dr. Radhakrishnan Nagar": "டாக்டர் ராதாகிருஷ்ணன் நகர்",
   "Perambur": "பெரம்பூர்",
   "Kolathur": "கொளத்தூர்",
@@ -9,18 +14,24 @@ export const constituencyTranslations = {
   "Royapuram": "ராயபுரம்",
   "Harbour": "துறைமுகம்",
   "Chepauk-Thiruvallikeni": "சேப்பாக்கம்-திருவல்லிக்கேணி",
+  "Chepauk-Thiruvalliken": "சேப்பாக்கம்-திருவல்லிக்கேணி",
+  "Chengam": "செங்கம்",
+  "Veerapandi": "வீரபாண்டி",
+  "Dr. Radhakrishnan Nagar": "டாக்டர் ராதாகிருஷ்ணன் நகர்",
+  "Dr.Radhakrishnan Naga": "டாக்டர் ராதாகிருஷ்ணன் நகர்",
+  "Kilvaithinankuppam": "கிழ்வைத்தினான்குப்பம்",
+  "Kilvaithinankuppam(SC": "கிழ்வைத்தினான்குப்பம்",
   "Thousand Lights": "ஆயிரம் விளக்கு",
   "Anna Nagar": "அண்ணா நகர்",
   "Virugambakkam": "விருகம்பாக்கம்",
+  "Virugampakkam": "விருகம்பாக்கம்",
   "Saidapet": "சைதாப்பேட்டை",
   "Thiyagarayanagar": "தியாகராய நகர்",
   "Mylapore": "மயிலாப்பூர்",
   "Velachery": "வேளச்சேரி",
+  "Sholinganallur": "சோழிங்கநல்லூர்",
   "Shozhinganallur": "சோழிங்கநல்லூர்",
-  "Pallavaram": "பல்லாவரம்",
-  "Tambaram": "தாம்பரம்",
-  "Chengalpattu": "செங்கல்பட்டு",
-  
+
   // Tiruvallur
   "Gummidipoondi": "கும்மிடிப்பூண்டி",
   "Ponneri": "பொன்னேரி",
@@ -29,13 +40,172 @@ export const constituencyTranslations = {
   "Poonamallee": "பூந்தமல்லி",
   "Avadi": "ஆவடி",
   "Maduravoyal": "மதுரவாயல்",
-  "Ambattur": "அம்பத்தூர்",
-  "Madavaram": "மாதவரம்",
-  "Thiruvottiyur": "திருவொற்றியூர்",
-  
+
+  // Kanchipuram & Chengalpattu
+  "Sriperumbudur": "ஸ்ரீபெரும்புதூர்",
+  "Uthiramerur": "உத்திரமேரூர்",
+  "Kancheepuram": "காஞ்சிபுரம்",
+  "Alandur": "ஆலந்தூர்",
+  "Pallavaram": "பல்லாவரம்",
+  "Tambaram": "தாம்பரம்",
+  "Chengalpattu": "செங்கல்பட்டு",
+  "Thiruporur": "திருப்போரூர்",
+  "Cheyyur": "செய்யூர்",
+  "Madurantakam": "மதுராந்தகம்",
+
+  // Vellore & Ranipet
+  "Arakkonam": "ஆற்காடு",
+  "Sholinghur": "சோளிங்கர்",
+  "Sholingur": "சோளிங்கர்",
+  "Arcot": "ஆற்காடு",
+  "Ranipet": "ராணிப்பேட்டை",
+  "Vellore": "வேலூர்",
+  "Anaikattu": "அணைக்கட்டு",
+  "Katpadi": "காட்பாடி",
+  "Gudiyattam": "குடியாத்தம்",
+  "Vaniyambadi": "வாணியம்பாடி",
+  "Ambur": "ஆம்பூர்",
+
+  // Tiruvannamalai
+  "Jolarpet": "ஜோலார்பேட்டை",
+  "Tirupattur": "திருப்பத்தூர்",
+  "Veppanahalli": "வேப்பனஹள்ளி",
+  "Polur": "போளூர்",
+  "Arani": "ஆரணி",
+  "Cheyyar": "செய்யார்",
+  "Vandavasi": "வந்தவாசி",
+  "Kalasapakkam": "கலசப்பாக்கம்",
+  "Tiruvannamalai": "திருவண்ணாமலை",
+  "Kilpennathur": "கீழ்பென்னாத்தூர்",
+
+  // Villupuram
+  "Gingee": "செஞ்சி",
+  "Mailam": "மயிலம்",
+  "Tindivanam": "திண்டிவனம்",
+  "Vanur": "வானூர்",
+  "Villupuram": "விழுப்புரம்",
+  "Viluppuram": "விழுப்புரம்",
+  "Vikravandi": "விக்கிரவாண்டி",
+  "Tirukkoyilur": "திருக்கோயிலூர்",
+  "Ulundurpettai": "உளுந்தூர்பேட்டை",
+  "Rishivandiyam": "ரிஷிவந்தியம்",
+  "Sankarapuram": "சங்கராபுரம்",
+
+  // Cuddalore
+  "Kallakurichi": "கள்ளக்குறிச்சி",
+  "Kilvaithinankuppam": "கீழ்வைத்தீஸ்வரன்கோயில்",
+  "Kilvaithinankuppam(SC": "கீழ்வைத்தீஸ்வரன்கோயில்",
+  "Cuddalore": "கடலூர்",
+  "Kurinjipadi": "குறிஞ்சிப்பாடி",
+  "Panruti": "பண்ருட்டி",
+  "Bhuvanagiri": "புவனகிரி",
+  "Chidambaram": "சிதம்பரம்",
+  "Kattumannarkoil": "கட்டுமன்னார்கோவில்",
+  "Sirkazhi": "சீர்காழி",
+  "Mayiladuturai": "மயிலாடுதுறை",
+  "Mayiladuthurai": "மயிலாடுதுறை",
+  "Poompuhar": "பூம்புகார்",
+  "Tittakudi": "திட்டக்குடி",
+  "Neyveli": "நெய்வேலி",
+  "Virudhachalam": "விருத்தாசலம்",
+  "Vriddhachalam": "விருத்தாசலம்",
+  "Jayankondam": "ஜெயங்கொண்டம்",
+
+  // Thanjavur
+  "Thanjavur": "தஞ்சாவூர்",
+  "Kumbakonam": "கும்பகோணம்",
+  "Papanasam": "பாபநாசம்",
+  "Thiruvaiyaru": "திருவையாறு",
+  "Thiruvidaimarudur": "திருவிடைமருதூர்",
+  "Pattukkottai": "பட்டுக்கோட்டை",
+  "Peravurani": "பேராவூரணி",
+  "Gandarvakottai": "கந்தர்வக்கோட்டை",
+  "Gandharvakottai(SC)": "கந்தர்வக்கோட்டை",
+  "Gandarvakottai(SC)": "கந்தர்வக்கோட்டை",
+  "Orathanadu": "ஒரத்தநாடு",
+
+  // Nagapattinam
+  "Nagapattinam": "நாகப்பட்டினம்",
+  "Kilvelur": "கீழ்வேளூர்",
+  "Vedaranyam": "வேதாரண்யம்",
+  "Thiruthuraipoondi": "திருத்துறைப்பூண்டி",
+  "Mannargudi": "மன்னார்குடி",
+  "Nannilam": "நன்னிலம்",
+
+  // Thiruvarur
+  "Thiruvarur": "திருவாரூர்",
+
+  // Trichy
+  "Manapaarai": "மணப்பாறை",
+  "Manapparai": "மணப்பாறை",
+  "Tiruchirappalli": "திருச்சிராப்பள்ளி",
+  "Musiri": "முசிறி",
+  "Lalgudi": "லால்குடி",
+  "Manachanallur": "மண்ணச்சநல்லூர்",
+  "Thuraiyur": "துறையூர்",
+
+  // Pudukkottai
+  "Pudukkottai": "புதுக்கோட்டை",
+  "Alangudi": "ஆலங்குடி",
+  "Aranthangi": "அறந்தாங்கி",
+  "Karaikudi": "காரைக்குடி",
+  "Thirumayam": "திருமயம்",
+  "Viralimalai": "விராலிமலை",
+
+  // Perambalur & Ariyalur
+  "Perambalur": "பெரம்பலூர்",
+  "Kunnam": "குன்னம்",
+  "Ariyalur": "அரியலூர்",
+
+  // Salem
+  "Salem (North)": "சேலம் வடக்கு",
+  "Salem (South)": "சேலம் தெற்கு",
+  "Salem (West)": "சேலம் மேற்கு",
+  "Gangavalli": "கங்கவள்ளி",
+  "Yercaud": "ஏற்காடு",
+  "Omalur": "ஓமலூர்",
+  "Mettur": "மேட்டூர்",
+  "Edappadi": "எடப்பாடி",
+  "Sangagiri": "சங்ககிரி",
+  "Sankari": "சங்ககிரி",
+  "Attur": "ஆத்தூர்",
+
+  // Namakkal
+  "Namakkal": "நாமக்கல்",
+  "Rasipuram": "ராசிபுரம்",
+  "Senthamangalam": "சேந்தமங்கலம்",
+  "Paramathi-Velur": "பரமத்தி-வேலூர்",
+  "Tiruchengodu": "திருச்செங்கோடு",
+  "Kumarapalayam": "குமாரபாளையம்",
+
+  // Erode
+  "Erode (East)": "ஈரோடு கிழக்கு",
+  "Erode (West)": "ஈரோடு மேற்கு",
+  "Modakkurichi": "மொடக்குறிச்சி",
+  "Perundurai": "பெருந்துறை",
+  "Bhavani": "பவானி",
+  "Anthiyur": "ஆந்தியூர்",
+  "Gobichettipalayam": "கோபிசெட்டிபாளையம்",
+  "Bhavanisagar": "பவானிசாகர்",
+
+  // Dharamapuri & Krishnagiri
+  "Dharmapuri": "தர்மபுரி",
+  "Pappireddippatti": "பாப்பிரெட்டிபட்டி",
+  "Pennagaram": "பென்னாகரம்",
+  "Harur": "ஹரூர்",
+  "Palacode": "பாலக்கோடு",
+  "Palacodu": "பாலக்கோடு",
+  "Uthangarai": "உத்தங்கரை",
+  "Krishnagiri": "கிருஷ்ணகிரி",
+  "Hosur": "ஓசூர்",
+  "Thalli": "தள்ளி",
+  "Bargur": "பர்கூர்",
+
   // Coimbatore
-  "Coimbatore North": "கோயம்புத்தூர் வடக்கு",
-  "Coimbatore South": "கோயம்புத்தூர் தெற்கு",
+  "Coimbatore (North)": "கோயம்புத்தூர் வடக்கு",
+  "Coimbatore(North)": "கோயம்புத்தூர் வடக்கு",
+  "Coimbatore (South)": "கோயம்புத்தூர் தெற்கு",
+  "Coimbatore(South)": "கோயம்புத்தூர் தெற்கு",
   "Kavundampalayam": "கவுண்டம்பாளையம்",
   "Singanallur": "சிங்காநல்லூர்",
   "Sulur": "சூலூர்",
@@ -44,7 +214,23 @@ export const constituencyTranslations = {
   "Pollachi": "பொள்ளாச்சி",
   "Valparai": "வால்பாறை",
   "Mettupalayam": "மேட்டுப்பாளையம்",
-  
+  "Mettuppalayam": "மேட்டுப்பாளையம்",
+
+  // Tiruppur
+  "Tiruppur (North)": "திருப்பூர் வடக்கு",
+  "Tiruppur (South)": "திருப்பூர் தெற்கு",
+  "Palladam": "பல்லடம்",
+  "Kangayam": "காங்கேயம்",
+  "Dharapuram": "தாராபுரம்",
+  "Avanashi": "அவனாசி",
+  "Udumalaipettai": "உடுமலைப்பேட்டை",
+  "Madathukulam": "மடத்துக்குளம்",
+
+  // Nilgiris
+  "Udhagamandalam": "உதகமண்டலம்",
+  "Coonoor": "குன்னூர்",
+  "Gudalur": "குடலூர்",
+
   // Madurai
   "Madurai North": "மதுரை வடக்கு",
   "Madurai South": "மதுரை தெற்கு",
@@ -55,44 +241,74 @@ export const constituencyTranslations = {
   "Thirumangalam": "திருமங்கலம்",
   "Usilampatti": "உசிலம்பட்டி",
   "Sholavandan": "சோழவந்தான்",
-  "Thirupparankundram": "திருப்பரங்குன்றம்",
-  
-  // Trichy
-  "Tiruchirappalli East": "திருச்சிராப்பள்ளி கிழக்கு",
-  "Tiruchirappalli West": "திருச்சிராப்பள்ளி மேற்கு",
-  "Srirangam": "ஸ்ரீரங்கம்",
-  "Thiruverumbur": "திருவெறும்பூர்",
-  "Manapparai": "மணப்பாறை",
-  "Musiri": "முசிறி",
-  "Lalgudi": "லால்குடி",
-  "Manachanallur": "மண்ணச்சநல்லூர்",
-  "Thuraiyur": "துறையூர்",
+  "Thiruparankundram": "திருப்பரங்குன்றம்",
+  "Andipatti": "ஆண்டிப்பட்டி",
+  "Periyakulam": "பெரியகுளம்",
+  "Bodinayakanur": "போடிநாயக்கனூர்",
+  "Cumbum": "கும்பும்",
+
+  // Theni & Dindigul
+  "Dindigul": "திண்டுக்கல்",
+  "Natham": "நாத்தம்",
+  "Nilakottai": "நிலக்கோட்டை",
+  "Oddanchatram": "ஒட்டன்சத்திரம்",
+  "Palani": "பழனி",
+  "Athoor": "ஆத்தூர்",
+  "Vedasandur": "வேடசந்தூர்",
+
+  // Ramanathapuram & Sivaganga
+  "Ramanathapuram": "ராமநாதபுரம்",
+  "Paramakudi": "பரமக்குடி",
+  "Tiruvadanai": "திருவாடானை",
+  "Mudhukulathur": "முதுகுளத்தூர்",
+  "Sivaganga": "சிவகங்கை",
+  "Manamadurai": "மானாமதுரை",
+
+  // Virudhunagar
+  "Virudhunagar": "விருதுநகர்",
+  "Aruppukkottai": "அருப்புக்கோட்டை",
+  "Sivakasi": "சிவகாசி",
+  "Srivilliputhur": "ஸ்ரீவில்லிபுத்தூர்",
+  "Sattur": "சாத்தூர்",
+  "Rajapalayam": "ராஜபாளையம்",
+
+  // Theni
+  "Aravakurichi": "அரவக்குறிச்சி",
+  "Karur": "கரூர்",
+  "Krishnarayapuram": "கிருஷ்ணராயபுரம்",
+  "Kulithalai": "குளித்தலை",
+
+  // Tirunelveli
+  "Tirunelveli": "திருநெல்வேலி",
+  "Palayamkottai": "பாளையங்கோட்டை",
+  "Ambasamudram": "அம்பாசமுத்திரம்",
+  "Nanguneri": "நாங்குநேரி",
+  "Radhapuram": "ராதாபுரம்",
+  "Sankarankovil": "சங்கரன்கோவில்",
+  "Vasudevanallur": "வாசுதேவநல்லூர்",
+  "Tenkasi": "தென்காசி",
+  "Alangulam": "ஆலங்குளம்",
+  "Kadayanallur": "கடையநல்லூர்",
+
+  // Thoothukudi
+  "Thoothukkudi": "தூத்துக்குடி",
+  "Tiruchendur": "திருச்செந்தூர்",
+  "Srivaikuntam": "ஸ்ரீவைகுண்டம்",
+  "Ottapidaram": "ஒட்டப்பிடாரம்",
+  "Kovilpatti": "கோவில்பட்டி",
+  "Vilathikulam": "விளாத்திகுளம்",
 
   // Kanyakumari
   "Kanniyakumari": "கன்னியாகுமரி",
   "Nagercoil": "நாகர்கோவில்",
   "Colachal": "குளச்சல்",
+  "Colachel": "குளச்சல்",
   "Padmanabhapuram": "பத்மநாபபுரம்",
   "Vilavancode": "விளவங்கோடு",
   "Killiyoor": "கிள்ளியூர்",
-  
-  // Others (Common)
-  "Salem": "சேலம்",
-  "Erode": "ஈரோடு",
-  "Vellore": "வேலூர்",
-  "Thanjavur": "தஞ்சாவூர்",
-  "Thoothukudi": "தூத்துக்குடி",
-  "Tirunelveli": "திருநெல்வேலி",
-  "Dindigul": "திண்டுக்கல்",
-  "Hosur": "ஓசூர்",
-  "Karaikudi": "காரைக்குடி",
-  "Kumbakonam": "கும்பகோணம்",
-  "Nagapattinam": "நாகப்பட்டினம்",
-  "Namakkal": "நாமக்கல்",
-  "Pudukkottai": "புதுக்கோட்டை",
-  "Sivakasi": "சிவகாசி",
-  "Udhagamandalam": "உதகமண்டலம்",
-  "Vandavasi": "வந்தவாசி",
-  "Villupuram": "விழுப்புரம்",
-  "Virudhunagar": "விருதுநகர்"
+
+  // Tiruchuli & others
+  "Tiruchuli": "திருச்சுழி",
+  "Tiruppattur": "திருப்பத்தூர்",
+  "Krishnarayapuram": "கிருஷ்ணராயபுரம்"
 };
