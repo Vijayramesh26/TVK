@@ -15,6 +15,7 @@
           :src="chatIcon3d" 
           class="fab-image"
           cover
+          alt="தவெக AI உதவியாளர்"
         ></v-img>
         <v-icon v-else color="white" size="32">mdi-close</v-icon>
       </div>
@@ -26,7 +27,7 @@
         <!-- Header -->
         <v-card-title class="chat-header text-white px-4 py-3 d-flex align-center">
           <v-avatar size="32" class="mr-3 border-gold-thin">
-            <v-img :src="chatbotIcon"></v-img>
+            <v-img :src="vijayLeader" alt="தளபதி விஜய் - தவெக தலைவர்"></v-img>
           </v-avatar>
           <div class="chat-header-info">
             <div class="text-subtitle-2 font-weight-bold">TVK AI Assistant</div>

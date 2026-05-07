@@ -135,7 +135,7 @@
                 <v-col cols="12" md="4" class="mb-6 mb-md-0">
                   <div class="d-flex align-center mb-4">
                     <v-avatar size="48" class="border-gold mr-3" color="white">
-                      <v-img :src="logo" cover></v-img>
+                      <v-img :src="logo" cover alt="தமிழக வெற்றிக் கழகம் லோகோ"></v-img>
                     </v-avatar>
                     <div>
                       <h3
