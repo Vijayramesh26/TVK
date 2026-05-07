@@ -702,27 +702,27 @@ export default {
         {
           name: this.isTamil ? "பெரியார் ஈ.வெ.ரா" : "Periyar E.V.R.",
           legacy: this.isTamil ? "சமூக நீதி" : "Social Justice",
-          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/periyar_portrait_1776571076470.png",
+          img: periyarImg,
         },
         {
           name: this.isTamil ? "அம்பேத்கர்" : "Ambedkar",
           legacy: this.isTamil ? "சமத்துவம்" : "Equality",
-          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/ambedkar_portrait_1776571095353.png",
+          img: ambedkarImg,
         },
         {
           name: this.isTamil ? "கே. காமராஜர்" : "K. Kamarajar",
           legacy: this.isTamil ? "கல்வித் தந்தை" : "Father of Education",
-          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/kamarajar_portrait_1776571109775.png",
+          img: kamarajarImg,
         },
         {
           name: this.isTamil ? "அஞ்சலை அம்மாள்" : "Anjalai Ammal",
           legacy: this.isTamil ? "சமூக வீரம்" : "Social Bravery",
-          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/anjalaiammal_portrait_1776571154402.png",
+          img: anjalaiAmmalImg,
         },
         {
           name: this.isTamil ? "வேலு நாச்சியார்" : "Velu Nachiyar",
           legacy: this.isTamil ? "வீரமங்கை" : "Brave Woman",
-          img: "/Users/VIJAYRAMESH/.gemini/antigravity/brain/ff549f9a-9772-4368-a30c-8b1b5c5b7558/velunachiyar_portrait_1776571124327.png",
+          img: veluNachiyarImg,
         },
       ];
     },

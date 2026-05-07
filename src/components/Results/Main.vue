@@ -76,10 +76,44 @@
       <v-row class="mb-10">
         <v-col cols="12">
           <v-card class="glass-card rounded-xl elevation-4 pa-6">
-            <h2 class="text-h4 font-weight-black color-maroon mb-6 text-center text-uppercase glow-text">
-              {{ isTamil ? 'தமிழ்நாடு தேர்தல் வரைபடம்' : 'Tamil Nadu Election Map' }}
+            <h2 class="text-h4 font-weight-black color-maroon mb-2 text-center text-uppercase glow-text">
+              {{ isTamil ? 'உங்கள் தொகுதியைத் தேடுங்கள்' : 'Know Your Constituency' }}
             </h2>
-            <div id="mapContainer" class="map-container"></div>
+            <p class="text-center text-grey-darken-1 mb-6">
+              {{ isTamil ? 'உங்கள் தொகுதி அல்லது மாவட்டத்தைத் தேடி விவரங்களைப் பெறுங்கள்.' : 'Search for your constituency or district to see deep-dive details.' }}
+            </p>
+
+            <v-row justify="center" class="mb-8">
+              <v-col cols="12" md="8">
+                <v-text-field
+                  v-model="mapSearch"
+                  :label="isTamil ? 'தொகுதியைத் தேடுங்கள் (எ.கா: பெரம்பூர்)...' : 'Search Constituency (e.g., Perambur)...'"
+                  variant="outlined"
+                  color="#800000"
+                  prepend-inner-icon="mdi-map-search-outline"
+                  class="rounded-xl"
+                  hide-details
+                  @keyup.enter="searchAndZoom"
+                >
+                  <template v-slot:append-inner>
+                    <v-btn color="#800000" class="text-white" rounded @click="searchAndZoom">
+                      {{ isTamil ? 'தேடு' : 'Search' }}
+                    </v-btn>
+                  </template>
+                </v-text-field>
+              </v-col>
+            </v-row>
+
+            <div id="mapContainer" class="map-container relative">
+              <!-- Zoom Reset Button -->
+              <v-btn
+                v-if="isZoomed"
+                icon="mdi-map-reset"
+                color="#800000"
+                class="map-reset-btn elevation-8"
+                @click="resetZoom"
+              ></v-btn>
+            </div>
 
             <!-- Party Legend -->
             <div class="map-legend mt-6">
@@ -255,6 +289,8 @@ export default {
     votingStats: JSON.parse(JSON.stringify(votingData)),
     candidates: candidatesData,
     search: "",
+    mapSearch: "",
+    isZoomed: false,
     selectedCategory: "ALL",
     partyLegend: []
   }),
@@ -412,14 +448,17 @@ export default {
       }
     },
     renderMap(liveData) {
+      this.currentLiveData = liveData; // Store for redraws
       const container = d3.select('#mapContainer');
       container.html(''); 
       
-      const svg = container.append('svg')
+      this.svg = container.append('svg')
           .attr('width', '100%')
           .attr('height', '100%')
           .attr('viewBox', `0 0 500 600`)
           .attr('preserveAspectRatio', 'xMidYMid meet');
+
+      this.g = this.svg.append('g'); // Group for paths to allow zooming
 
       d3.selectAll('.map-tooltip').remove();
       const tooltip = d3.select('body').append('div')
@@ -439,15 +478,15 @@ export default {
           .style('min-width', '200px')
           .style('max-width', '280px');
           
-      const projection = d3.geoMercator().fitSize([500, 600], TN_MAP_DATA);
-      const path = d3.geoPath().projection(projection);
+      this.projection = d3.geoMercator().fitSize([500, 600], TN_MAP_DATA);
+      this.path = d3.geoPath().projection(this.projection);
 
-      svg.selectAll('.map-path')
+      this.g.selectAll('.map-path')
           .data(TN_MAP_DATA.features)
           .enter()
           .append('path')
           .attr('class', 'map-path')
-          .attr('d', path)
+          .attr('d', this.path)
           .attr('fill', d => {
               const acNo = d.properties.AC_NO;
               const result = liveData.find(item => parseInt(item[2]) === acNo);
@@ -510,7 +549,44 @@ export default {
               
               tooltip.style('left', leftPos + 'px').style('top', topPos + 'px');
           })
-          .on('mouseout', () => tooltip.style('display', 'none'));
+          .on('mouseout', () => tooltip.style('display', 'none'))
+          .on('click', (event, d) => {
+            this.mapSearch = d.properties.AC_NAME;
+            this.searchAndZoom();
+          });
+    },
+    searchAndZoom() {
+      if (!this.mapSearch) return;
+      
+      const query = this.mapSearch.toLowerCase();
+      const feature = TN_MAP_DATA.features.find(f => 
+        f.properties.AC_NAME.toLowerCase().includes(query) ||
+        (this.constituencyMap[f.properties.AC_NAME] && this.constituencyMap[f.properties.AC_NAME].toLowerCase().includes(query))
+      );
+
+      if (feature) {
+        const [[x0, y0], [x1, y1]] = this.path.bounds(feature);
+        this.svg.transition().duration(750).call(
+          d3.zoom().on("zoom", (event) => {
+            this.g.attr("transform", event.transform);
+          }).transform,
+          d3.zoomIdentity
+            .translate(250, 300)
+            .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / 500, (y1 - y0) / 600)))
+            .translate(-(x0 + x1) / 2, -(y0 + y1) / 2)
+        );
+        this.isZoomed = true;
+      }
+    },
+    resetZoom() {
+      this.svg.transition().duration(750).call(
+        d3.zoom().on("zoom", (event) => {
+          this.g.attr("transform", event.transform);
+        }).transform,
+        d3.zoomIdentity
+      );
+      this.isZoomed = false;
+      this.mapSearch = "";
     },
     translateDistrict(dist) {
       const translated = this.t('districts.' + dist);
@@ -710,6 +786,18 @@ export default {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  position: relative;
+}
+
+.map-reset-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+}
+
+.relative {
+  position: relative;
 }
 
 :deep(.map-path) {

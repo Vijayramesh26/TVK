@@ -1,120 +1,117 @@
 <template>
   <v-app>
+    <div class="bg-flag-wave"></div>
     <SplashScreen @finish="ready = true" />
 
     <v-fade-transition>
       <div v-if="ready" class="app-layout">
-        <!-- Mobile Navigation Drawer -->
+        <!-- Unified Navigation Drawer -->
         <v-navigation-drawer
           v-model="drawer"
           location="left"
-          temporary
+          :temporary="true"
+          scroll-strategy="block"
           color="#800000"
           theme="dark"
-          class="border-gold-left"
+          class="border-gold-right elevation-10"
+          width="280"
         >
-          <div class="pa-6 text-center">
-            <v-avatar size="80" class="mb-4 border-gold border-3 elevation-4">
+          <div class="pa-5 text-center branding-drawer">
+            <v-avatar size="72" class="mb-3 border-gold border-3 elevation-8 glow-avatar" @click="$router.push('/')">
               <v-img :src="logo" alt="தமிழக வெற்றிக் கழகம் லோகோ"></v-img>
             </v-avatar>
-            <div class="text-h6 font-weight-black color-gold">த.வெ.க</div>
-            <div class="text-caption opacity-70 mt-1">
+            <div class="text-h6 font-weight-black color-gold letter-spacing-2">த.வெ.க</div>
+            <div class="text-caption opacity-70 mt-1 font-weight-bold">
               {{ t("hero.title") }}
             </div>
           </div>
 
-          <v-divider color="#d4af37" class="mb-2"></v-divider>
+          <v-divider color="#d4af37" class="mx-4 mb-2 opacity-30"></v-divider>
 
-          <v-list nav class="drawer-list px-4">
+          <v-list nav class="drawer-list px-4 py-0">
             <v-list-item
               v-for="item in navItems"
               :key="item.to"
               :to="item.to"
               active-color="#d4af37"
-              rounded="lg"
-              class="mb-2 py-3 drawer-item"
+              rounded="xl"
+              class="mb-1 py-2 drawer-item transition-swing"
               :active-class="'drawer-item-active'"
             >
               <template v-slot:prepend>
-                <v-icon :icon="item.icon" size="24" class="mr-4"></v-icon>
+                <v-icon :icon="item.icon" size="20" class="mr-3"></v-icon>
               </template>
-              <v-list-item-title class="font-weight-bold text-subtitle-1">
+              <v-list-item-title class="font-weight-black text-body-2">
                 {{ item.text }}
               </v-list-item-title>
             </v-list-item>
           </v-list>
 
           <template v-slot:append>
-            <div class="pa-6 text-center opacity-50 text-caption">
-              © 2026 தமிழக வெற்றிக் கழகம்
+            <div class="pa-4 text-center">
+               <v-btn
+                variant="outlined"
+                color="#D4AF37"
+                block
+                size="small"
+                class="rounded-pill font-weight-black mb-3"
+                @click="toggleLang"
+              >
+                {{ currentLang === "ta" ? "English" : "தமிழ்" }}
+              </v-btn>
+              <div class="opacity-40 text-tiny font-weight-bold">
+                © 2026 TVK OFFICIAL
+              </div>
             </div>
           </template>
         </v-navigation-drawer>
 
-        <!-- Persistent Top Navigation Bar -->
+        <!-- Minimal Top App Bar -->
         <v-app-bar
           color="#800000"
           theme="dark"
-          elevation="4"
-          class="px-4 px-md-8"
+          elevation="2"
+          class="px-4"
           height="64"
         >
-          <!-- Hamburger Menu (Mobile Only) -->
           <v-app-bar-nav-icon
             @click="drawer = !drawer"
             color="#d4af37"
-            class="d-md-none mr-2"
+            class="mr-2"
           ></v-app-bar-nav-icon>
 
-          <!-- Branding -->
           <div
             class="d-flex align-center cursor-pointer"
             @click="$router.push('/')"
           >
-            <v-avatar size="38" class="mr-3 border-gold elevation-2">
-              <v-img :src="logo" alt="தமிழக வெற்றிக் கழகம் சின்னம்"></v-img>
+            <v-avatar size="36" class="mr-3 border-gold">
+              <v-img :src="logo"></v-img>
             </v-avatar>
-            <div class="d-flex flex-column">
-              <!-- Show short name on mobile, full name on desktop -->
-              <span class="text-h6 font-weight-black lh-1 mb-0 d-sm-none"
-                >த.வெ.க</span
-              >
-              <span
-                class="text-subtitle-1 font-weight-black lh-1 mb-0 d-none d-sm-block"
-                >{{ t("hero.title") }}</span
-              >
-              <span class="text-caption opacity-70 lh-1 mt-1 d-none d-sm-block">
-                {{ t("hero.subtitle") }}!
-              </span>
-            </div>
+            <span class="text-h6 font-weight-black">
+              {{ currentLang === 'ta' ? 'த.வெ.க' : 'TVK' }}
+            </span>
           </div>
 
           <v-spacer></v-spacer>
 
-          <!-- Desktop Navigation Items (Hidden on Mobile) -->
-          <div class="d-none d-md-flex align-center">
-            <v-btn
-              v-for="item in navItems"
-              :key="item.to"
-              variant="text"
-              :to="item.to"
-              exact
-              class="mx-1 nav-btn"
-              :active-class="'nav-btn-active'"
+          <div class="d-flex align-center">
+            <v-chip
+              v-if="$vuetify.display.smAndUp"
+              color="#D4AF37"
+              variant="outlined"
+              class="mr-4 font-weight-black d-none d-sm-flex"
             >
-              <v-icon class="mr-md-2">{{ item.icon }}</v-icon>
-              <span>{{ item.text }}</span>
-            </v-btn>
+              <v-icon start icon="mdi-shield-check"></v-icon>
+              {{ t("hero.officialPlatform") }}
+            </v-chip>
+            
+            <v-btn
+              icon="mdi-translate"
+              color="#D4AF37"
+              class="mr-2"
+              @click="toggleLang"
+            ></v-btn>
           </div>
-
-          <v-btn
-            variant="tonal"
-            color="#D4AF37"
-            class="ml-4 rounded-lg font-weight-black"
-            @click="toggleLang"
-          >
-            {{ currentLang === "ta" ? "EN" : "தமிழ்" }}
-          </v-btn>
         </v-app-bar>
 
         <v-main>
@@ -281,6 +278,7 @@
             </div>
           </v-footer>
         </v-main>
+        <ChatBot />
       </div>
     </v-fade-transition>
   </v-app>
@@ -288,6 +286,7 @@
 
 <script>
 import SplashScreen from "./components/SplashScreen.vue";
+import ChatBot from "./components/Chat/ChatBot.vue";
 import logo from "./assets/tvk-logo.png";
 import translations from "./data/translations";
 
@@ -295,6 +294,7 @@ export default {
   name: "App",
   components: {
     SplashScreen,
+    ChatBot,
   },
   provide() {
     return {
@@ -325,14 +325,34 @@ export default {
         { text: this.t("nav.kolgai"), to: "/kolgai", icon: "mdi-script-text" },
         { text: this.t("nav.results"), to: "/results", icon: "mdi-poll" },
         {
-          text: this.t("nav.candidates"),
+          text: this.isTamil ? "வேட்பாளர்கள்" : "Candidates",
           to: "/candidates",
           icon: "mdi-account-group",
         },
         {
-          text: this.t("nav.dashboard"),
+          text: this.isTamil ? "நிர்வாகம்" : "Admin",
           to: "/dashboard",
-          icon: "mdi-view-dashboard-outline",
+          icon: "mdi-view-dashboard",
+        },
+        {
+          text: this.isTamil ? "AI தேடல்" : "AI Search",
+          to: "/search",
+          icon: "mdi-robot-outline",
+        },
+        {
+          text: this.isTamil ? "பொன்மொழிகள்" : "Quotes",
+          to: "/quotes",
+          icon: "mdi-format-quote-open",
+        },
+        {
+          text: this.isTamil ? "ஆதரவாளர் அட்டை" : "Supporter Card",
+          to: "/supporter-card",
+          icon: "mdi-card-account-details-star-outline",
+        },
+        {
+          text: this.isTamil ? "வரலாற்றுப் பயணம்" : "Journey",
+          to: "/journey",
+          icon: "mdi-timeline-clock-outline",
         },
       ];
     },
@@ -359,6 +379,9 @@ export default {
     toggleLang() {
       this.currentLang = this.currentLang === "ta" ? "en" : "ta";
     },
+    isTamil() {
+      return this.currentLang === "ta";
+    }
   },
 };
 </script>
@@ -369,47 +392,84 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .border-gold {
   border: 2px solid #d4af37;
 }
 
-.lh-1 {
-  line-height: 1;
+.border-gold-right {
+  border-right: 2px solid #d4af37 !important;
 }
 
-.nav-btn {
-  border-radius: 8px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.5px !important;
-  text-transform: none !important;
-  transition: all 0.3s ease;
+.glow-avatar {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
 }
 
-.nav-btn-active {
-  background: rgba(212, 175, 55, 0.15) !important;
-  color: #d4af37 !important;
-  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+.glow-avatar:hover {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+  transform: scale(1.05);
+}
+
+.drawer-list {
+  background: transparent !important;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .drawer-item {
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  color: rgba(255, 255, 255, 0.85) !important;
+  min-height: 44px !important;
+}
+
+.text-tiny {
+  font-size: 0.65rem;
+  letter-spacing: 0.5px;
+}
+
+.drawer-item:hover {
+  background: rgba(212, 175, 55, 0.1) !important;
+  color: #d4af37 !important;
+  transform: translateX(5px);
 }
 
 .drawer-item-active {
-  background: rgba(212, 175, 55, 0.2) !important;
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.25) 0%, transparent 100%) !important;
   color: #d4af37 !important;
-  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  border-left: 4px solid #d4af37 !important;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 
-.border-3 {
-  border-width: 3px !important;
+.branding-drawer {
+  flex-shrink: 0;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
 }
 
 .v-main {
   background-color: #fcfcfc;
+  transition: padding 0.3s ease;
 }
 
 /* Custom scrollbar for better aesthetics */

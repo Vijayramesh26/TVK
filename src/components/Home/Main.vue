@@ -1,5 +1,6 @@
 <template>
   <div class="home-container">
+    <NewsTicker />
     <!-- Hero Section -->
     <section class="hero-section position-relative d-flex align-center">
       <!-- Background Overlays -->
@@ -10,13 +11,17 @@
       <div class="abstract-shape shape-glow-1"></div>
       <div class="abstract-shape shape-glow-2"></div>
 
-      <v-container class="position-relative z-10 pt-16">
+      <v-container class="position-relative z-10 pt-0 pb-0">
         <v-row align="center">
-          <v-col cols="12" md="8" lg="7" class="text-center text-md-left">
+          <v-col
+            cols="12"
+            md="9"
+            class="text-center text-md-left position-relative z-10"
+          >
             <v-chip
               color="#D4AF37"
               variant="outlined"
-              class="mb-6 font-weight-bold tracking-wide px-4 py-2 border-gold-thin text-uppercase"
+              class="mb-2 font-weight-bold tracking-wide px-4 py-2 border-gold-thin text-uppercase"
             >
               {{ t("hero.title") }}
             </v-chip>
@@ -32,13 +37,13 @@
             </h1>
 
             <p
-              class="hero-subtitle text-white opacity-90 mb-10 text-h6 font-weight-regular max-w-lg mx-auto mx-md-0 lh-relaxed"
+              class="hero-subtitle text-white opacity-90 mb-6 mb-md-10 text-h6 font-weight-regular max-w-lg mx-auto mx-md-0 lh-relaxed"
             >
               {{ t("hero.tagline") }}
             </p>
 
             <div
-              class="d-flex flex-column flex-sm-row justify-center justify-md-start gap-4 mb-10"
+              class="d-flex flex-column flex-sm-row justify-center justify-md-start gap-4 mb-6 mb-md-10"
             >
               <v-btn
                 color="#D4AF37"
@@ -62,7 +67,7 @@
               <v-btn
                 color="#800000"
                 size="x-large"
-                class="rounded-pill font-weight-bold px-8 text-white elevation-4"
+                class="rounded-pill font-weight-bold px-8 text-white elevation-4 btn-multiline"
                 prepend-icon="mdi-file-pdf-box"
                 href="/TVK_MANIFESTO_2026.pdf"
                 target="_blank"
@@ -74,7 +79,7 @@
 
             <!-- Membership Counter -->
             <div
-              class="membership-counter d-flex align-center justify-center justify-md-start mt-10 mt-md-16 position-relative z-10"
+              class="membership-counter d-flex align-center justify-center justify-md-start mt-6 mt-md-10 mb-12 mb-md-16 position-relative z-10"
             >
               <div class="text-center text-md-left">
                 <div
@@ -93,14 +98,13 @@
 
           <v-col
             cols="12"
-            md="4"
-            lg="5"
-            class="d-none d-md-flex justify-center position-relative"
+            md="3"
+            class="d-none d-md-flex justify-end position-relative z-1 mt-n16"
           >
             <!-- Central Avatar holding the logo or leader image if available -->
             <v-avatar
-              size="320"
-              class="hero-avatar elevation-16 border-gold-thick"
+              size="360"
+              class="hero-avatar border-gold-thick"
               color="white"
             >
               <v-img
@@ -116,9 +120,9 @@
         </v-row>
       </v-container>
 
-      <!-- Scroll Indicator -->
+      <!-- Centered Scroll Indicator -->
       <div
-        class="scroll-indicator d-flex flex-column align-center w-100 pb-8 text-white opacity-80"
+        class="scroll-indicator-wrap d-flex flex-column align-center mt-4 text-white opacity-80 w-100"
       >
         <span
           class="text-caption mb-2 font-weight-bold letter-spacing-1 text-uppercase"
@@ -128,14 +132,108 @@
       </div>
     </section>
 
+    <!-- Quick Tools Section -->
+    <v-container class="my-4 position-relative z-20 py-10">
+      <v-row align="stretch">
+        <v-col cols="12" md="4">
+          <v-card
+            to="/quotes"
+            class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
+          >
+            <div class="d-flex align-center h-100">
+              <v-avatar
+                color="#800000"
+                size="64"
+                class="mr-4 elevation-4 flex-shrink-0"
+              >
+                <v-icon color="#D4AF37" size="32">mdi-format-quote-open</v-icon>
+              </v-avatar>
+              <div>
+                <h3 class="text-h6 font-weight-black color-maroon mb-1">
+                  {{ isTamil ? "தளபதியின் பொன்மொழிகள்" : "Daily Inspiration" }}
+                </h3>
+                <p class="text-caption text-grey-darken-1 mb-0">
+                  {{
+                    isTamil
+                      ? "தளபதியின் எழுச்சிமிகு உரைகள்"
+                      : "Random powerful quotes from speeches"
+                  }}
+                </p>
+              </div>
+            </div>
+          </v-card>
+        </v-col>
+        <v-col cols="12" md="4">
+          <v-card
+            to="/supporter-card"
+            class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
+          >
+            <div class="d-flex align-center h-100">
+              <v-avatar
+                color="#800000"
+                size="64"
+                class="mr-4 elevation-4 flex-shrink-0"
+              >
+                <v-icon color="#D4AF37" size="32"
+                  >mdi-card-account-details-star-outline</v-icon
+                >
+              </v-avatar>
+              <div>
+                <h3 class="text-h6 font-weight-black color-maroon mb-1">
+                  {{ isTamil ? "ஆதரவாளர் அட்டை" : "Supporter Card" }}
+                </h3>
+                <p class="text-caption text-grey-darken-1 mb-0">
+                  {{
+                    isTamil
+                      ? "உங்கள் டிஜிட்டல் ஐடி உருவாக்குங்கள்"
+                      : "Create your digital identity card"
+                  }}
+                </p>
+              </div>
+            </div>
+          </v-card>
+        </v-col>
+        <v-col cols="12" md="4">
+          <v-card
+            to="/candidates"
+            class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
+          >
+            <div class="d-flex align-center h-100">
+              <v-avatar
+                color="#800000"
+                size="64"
+                class="mr-4 elevation-4 flex-shrink-0"
+              >
+                <v-icon color="#D4AF37" size="32">mdi-account-search</v-icon>
+              </v-avatar>
+              <div>
+                <h3 class="text-h6 font-weight-black color-maroon mb-1">
+                  {{ isTamil ? "வேட்பாளர் தேடல்" : "Find Candidate" }}
+                </h3>
+                <p class="text-caption text-grey-darken-1 mb-0">
+                  {{
+                    isTamil
+                      ? "உங்கள் தொகுதி வேட்பாளரை அறியுங்கள்"
+                      : "Meet your local TVK representative"
+                  }}
+                </p>
+              </div>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+
     <!-- Election Status & Results Banner -->
-    <section
-      class="election-banner position-relative overflow-hidden elevation-20"
-    >
+    <section class="election-banner position-relative elevation-20 z-30">
       <!-- Use static div for mobile, parallax for desktop to save memory -->
-      <div v-if="isMobile" class="py-10 banner-static-bg" :style="{ backgroundImage: `url(${electionBg})` }">
+      <div
+        v-if="isMobile"
+        class="py-16 banner-static-bg"
+        :style="{ backgroundImage: `url(${electionBg})` }"
+      >
         <div class="banner-overlay absolute-inset"></div>
-        <v-container class="position-relative z-10 py-10">
+        <v-container class="position-relative z-10 py-16">
           <!-- Content remains the same -->
           <v-row align="center" justify="space-between">
             <v-col cols="12" md="7" class="text-center text-md-left">
@@ -172,7 +270,7 @@
                     class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
                   >
                     <div class="text-overline color-gold font-weight-bold mb-1">
-                      {{ isTamil ? 'த.வெ.க வென்ற இடங்கள்' : 'TVK Seats Won' }}
+                      {{ isTamil ? "த.வெ.க வென்ற இடங்கள்" : "TVK Seats Won" }}
                     </div>
                     <div class="text-h3 font-weight-black text-white">
                       108 <span class="text-h5">/ 234</span>
@@ -184,7 +282,7 @@
                     class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
                   >
                     <div class="text-overline color-gold font-weight-bold mb-1">
-                      {{ isTamil ? 'வாக்குப்பதிவு சதவீதம்' : 'Voter Turnout' }}
+                      {{ isTamil ? "வாக்குப்பதிவு சதவீதம்" : "Voter Turnout" }}
                     </div>
                     <div class="text-h3 font-weight-black text-white">
                       85.15 <span class="text-h5">%</span>
@@ -207,24 +305,10 @@
                 </v-btn>
               </div>
             </v-col>
-
-            <v-col cols="12" md="5" class="d-none d-md-flex justify-end">
-              <v-card
-                variant="outlined"
-                color="#D4AF37"
-                class="rounded-circle pa-4 border-gold-thin pulse-gold"
-              >
-                <v-icon icon="mdi-vote" size="80" color="white"></v-icon>
-              </v-card>
-            </v-col>
           </v-row>
 
           <!-- Bottom Filling Area: Roadmap / Process -->
-          <v-divider
-            class="mt-16 mb-10 border-white-thin opacity-20"
-          ></v-divider>
-
-          <v-row class="px-4" justify="center">
+          <v-row class="px-4 mt-8" justify="center">
             <v-col
               cols="12"
               sm="4"
@@ -281,8 +365,8 @@
         v-else
         :src="electionBg"
         scale="1.1"
-        height="850"
-        class="py-10"
+        height="1000"
+        class="py-16"
       >
         <div class="banner-overlay absolute-inset"></div>
 
@@ -322,7 +406,7 @@
                     class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
                   >
                     <div class="text-overline color-gold font-weight-bold mb-1">
-                      {{ isTamil ? 'த.வெ.க வென்ற இடங்கள்' : 'TVK Seats Won' }}
+                      {{ isTamil ? "த.வெ.க வென்ற இடங்கள்" : "TVK Seats Won" }}
                     </div>
                     <div class="text-h3 font-weight-black text-white">
                       108 <span class="text-h5">/ 234</span>
@@ -334,7 +418,7 @@
                     class="stat-item glass-effect pa-6 rounded-xl border-white-thin"
                   >
                     <div class="text-overline color-gold font-weight-bold mb-1">
-                      {{ isTamil ? 'வாக்குப்பதிவு சதவீதம்' : 'Voter Turnout' }}
+                      {{ isTamil ? "வாக்குப்பதிவு சதவீதம்" : "Voter Turnout" }}
                     </div>
                     <div class="text-h3 font-weight-black text-white">
                       85.15 <span class="text-h5">%</span>
@@ -357,24 +441,10 @@
                 </v-btn>
               </div>
             </v-col>
-
-            <v-col cols="12" md="5" class="d-none d-md-flex justify-end">
-              <v-card
-                variant="outlined"
-                color="#D4AF37"
-                class="rounded-circle pa-4 border-gold-thin pulse-gold"
-              >
-                <v-icon icon="mdi-vote" size="80" color="white"></v-icon>
-              </v-card>
-            </v-col>
           </v-row>
 
           <!-- Bottom Filling Area: Roadmap / Process -->
-          <v-divider
-            class="mt-16 mb-10 border-white-thin opacity-20"
-          ></v-divider>
-
-          <v-row class="px-4" justify="center">
+          <v-row class="px-4 mt-8" justify="center">
             <v-col
               cols="12"
               sm="4"
@@ -536,7 +606,178 @@
       </v-container>
     </section>
 
-    <!-- News Section -->
+    <!-- Digital Engagement & Volunteer Impact Section [NEW] -->
+    <section class="py-16 bg-white overflow-hidden">
+      <v-container>
+        <div class="text-center mb-12">
+          <v-chip
+            color="#D4AF37"
+            variant="elevated"
+            class="mb-4 font-weight-black"
+            >TVK DIGITAL 2026</v-chip
+          >
+          <h2 class="text-h2 font-weight-black color-maroon mb-4">
+            {{
+              currentLang() === "ta"
+                ? "டிஜிட்டல் புரட்சி & தொண்டர்கள் தடம்"
+                : "Digital Revolution & Volunteer Impact"
+            }}
+          </h2>
+          <p class="text-h6 text-grey-darken-1 max-w-lg mx-auto">
+            {{
+              currentLang() === "ta"
+                ? "நமது கட்சியின் தொழில்நுட்ப முன்னெடுப்புகள் மற்றும் தொண்டர்களின் பங்களிப்பை இங்கே காணலாம்."
+                : "Explore our digital tools and the massive impact created by our grassroots volunteers."
+            }}
+          </p>
+        </div>
+
+        <v-row>
+          <!-- Tool 1: AI Search -->
+          <v-col cols="12" md="4">
+            <v-card
+              class="rounded-xl elevation-10 pa-6 h-100 border-gold-thin hover-lift"
+              to="/search"
+            >
+              <v-icon color="#800000" size="48" class="mb-4"
+                >mdi-robot-outline</v-icon
+              >
+              <h3 class="text-h5 font-weight-bold color-maroon mb-2">
+                {{
+                  currentLang() === "ta"
+                    ? "தளபதி AI ஆவணக்காப்பகம்"
+                    : "Thalapathy AI Archive"
+                }}
+              </h3>
+              <p class="text-body-1 text-grey-darken-2 mb-4">
+                {{
+                  currentLang() === "ta"
+                    ? "தளபதியின் உரைகள் மற்றும் கொள்கைகளை AI மூலம் தேடுங்கள்."
+                    : "Search through Thalapathy’s speeches and vision using AI-powered search."
+                }}
+              </p>
+              <v-btn
+                variant="text"
+                color="#D4AF37"
+                class="pa-0 font-weight-bold"
+                append-icon="mdi-arrow-right"
+              >
+                {{
+                  currentLang() === "ta" ? "இப்போதே தேடுங்கள்" : "Search Now"
+                }}
+              </v-btn>
+            </v-card>
+          </v-col>
+
+          <!-- Tool 2: Timeline -->
+          <v-col cols="12" md="4">
+            <v-card
+              class="rounded-xl elevation-10 pa-6 h-100 border-gold-thin hover-lift"
+              to="/journey"
+            >
+              <v-icon color="#800000" size="48" class="mb-4"
+                >mdi-timeline-clock-outline</v-icon
+              >
+              <h3 class="text-h5 font-weight-bold color-maroon mb-2">
+                {{
+                  currentLang() === "ta"
+                    ? "வரலாற்றுப் பயணம்"
+                    : "The Party Journey"
+                }}
+              </h3>
+              <p class="text-body-1 text-grey-darken-2 mb-4">
+                {{
+                  currentLang() === "ta"
+                    ? "த.வெ.க-வின் முக்கிய மைல்கற்களைப் பாராது ஒரு வரலாற்றுப் பயணம்."
+                    : "A vertical journey through the key milestones of Tamilaga Vettri Kazhagam."
+                }}
+              </p>
+              <v-btn
+                variant="text"
+                color="#D4AF37"
+                class="pa-0 font-weight-bold"
+                append-icon="mdi-arrow-right"
+              >
+                {{
+                  currentLang() === "ta" ? "பயணத்தைத் தொடங்கு" : "Start Journey"
+                }}
+              </v-btn>
+            </v-card>
+          </v-col>
+
+          <!-- Volunteer Impact Card -->
+          <v-col cols="12" md="4">
+            <v-card
+              class="rounded-xl elevation-10 pa-6 h-100 bg-maroon text-white border-gold-glow"
+            >
+              <div class="d-flex align-center justify-space-between mb-4">
+                <v-icon color="#D4AF37" size="48"
+                  >mdi-account-group-outline</v-icon
+                >
+                <v-chip
+                  color="#D4AF37"
+                  size="small"
+                  class="text-white font-weight-bold"
+                  >LIVE</v-chip
+                >
+              </div>
+              <h3 class="text-h5 font-weight-bold mb-2">
+                {{
+                  currentLang() === "ta"
+                    ? "தொண்டர்களின் பங்களிப்பு"
+                    : "Volunteer Impact"
+                }}
+              </h3>
+              <div class="mb-4">
+                <div class="d-flex justify-space-between mb-1">
+                  <span class="text-caption opacity-80">{{
+                    currentLang() === "ta"
+                      ? "டிஜிட்டல் அட்டைகள்"
+                      : "ID Cards Created"
+                  }}</span>
+                  <span class="text-caption font-weight-bold">8.4M+</span>
+                </div>
+                <v-progress-linear
+                  model-value="85"
+                  color="#D4AF37"
+                  height="8"
+                  rounded
+                ></v-progress-linear>
+              </div>
+              <div class="mb-4">
+                <div class="d-flex justify-space-between mb-1">
+                  <span class="text-caption opacity-80">{{
+                    currentLang() === "ta"
+                      ? "போஸ்டர்கள் உருவாக்கப்பட்டவை"
+                      : "Posters Designed"
+                  }}</span>
+                  <span class="text-caption font-weight-bold">1.2M+</span>
+                </div>
+                <v-progress-linear
+                  model-value="65"
+                  color="#D4AF37"
+                  height="8"
+                  rounded
+                ></v-progress-linear>
+              </div>
+              <v-divider class="my-4 opacity-20"></v-divider>
+              <div class="activity-ticker">
+                <div
+                  v-for="(act, idx) in liveActivities"
+                  :key="idx"
+                  class="ticker-item text-caption mb-1"
+                >
+                  <v-icon size="10" color="#D4AF37" class="mr-1"
+                    >mdi-circle</v-icon
+                  >
+                  {{ act }}
+                </div>
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
     <section class="py-16 bg-white overflow-hidden">
       <v-container>
         <div class="d-flex justify-space-between align-end mb-10">
@@ -565,11 +806,19 @@
             >
               <!-- Video Embed (Anthems Style) -->
               <div v-if="item.youtubeId" class="video-container">
-                <iframe 
-                  :src="`https://www.youtube.com/embed/${item.youtubeId}`" 
-                  title="TVK News Video" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                <iframe
+                  :src="`https://www.youtube.com/embed/${item.youtubeId}`"
+                  title="TVK News Video"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
                   allowfullscreen
                 ></iframe>
               </div>
@@ -585,18 +834,34 @@
               >
                 <div class="poster-gradient absolute-inset"></div>
                 <div class="news-poster-overlay absolute-inset overflow-hidden">
-                  <v-img :src="heroImage" alt="Vijay" class="poster-vijay-portrait" width="140" cover></v-img>
-                  <div class="absolute-inset d-flex flex-column justify-space-between pa-4 z-10">
+                  <v-img
+                    :src="heroImage"
+                    alt="Vijay"
+                    class="poster-vijay-portrait"
+                    width="140"
+                    cover
+                  ></v-img>
+                  <div
+                    class="absolute-inset d-flex flex-column justify-space-between pa-4 z-10"
+                  >
                     <div class="d-flex justify-start">
-                      <div class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon rounded-pill elevation-4">
+                      <div
+                        class="news-tag px-4 py-1 text-caption font-weight-bold text-white bg-maroon rounded-pill elevation-4"
+                      >
                         {{ item.tag }}
                       </div>
                     </div>
-                    <div class="news-official-label pa-3 rounded-lg elevation-10">
-                      <div class="text-caption font-weight-black color-gold text-uppercase tracking-widest mb-1">
+                    <div
+                      class="news-official-label pa-3 rounded-lg elevation-10"
+                    >
+                      <div
+                        class="text-caption font-weight-black color-gold text-uppercase tracking-widest mb-1"
+                      >
                         {{ isTamil ? "தளபதி விஜய்" : "THALAPATHY VIJAY" }}
                       </div>
-                      <div class="text-h5 font-weight-black text-white letter-spacing-2">
+                      <div
+                        class="text-h5 font-weight-black text-white letter-spacing-2"
+                      >
                         {{ isTamil ? item.location : item.locationEn }}
                       </div>
                     </div>
@@ -604,11 +869,18 @@
                 </div>
               </v-img>
 
-              <v-card-text class="pa-6" @click="$router.push(`/news/${item.id}`)">
-                <div class="text-caption font-weight-bold text-grey-lighten-1 mb-2">
+              <v-card-text
+                class="pa-6"
+                @click="$router.push(`/news/${item.id}`)"
+              >
+                <div
+                  class="text-caption font-weight-bold text-grey-lighten-1 mb-2"
+                >
                   {{ t(`news.item${item.id + 1}.date`) }}
                 </div>
-                <h3 class="text-h6 font-weight-bold color-maroon line-clamp-2 lh-tight">
+                <h3
+                  class="text-h6 font-weight-bold color-maroon line-clamp-2 lh-tight"
+                >
                   {{ t(`news.item${item.id + 1}.title`) }}
                 </h3>
               </v-card-text>
@@ -755,11 +1027,13 @@ import whistleImg from "../../assets/voteForWhistle.jpg";
 import electionBg from "../../assets/generated/election_bg.png";
 import { newsData } from "../../data/newsData";
 import Anthems from "../Media/Anthems.vue";
+import NewsTicker from "./NewsTicker.vue";
 
 export default {
   name: "Home",
   components: {
     Anthems,
+    NewsTicker,
   },
   inject: ["t", "currentLang"],
   data: () => ({
@@ -769,6 +1043,14 @@ export default {
     newsData,
     displayCount: 0,
     targetCount: 15428670,
+    liveActivities: [
+      "Member #4829 joined from Madurai",
+      "Supporter Card #1293 created in Chennai",
+      "Volunteer milestone reached: 1M posters",
+      "New speech transcript added: Vikkiravandi 2025",
+    ],
+    tickerInterval: null,
+    ready: false,
 
     leaders: [
       { id: "periyar", name: "தந்தை பெரியார்", image: periyarImg },
@@ -848,8 +1130,12 @@ export default {
     },
   },
   mounted() {
+    this.startActivityTicker();
     this.animateCounter();
     this.updateSEO();
+  },
+  beforeUnmount() {
+    if (this.tickerInterval) clearInterval(this.tickerInterval);
   },
   methods: {
     animateCounter() {
@@ -869,6 +1155,35 @@ export default {
     },
     formatNumber(num) {
       return num.toLocaleString();
+    },
+    startActivityTicker() {
+      const locations = [
+        "Chennai",
+        "Madurai",
+        "Trichy",
+        "Salem",
+        "Coimbatore",
+        "Nellai",
+        "Vellore",
+        "Erode",
+      ];
+      const activities = [
+        "joined the revolution",
+        "created a Supporter Card",
+        "shared the 2026 Manifesto",
+        "completed volunteer training",
+        "verified their constituency",
+      ];
+
+      this.tickerInterval = setInterval(() => {
+        const loc = locations[Math.floor(Math.random() * locations.length)];
+        const act = activities[Math.floor(Math.random() * activities.length)];
+        const num = Math.floor(Math.random() * 9000) + 1000;
+        const newAct = `Member #${num} from ${loc} ${act}`;
+
+        this.liveActivities.unshift(newAct);
+        if (this.liveActivities.length > 4) this.liveActivities.pop();
+      }, 4000);
     },
     updateSEO() {
       const title = this.isTamil
@@ -948,8 +1263,31 @@ export default {
 
 /* Hero Section */
 .hero-section {
-  min-height: calc(100vh - 64px); /* Minus app bar height */
+  min-height: auto;
+  height: auto;
   background-color: #800000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.scroll-indicator-wrap {
+  z-index: 10;
+}
+
+@media (max-width: 959px) {
+  .hero-section {
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+@media (min-height: 900px) {
+  .hero-section {
+    height: auto;
+  }
 }
 
 .hero-gradient-overlay {
@@ -1025,14 +1363,23 @@ export default {
 }
 
 /* Scroll Indicator */
-.scroll-indicator {
-  position: absolute;
-  bottom: 0;
+.scroll-indicator-wrap {
   z-index: 10;
 }
-.animate-bounce {
-  animation: bounce 2s infinite;
+
+.btn-multiline {
+  height: auto !important;
+  min-height: 52px;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
+
+.btn-multiline :deep(.v-btn__content) {
+  white-space: normal !important;
+  text-align: center;
+  line-height: 1.2;
+}
+
 @keyframes bounce {
   0%,
   20%,
@@ -1252,15 +1599,16 @@ export default {
 
 .banner-overlay {
   background: linear-gradient(
-    135deg,
+    90deg,
     rgba(128, 0, 0, 0.95) 0%,
-    rgba(128, 0, 0, 0.7) 100%
+    rgba(128, 0, 0, 0.6) 100%
   );
 }
 
 .display-promo {
   font-size: clamp(3rem, 8vw, 5rem);
-  line-height: 1;
+  line-height: 1.1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .whistle-pulse {
@@ -1292,14 +1640,16 @@ export default {
 }
 
 .stat-item {
-  min-width: 180px;
+  min-width: 160px;
   flex: 1;
-  transition: transform 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .stat-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   background: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(212, 175, 55, 0.5) !important;
 }
 
 .glass-effect {

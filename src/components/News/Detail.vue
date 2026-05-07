@@ -107,6 +107,17 @@
                 <h2 class="text-h4 font-weight-black color-maroon">
                   {{ isTamil ? 'தளபதி விஜய்யின் முழு உரை' : 'Full Speech Transcript' }}
                 </h2>
+                <v-spacer></v-spacer>
+                <!-- Audio Feed (TTS) -->
+                <v-btn
+                  :color="isSpeaking ? '#D4AF37' : '#800000'"
+                  :prepend-icon="isSpeaking ? 'mdi-stop-circle' : 'mdi-volume-high'"
+                  variant="elevated"
+                  class="rounded-pill text-white font-weight-bold"
+                  @click="toggleTTS"
+                >
+                  {{ isSpeaking ? (isTamil ? 'நிறுத்து' : 'Stop') : (isTamil ? 'கேளுங்கள்' : 'Listen') }}
+                </v-btn>
               </div>
               
               <v-card variant="flat" color="grey-lighten-4" class="pa-8 rounded-lg transcript-content border-left-gold">
@@ -157,7 +168,10 @@ export default {
   props: ['id'],
   inject: ['t', 'currentLang'],
   data: () => ({
-    heroImage
+    heroImage,
+    isSpeaking: false,
+    synth: window.speechSynthesis,
+    utterance: null
   }),
   computed: {
     idNum() {
@@ -194,7 +208,30 @@ export default {
     window.scrollTo(0, 0);
     this.updateSEO();
   },
+  beforeUnmount() {
+    if (this.isSpeaking) {
+      this.synth.cancel();
+    }
+  },
   methods: {
+    toggleTTS() {
+      if (this.isSpeaking) {
+        this.synth.cancel();
+        this.isSpeaking = false;
+        return;
+      }
+
+      const textToRead = this.hasTranscript ? this.articleTranscript : this.articleContent.join(' ');
+      this.utterance = new SpeechSynthesisUtterance(textToRead);
+      this.utterance.lang = this.isTamil ? 'ta-IN' : 'en-IN';
+      this.utterance.rate = 0.9; // Slightly slower for clarity
+      
+      this.utterance.onstart = () => { this.isSpeaking = true; };
+      this.utterance.onend = () => { this.isSpeaking = false; };
+      this.utterance.onerror = () => { this.isSpeaking = false; };
+
+      this.synth.speak(this.utterance);
+    },
     updateSEO() {
       const articleTitle = this.t(`news.item${this.idNum + 1}.title`);
       const title = this.isTamil 
