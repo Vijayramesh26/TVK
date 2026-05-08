@@ -23,7 +23,7 @@
 
     <!-- Chat Window -->
     <v-fade-transition>
-      <v-card v-if="isOpen" class="chat-window elevation-24 border-gold-thin" width="350" height="500">
+      <v-card v-if="isOpen" class="chat-window elevation-24 border-gold-thin" width="380" height="550">
         <!-- Header -->
         <v-card-title class="chat-header text-white px-4 py-3 d-flex align-center">
           <v-avatar size="32" class="mr-3 border-gold-thin">
@@ -31,7 +31,10 @@
           </v-avatar>
           <div class="chat-header-info">
             <div class="text-subtitle-2 font-weight-bold">TVK AI Assistant</div>
-            <div class="text-caption opacity-80">Online | தமிழ் & English</div>
+            <div class="text-caption opacity-80 d-flex align-center">
+              <span class="status-dot mr-1"></span>
+              Online | தமிழ் & English
+            </div>
           </div>
           <v-spacer></v-spacer>
           <v-btn icon size="x-small" variant="text" color="white" @click="isOpen = false">
@@ -44,32 +47,57 @@
           <div v-for="(msg, i) in messages" :key="i" class="mb-4 d-flex" :class="msg.role === 'user' ? 'justify-end' : 'justify-start'">
             <div
               :class="[
-                'message-bubble px-4 py-2 rounded-xl text-body-2',
-                msg.role === 'user' ? 'user-message bg-maroon text-white' : 'ai-message bg-grey-lighten-4 text-dark'
+                'message-bubble px-4 py-2 rounded-xl text-body-2 shadow-sm',
+                msg.role === 'user' ? 'user-message text-white' : 'ai-message bg-white text-dark'
               ]"
             >
               {{ msg.text }}
             </div>
           </div>
+          
+          <!-- Typing Indicator -->
           <div v-if="isTyping" class="mb-4 d-flex justify-start">
-            <div class="message-bubble ai-message bg-grey-lighten-4 px-4 py-2 rounded-xl">
-              <v-progress-circular indeterminate size="16" width="2" color="#800000"></v-progress-circular>
+            <div class="message-bubble ai-message bg-white px-4 py-2 rounded-xl d-flex align-center">
+              <div class="typing-dots">
+                <span></span><span></span><span></span>
+              </div>
             </div>
           </div>
         </v-card-text>
 
+        <!-- Suggestions Section -->
+        <div v-if="showSuggestions" class="suggestions-container px-3 py-2 bg-grey-lighten-5">
+          <div class="text-caption text-grey-darken-1 mb-2 font-weight-medium">
+            {{ currentLocale === 'ta' ? 'பொதுவான கேள்விகள்:' : 'Suggested Questions:' }}
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <v-chip
+              v-for="(sug, idx) in suggestions"
+              :key="idx"
+              size="small"
+              variant="flat"
+              color="white"
+              class="sug-chip border-gold-thin mb-1"
+              @click="handleSuggestion(sug)"
+            >
+              {{ currentLocale === 'ta' ? sug.ta : sug.en }}
+            </v-chip>
+          </div>
+        </div>
+
         <!-- Input Area -->
         <v-divider></v-divider>
-        <v-card-actions class="px-3 py-2 bg-white">
+        <v-card-actions class="px-3 py-3 bg-white">
           <v-text-field
             v-model="userInput"
             :placeholder="currentLocale === 'ta' ? 'கேள்வி கேட்கவும்...' : 'Type a message...'"
             variant="solo-filled"
-            density="compact"
+            density="comfortable"
             hide-details
-            rounded="xl"
+            rounded="pill"
             flat
             bg-color="grey-lighten-4"
+            class="chat-input"
             @keyup.enter="sendMessage"
           >
             <template v-slot:append-inner>
@@ -81,7 +109,7 @@
                 @click="sendMessage"
                 :disabled="!userInput.trim()"
               >
-                <v-icon>mdi-send</v-icon>
+                <v-icon>mdi-send-variant</v-icon>
               </v-btn>
             </template>
           </v-text-field>
@@ -95,6 +123,8 @@
 import { ref, watch, onMounted, nextTick, inject, computed } from 'vue';
 import chatIcon3d from '../../assets/chat-icon-3d.png';
 import vijayLeader from '../../assets/leaders/vijay-leader.png';
+import speechesData from '../../../tvk_vijay_speeches.json';
+import { newsData } from '../../data/newsData';
 
 const t = inject('t');
 const getLang = inject('currentLang');
@@ -104,6 +134,15 @@ const isOpen = ref(false);
 const isTyping = ref(false);
 const userInput = ref('');
 const messageBox = ref(null);
+const showSuggestions = ref(true);
+
+const suggestions = [
+  { en: "What is TVK's ideology?", ta: "தவெக-வின் கொள்கை என்ன?" },
+  { en: "Women's welfare promises", ta: "பெண்கள் நல வாக்குறுதிகள்" },
+  { en: "AI & Technology vision", ta: "AI மற்றும் தொழில்நுட்ப தொலைநோக்கு" },
+  { en: "How to join the party?", ta: "கட்சியில் இணைய வழிமுறை" },
+  { en: "Latest campaign news", ta: "சமீபத்திய பரப்புரை செய்திகள்" }
+];
 
 const messages = ref([
   { 
@@ -126,45 +165,95 @@ const scrollToBottom = async () => {
   }
 };
 
+const handleSuggestion = (sug) => {
+  userInput.value = currentLocale.value === 'ta' ? sug.ta : sug.en;
+  sendMessage();
+  showSuggestions.value = false;
+};
+
+const findResponse = (query) => {
+  const q = query.toLowerCase();
+  const isTa = currentLocale.value === 'ta';
+
+  // Ideology & Icons
+  if (q.includes('ideology') || q.includes('கொள்கை') || q.includes('vision') || q.includes('நோக்கம்') || q.includes('icons')) {
+    const icons = isTa ? speechesData.party_overview.guiding_icons_ta.join(', ') : speechesData.party_overview.guiding_icons.join(', ');
+    const ideologies = isTa ? speechesData.party_overview.ideology_ta.join(', ') : speechesData.party_overview.ideology.join(', ');
+    return isTa 
+      ? `தவெக ${ideologies} கொள்கைகளை அடிப்படையாகக் கொண்டது. பி.ஆர். அம்பேத்கர், பெரியார், காமராஜ் ஆகியோர் எங்களின் வழிகாட்டும் தலைவர்கள்.`
+      : `TVK is based on ${ideologies} ideologies. Our guiding icons are B.R. Ambedkar, Periyar, and K. Kamaraj.`;
+  }
+
+  // Women's Welfare
+  if (q.includes('women') || q.includes('பெண்') || q.includes('welfare') || q.includes('நலம்') || q.includes('promise') || q.includes('வாக்குறுதி')) {
+    return isTa
+      ? "பெண்களுக்கு மாதம் ₹2,500 நிதி உதவி, இலவச எரிவாயு சிலிண்டர்கள், அரசு பேருந்துகளில் இலவச பயணம் மற்றும் பெண்களுக்கு 33% இடஒதுக்கீடு ஆகியவற்றை தவெக உறுதி செய்கிறது."
+      : "TVK promises ₹2,500 monthly financial assistance for women, free LPG cylinders, free government bus travel, and 33% reservation for women in party and assembly seats.";
+  }
+
+  // AI & Technology
+  if (q.includes('ai') || q.includes('tech') || q.includes('தொழில்நுட்பம்') || q.includes('computer')) {
+    return isTa
+      ? "தமிழகத்தை இந்தியாவின் AI தலைநகராக மாற்றுவோம். இதற்காக தனி AI அமைச்சகம், AI பல்கலைக்கழகம் மற்றும் 1,000 ஸ்டார்ட்அப்களுக்கு ஆதரவு வழங்கப்படும்."
+      : "We aim to make Tamil Nadu the AI capital of India. Plans include a dedicated AI Ministry, an AI University, and support for 1,000 deep-tech startups.";
+  }
+
+  // Education & OPS
+  if (q.includes('education') || q.includes('கல்வி') || q.includes('ops') || q.includes('pension') || q.includes('ஓய்வூதியம்')) {
+    return isTa
+      ? "அரசு ஊழியர்களுக்கு பழைய ஓய்வூதியத் திட்டம் (OPS) செயல்படுத்தப்படும். கல்வி மாநில பட்டியலுக்கு மாற்றப்படும் மற்றும் மாணவர்களுக்கு கல்வி உதவி வழங்கப்படும்."
+      : "We will implement the Old Pension Scheme (OPS) for government employees. Education will be moved to the State List, and educational assistance will be provided to students.";
+  }
+
+  // News & Campaign
+  if (q.includes('news') || q.includes('latest') || q.includes('செய்தி') || q.includes('சமீபத்திய') || q.includes('campaign') || q.includes('பரப்புரை')) {
+    const latest = newsData[0];
+    return isTa
+      ? `சமீபத்திய செய்தி: ${latest.location}ல் ${latest.tag} வெற்றிகரமாக நடந்தது. தளபதி விஜய் அவர்கள் மக்களைச் சந்தித்து உரையாற்றினார்.`
+      : `Latest news: A ${latest.tag} was held at ${latest.locationEn}. Thalapathy Vijay addressed the massive gathering.`;
+  }
+
+  // Join Party
+  if (q.includes('join') || q.includes('member') || q.includes('இணைய') || q.includes('உறுப்பினர்')) {
+    return isTa
+      ? "தவெக-வில் இணைய 'தமிழக வெற்றிக் கழகம்' அதிகாரப்பூர்வ செயலியைப் பதிவிறக்கவும் அல்லது இணையதளத்தில் 'உறுப்பினர் ஆகுங்கள்' பக்கத்திற்குச் செல்லவும்."
+      : "To join TVK, please download the official TVK app or visit the 'Become a Member' section on our website.";
+  }
+
+  // Default fallback
+  return isTa
+    ? "மன்னிக்கவும், இது குறித்த கூடுதல் விவரங்கள் விரைவில் வழங்கப்படும். வேறு ஏதேனும் கேள்விகள் உள்ளதா?"
+    : "I apologize, but more details on this will be provided soon. Do you have any other questions?";
+};
+
 const sendMessage = async () => {
   if (!userInput.value.trim()) return;
 
   const userText = userInput.value;
   messages.value.push({ role: 'user', text: userText });
   userInput.value = '';
+  showSuggestions.value = false;
   await scrollToBottom();
 
   isTyping.value = true;
   
-  // Simulate AI Response
+  // Simulate AI Response with intelligent logic
   setTimeout(async () => {
-    let responseText = '';
-    const lowerText = userText.toLowerCase();
-    
-    if (lowerText.includes('vijay') || lowerText.includes('விஜய்')) {
-      responseText = currentLocale.value === 'ta' 
-        ? 'தளபதி விஜய் அவர்கள் தமிழக வெற்றிக் கழகத்தின் தலைவர். அவர் தமிழகத்தின் முன்னேற்றத்திற்காக உழைக்கத் தயாராக உள்ளார்.' 
-        : 'Thalapathy Vijay is the President of TVK. He is dedicated to the progress of Tamil Nadu.';
-    } else if (lowerText.includes('join') || lowerText.includes('இணைய')) {
-      responseText = currentLocale.value === 'ta' 
-        ? 'எங்கள் கட்சியில் இணைய முகப்புப் பக்கத்தில் உள்ள "உறுப்பினர் ஆகுங்கள்" பொத்தானை அழுத்தவும்.' 
-        : 'To join our party, please click the "Become a Member" button on the home page.';
-    } else {
-      responseText = currentLocale.value === 'ta' 
-        ? 'மன்னிக்கவும், இது குறித்த கூடுதல் விவரங்கள் விரைவில் வழங்கப்படும். வேறு ஏதேனும் கேள்விகள் உள்ளதா?' 
-        : 'I apologize, but more details on this will be provided soon. Do you have any other questions?';
-    }
-
+    const responseText = findResponse(userText);
     messages.value.push({ role: 'ai', text: responseText });
     isTyping.value = false;
     await scrollToBottom();
-  }, 1500);
+  }, 1000);
 };
 
 // Initial scroll
 watch(isOpen, (newVal) => {
   if (newVal) {
     scrollToBottom();
+    // Reset suggestions if chat is empty except for welcome
+    if (messages.value.length === 1) {
+      showSuggestions.value = true;
+    }
   }
 });
 </script>
@@ -177,7 +266,7 @@ watch(isOpen, (newVal) => {
   border: 2px solid #D4AF37;
   border-radius: 50%;
   display: flex;
-  align-center: center;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   position: relative;
@@ -233,6 +322,15 @@ watch(isOpen, (newVal) => {
   box-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
 }
 
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
 @keyframes pulse {
   0% { transform: scale(1); opacity: 0.5; }
   100% { transform: scale(1.3); opacity: 0; }
@@ -257,8 +355,8 @@ watch(isOpen, (newVal) => {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border-radius: 16px !important;
-  background: white;
+  border-radius: 20px !important;
+  background: #fdfdfd;
 }
 
 .chat-header {
@@ -269,29 +367,78 @@ watch(isOpen, (newVal) => {
 .chat-messages {
   flex-grow: 1;
   overflow-y: auto;
-  background-color: #f8f9fa;
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
+  scrollbar-width: thin;
+  scrollbar-color: #800000 #f5f5f5;
 }
 
 .message-bubble {
-  max-width: 80%;
+  max-width: 85%;
   word-wrap: break-word;
-  line-height: 1.5;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
 }
 
 .user-message {
+  background: linear-gradient(135deg, #800000 0%, #600000 100%);
   border-bottom-right-radius: 4px !important;
+  box-shadow: 0 4px 12px rgba(128, 0, 0, 0.15);
 }
 
 .ai-message {
   border-bottom-left-radius: 4px !important;
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.bg-maroon {
+.suggestions-container {
+  border-top: 1px solid rgba(0,0,0,0.05);
+  animation: slideInUp 0.3s ease-out;
+}
+
+.sug-chip {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: 0.75rem !important;
+}
+
+.sug-chip:hover {
   background-color: #800000 !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.typing-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.typing-dots span {
+  width: 6px;
+  height: 6px;
+  background-color: #800000;
+  border-radius: 50%;
+  animation: typing 1s infinite ease-in-out;
+}
+
+.typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+.typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+  0%, 100% { transform: translateY(0); opacity: 0.3; }
+  50% { transform: translateY(-4px); opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.chat-input :deep(.v-field__input) {
+  font-size: 0.9rem;
 }
 
 .border-gold-thin {
@@ -306,7 +453,7 @@ watch(isOpen, (newVal) => {
   
   .chat-window {
     width: calc(100vw - 40px);
-    height: 400px;
+    height: 450px;
   }
 }
 </style>
