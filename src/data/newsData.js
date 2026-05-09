@@ -597,5 +597,15 @@ export const newsData = [
     locationEn: "Chennai (Nehru Stadium)",
     sortDate: "2026-05-10",
     youtubeId: ""
+  },
+  {
+    id: 58,
+    tag: "Historical Analysis",
+    image: panaiyurBg,
+    category: "Politics",
+    location: "Tamil Nadu",
+    locationEn: "Tamil Nadu",
+    sortDate: "2026-05-10",
+    youtubeId: ""
   }
 ];
