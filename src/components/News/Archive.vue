@@ -55,7 +55,7 @@
         >
           <v-card 
             class="news-card h-100 rounded-xl overflow-hidden hover-lift border-transparent elevation-10"
-            @click="$router.push(`/news/${item.id}`)"
+            @click="$router.push(`/news/${item.slug}`)"
           >
             <v-img
               :src="item.image_url"

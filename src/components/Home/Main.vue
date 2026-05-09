@@ -872,7 +872,7 @@
 
               <v-card-text
                 class="pa-6"
-                @click="$router.push(`/news/${item.id}`)"
+                @click="$router.push(`/news/${item.slug}`)"
               >
                 <div
                   class="text-caption font-weight-bold text-grey-lighten-1 mb-2"

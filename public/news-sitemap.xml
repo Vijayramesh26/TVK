@@ -3,7 +3,7 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <!-- Latest TVK News for Google News indexing -->
   <url>
-    <loc>https://myvetritamilnadu.org/news/57</loc>
+    <loc>https://myvetritamilnadu.org/news/campaign-rally---namakkal7</loc>
     <news:news>
       <news:publication>
         <news:name>TVK Official News</news:name>
@@ -14,7 +14,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://myvetritamilnadu.org/news/58</loc>
+    <loc>https://myvetritamilnadu.org/news/campaign-rally---namakkal8</loc>
     <news:news>
       <news:publication>
         <news:name>TVK Official News</news:name>
@@ -25,7 +25,7 @@
     </news:news>
   </url>
   <url>
-    <loc>https://myvetritamilnadu.org/news/59</loc>
+    <loc>https://myvetritamilnadu.org/news/campaign-rally---namakkal9</loc>
     <news:news>
       <news:publication>
         <news:name>TVK Official News</news:name>

@@ -22,6 +22,7 @@ export const newsData = [
   {
     id: 0,
     title: "Campaign Rally - Ariyalur",
+    slug: "campaign-rally---ariyalur",
     category: "Campaign",
     date: "2025-09-13",
     author: "Political Desk",
@@ -38,6 +39,7 @@ export const newsData = [
   {
     id: 1,
     title: "Campaign Rally - Perambalur",
+    slug: "campaign-rally---perambalur",
     category: "Campaign",
     date: "2025-09-13",
     author: "Political Desk",
@@ -54,6 +56,7 @@ export const newsData = [
   {
     id: 2,
     title: "Public Meeting - Nagapattinam",
+    slug: "public-meeting---nagapattinam",
     category: "Campaign",
     date: "2025-09-20",
     author: "Political Desk",
@@ -70,6 +73,7 @@ export const newsData = [
   {
     id: 3,
     title: "Public Meeting - Thiruvarur",
+    slug: "public-meeting---thiruvarur",
     category: "Campaign",
     date: "2025-09-20",
     author: "Political Desk",
@@ -86,6 +90,7 @@ export const newsData = [
   {
     id: 4,
     title: "Campaign Stop - Mayiladuthurai",
+    slug: "campaign-stop---mayiladuthurai",
     category: "Campaign",
     date: "2025-09-20",
     author: "Political Desk",
@@ -102,6 +107,7 @@ export const newsData = [
   {
     id: 5,
     title: "Campaign Rally - Namakkal",
+    slug: "campaign-rally---namakkal",
     category: "Campaign",
     date: "2025-09-27",
     author: "Political Desk",
@@ -118,6 +124,7 @@ export const newsData = [
   {
     id: 6,
     title: "Campaign Rally - Karur (Velusamypuram)",
+    slug: "campaign-rally---karur-velusamypuram",
     category: "Campaign",
     date: "2025-09-27",
     author: "Political Desk",
@@ -134,6 +141,7 @@ export const newsData = [
   {
     id: 7,
     title: "Public Meeting - Vellore",
+    slug: "public-meeting---vellore",
     category: "Campaign",
     date: "2025-10-05",
     author: "Political Desk",
@@ -150,6 +158,7 @@ export const newsData = [
   {
     id: 8,
     title: "Campaign Stop - Ranipet",
+    slug: "campaign-stop---ranipet",
     category: "Campaign",
     date: "2025-10-05",
     author: "Political Desk",
@@ -166,6 +175,7 @@ export const newsData = [
   {
     id: 9,
     title: "Campaign Rally - Puducherry",
+    slug: "campaign-rally---puducherry",
     category: "Campaign",
     date: "2025-10-11",
     author: "Political Desk",
@@ -182,6 +192,7 @@ export const newsData = [
   {
     id: 10,
     title: "Campaign Stop - Cuddalore",
+    slug: "campaign-stop---cuddalore",
     category: "Campaign",
     date: "2025-10-11",
     author: "Political Desk",
@@ -198,6 +209,7 @@ export const newsData = [
   {
     id: 11,
     title: "Campaign Rally - Thoothukudi",
+    slug: "campaign-rally---thoothukudi",
     category: "Campaign",
     date: "2025-10-18",
     author: "Political Desk",
@@ -214,6 +226,7 @@ export const newsData = [
   {
     id: 12,
     title: "Campaign Rally - Tirunelveli",
+    slug: "campaign-rally---tirunelveli",
     category: "Campaign",
     date: "2025-10-18",
     author: "Political Desk",
@@ -230,6 +243,7 @@ export const newsData = [
   {
     id: 13,
     title: "Campaign Rally - Tiruppur",
+    slug: "campaign-rally---tiruppur",
     category: "Campaign",
     date: "2025-10-25",
     author: "Political Desk",
@@ -246,6 +260,7 @@ export const newsData = [
   {
     id: 14,
     title: "Campaign Rally - Erode",
+    slug: "campaign-rally---erode",
     category: "Campaign",
     date: "2025-10-25",
     author: "Political Desk",
@@ -262,6 +277,7 @@ export const newsData = [
   {
     id: 15,
     title: "Campaign Tour - Coimbatore & The Nilgiris",
+    slug: "campaign-tour---coimbatore-the-nilgiris",
     category: "Campaign",
     date: "2025-10-25",
     author: "Political Desk",
@@ -278,6 +294,7 @@ export const newsData = [
   {
     id: 16,
     title: "Campaign Stop - South Chennai & Chengalpattu",
+    slug: "campaign-stop---south-chennai-chengalpattu",
     category: "Campaign",
     date: "2025-10-25",
     author: "Political Desk",
@@ -294,6 +311,7 @@ export const newsData = [
   {
     id: 17,
     title: "Indoor Public Meeting - Kanchipuram",
+    slug: "indoor-public-meeting---kanchipuram",
     category: "Campaign",
     date: "2025-10-25",
     author: "Political Desk",
@@ -310,6 +328,7 @@ export const newsData = [
   {
     id: 18,
     title: "Campaign Stop - Kanniyakumari",
+    slug: "campaign-stop---kanniyakumari",
     category: "Campaign",
     date: "2025-10-25",
     author: "Political Desk",
@@ -326,6 +345,7 @@ export const newsData = [
   {
     id: 19,
     title: "Campaign Tour - Perambalur & Kallakurichi",
+    slug: "campaign-tour---perambalur-kallakurichi",
     category: "Campaign",
     date: "2025-11-01",
     author: "Political Desk",
@@ -342,6 +362,7 @@ export const newsData = [
   {
     id: 20,
     title: "Campaign Stop - Krishnagiri",
+    slug: "campaign-stop---krishnagiri",
     category: "Campaign",
     date: "2025-11-01",
     author: "Political Desk",
@@ -358,6 +379,7 @@ export const newsData = [
   {
     id: 21,
     title: "Campaign Stop - Tirupattur",
+    slug: "campaign-stop---tirupattur",
     category: "Campaign",
     date: "2025-11-01",
     author: "Political Desk",
@@ -374,6 +396,7 @@ export const newsData = [
   {
     id: 22,
     title: "Campaign Stop - Dharmapuri",
+    slug: "campaign-stop---dharmapuri",
     category: "Campaign",
     date: "2025-11-08",
     author: "Political Desk",
@@ -390,6 +413,7 @@ export const newsData = [
   {
     id: 23,
     title: "Campaign Stop - Villupuram",
+    slug: "campaign-stop---villupuram",
     category: "Campaign",
     date: "2025-11-15",
     author: "Political Desk",
@@ -406,6 +430,7 @@ export const newsData = [
   {
     id: 24,
     title: "Campaign Stop - Thiruvannamalai",
+    slug: "campaign-stop---thiruvannamalai",
     category: "Campaign",
     date: "2025-11-15",
     author: "Political Desk",
@@ -422,6 +447,7 @@ export const newsData = [
   {
     id: 25,
     title: "Campaign Rally - Salem",
+    slug: "campaign-rally---salem",
     category: "Campaign",
     date: "2025-11-22",
     author: "Political Desk",
@@ -438,6 +464,7 @@ export const newsData = [
   {
     id: 26,
     title: "Campaign Stop - Dharmapuri (November)",
+    slug: "campaign-stop---dharmapuri-november",
     category: "Campaign",
     date: "2025-11-22",
     author: "Political Desk",
@@ -454,6 +481,7 @@ export const newsData = [
   {
     id: 27,
     title: "Major Indoor Conference - Kanchipuram",
+    slug: "major-indoor-conference---kanchipuram",
     category: "Campaign",
     date: "2025-11-23",
     author: "Political Desk",
@@ -470,6 +498,7 @@ export const newsData = [
   {
     id: 28,
     title: "Campaign Stop - Thanjavur",
+    slug: "campaign-stop---thanjavur",
     category: "Campaign",
     date: "2025-11-29",
     author: "Political Desk",
@@ -486,6 +515,7 @@ export const newsData = [
   {
     id: 29,
     title: "Campaign Stop - Mayiladuthurai (November)",
+    slug: "campaign-stop---mayiladuthurai-november",
     category: "Campaign",
     date: "2025-11-29",
     author: "Political Desk",
@@ -502,6 +532,7 @@ export const newsData = [
   {
     id: 30,
     title: "Campaign Tour - Sivaganga & Ramanathapuram",
+    slug: "campaign-tour---sivaganga-ramanathapuram",
     category: "Campaign",
     date: "2025-11-29",
     author: "Political Desk",
@@ -518,6 +549,7 @@ export const newsData = [
   {
     id: 31,
     title: "Campaign Rally & Public Meeting - Thanjavur (December)",
+    slug: "campaign-rally-public-meeting---thanjavur-december",
     category: "Campaign",
     date: "2025-12-06",
     author: "Political Desk",
@@ -534,6 +566,7 @@ export const newsData = [
   {
     id: 32,
     title: "Campaign Stop - Pudukkottai",
+    slug: "campaign-stop---pudukkottai",
     category: "Campaign",
     date: "2025-12-06",
     author: "Political Desk",
@@ -550,6 +583,7 @@ export const newsData = [
   {
     id: 33,
     title: "Campaign Stop - Salem (December)",
+    slug: "campaign-stop---salem-december",
     category: "Campaign",
     date: "2025-12-13",
     author: "Political Desk",
@@ -566,6 +600,7 @@ export const newsData = [
   {
     id: 34,
     title: "Campaign Stop - Namakkal (December)",
+    slug: "campaign-stop---namakkal-december",
     category: "Campaign",
     date: "2025-12-13",
     author: "Political Desk",
@@ -582,6 +617,7 @@ export const newsData = [
   {
     id: 35,
     title: "Campaign Stop - Karur (December)",
+    slug: "campaign-stop---karur-december",
     category: "Campaign",
     date: "2025-12-13",
     author: "Political Desk",
@@ -598,6 +634,7 @@ export const newsData = [
   {
     id: 36,
     title: "Campaign Rally - Erode (December)",
+    slug: "campaign-rally---erode-december",
     category: "Campaign",
     date: "2025-12-18",
     author: "Political Desk",
@@ -614,6 +651,7 @@ export const newsData = [
   {
     id: 37,
     title: "Campaign Stop - Dindigul",
+    slug: "campaign-stop---dindigul",
     category: "Campaign",
     date: "2025-12-20",
     author: "Political Desk",
@@ -630,6 +668,7 @@ export const newsData = [
   {
     id: 38,
     title: "Campaign Stop - Theni",
+    slug: "campaign-stop---theni",
     category: "Campaign",
     date: "2025-12-20",
     author: "Political Desk",
@@ -646,6 +685,7 @@ export const newsData = [
   {
     id: 39,
     title: "Campaign Tour - Thiruvallur & Kancheepuram (December)",
+    slug: "campaign-tour---thiruvallur-kancheepuram-december",
     category: "Campaign",
     date: "2025-12-20",
     author: "Political Desk",
@@ -662,6 +702,7 @@ export const newsData = [
   {
     id: 40,
     title: "Public Meeting - Vellore (February)",
+    slug: "public-meeting---vellore-february",
     category: "Campaign",
     date: "2026-02-23",
     author: "Political Desk",
@@ -678,6 +719,7 @@ export const newsData = [
   {
     id: 41,
     title: "International Women's Day 2026 Celebration - Mahabalipuram",
+    slug: "international-womens-day-2026-celebration---mahabalipuram",
     category: "Campaign",
     date: "2026-03-07",
     author: "Political Desk",
@@ -694,6 +736,7 @@ export const newsData = [
   {
     id: 42,
     title: "Campaign Rally - Thanjavur (March)",
+    slug: "campaign-rally---thanjavur-march",
     category: "Campaign",
     date: "2026-03-04",
     author: "Political Desk",
@@ -710,6 +753,7 @@ export const newsData = [
   {
     id: 43,
     title: "Campaign Rally - Salem (February)",
+    slug: "campaign-rally---salem-february",
     category: "Campaign",
     date: "2026-02-13",
     author: "Political Desk",
@@ -726,6 +770,7 @@ export const newsData = [
   {
     id: 44,
     title: "State-Level Conference - Madurai",
+    slug: "state-level-conference---madurai",
     category: "Campaign",
     date: "2026-02-22",
     author: "Political Desk",
@@ -742,6 +787,7 @@ export const newsData = [
   {
     id: 45,
     title: "Campaign Rally - Kanyakumari (April)",
+    slug: "campaign-rally---kanyakumari-april",
     category: "Campaign",
     date: "2026-04-08",
     author: "Political Desk",
@@ -758,6 +804,7 @@ export const newsData = [
   {
     id: 46,
     title: "Campaign Rally - Trichy",
+    slug: "campaign-rally---trichy",
     category: "Campaign",
     date: "2026-04-05",
     author: "Political Desk",
@@ -774,6 +821,7 @@ export const newsData = [
   {
     id: 47,
     title: "Campaign Event - Chennai (April)",
+    slug: "campaign-event---chennai-april",
     category: "Campaign",
     date: "2026-04-12",
     author: "Political Desk",
@@ -790,6 +838,7 @@ export const newsData = [
   {
     id: 48,
     title: "Final Campaign Rally (Grand Finale) - Nandanam YMCA Ground",
+    slug: "final-campaign-rally-grand-finale---nandanam-ymca-ground",
     category: "Campaign",
     date: "2026-04-21",
     author: "Political Desk",
@@ -806,6 +855,7 @@ export const newsData = [
   {
     id: 49,
     title: "Final Campaign Speeches - Chennai (Final Phase)",
+    slug: "final-campaign-speeches---chennai-final-phase",
     category: "Campaign",
     date: "2026-04-21",
     author: "Political Desk",
@@ -822,6 +872,7 @@ export const newsData = [
   {
     id: 50,
     title: "Final Campaign Speech - Thiruvallur (Final Phase)",
+    slug: "final-campaign-speech---thiruvallur-final-phase",
     category: "Campaign",
     date: "2026-04-21",
     author: "Political Desk",
@@ -838,6 +889,7 @@ export const newsData = [
   {
     id: 51,
     title: "Final Day Campaign - Various Locations (Final Day)",
+    slug: "final-day-campaign---various-locations-final-day",
     category: "Campaign",
     date: "2026-04-21",
     author: "Political Desk",
@@ -854,6 +906,7 @@ export const newsData = [
   {
     id: 52,
     title: "Campaign Rally Address - Perambur",
+    slug: "campaign-rally-address---perambur",
     category: "Campaign",
     date: "2026-04-21",
     author: "Political Desk",
@@ -870,6 +923,7 @@ export const newsData = [
   {
     id: 53,
     title: "Jana Nayagan Audio Launch & Farewell Event - Malaysia",
+    slug: "jana-nayagan-audio-launch-farewell-event---malaysia",
     category: "Campaign",
     date: "2025-12-27",
     author: "Political Desk",
@@ -886,6 +940,7 @@ export const newsData = [
   {
     id: 54,
     title: "First Political Conference - Vikravandi",
+    slug: "first-political-conference---vikravandi",
     category: "Campaign",
     date: "2025-10-27",
     author: "Political Desk",
@@ -902,6 +957,7 @@ export const newsData = [
   {
     id: 55,
     title: "Party Functionaries Meeting - Coimbatore",
+    slug: "party-functionaries-meeting---coimbatore",
     category: "Campaign",
     date: "2026-04-26",
     author: "Political Desk",
@@ -918,6 +974,7 @@ export const newsData = [
   {
     id: 56,
     title: "Historic Victory - Vijay Sworn in as Chief Minister of Tamil Nadu!",
+    slug: "historic-victory---vijay-sworn-in-as-chief-minister-of-tamil-nadu",
     category: "Government",
     date: "2026-05-09",
     author: "Political Desk",
@@ -934,6 +991,7 @@ export const newsData = [
   {
     id: 57,
     title: "Historic Victory: Vijay to be Sworn in as Tamil Nadu Chief Minister Today",
+    slug: "historic-victory-vijay-to-be-sworn-in-as-tamil-nadu-chief-minister-today",
     category: "Politics",
     date: "2026-05-10",
     author: "Political Desk",
@@ -958,6 +1016,7 @@ Political observers expect the Cabinet composition to be closely watched, as Vij
   {
     id: 58,
     title: "From Fanclubs to Political Power: The Remarkable Rise of Tamilaga Vettri Kazhagam",
+    slug: "from-fanclubs-to-political-power-the-remarkable-rise-of-tamilaga-vettri-kazhagam",
     category: "Politics",
     date: "2026-05-09",
     author: "Political Correspondent",
@@ -984,6 +1043,7 @@ In the April 23, 2026 elections, TVK emerged as the single-largest party with 10
   {
     id: 59,
     title: "Vijay Contests Two Seats, Wins Both with Massive Margins",
+    slug: "vijay-contests-two-seats-wins-both-with-massive-margins",
     category: "Elections",
     date: "2026-05-04",
     author: "Election Correspondent",
@@ -1008,6 +1068,7 @@ The actor's transition from cinema to politics has been compared to the journeys
   {
     id: 60,
     title: "TVK Secures Majority: Congress, Left Parties and VCK Pledge Support",
+    slug: "tvk-secures-majority-congress-left-parties-and-vck-pledge-support",
     category: "Politics",
     date: "2026-05-09",
     author: "Political Desk",
@@ -1043,6 +1104,7 @@ The securing of coalition support marks the final hurdle before Vijay's oath cer
   {
     id: 61,
     title: "Political Tsunami: Analysis of TVK's Historic Electoral Victory",
+    slug: "political-tsunami-analysis-of-tvks-historic-electoral-victory",
     category: "Politics",
     date: "2026-05-07",
     author: "Political Analyst",
@@ -1079,6 +1141,7 @@ However, Kannan notes that the biggest challenge before Vijay's government will 
   {
     id: 62,
     title: "Vijay's Political Journey: From Bollywood Star to Chief Minister",
+    slug: "vijays-political-journey-from-bollywood-star-to-chief-minister",
     category: "Profile",
     date: "2026-05-08",
     author: "Entertainment & Politics Correspondent",
@@ -1118,6 +1181,7 @@ Vijay's early political statements included condemning the Citizenship Amendment
   {
     id: 63,
     title: "DMK's Historic Defeat: 15 Ministers Lose Elections, Stalin Steps Down",
+    slug: "dmks-historic-defeat-15-ministers-lose-elections-stalin-steps-down",
     category: "Politics",
     date: "2026-05-05",
     author: "Political Correspondent",
@@ -1153,6 +1217,7 @@ The wholesale defeat of DMK ministers underscores the extent of anti-incumbency 
   {
     id: 64,
     title: "Tragedy at Karur: 41 Dead in Crowd Crush During TVK Campaign Rally",
+    slug: "tragedy-at-karur-41-dead-in-crowd-crush-during-tvk-campaign-rally",
     category: "News",
     date: "2025-09-27",
     author: "News Correspondent",
@@ -1183,6 +1248,7 @@ Despite the tragedy, TVK went on to achieve a historic electoral victory in the 
   {
     id: 65,
     title: "TVK Supporter Attempts Self-Immolation Over Delay in Vijay's Oath Ceremony",
+    slug: "tvk-supporter-attempts-self-immolation-over-delay-in-vijays-oath-ceremony",
     category: "News",
     date: "2026-05-09",
     author: "News Correspondent",
@@ -1215,6 +1281,7 @@ The incident reflects the passionate emotional investment TVK supporters have in
   {
     id: 66,
     title: "TVK's Welfare Manifesto: Free Bus Travel, Gas Cylinders, and Women Safety",
+    slug: "tvks-welfare-manifesto-free-bus-travel-gas-cylinders-and-women-safety",
     category: "Politics",
     date: "2026-04-15",
     author: "Policy Correspondent",
@@ -1263,6 +1330,7 @@ Political analyst R. Kannan notes that the biggest challenge before Vijay's gove
   {
     id: 67,
     title: "Election Commission Records Highest Ever Voter Turnout in Tamil Nadu: 85.1%",
+    slug: "election-commission-records-highest-ever-voter-turnout-in-tamil-nadu-851",
     category: "Elections",
     date: "2026-04-23",
     author: "Election Correspondent",
@@ -1302,6 +1370,7 @@ The high turnout resulted in a clear and decisive mandate, with TVK emerging as 
   {
     id: 68,
     title: "Vijay Rejects Right-Wing Politics: TVK Announces Centre-Left Ideology",
+    slug: "vijay-rejects-right-wing-politics-tvk-announces-centre-left-ideology",
     category: "Politics",
     date: "2024-09-15",
     author: "Political Correspondent",

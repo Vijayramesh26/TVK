@@ -174,14 +174,17 @@ export default {
     utterance: null
   }),
   computed: {
-    idNum() {
-      return parseInt(this.id);
-    },
     isTamil() {
-      return this.currentLang() === 'ta';
+      return this.currentLang() === "ta";
+    },
+    slug() {
+      return this.$route.params.slug;
     },
     articleData() {
-      return newsData.find(n => n.id === this.idNum) || newsData[0];
+      return newsData.find(n => n.slug === this.slug) || newsData[0];
+    },
+    idNum() {
+      return this.articleData.id;
     },
     article() {
       return {
