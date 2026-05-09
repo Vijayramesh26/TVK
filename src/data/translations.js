@@ -1,6 +1,6 @@
 const translations = {
   ta: {
-    broadcast: "வரலாற்றுச் சிறப்புமிக்க வெற்றி: தமிழகத்தின் புதிய முதலமைச்சராக திரு. விஜய் நாளை காலை 10 மணிக்கு நேரு விளையாட்டு அரங்கில் பதவியேற்கிறார்!",
+    broadcast: "முக்கியச் செய்தி: தளபதி விஜய் நாளை தமிழக முதலமைச்சராகப் பதவியேற்கிறார் - தமிழக அரசியலில் புதிய விடியல்!",
     nav: {
       home: "முகப்பு",
       kolgai: "கொள்கைகள்",
@@ -614,7 +614,7 @@ const translations = {
     },
   },
   en: {
-    broadcast: "BREAKING: Historic Victory - Thalapathy Vijay to take oath as the Chief Minister of Tamil Nadu tomorrow at 10 AM, Nehru Stadium, Chennai!",
+    broadcast: "BREAKING: Thalapathy Vijay to be sworn in as Tamil Nadu Chief Minister tomorrow - A Historic New Era Begins!",
     nav: {
       home: "Home",
       kolgai: "Ideology",

@@ -39,10 +39,13 @@ export default {
     },
     tickerItems() {
       const broadcast = this.t("broadcast");
-      // Get titles from translations based on newsData IDs (reversed for latest first)
-      const items = [...newsData].reverse().map(item => {
-        return this.t(`news.item${item.id + 1}.title`);
-      });
+      // Get titles of latest 10 news items (reversed for latest first)
+      const items = [...newsData]
+        .reverse()
+        .slice(0, 10)
+        .map(item => {
+          return this.t(`news.item${item.id + 1}.title`);
+        });
       return [broadcast, ...items];
     }
   }
