@@ -577,5 +577,15 @@ export const newsData = [
     locationEn: "Coimbatore",
     sortDate: "2026-04-26",
     youtubeId: ""
+  },
+  {
+    id: 56,
+    tag: "Historic Victory",
+    image: candidateIntroBg,
+    category: "Government",
+    location: "Chennai (Fort St. George)",
+    locationEn: "Chennai (Fort St. George)",
+    sortDate: "2026-05-09",
+    youtubeId: ""
   }
 ];

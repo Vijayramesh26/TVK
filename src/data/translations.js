@@ -459,6 +459,12 @@ const translations = {
           "வெளிப்படையான நிர்வாகத்தை உறுதிப்படுத்தும் விதமாக விஜய்யின் உரை",
         sourceUrl: "Note: கட்சி நிர்வாகிகள் கூட்டம் மற்றும் அறிவிப்பு",
       },
+      item57: {
+        title: "வரலாற்று வெற்றி - தமிழகத்தின் புதிய முதல்வராக விஜய்!",
+        date: "2026-05-09",
+        content: "தமிழகத்தில் தவெக ஆட்சி அமைத்தது! முதலமைச்சராக தளபதி விஜய் பதவியேற்பு.",
+        sourceUrl: "Note: தமிழக அரசின் புதிய சகாப்தம்",
+      },
     },
     anthems: {
       title: "கட்சிப் பாடல்கள்",
@@ -981,6 +987,12 @@ const translations = {
         content:
           "TVK party meeting where Vijay stated commitment to transparent governance",
         sourceUrl: "Note: Party functionaries meeting",
+      },
+      item57: {
+        title: "Historic Victory - Vijay Sworn in as Chief Minister of Tamil Nadu!",
+        date: "2026-05-09",
+        content: "TVK forms government in Tamil Nadu! Thalapathy Vijay takes oath as the Chief Minister.",
+        sourceUrl: "Note: New Era for Tamil Nadu Government",
       },
     },
     anthems: {
