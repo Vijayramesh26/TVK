@@ -607,5 +607,105 @@ export const newsData = [
     locationEn: "Tamil Nadu",
     sortDate: "2026-05-10",
     youtubeId: ""
+  },
+  {
+    id: 59,
+    tag: "Election Victory",
+    image: trichyBg,
+    category: "Elections",
+    location: "Perambur & Trichy",
+    locationEn: "Perambur & Trichy",
+    sortDate: "2026-05-04",
+    youtubeId: ""
+  },
+  {
+    id: 60,
+    tag: "Government Formation",
+    image: maduraiBg,
+    category: "Politics",
+    location: "Chennai",
+    locationEn: "Chennai",
+    sortDate: "2026-05-09",
+    youtubeId: ""
+  },
+  {
+    id: 61,
+    tag: "Political Analysis",
+    image: coimbatoreBg,
+    category: "Politics",
+    location: "Tamil Nadu",
+    locationEn: "Tamil Nadu",
+    sortDate: "2026-05-07",
+    youtubeId: ""
+  },
+  {
+    id: 62,
+    tag: "Leader Profile",
+    image: candidateIntroBg,
+    category: "Profile",
+    location: "Tamil Nadu",
+    locationEn: "Tamil Nadu",
+    sortDate: "2026-05-08",
+    youtubeId: ""
+  },
+  {
+    id: 63,
+    tag: "Election Results",
+    image: registrationBg,
+    category: "Politics",
+    location: "Tamil Nadu",
+    locationEn: "Tamil Nadu",
+    sortDate: "2026-05-05",
+    youtubeId: ""
+  },
+  {
+    id: 64,
+    tag: "Campaign Update",
+    image: antiDrugBg,
+    category: "News",
+    location: "Karur",
+    locationEn: "Karur",
+    sortDate: "2025-09-27",
+    youtubeId: ""
+  },
+  {
+    id: 65,
+    tag: "Breaking News",
+    image: velloreBg,
+    category: "News",
+    location: "Tirunelveli",
+    locationEn: "Tirunelveli",
+    sortDate: "2026-05-09",
+    youtubeId: ""
+  },
+  {
+    id: 66,
+    tag: "Policy Update",
+    image: manifestoReleaseBg,
+    category: "Politics",
+    location: "Tamil Nadu",
+    locationEn: "Tamil Nadu",
+    sortDate: "2026-04-15",
+    youtubeId: ""
+  },
+  {
+    id: 67,
+    tag: "Election Statistics",
+    image: educationBg,
+    category: "Elections",
+    location: "Tamil Nadu",
+    locationEn: "Tamil Nadu",
+    sortDate: "2026-04-23",
+    youtubeId: ""
+  },
+  {
+    id: 68,
+    tag: "Ideology",
+    image: membershipBg,
+    category: "Politics",
+    location: "Tamil Nadu",
+    locationEn: "Tamil Nadu",
+    sortDate: "2024-09-15",
+    youtubeId: ""
   }
 ];
