@@ -9,6 +9,7 @@ const translations = {
       dashboard: "நிர்வாகம்",
       poster: "போஸ்டர்",
       letter: "கடிதம்",
+      news: "செய்திகள்",
     },
     election: {
       title: "தமிழக சட்டமன்றத் தேர்தல்",
@@ -623,6 +624,7 @@ const translations = {
       dashboard: "Admin",
       poster: "Poster",
       letter: "Letter",
+      news: "News",
     },
     election: {
       title: "Tamil Nadu Assembly Election",

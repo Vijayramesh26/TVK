@@ -792,6 +792,7 @@
             color="#800000"
             class="font-weight-bold p-0"
             append-icon="mdi-chevron-right"
+            to="/news"
           >
             {{ t("sections.viewAll") }}
           </v-btn>

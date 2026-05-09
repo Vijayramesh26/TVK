@@ -228,6 +228,11 @@
                   </h3>
                   <div class="d-flex flex-column" style="gap: 12px">
                     <router-link
+                      to="/news"
+                      class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none"
+                      >{{ t("nav.news") }}</router-link
+                    >
+                    <router-link
                       to="/kolgai"
                       class="footer-link text-body-2 text-grey-lighten-1 text-decoration-none"
                       >{{ t("nav.kolgai") }}</router-link
@@ -312,6 +317,7 @@ export default {
     navItems() {
       return [
         { text: this.t("nav.home"), to: "/", icon: "mdi-home" },
+        { text: this.t("nav.news"), to: "/news", icon: "mdi-newspaper-variant-outline" },
         {
           text: this.t("nav.poster"),
           to: "/create",

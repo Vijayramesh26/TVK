@@ -65,6 +65,16 @@ const routes = [
     },
   },
   {
+    path: "/news",
+    name: "NewsArchive",
+    component: () => import("../components/News/Archive.vue"),
+    meta: {
+      title: "TVK News Archive | செய்திக் களஞ்சியம் | Official Press Releases",
+      description:
+        "The complete archive of Tamilaga Vettri Kazhagam news, press releases, and historical milestones. | த.வெ.க-வின் அனைத்துச் செய்திகளின் தொகுப்பு.",
+    },
+  },
+  {
     path: "/kolgai",
     name: "Ideology",
     component: () => import("../components/Ideology/Main.vue"),
