@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <!-- Latest TVK News for Google News indexing -->
+  <url>
+    <loc>https://myvetritamilnadu.org/news/57</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-10</news:publication_date>
+      <news:title>வரலாற்றுச் சிறப்புமிக்க வெற்றி: தமிழகத்தின் புதிய முதலமைச்சராகத் தளபதி விஜய் இன்று பதவியேற்பு!</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/58</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-09</news:publication_date>
+      <news:title>தளபதி விஜயின் முதல் கையெழுத்து: விவசாயக் கடன் தள்ளுபடி மற்றும் இலவசக் கல்வித் திட்டம்!</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/59</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-08</news:publication_date>
+      <news:title>மக்கள் முதல்வர் விஜய்: நேரு மைதானத்தில் பிரம்மாண்ட பதவியேற்பு விழா ஏற்பாடுகள் தீவிரம்!</news:title>
+    </news:news>
+  </url>
+</urlset>
