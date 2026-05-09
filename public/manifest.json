@@ -1,0 +1,21 @@
+{
+  "name": "Tamilaga Vettri Kazhagam Official",
+  "short_name": "TVK Official",
+  "description": "Official platform for TVK - Tamilaga Vettri Kazhagam. Stay updated with news, policies, and election results.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#800000",
+  "theme_color": "#800000",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

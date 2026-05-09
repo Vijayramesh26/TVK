@@ -140,6 +140,35 @@ export default {
     }
   },
   methods: {
+    updateSEO() {
+      // Breadcrumb Schema
+      let breadcrumbScript = document.getElementById('json-ld-breadcrumb-archive');
+      if (!breadcrumbScript) {
+        breadcrumbScript = document.createElement('script');
+        breadcrumbScript.setAttribute('id', 'json-ld-breadcrumb-archive');
+        breadcrumbScript.setAttribute('type', 'application/ld+json');
+        document.head.appendChild(breadcrumbScript);
+      }
+      const breadcrumbLD = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": this.isTamil ? "முகப்பு" : "Home",
+            "item": "https://myvetritamilnadu.org/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": this.isTamil ? "செய்திகள்" : "News",
+            "item": "https://myvetritamilnadu.org/news"
+          }
+        ]
+      };
+      breadcrumbScript.text = JSON.stringify(breadcrumbLD);
+    },
     formatDate(dateStr) {
       const date = new Date(dateStr);
       const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
@@ -152,6 +181,7 @@ export default {
   },
   mounted() {
     window.scrollTo(0, 0);
+    this.updateSEO();
   }
 };
 </script>
