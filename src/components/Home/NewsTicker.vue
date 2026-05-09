@@ -6,13 +6,17 @@
     </div>
     <div class="ticker-container" @mouseenter="pause = true" @mouseleave="pause = false">
       <div class="ticker-content" :class="{ 'paused': pause }">
-        <span v-for="(item, i) in tickerItems" :key="i" class="ticker-item">
-          <v-icon color="#D4AF37" size="14" class="mr-2">mdi-star-four-points</v-icon>
+        <span v-for="(item, i) in tickerItems" :key="i" class="ticker-item" :class="{ 'is-broadcast': i === 0 }">
+          <v-icon :color="i === 0 ? '#FFD700' : '#D4AF37'" :size="i === 0 ? 18 : 14" class="mr-2">
+            {{ i === 0 ? 'mdi-bullhorn' : 'mdi-star-four-points' }}
+          </v-icon>
           {{ item }}
         </span>
         <!-- Duplicate for seamless loop -->
-        <span v-for="(item, i) in tickerItems" :key="'dup-'+i" class="ticker-item">
-          <v-icon color="#D4AF37" size="14" class="mr-2">mdi-star-four-points</v-icon>
+        <span v-for="(item, i) in tickerItems" :key="'dup-'+i" class="ticker-item" :class="{ 'is-broadcast': i === 0 }">
+          <v-icon :color="i === 0 ? '#FFD700' : '#D4AF37'" :size="i === 0 ? 18 : 14" class="mr-2">
+            {{ i === 0 ? 'mdi-bullhorn' : 'mdi-star-four-points' }}
+          </v-icon>
           {{ item }}
         </span>
       </div>
@@ -34,10 +38,12 @@ export default {
       return this.currentLang() === "ta";
     },
     tickerItems() {
-      // Get titles from translations based on newsData IDs
-      return newsData.map(item => {
+      const broadcast = this.t("broadcast");
+      // Get titles from translations based on newsData IDs (reversed for latest first)
+      const items = [...newsData].reverse().map(item => {
         return this.t(`news.item${item.id + 1}.title`);
       });
+      return [broadcast, ...items];
     }
   }
 };
@@ -94,6 +100,19 @@ export default {
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+.ticker-item.is-broadcast {
+  color: #FFD700;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
 }
 
 @keyframes ticker {
