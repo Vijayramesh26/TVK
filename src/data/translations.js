@@ -465,6 +465,13 @@ const translations = {
         content: "தமிழகத்தில் தவெக ஆட்சி அமைத்தது! முதலமைச்சராக தளபதி விஜய் பதவியேற்பு.",
         sourceUrl: "Note: தமிழக அரசின் புதிய சகாப்தம்",
       },
+      item58: {
+        title: "வரலாற்றுச் சிறப்புமிக்க வெற்றி: தமிழகத்தின் புதிய முதலமைச்சராக திரு. விஜய் பதவியேற்பு",
+        date: "2026-05-10",
+        content: "சென்னை, மே 9, 2026 — தமிழக அரசியல் வரலாற்றில் ஒரு முக்கிய மாற்றமாக, நடிகர் மற்றும் தவெக தலைவர் திரு. விஜய் அவர்கள் நாளை காலை சென்னை நேரு விளையாட்டு அரங்கில் தமிழகத்தின் புதிய முதலமைச்சராகப் பதவியேற்கிறார். 59 ஆண்டு கால திராவிடக் கட்சிகளின் ஆட்சிக்கு முற்றுப்புள்ளி வைத்து, தவெக 108 இடங்களை வென்று சாதனை படைத்துள்ளது.",
+        fullTranscript: "வரலாற்று வெற்றி: தமிழகத்தின் புதிய முதலமைச்சராக விஜய் பதவியேற்பு\n\nநாளை காலை 10 மணிக்கு நேரு விளையாட்டு அரங்கில் பதவியேற்பு விழா நடைபெற உள்ளது. தமிழக அரசியல் வரலாற்றில் இது ஒரு மிக முக்கியமான தருணமாகக் கருதப்படுகிறது.\n\nதமிழக வெற்றி கழகம் (தவெக) 234 தொகுதிகளில் 108 தொகுதிகளை வென்று தனிப்பெரும் கட்சியாக உருவெடுத்துள்ளது. நாளை காலை ஆளுநர் மாளிகையில் விஜய் அவர்கள் முறைப்படி முதலமைச்சராகப் பதவியேற்க உள்ளார். காங்கிரஸ், இடதுசாரி கட்சிகள் மற்றும் விசிக உள்ளிட்ட கட்சிகளின் ஆதரவுடன் ஒரு நிலையான கூட்டணியை அவர் அமைத்துள்ளார்.\n\nகடந்த 59 ஆண்டுகளாக தமிழகத்தை ஆட்சி செய்த திராவிடக் கட்சிகளுக்குப் பிறகு, ஒரு புதிய அரசியல் சக்தி ஆட்சியைப் பிடித்துள்ளது. இது தமிழக மக்களின் மாற்றத்திற்கான வேட்கையை வெளிப்படுத்துகிறது. திரையுலகிலிருந்து அரசியலுக்கு வந்த எம்.ஜி.ஆர், ஜெயலலிதா ஆகியோருக்குப் பிறகு, விஜய் அவர்கள் ஒரு மிகப்பெரிய அரசியல் புரட்சியைச் செய்துள்ளார்.\n\nபுதிய முதலமைச்சருக்கு முன் பல சவால்கள் உள்ளன. பொருளாதார வளர்ச்சி, மக்கள் நலத்திட்டங்களைச் செயல்படுத்துதல் மற்றும் கூட்டணிக் கட்சிகளுடன் இணைந்து செயல்படுதல் போன்ற பொறுப்புகளை அவர் கவனிக்க வேண்டியுள்ளது. நாளை நடைபெறும் இந்த வரலாற்றுச் சிறப்புமிக்க நிகழ்வு தமிழக அரசியலில் ஒரு புதிய அத்தியாயத்தைத் தொடங்கும்.",
+        sourceUrl: "Note: தமிழக அரசின் புதிய அத்தியாயம்",
+      },
     },
     anthems: {
       title: "கட்சிப் பாடல்கள்",
@@ -993,6 +1000,13 @@ const translations = {
         date: "2026-05-09",
         content: "TVK forms government in Tamil Nadu! Thalapathy Vijay takes oath as the Chief Minister.",
         sourceUrl: "Note: New Era for Tamil Nadu Government",
+      },
+      item58: {
+        title: "Historic Victory: Actor Vijay to Take Oath as Tamil Nadu's New Chief Minister",
+        date: "2026-05-10",
+        content: "Chennai, May 9, 2026 — Tamil Nadu is poised for a historic political transition as actor-turned-politician C. Joseph Vijay will be sworn in as Chief Minister tomorrow morning at Nehru Stadium, Chennai. TVK won 108 seats, breaking a 59-year Dravidian rule.",
+        fullTranscriptEn: "Historic Victory: Actor Vijay to Take Oath as Tamil Nadu's New Chief Minister\n\nNehru Stadium ceremony set for May 10, 2026, marking watershed moment in state politics\n\nChennai, May 9, 2026 — Tamil Nadu is poised for a historic political transition as actor-turned-politician C. Joseph Vijay will be sworn in as Chief Minister tomorrow morning, ushering in a new era after the Dravidian parties' 59-year reign over the state's governance.\n\nThe swearing-in ceremony is scheduled to take place at Nehru Stadium in Chennai at 10:00 AM on May 10, 2026. The grand event is expected to draw massive public attention and will be attended by coalition partners and political leaders from across the country.\n\nVijay's Tamilaga Vettri Kazhagam (TVK) won 108 seats in the 234-member Assembly, securing the single-largest party status. He submitted formal confirmation of his election as Legislature Party leader to Governor Rajendra Vishwanath Arlekar, along with support letters from coalition partners including Congress, CPI, CPI-M, and VCK.\n\nBreaking a 59-Year Tradition: The oath ceremony marks a watershed moment in Tamil Nadu's political history. Vijay will become the first non-Dravidian leader to hold the position of Chief Minister in the past 59 years, signaling a seismic shift in the state's political dynamics.\n\nExpectations and Challenges Ahead: Political observers suggest that Vijay's Cabinet composition will be closely watched. The incoming Chief Minister faces several challenges, including economic development, welfare scheme implementation, and maintaining coalition harmony. His decisions in the coming weeks will set the tone for his tenure.",
+        sourceUrl: "Note: New Chapter for Tamil Nadu Government",
       },
     },
     anthems: {

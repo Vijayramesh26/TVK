@@ -587,5 +587,15 @@ export const newsData = [
     locationEn: "Chennai (Fort St. George)",
     sortDate: "2026-05-09",
     youtubeId: ""
+  },
+  {
+    id: 57,
+    tag: "Special Report",
+    image: finalAppealBg,
+    category: "Government",
+    location: "Chennai (Nehru Stadium)",
+    locationEn: "Chennai (Nehru Stadium)",
+    sortDate: "2026-05-10",
+    youtubeId: ""
   }
 ];
