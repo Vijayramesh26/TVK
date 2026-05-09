@@ -14,19 +14,32 @@
       </div>
 
       <!-- Search & Filter -->
-      <v-row class="mb-10" justify="center">
-        <v-col cols="12" md="6">
-          <v-text-field
-            v-model="search"
-            :label="isTamil ? 'செய்திகளைத் தேடுங்கள்...' : 'Search news...'"
-            prepend-inner-icon="mdi-magnify"
-            variant="solo-filled"
-            rounded="pill"
-            flat
-            bg-color="white"
-            class="elevation-4 border-gold-thin"
-            clearable
-          ></v-text-field>
+      <v-row class="mb-12" justify="center">
+        <v-col cols="12" md="8" lg="6">
+          <v-card class="search-card rounded-pill elevation-12 overflow-hidden border-gold-thin">
+            <v-text-field
+              v-model="search"
+              :label="isTamil ? 'செய்திகளைத் தேடுங்கள்...' : 'Search news archive...'"
+              prepend-inner-icon="mdi-magnify"
+              variant="solo"
+              flat
+              hide-details
+              rounded="pill"
+              class="search-input"
+              bg-color="white"
+              clearable
+            >
+              <template v-slot:append-inner>
+                <v-btn
+                  color="#800000"
+                  class="rounded-pill px-6 font-weight-black text-white d-none d-sm-flex"
+                  elevation="0"
+                >
+                  {{ isTamil ? 'தேடு' : 'Search' }}
+                </v-btn>
+              </template>
+            </v-text-field>
+          </v-card>
         </v-col>
       </v-row>
 
@@ -157,6 +170,20 @@ export default {
   width: 80px;
   height: 4px;
   border-radius: 2px;
+}
+
+.search-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+.search-card:focus-within {
+  border-color: #D4AF37 !important;
+  box-shadow: 0 10px 30px rgba(128, 0, 0, 0.1) !important;
+}
+
+.search-input :deep(.v-field__outline) {
+  display: none;
 }
 
 .poster-gradient {
