@@ -77,6 +77,7 @@
                   placeholder="செய்தியின் தலைப்பு..."
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
 
@@ -89,6 +90,7 @@
                   density="compact"
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
 
@@ -102,6 +104,7 @@
                   class="neat-field"
                   hide-details
                   :disabled="!showRef"
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
 
@@ -131,6 +134,7 @@
                   density="compact"
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
 
@@ -142,20 +146,13 @@
                   density="compact"
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
 
               <v-col cols="12" class="mt-3">
                 <div class="field-label mb-1">உள்ளடக்கம் / Body Content</div>
-                <v-textarea
-                  v-model="letterContent"
-                  variant="outlined"
-                  rows="10"
-                  density="compact"
-                  placeholder="Type message here..."
-                  class="neat-field"
-                  hide-details
-                ></v-textarea>
+                <div ref="editor" class="quill-editor bg-white rounded-lg"></div>
               </v-col>
             </v-row>
           </v-card>
@@ -201,6 +198,8 @@
 <script>
 import LetterCanvas from "../PosterCreator/LetterCanvas.vue";
 import logoPremium from "../../assets/tvk-logo-premium.png";
+import Quill from "quill";
+import "quill/dist/quill.snow.css";
 
 export default {
   name: "LetterCreator",
@@ -210,7 +209,7 @@ export default {
     logoPremium,
     letterTitle: "மதுரவாயல் தொகுதி தகவல்",
     letterContent:
-      "தமிழக வெற்றிக் கழகத்தின் சார்பாக நடைபெற உள்ள முக்கிய செய்திகள் இங்கே இடம்பெறும்...",
+      "<p>தமிழக வெற்றிக் கழகத்தின் சார்பாக நடைபெற உள்ள முக்கிய செய்திகள் இங்கே இடம்பெறும்...</p>",
     letterDate: new Date().toISOString().substr(0, 10),
     letterRef: "TVK/PR/2026/01",
     letterImageFile: null,
@@ -219,13 +218,37 @@ export default {
     showRef: false,
     letterSignatoryName: "ஆகாஷ் R",
     letterSignatoryPosting: "155-வது வட்டக் கழகச் செயலாளர்",
+    quill: null,
   }),
+  mounted() {
+    this.initQuill();
+  },
   computed: {
     isTamil() {
       return this.currentLang() === "ta";
     },
   },
   methods: {
+    initQuill() {
+      this.quill = new Quill(this.$refs.editor, {
+        theme: "snow",
+        modules: {
+          toolbar: [
+            ["bold", "italic", "underline"],
+            [{ list: "ordered" }, { list: "bullet" }],
+            [{ align: [] }],
+            ["clean"],
+          ],
+        },
+        placeholder: "Type message here...",
+      });
+
+      this.quill.root.innerHTML = this.letterContent;
+
+      this.quill.on("text-change", () => {
+        this.letterContent = this.quill.root.innerHTML;
+      });
+    },
     async onLetterImageChange() {
       if (!this.letterImageFile) {
         this.letterImageUrl = null;
@@ -372,5 +395,25 @@ export default {
 .elegant-btn {
   font-weight: 800;
   letter-spacing: 1px;
+}
+
+.quill-editor {
+  height: 300px;
+  border: 1px solid #e8e4db;
+}
+
+:deep(.ql-toolbar.ql-snow) {
+  border: 1px solid #e8e4db;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #fdfdfd;
+}
+
+:deep(.ql-container.ql-snow) {
+  border: 1px solid #e8e4db;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 16px;
 }
 </style>

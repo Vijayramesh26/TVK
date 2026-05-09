@@ -89,6 +89,7 @@
                   density="compact"
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
 
@@ -100,6 +101,7 @@
                   density="compact"
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
               <v-col cols="8" class="mt-3">
@@ -125,6 +127,7 @@
                   density="compact"
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
               <v-col cols="7" class="mt-3">
@@ -136,6 +139,7 @@
                   density="compact"
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
 
@@ -147,6 +151,7 @@
                   density="compact"
                   class="neat-field"
                   hide-details
+                  @keydown.enter.prevent
                 ></v-text-field>
               </v-col>
 

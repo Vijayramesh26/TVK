@@ -91,27 +91,34 @@ export default {
 
       const contentBaseY = this.showMainTitle ? startY + 180 : startY;
 
-      this.ctx.textAlign = "left";
-      this.ctx.font = '500 50px "Hind Madurai", sans-serif';
-      this.ctx.fillStyle = "#333333";
-      this.ctx.fillText(`தேதி: ${this.date}`, 150, contentBaseY + 120);
+      let headlineY = contentBaseY + 280;
 
-      if (this.showRef) {
-        this.ctx.textAlign = "right";
-        this.ctx.font = '500 45px "Hind Madurai", sans-serif';
-        this.ctx.fillText(
-          `வ.எண்: ${this.referenceNo}`,
-          this.width - 150,
-          contentBaseY + 120,
-        );
+      if (this.date) {
+        this.ctx.textAlign = "left";
+        this.ctx.font = '500 50px "Hind Madurai", sans-serif';
+        this.ctx.fillStyle = "#333333";
+        this.ctx.fillText(`தேதி: ${this.date}`, 150, contentBaseY + 120);
+
+        if (this.showRef) {
+          this.ctx.textAlign = "right";
+          this.ctx.font = '500 45px "Hind Madurai", sans-serif';
+          this.ctx.fillText(
+            `வ.எண்: ${this.referenceNo}`,
+            this.width - 150,
+            contentBaseY + 120,
+          );
+        }
+      } else {
+        // Shift headline up if date is missing
+        headlineY = contentBaseY + 100;
       }
 
       // 4. Letter Title (Headline)
       this.ctx.textAlign = "center";
       this.ctx.font = 'bold 72px "Hind Madurai", sans-serif';
       
-      const headlineY = contentBaseY + 280;
       const headlineGradient = this.ctx.createLinearGradient(this.width/2, headlineY - 50, this.width/2, headlineY + 20);
+
       headlineGradient.addColorStop(0, "#800000");
       headlineGradient.addColorStop(0.45, "#800000");
       headlineGradient.addColorStop(0.45, "#FFD700");
@@ -132,7 +139,7 @@ export default {
         Math.ceil(
           this.ctx.measureText(this.title).width / (this.width - 400),
         ) || 1;
-      let currentY = contentBaseY + 280 + headlineLines * 90 + 50;
+      let currentY = headlineY + headlineLines * 90 + 40;
 
       // 5. Main Image (If provided)
       if (this.imageUrl) {
@@ -155,20 +162,16 @@ export default {
         }
       }
 
-      // 6. Content Text
-      this.ctx.textAlign = "left";
-      this.ctx.font = '500 56px "Hind Madurai", sans-serif';
-      this.ctx.fillStyle = "#1a1a1a";
-      this.drawWrappedText(
+      // 6. Content Text (Rich Text)
+      await this.drawRichText(
         this.textContent,
         200,
         currentY,
-        this.width - 400,
-        85,
+        this.width - 400
       );
 
       // 7. Footer - Signature Area
-      const footerY = this.height - 350;
+      const footerY = this.height - 310; // Moved up for more breathing room
       this.ctx.fillStyle = "#800000";
       this.ctx.textAlign = "center";
       const sigX = this.width - 550; 
@@ -181,7 +184,7 @@ export default {
       this.ctx.font = 'bold 90px "Hind Madurai", sans-serif';
 
       // Create Flag Gradient for the Name (Maroon-Yellow-Maroon)
-      const nameY = footerY + 110;
+      const nameY = footerY + 100; // Increased spacing
       const gradient = this.ctx.createLinearGradient(
         sigX,
         nameY - 60,
@@ -201,7 +204,7 @@ export default {
 
       this.ctx.fillStyle = "#800000"; // Revert to Maroon for the rest
       this.ctx.font = 'bold 50px "Hind Madurai", sans-serif';
-      this.ctx.fillText(this.signatoryPosting || "155-வது வட்டக் கழகச் செயலாளர்", sigX, footerY + 200);
+      this.ctx.fillText(this.signatoryPosting || "155-வது வட்டக் கழகச் செயலாளர்", sigX, footerY + 180); // Increased spacing
 
       // Decorative bottom border
       this.ctx.fillStyle = "#800000";
@@ -226,6 +229,12 @@ export default {
       if (!text) return;
       const paragraphs = text.split("\n");
       for (let p = 0; p < paragraphs.length; p++) {
+        // If it's a blank line (empty paragraph), use reduced line height
+        if (paragraphs[p].trim() === "") {
+          y += lineHeight * 0.4; 
+          continue;
+        }
+
         const words = paragraphs[p].split(" ");
         let line = "";
         for (let n = 0; n < words.length; n++) {
@@ -241,7 +250,104 @@ export default {
           }
         }
         this.ctx.fillText(line, x, y);
-        y += lineHeight * 1.5; // Paragraph spacing
+        y += lineHeight * 1.1; // Standard Paragraph spacing (Tightened)
+      }
+    },
+    async drawRichText(html, x, y, maxWidth) {
+      if (!html) return;
+
+      const fontSize = 56;
+      const lineHeight = fontSize * 1.3;
+      
+      // Drawing State
+      let isBold = false;
+      let isItalic = false;
+      let isUnderline = false;
+      let currentX = x;
+      let currentY = y;
+
+      const setFont = () => {
+        let style = "";
+        if (isItalic) style += "italic ";
+        if (isBold) style += "bold ";
+        this.ctx.font = `${style}${fontSize}px "Hind Madurai", sans-serif`;
+      };
+
+      // Reset and set initial font
+      this.ctx.textAlign = "left";
+      this.ctx.fillStyle = "#1a1a1a";
+      setFont();
+
+      // Simple HTML Tokenizer
+      const tokens = html.split(/(<[^>]+>)/g);
+      
+      for (const token of tokens) {
+        if (!token) continue;
+
+        if (token.startsWith("<")) {
+          const tag = token.toLowerCase();
+          if (tag === "<p>" || tag === "<div>") {
+            if (currentX > x) {
+              currentX = x;
+              currentY += lineHeight;
+            }
+          } else if (tag === "</p>" || tag === "</div>") {
+            currentX = x;
+            currentY += lineHeight * 1.1; // Paragraph gap
+          } else if (tag === "<b>" || tag === "<strong>") {
+            isBold = true;
+          } else if (tag === "</b>" || tag === "</strong>") {
+            isBold = false;
+          } else if (tag === "<i>" || tag === "<em>") {
+            isItalic = true;
+          } else if (tag === "</i>" || tag === "</em>") {
+            isItalic = false;
+          } else if (tag === "<u>") {
+            isUnderline = true;
+          } else if (tag === "</u>") {
+            isUnderline = false;
+          } else if (tag === "<br>" || tag === "<br />") {
+            currentX = x;
+            currentY += lineHeight;
+          } else if (tag === "<li>") {
+            currentX = x + 50;
+            this.ctx.fillText("•", x + 10, currentY);
+          } else if (tag === "</li>") {
+            currentX = x;
+            currentY += lineHeight;
+          }
+          setFont();
+        } else {
+          // Text handling with wrapping
+          const text = token
+            .replace(/&nbsp;/g, " ")
+            .replace(/&amp;/g, "&")
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+            .replace(/&#160;/g, " ");
+
+          const words = text.split(" ");
+          for (let i = 0; i < words.length; i++) {
+            const word = words[i];
+            if (word === "" && i > 0) continue; 
+
+            const wordToDraw = word + (i < words.length - 1 ? " " : "");
+            const metrics = this.ctx.measureText(wordToDraw);
+
+            if (currentX + metrics.width > x + maxWidth) {
+              currentX = x;
+              currentY += lineHeight;
+            }
+
+            this.ctx.fillText(wordToDraw, currentX, currentY);
+            
+            if (isUnderline) {
+              this.ctx.fillRect(currentX, currentY + 8, metrics.width, 3);
+            }
+            
+            currentX += metrics.width;
+          }
+        }
       }
     },
     exportAsImage() {

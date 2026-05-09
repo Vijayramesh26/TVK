@@ -344,21 +344,26 @@ export default {
       });
     },
     drawWrappedText(text, x, y, maxWidth, lineHeight) {
-      const words = text.split(" ");
-      let line = "";
-      for (let n = 0; n < words.length; n++) {
-        const testLine = line + words[n] + " ";
-        const metrics = this.ctx.measureText(testLine);
-        const testWidth = metrics.width;
-        if (testWidth > maxWidth && n > 0) {
-          this.ctx.fillText(line, x, y);
-          line = words[n] + " ";
-          y += lineHeight;
-        } else {
-          line = testLine;
+      if (!text) return;
+      const paragraphs = text.split("\n");
+      for (let p = 0; p < paragraphs.length; p++) {
+        const words = paragraphs[p].split(" ");
+        let line = "";
+        for (let n = 0; n < words.length; n++) {
+          const testLine = line + words[n] + " ";
+          const metrics = this.ctx.measureText(testLine);
+          const testWidth = metrics.width;
+          if (testWidth > maxWidth && n > 0) {
+            this.ctx.fillText(line, x, y);
+            line = words[n] + " ";
+            y += lineHeight;
+          } else {
+            line = testLine;
+          }
         }
+        this.ctx.fillText(line, x, y);
+        y += lineHeight; // Next paragraph
       }
-      this.ctx.fillText(line, x, y);
     },
     exportAsImage() {
       return this.$refs.canvas.toDataURL("image/png");
