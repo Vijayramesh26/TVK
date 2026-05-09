@@ -241,22 +241,86 @@ export default {
     },
     updateSEO() {
       const articleTitle = this.articleData.title || this.t(`news.item${this.idNum + 1}.title`);
-      const title = this.isTamil 
-        ? `தளபதி விஜய் அதிரடி உரை: ${articleTitle} | தவெக அதிகாரப்பூர்வ தளம்`
-        : `${articleTitle} | Thalapathy Vijay Official News | TVK`;
+      const fullTitle = this.isTamil 
+        ? `தளபதி விஜய் அதிரடி உரை: ${articleTitle} | தவெக செய்திகள்`
+        : `${articleTitle} | Thalapathy Vijay TVK News | Official`;
       
-      document.title = title;
+      document.title = fullTitle;
 
-      // Update Meta Description
       const articleExcerpt = this.articleData.excerpt || this.t(`news.item${this.idNum + 1}.content`);
       const description = this.isTamil
-        ? `இப்போதே படிக்கவும்: ${articleTitle}. ${articleExcerpt}`
-        : `Official Report: ${articleTitle}. ${articleExcerpt}`;
+        ? `இப்போதே படிக்கவும்: ${articleTitle}. ${articleExcerpt} தமிழக வெற்றிக் கழகத்தின் அதிகாரப்பூர்வ செய்திகள்.`
+        : `Official TVK News: ${articleTitle}. ${articleExcerpt} Read the full transcript of Thalapathy Vijay's vision.`;
 
+      // Update Meta Tags
       let metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) {
-        metaDesc.setAttribute('content', description);
+      if (metaDesc) metaDesc.setAttribute('content', description);
+
+      // Open Graph / Social SEO
+      const updateMeta = (property, content) => {
+        let el = document.querySelector(`meta[property="${property}"]`);
+        if (!el) {
+          el = document.createElement('meta');
+          el.setAttribute('property', property);
+          document.head.appendChild(el);
+        }
+        el.setAttribute('content', content);
+      };
+
+      const url = `https://myvetritamilnadu.org/news/${this.idNum}`;
+      updateMeta('og:title', fullTitle);
+      updateMeta('og:description', description);
+      updateMeta('og:url', url);
+      updateMeta('og:type', 'article');
+      updateMeta('article:published_time', this.articleData.date);
+      updateMeta('article:author', this.articleData.author);
+      
+      // Canonical Tag
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonical);
       }
+      canonical.setAttribute('href', url);
+
+      // JSON-LD Structured Data
+      let script = document.getElementById('json-ld-news');
+      if (!script) {
+        script = document.createElement('script');
+        script.setAttribute('id', 'json-ld-news');
+        script.setAttribute('type', 'application/ld+json');
+        document.head.appendChild(script);
+      }
+
+      const jsonLD = {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": articleTitle,
+        "description": articleExcerpt,
+        "image": [
+          "https://myvetritamilnadu.org" + this.articleData.image
+        ],
+        "datePublished": this.articleData.date,
+        "author": [{
+          "@type": "Person",
+          "name": this.articleData.author,
+          "url": "https://myvetritamilnadu.org"
+        }],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Tamilaga Vettri Kazhagam (TVK)",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://myvetritamilnadu.org/favicon.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": url
+        }
+      };
+      script.text = JSON.stringify(jsonLD);
     }
   },
   watch: {
