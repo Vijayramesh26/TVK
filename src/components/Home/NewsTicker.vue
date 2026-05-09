@@ -39,9 +39,9 @@ export default {
     },
     tickerItems() {
       const broadcast = this.t("broadcast");
-      // Get titles of latest 10 news items (reversed for latest first)
+      // Get titles of latest 10 news items (sorted by date)
       const items = [...newsData]
-        .reverse()
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
         .slice(0, 10)
         .map(item => {
           return this.t(`news.item${item.id + 1}.title`);

@@ -58,8 +58,9 @@
                   </v-chip>
                 </div>
                 <div class="news-date-badge pa-2 rounded-lg text-center">
-                  <div class="text-caption font-weight-black color-gold">{{ formatDate(item.date).month }}</div>
-                  <div class="text-h6 font-weight-black text-white">{{ formatDate(item.date).day }}</div>
+                  <div class="text-caption font-weight-black color-gold line-height-1">{{ formatDate(item.date).month }}</div>
+                  <div class="text-h6 font-weight-black text-white line-height-1">{{ formatDate(item.date).day }}</div>
+                  <div class="text-caption font-weight-bold text-white opacity-60 line-height-1">{{ formatDate(item.date).year }}</div>
                 </div>
               </div>
             </v-img>
@@ -109,7 +110,7 @@ export default {
   inject: ['t', 'currentLang'],
   data: () => ({
     search: '',
-    news: [...newsData].reverse()
+    news: [...newsData].sort((a, b) => new Date(b.date) - new Date(a.date))
   }),
   computed: {
     isTamil() {
@@ -131,7 +132,8 @@ export default {
       const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
       return {
         month: months[date.getMonth()],
-        day: date.getDate()
+        day: date.getDate(),
+        year: date.getFullYear()
       };
     }
   },
@@ -199,6 +201,7 @@ export default {
 }
 
 .lh-tight { line-height: 1.2; }
+.line-height-1 { line-height: 1 !important; }
 
 @media (max-width: 600px) {
   .text-h2 {

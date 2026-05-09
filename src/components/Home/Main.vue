@@ -877,7 +877,7 @@
                 <div
                   class="text-caption font-weight-bold text-grey-lighten-1 mb-2"
                 >
-                  {{ t(`news.item${item.id + 1}.date`) }}
+                  {{ formatDate(item.date) }}
                 </div>
                 <h3
                   class="text-h6 font-weight-bold color-maroon line-clamp-2 lh-tight"
@@ -1111,9 +1111,9 @@ export default {
       return this.currentLang() === "ta";
     },
     sortedNews() {
-      return [...this.newsData].sort((a, b) => {
-        const dateA = new Date(a.sortDate);
-        const dateB = new Date(b.sortDate);
+      return [...newsData].sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
         if (dateB - dateA !== 0) {
           return dateB - dateA;
         }
@@ -1139,6 +1139,12 @@ export default {
     if (this.tickerInterval) clearInterval(this.tickerInterval);
   },
   methods: {
+    formatDate(dateStr) {
+      if (!dateStr) return "";
+      const date = new Date(dateStr);
+      const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+      return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
+    },
     animateCounter() {
       const duration = 2000;
       const start = Date.now();
