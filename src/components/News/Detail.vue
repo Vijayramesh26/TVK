@@ -196,12 +196,19 @@ export default {
       const transcript = this.isTamil ? 
         this.t(`news.item${this.idNum + 1}.fullTranscript`) : 
         this.t(`news.item${this.idNum + 1}.fullTranscriptEn`);
-      return transcript && transcript.length > 0 && !transcript.includes('news.item');
+      
+      const hasTrans = transcript && transcript.length > 0 && !transcript.includes('news.item');
+      return hasTrans || (this.articleData.content && this.articleData.content.length > 0);
     },
     articleTranscript() {
-      return this.isTamil ? 
+      const trans = this.isTamil ? 
         this.t(`news.item${this.idNum + 1}.fullTranscript`) : 
         this.t(`news.item${this.idNum + 1}.fullTranscriptEn`);
+      
+      if (trans && trans.length > 0 && !trans.includes('news.item')) {
+        return trans;
+      }
+      return this.articleData.content || '';
     }
   },
   mounted() {
@@ -233,17 +240,18 @@ export default {
       this.synth.speak(this.utterance);
     },
     updateSEO() {
-      const articleTitle = this.t(`news.item${this.idNum + 1}.title`);
+      const articleTitle = this.articleData.title || this.t(`news.item${this.idNum + 1}.title`);
       const title = this.isTamil 
         ? `தளபதி விஜய் அதிரடி உரை: ${articleTitle} | தவெக அதிகாரப்பூர்வ தளம்`
-        : `Watch Now: ${articleTitle} | Thalapathy Vijay's Emotional Political Speech | TVK`;
+        : `${articleTitle} | Thalapathy Vijay Official News | TVK`;
       
       document.title = title;
 
-      // Update Meta Description with a "grabbing" prefix
+      // Update Meta Description
+      const articleExcerpt = this.articleData.excerpt || this.t(`news.item${this.idNum + 1}.content`);
       const description = this.isTamil
-        ? `இப்போதே படிக்கவும்: ${articleTitle}. தளபதி விஜய்யின் எழுச்சிமிக்க உரையின் முழு தொகுப்பு. தமிழக வெற்றிக் கழகம்.`
-        : `Exclusive: Read the full powerful address - ${articleTitle}. Experience the history of Thalapathy Vijay's political journey with full transcripts.`;
+        ? `இப்போதே படிக்கவும்: ${articleTitle}. ${articleExcerpt}`
+        : `Official Report: ${articleTitle}. ${articleExcerpt}`;
 
       let metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
