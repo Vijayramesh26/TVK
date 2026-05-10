@@ -95,7 +95,7 @@
 
             <!-- Article Summary/Body -->
             <div class="article-body text-h6 font-weight-medium color-grey-darken-3 mb-12">
-              <p v-for="(paragraph, i) in articleContent" :key="i" class="mb-6 lh-relaxed">
+              <p v-for="(paragraph, i) in articleContent" :key="i" class="lh-relaxed">
                 {{ paragraph }}
               </p>
             </div>
@@ -193,7 +193,8 @@ export default {
     },
     articleContent() {
       const fullText = this.t(`news.item${this.idNum + 1}.content`);
-      return fullText.split('\n\n');
+      // Split by double newline but filter out empty strings to avoid extra vertical space
+      return fullText.split('\n\n').filter(p => p.trim().length > 0);
     },
     hasTranscript() {
       const transcript = this.isTamil ? 
@@ -458,6 +459,8 @@ export default {
 
 .article-body p {
   text-align: justify;
+  white-space: pre-wrap;
+  margin-bottom: 1.2rem;
 }
 
 .video-container {
