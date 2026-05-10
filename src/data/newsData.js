@@ -20,6 +20,38 @@ import finalAppealBg from '../assets/generated/rally_scene.png'; // Fallback
 
 export const newsData = [
   {
+    id: 71,
+    title: "CM Thalapathy Vijay signs first executive orders: 200 units free electricity and 'Singapen' safety force!",
+    slug: "cm-vijay-signs-first-executive-orders-free-electricity-women-safety",
+    category: "Government",
+    date: "2026-05-10",
+    author: "Admin",
+    source: "TVK Official",
+    image: educationBg,
+    image_url: educationBg,
+    excerpt: "Following the swearing-in, CM Vijay signed historic orders for free electricity and women's safety.",
+    content: "Following the swearing-in ceremony, Tamil Nadu Chief Minister Thalapathy C. Joseph Vijay has signed his first executive orders. Key policies include 200 units of free electricity for families consuming up to 500 units, the formation of 'Singapen' special security force for women, and dedicated anti-drug wings in every district.",
+    tags: ["Chief Minister", "Vijay", "Free Electricity", "Women Safety"],
+    location: "Chennai",
+    locationEn: "Chennai"
+  },
+  {
+    id: 70,
+    title: "Thalapathy Vijay Sworn in as Tamil Nadu Chief Minister: A Historic Landmark Event!",
+    slug: "thalapathy-vijay-sworn-in-as-tamil-nadu-chief-minister-historic-event",
+    category: "Politics",
+    date: "2026-05-10",
+    author: "Admin",
+    source: "TVK Media",
+    image: finalAppealBg,
+    image_url: finalAppealBg,
+    excerpt: "Thalapathy Vijay has officially been sworn in as the new Chief Minister of Tamil Nadu today.",
+    content: "Thalapathy Vijay has officially been sworn in as the new Chief Minister of Tamil Nadu today. Millions of supporters gathered to witness the dawn of a new political era for the state.",
+    tags: ["Chief Minister", "Vijay", "Swearing In", "Tamil Nadu"],
+    location: "Chennai",
+    locationEn: "Chennai"
+  },
+  {
     id: 0,
     title: "Campaign Rally - Ariyalur",
     slug: "campaign-rally---ariyalur",

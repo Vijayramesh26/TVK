@@ -1,6 +1,6 @@
 const translations = {
   ta: {
-    broadcast: "முக்கியச் செய்தி: தளபதி விஜய் நாளை தமிழக முதலமைச்சராகப் பதவியேற்கிறார் - தமிழக அரசியலில் புதிய விடியல்!",
+    broadcast: "முக்கியச் செய்தி: தமிழக முதலமைச்சர் தளபதி விஜய் அவர்கள் மக்கள் நலன் சார்ந்த முதல் அரசாணைகளில் கையெழுத்திட்டார் - 200 யூனிட் இலவச மின்சாரம் மற்றும் பெண்கள் பாதுகாப்பு படை!",
     nav: {
       home: "முகப்பு",
       kolgai: "கொள்கைகள்",
@@ -541,6 +541,17 @@ const translations = {
         content: "தவெக ஒரு மத்திய-இடதுசாரி கொள்கை கொண்ட கட்சி என்றும், மதவாத அரசியலை ஒருபோதும் ஏற்காது என்றும் விஜய் திட்டவட்டமாக அறிவித்துள்ளார்.",
         sourceUrl: "Note: தவெக கொள்கை விளக்கம்",
       },
+      item70: {
+        title: "தமிழக முதலமைச்சராக தளபதி விஜய் அவர்கள் பதவியேற்பு: லட்சக்கணக்கான மக்கள் முன்னிலையில் வரலாற்றுச் சாதனை!",
+        date: "2026-05-10",
+        content: "தமிழகத்தின் புதிய முதலமைச்சராக தளபதி விஜய் அவர்கள் இன்று பதவியேற்றார். பதவியேற்பு விழாவில் லட்சக்கணக்கான தொண்டர்கள் மற்றும் பொதுமக்கள் கலந்து கொண்டு புதிய தமிழகத்தின் உதயமாக இதனை கொண்டாடினர்.",
+        sourceUrl: "https://www.youtube.com"
+      },
+      item71: {
+        title: "தமிழக முதலமைச்சர் தளபதி விஜய் அவர்களின் முதல் அரசாணைகள்: 200 யூனிட் இலவச மின்சாரம் மற்றும் 'சிங்கப்பெண்' பாதுகாப்பு படை!",
+        date: "2026-05-10",
+        content: "தமிழக முதலமைச்சர் தளபதி திரு. C. ஜோசப் விஜய் அவர்கள் பதவியேற்றதைத் தொடர்ந்து, மக்களுக்கு அளித்த முக்கிய வாக்குறுதிகளை நிறைவேற்றும் வகையில் முதல் அரசாணைகளில் கையெழுத்திட்டுள்ளார். அதன்படி, 500 யூனிட் வரை பயன்படுத்தும் குடும்பங்களுக்கு 200 யூனிட் இலவச மின்சாரம், 'சிங்கப்பெண்' சிறப்பு பாதுகாப்புப் படை மற்றும் போதைப்பொருள் ஒழிப்பு பிரிவுகள் அமைக்க உத்தரவிடப்பட்டுள்ளது."
+      }
     },
     anthems: {
       title: "கட்சிப் பாடல்கள்",
@@ -615,7 +626,7 @@ const translations = {
     },
   },
   en: {
-    broadcast: "BREAKING: Thalapathy Vijay to be sworn in as Tamil Nadu Chief Minister tomorrow - A Historic New Era Begins!",
+    broadcast: "Breaking News: TN Chief Minister Thalapathy Vijay signs first executive orders - 200 units free electricity and special security force for women!",
     nav: {
       home: "Home",
       kolgai: "Ideology",
@@ -1146,6 +1157,18 @@ const translations = {
         content: "TVK formally aligned with centre-left ideology, following Ambedkar, Periyar, and Kamaraj, while rejecting right-wing politics.",
         sourceUrl: "Note: Ideology Announcement",
       },
+      item70: {
+        title: "Thalapathy Vijay Sworn in as Tamil Nadu Chief Minister: A Historic Landmark Event!",
+        date: "2026-05-10",
+        content: "Thalapathy Vijay has officially been sworn in as the new Chief Minister of Tamil Nadu today. Millions of supporters gathered to witness the dawn of a new political era for the state.",
+        sourceUrl: "https://www.youtube.com"
+      },
+      item71: {
+        title: "CM Thalapathy Vijay signs first executive orders: 200 units free electricity and 'Singapen' safety force!",
+        date: "2026-05-10",
+        content: "Following the swearing-in ceremony, Tamil Nadu Chief Minister Thalapathy C. Joseph Vijay has signed his first executive orders. Key policies include 200 units of free electricity for families consuming up to 500 units, the formation of 'Singapen' special security force for women, and dedicated anti-drug wings in every district.",
+        sourceUrl: "https://www.youtube.com"
+      }
     },
     anthems: {
       title: "Party Anthems",

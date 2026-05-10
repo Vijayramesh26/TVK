@@ -1,38 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <!-- Latest TVK News for Google News indexing -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://myvetritamilnadu.org/news/campaign-rally---namakkal7</loc>
+    <loc>https://myvetritamilnadu.org/news/cm-vijay-signs-first-executive-orders-free-electricity-women-safety</loc>
     <news:news>
       <news:publication>
         <news:name>TVK Official News</news:name>
         <news:language>ta</news:language>
       </news:publication>
       <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>வரலாற்றுச் சிறப்புமிக்க வெற்றி: தமிழகத்தின் புதிய முதலமைச்சராகத் தளபதி விஜய் இன்று பதவியேற்பு!</news:title>
+      <news:title>CM Thalapathy Vijay signs first executive orders: 200 units free electricity and 'Singapen' safety force!</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://myvetritamilnadu.org/news/campaign-rally---namakkal8</loc>
+    <loc>https://myvetritamilnadu.org/news/thalapathy-vijay-sworn-in-as-tamil-nadu-chief-minister-historic-event</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-10</news:publication_date>
+      <news:title>Thalapathy Vijay Sworn in as Tamil Nadu Chief Minister: A Historic Landmark Event!</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/historic-victory-vijay-to-be-sworn-in-as-tamil-nadu-chief-minister-today</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-10</news:publication_date>
+      <news:title>Historic Victory: Vijay to be Sworn in as Tamil Nadu Chief Minister Today</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/historic-victory---vijay-sworn-in-as-chief-minister-of-tamil-nadu</loc>
     <news:news>
       <news:publication>
         <news:name>TVK Official News</news:name>
         <news:language>ta</news:language>
       </news:publication>
       <news:publication_date>2026-05-09</news:publication_date>
-      <news:title>தளபதி விஜயின் முதல் கையெழுத்து: விவசாயக் கடன் தள்ளுபடி மற்றும் இலவசக் கல்வித் திட்டம்!</news:title>
+      <news:title>Historic Victory - Vijay Sworn in as Chief Minister of Tamil Nadu!</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://myvetritamilnadu.org/news/campaign-rally---namakkal9</loc>
+    <loc>https://myvetritamilnadu.org/news/from-fanclubs-to-political-power-the-remarkable-rise-of-tamilaga-vettri-kazhagam</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-09</news:publication_date>
+      <news:title>From Fanclubs to Political Power: The Remarkable Rise of Tamilaga Vettri Kazhagam</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/tvk-secures-majority-congress-left-parties-and-vck-pledge-support</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-09</news:publication_date>
+      <news:title>TVK Secures Majority: Congress, Left Parties and VCK Pledge Support</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/tvk-supporter-attempts-self-immolation-over-delay-in-vijays-oath-ceremony</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-09</news:publication_date>
+      <news:title>TVK Supporter Attempts Self-Immolation Over Delay in Vijay's Oath Ceremony</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/vijays-political-journey-from-bollywood-star-to-chief-minister</loc>
     <news:news>
       <news:publication>
         <news:name>TVK Official News</news:name>
         <news:language>ta</news:language>
       </news:publication>
       <news:publication_date>2026-05-08</news:publication_date>
-      <news:title>மக்கள் முதல்வர் விஜய்: நேரு மைதானத்தில் பிரம்மாண்ட பதவியேற்பு விழா ஏற்பாடுகள் தீவிரம்!</news:title>
+      <news:title>Vijay's Political Journey: From Bollywood Star to Chief Minister</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/political-tsunami-analysis-of-tvks-historic-electoral-victory</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-07</news:publication_date>
+      <news:title>Political Tsunami: Analysis of TVK's Historic Electoral Victory</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://myvetritamilnadu.org/news/dmks-historic-defeat-15-ministers-lose-elections-stalin-steps-down</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TVK Official News</news:name>
+        <news:language>ta</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-05</news:publication_date>
+      <news:title>DMK's Historic Defeat: 15 Ministers Lose Elections, Stalin Steps Down</news:title>
     </news:news>
   </url>
 </urlset>

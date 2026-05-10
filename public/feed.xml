@@ -1,35 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0">
 <channel>
-  <title>TVK Official News | தமிழக வெற்றிக் கழகம் செய்திகள்</title>
+  <title>TVK Official News</title>
   <link>https://myvetritamilnadu.org/news</link>
-  <description>Latest news, press releases, and official updates from Tamilaga Vettri Kazhagam (TVK).</description>
-  <language>ta-in</language>
-  <lastBuildDate>Sun, 10 May 2026 10:00:00 +0530</lastBuildDate>
-  <atom:link href="https://myvetritamilnadu.org/feed.xml" rel="self" type="application/rss+xml" />
-  
+  <description>Latest updates from Tamilaga Vettri Kazhagam</description>
+  <language>ta</language>
+  <item>
+    <title>CM Thalapathy Vijay signs first executive orders: 200 units free electricity and 'Singapen' safety force!</title>
+    <link>https://myvetritamilnadu.org/news/cm-vijay-signs-first-executive-orders-free-electricity-women-safety</link>
+    <pubDate>2026-05-10T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/cm-vijay-signs-first-executive-orders-free-electricity-women-safety</guid>
+  </item>
+  <item>
+    <title>Thalapathy Vijay Sworn in as Tamil Nadu Chief Minister: A Historic Landmark Event!</title>
+    <link>https://myvetritamilnadu.org/news/thalapathy-vijay-sworn-in-as-tamil-nadu-chief-minister-historic-event</link>
+    <pubDate>2026-05-10T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/thalapathy-vijay-sworn-in-as-tamil-nadu-chief-minister-historic-event</guid>
+  </item>
   <item>
     <title>Historic Victory: Vijay to be Sworn in as Tamil Nadu Chief Minister Today</title>
-    <link>https://myvetritamilnadu.org/news/campaign-rally---namakkal7</link>
-    <guid>https://myvetritamilnadu.org/news/campaign-rally---namakkal7</guid>
-    <pubDate>Sun, 10 May 2026 08:00:00 +0530</pubDate>
-    <description>Actor-turned-politician C. Joseph Vijay will be sworn in as the 13th Chief Minister of Tamil Nadu today at Nehru Stadium, Chennai.</description>
+    <link>https://myvetritamilnadu.org/news/historic-victory-vijay-to-be-sworn-in-as-tamil-nadu-chief-minister-today</link>
+    <pubDate>2026-05-10T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/historic-victory-vijay-to-be-sworn-in-as-tamil-nadu-chief-minister-today</guid>
   </item>
-  
   <item>
-    <title>TVK's New Era: Vijay's First Executive Order Expected on Farmers Welfare</title>
-    <link>https://myvetritamilnadu.org/news/campaign-rally---namakkal8</link>
-    <guid>https://myvetritamilnadu.org/news/campaign-rally---namakkal8</guid>
-    <pubDate>Sat, 09 May 2026 14:00:00 +0530</pubDate>
-    <description>The incoming TVK government has signaled a major focus on agriculture and rural development in its first 100 days.</description>
+    <title>Historic Victory - Vijay Sworn in as Chief Minister of Tamil Nadu!</title>
+    <link>https://myvetritamilnadu.org/news/historic-victory---vijay-sworn-in-as-chief-minister-of-tamil-nadu</link>
+    <pubDate>2026-05-09T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/historic-victory---vijay-sworn-in-as-chief-minister-of-tamil-nadu</guid>
   </item>
-
   <item>
-    <title>Massive Preparations at Nehru Stadium for Vijay's Oath Ceremony</title>
-    <link>https://myvetritamilnadu.org/news/campaign-rally---namakkal9</link>
-    <guid>https://myvetritamilnadu.org/news/campaign-rally---namakkal9</guid>
-    <pubDate>Fri, 08 May 2026 18:00:00 +0530</pubDate>
-    <description>Thousands of supporters from across Tamil Nadu are converging on Chennai for the historic swearing-in ceremony.</description>
+    <title>From Fanclubs to Political Power: The Remarkable Rise of Tamilaga Vettri Kazhagam</title>
+    <link>https://myvetritamilnadu.org/news/from-fanclubs-to-political-power-the-remarkable-rise-of-tamilaga-vettri-kazhagam</link>
+    <pubDate>2026-05-09T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/from-fanclubs-to-political-power-the-remarkable-rise-of-tamilaga-vettri-kazhagam</guid>
+  </item>
+  <item>
+    <title>TVK Secures Majority: Congress, Left Parties and VCK Pledge Support</title>
+    <link>https://myvetritamilnadu.org/news/tvk-secures-majority-congress-left-parties-and-vck-pledge-support</link>
+    <pubDate>2026-05-09T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/tvk-secures-majority-congress-left-parties-and-vck-pledge-support</guid>
+  </item>
+  <item>
+    <title>TVK Supporter Attempts Self-Immolation Over Delay in Vijay's Oath Ceremony</title>
+    <link>https://myvetritamilnadu.org/news/tvk-supporter-attempts-self-immolation-over-delay-in-vijays-oath-ceremony</link>
+    <pubDate>2026-05-09T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/tvk-supporter-attempts-self-immolation-over-delay-in-vijays-oath-ceremony</guid>
+  </item>
+  <item>
+    <title>Vijay's Political Journey: From Bollywood Star to Chief Minister</title>
+    <link>https://myvetritamilnadu.org/news/vijays-political-journey-from-bollywood-star-to-chief-minister</link>
+    <pubDate>2026-05-08T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/vijays-political-journey-from-bollywood-star-to-chief-minister</guid>
+  </item>
+  <item>
+    <title>Political Tsunami: Analysis of TVK's Historic Electoral Victory</title>
+    <link>https://myvetritamilnadu.org/news/political-tsunami-analysis-of-tvks-historic-electoral-victory</link>
+    <pubDate>2026-05-07T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/political-tsunami-analysis-of-tvks-historic-electoral-victory</guid>
+  </item>
+  <item>
+    <title>DMK's Historic Defeat: 15 Ministers Lose Elections, Stalin Steps Down</title>
+    <link>https://myvetritamilnadu.org/news/dmks-historic-defeat-15-ministers-lose-elections-stalin-steps-down</link>
+    <pubDate>2026-05-05T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/dmks-historic-defeat-15-ministers-lose-elections-stalin-steps-down</guid>
+  </item>
+  <item>
+    <title>Vijay Contests Two Seats, Wins Both with Massive Margins</title>
+    <link>https://myvetritamilnadu.org/news/vijay-contests-two-seats-wins-both-with-massive-margins</link>
+    <pubDate>2026-05-04T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/vijay-contests-two-seats-wins-both-with-massive-margins</guid>
+  </item>
+  <item>
+    <title>Party Functionaries Meeting - Coimbatore</title>
+    <link>https://myvetritamilnadu.org/news/party-functionaries-meeting---coimbatore</link>
+    <pubDate>2026-04-26T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/party-functionaries-meeting---coimbatore</guid>
+  </item>
+  <item>
+    <title>Election Commission Records Highest Ever Voter Turnout in Tamil Nadu: 85.1%</title>
+    <link>https://myvetritamilnadu.org/news/election-commission-records-highest-ever-voter-turnout-in-tamil-nadu-851</link>
+    <pubDate>2026-04-23T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/election-commission-records-highest-ever-voter-turnout-in-tamil-nadu-851</guid>
+  </item>
+  <item>
+    <title>Final Campaign Rally (Grand Finale) - Nandanam YMCA Ground</title>
+    <link>https://myvetritamilnadu.org/news/final-campaign-rally-grand-finale---nandanam-ymca-ground</link>
+    <pubDate>2026-04-21T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/final-campaign-rally-grand-finale---nandanam-ymca-ground</guid>
+  </item>
+  <item>
+    <title>Final Campaign Speeches - Chennai (Final Phase)</title>
+    <link>https://myvetritamilnadu.org/news/final-campaign-speeches---chennai-final-phase</link>
+    <pubDate>2026-04-21T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/final-campaign-speeches---chennai-final-phase</guid>
+  </item>
+  <item>
+    <title>Final Campaign Speech - Thiruvallur (Final Phase)</title>
+    <link>https://myvetritamilnadu.org/news/final-campaign-speech---thiruvallur-final-phase</link>
+    <pubDate>2026-04-21T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/final-campaign-speech---thiruvallur-final-phase</guid>
+  </item>
+  <item>
+    <title>Final Day Campaign - Various Locations (Final Day)</title>
+    <link>https://myvetritamilnadu.org/news/final-day-campaign---various-locations-final-day</link>
+    <pubDate>2026-04-21T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/final-day-campaign---various-locations-final-day</guid>
+  </item>
+  <item>
+    <title>Campaign Rally Address - Perambur</title>
+    <link>https://myvetritamilnadu.org/news/campaign-rally-address---perambur</link>
+    <pubDate>2026-04-21T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/campaign-rally-address---perambur</guid>
+  </item>
+  <item>
+    <title>TVK's Welfare Manifesto: Free Bus Travel, Gas Cylinders, and Women Safety</title>
+    <link>https://myvetritamilnadu.org/news/tvks-welfare-manifesto-free-bus-travel-gas-cylinders-and-women-safety</link>
+    <pubDate>2026-04-15T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/tvks-welfare-manifesto-free-bus-travel-gas-cylinders-and-women-safety</guid>
+  </item>
+  <item>
+    <title>Campaign Event - Chennai (April)</title>
+    <link>https://myvetritamilnadu.org/news/campaign-event---chennai-april</link>
+    <pubDate>2026-04-12T00:00:00Z</pubDate>
+    <guid>https://myvetritamilnadu.org/news/campaign-event---chennai-april</guid>
   </item>
 </channel>
 </rss>
