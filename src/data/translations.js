@@ -550,7 +550,13 @@ const translations = {
       item71: {
         title: "தமிழக முதலமைச்சர் தளபதி விஜய் அவர்களின் முதல் அரசாணைகள்: 200 யூனிட் இலவச மின்சாரம் மற்றும் 'சிங்கப்பெண்' பாதுகாப்பு படை!",
         date: "2026-05-10",
-        content: "பொதுமக்கள் கவனத்திற்கு,\n\nதமிழக முதலமைச்சர்\nதளபதி திரு. C. ஜோசப் விஜய் அவர்கள்\nபதவியேற்றதைத் தொடர்ந்து,\nமக்களுக்கு அளித்த முக்கிய வாக்குறுதிகளை நிறைவேற்றும் வகையில்\nமுதல் அரசாணைகளில் கையெழுத்திட்டுள்ளார்.\n\nஅதன்படி:\n\n⚡ இரண்டு மாத மின்சார பயன்பாடு\n**500 யூனிட் வரை உள்ள குடும்பங்களுக்கு,\n200 யூனிட் இலவச மின்சாரம் வழங்கப்படும்.**\n\n⚡ இரண்டு மாத மின்சார பயன்பாடு\n**500 யூனிட்டை மீறும் குடும்பங்களுக்கு,\nதற்போது நடைமுறையில் உள்ளபடி\n100 யூனிட் இலவச மின்சாரம் தொடரும்.**\n\n⚡ பெண்களின் பாதுகாப்பை வலுப்படுத்தும் வகையில்\n**“சிங்கப்பெண்” சிறப்பு பாதுகாப்புப் படை** அமைக்க உத்தரவு வழங்கப்பட்டுள்ளது.\n\n⚡ போதைப்பொருள் அச்சுறுத்தலை கட்டுப்படுத்தும் நோக்கில்\nமாவட்டம் மற்றும் மாநகரம் தோறும்\n**சிறப்பு போதை ஒழிப்பு பிரிவுகள்** அமைக்க உத்தரவு பிறப்பிக்கப்பட்டுள்ளது.\n\nமக்கள் நலன், பெண்களின் பாதுகாப்பு மற்றும்\nஇளைஞர்களின் எதிர்காலத்தை பாதுகாக்கும் நோக்கில்\nஇந்த திட்டங்கள் செயல்படுத்தப்படுகின்றன.\n\n⚡ மக்கள் நலனே எங்கள் அரசின் முதன்மை நோக்கம்! ⚡"
+        content: "பொதுமக்கள் கவனத்திற்கு,\n\nதமிழக முதலமைச்சர் **தளபதி திரு. C. ஜோசப் விஜய் அவர்கள்**, பதவியேற்றதைத் தொடர்ந்து மக்களுக்கு அளித்த முக்கிய வாக்குறுதிகளை நிறைவேற்றும் வகையில் முதல் அரசாணைகளில் கையெழுத்திட்டுள்ளார்.\n\n⚡ இரண்டு மாதத்திற்கு **500 யூனிட் வரை பயன்படுத்தும் குடும்பங்களுக்கு 200 யூனிட் இலவச மின்சாரம்** வழங்கப்படும்.\n\n⚡ இரண்டு மாதத்திற்கு **500 யூனிட்டை மீறும் குடும்பங்களுக்கு தற்போது நடைமுறையில் உள்ளபடி 100 யூனிட் இலவச மின்சாரம்** தொடரும்.\n\n⚡ பெண்களின் பாதுகாப்பை வலுப்படுத்த **“சிங்கப்பெண்” சிறப்பு பாதுகாப்புப் படை** அமைக்க உத்தரவு வழங்கப்பட்டுள்ளது.\n\n⚡ போதைப்பொருள் அச்சுறுத்தலை கட்டுப்படுத்த மாவட்டம் மற்றும் மாநகரம் தோறும் **சிறப்பு போதை ஒழிப்பு பிரிவுகள்** அமைக்கப்படும்.\n\nமக்கள் நலன், பெண்களின் பாதுகாப்பு மற்றும் இளைஞர்களின் எதிர்காலத்தை பாதுகாக்கும் நோக்கில் இந்த திட்டங்கள் செயல்படுத்தப்படுகின்றன.\n\n⚡ **கான்ஃபிடென்ட்டா இருங்க… வெற்றி நிச்சயம்!** ⚡"
+      },
+      item72: {
+        title: "மதுரவாயல் 155-வது வார்டில் தவெக-வின் பிரம்மாண்ட வெற்றி விழா!",
+        date: "2026-05-10",
+        content: "மதுரவாயல் தொகுதி 155-வது வார்டில் தமிழக வெற்றிக் கழகத்தின் வரலாற்று வெற்றிக்கு பின், இராமபுரம் மற்றும் மதுரவாயல் பகுதிகளில் மக்கள் திரளாக கூடி இனிப்புகள் வழங்கி கொண்டாடினர். கட்சி நிர்வாகிகள் முன்னிலையில் எழுச்சிமிக்க வெற்றி பேரணி நடைபெற்றது.",
+        sourceUrl: "https://www.youtube.com"
       }
     },
     anthems: {
@@ -1166,7 +1172,13 @@ const translations = {
       item71: {
         title: "CM Thalapathy Vijay signs first executive orders: 200 units free electricity and 'Singapen' safety force!",
         date: "2026-05-10",
-        content: "Following the swearing-in ceremony, Tamil Nadu Chief Minister Thalapathy C. Joseph Vijay has signed his first executive orders. Key policies include 200 units of free electricity for families consuming up to 500 units, the formation of 'Singapen' special security force for women, and dedicated anti-drug wings in every district.",
+        content: "Following the swearing-in ceremony, Tamil Nadu Chief Minister Thalapathy C. Joseph Vijay has signed his first executive orders. Key policies include 200 units of free electricity for families consuming up to 500 units, the formation of 'Singapen' special security force for women, and dedicated anti-drug wings in every district. **Stay confident... victory is certain!**",
+        sourceUrl: "https://www.youtube.com"
+      },
+      item72: {
+        title: "TVK's Grand Victory Celebration in Madhuravoyal 155th Ward!",
+        date: "2026-05-10",
+        content: "Residents of Ramapuram and Madhuravoyal gathered in large numbers to celebrate TVK's victory in the 155th ward. The event was marked by public distribution of sweets and a massive rally led by local party functionaries.",
         sourceUrl: "https://www.youtube.com"
       }
     },

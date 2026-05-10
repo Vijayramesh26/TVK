@@ -21,6 +21,22 @@ import finalAppealBg from '../assets/generated/rally_scene.png'; // Fallback
 export const newsData = [
   {
     id: 71,
+    title: "TVK's Grand Victory Celebration in Madhuravoyal 155th Ward!",
+    slug: "tvk-victory-celebration-madhuravoyal-155-ward",
+    category: "Politics",
+    date: "2026-05-10",
+    author: "Admin",
+    source: "TVK Media",
+    image: maduraiBg,
+    image_url: maduraiBg,
+    excerpt: "Massive victory celebration held in Madhuravoyal 155th ward following TVK's historic win.",
+    content: "Residents of Ramapuram and Madhuravoyal gathered in large numbers to celebrate TVK's victory in the 155th ward. The event was marked by public distribution of sweets and a massive rally led by local party functionaries.",
+    tags: ["Victory", "Madhuravoyal", "155 Ward", "Celebration"],
+    location: "Madhuravoyal",
+    locationEn: "Madhuravoyal"
+  },
+  {
+    id: 70,
     title: "CM Thalapathy Vijay signs first executive orders: 200 units free electricity and 'Singapen' safety force!",
     slug: "cm-vijay-signs-first-executive-orders-free-electricity-women-safety",
     category: "Government",
@@ -30,13 +46,13 @@ export const newsData = [
     image: educationBg,
     image_url: educationBg,
     excerpt: "Following the swearing-in, CM Vijay signed historic orders for free electricity and women's safety.",
-    content: "Following the swearing-in ceremony, Tamil Nadu Chief Minister Thalapathy C. Joseph Vijay has signed his first executive orders. Key policies include 200 units of free electricity for families consuming up to 500 units, the formation of 'Singapen' special security force for women, and dedicated anti-drug wings in every district.",
+    content: "Following the swearing-in ceremony, Tamil Nadu Chief Minister **Thalapathy திரு. C. Joseph Vijay அவர்கள்**, has signed his first executive orders. Key policies include 200 units of free electricity for families consuming up to 500 units, the formation of 'Singapen' special security force for women, and dedicated anti-drug wings in every district. **Stay confident... victory is certain!**",
     tags: ["Chief Minister", "Vijay", "Free Electricity", "Women Safety"],
     location: "Chennai",
     locationEn: "Chennai"
   },
   {
-    id: 70,
+    id: 69,
     title: "Thalapathy Vijay Sworn in as Tamil Nadu Chief Minister: A Historic Landmark Event!",
     slug: "thalapathy-vijay-sworn-in-as-tamil-nadu-chief-minister-historic-event",
     category: "Politics",

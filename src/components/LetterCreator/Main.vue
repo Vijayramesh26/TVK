@@ -416,4 +416,18 @@ export default {
   font-family: "Hind Madurai", sans-serif;
   font-size: 16px;
 }
+
+:deep(.ql-editor p) {
+  margin-bottom: 0px !important;
+  line-height: 1.5;
+}
+
+:deep(.ql-editor p:has(br:only-child)) {
+  line-height: 0.5 !important;
+}
+
+:deep(.ql-editor b),
+:deep(.ql-editor strong) {
+  color: #800000;
+}
 </style>

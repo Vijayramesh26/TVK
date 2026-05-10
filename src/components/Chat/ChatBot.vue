@@ -120,13 +120,12 @@
 </template>
 
 <script setup>
-import { ref, watch, onMounted, nextTick, inject, computed } from 'vue';
+import { ref, watch, nextTick, inject, computed } from 'vue';
 import chatIcon3d from '../../assets/chat-icon-3d.png';
 import vijayLeader from '../../assets/leaders/vijay-leader.png';
 import speechesData from '../../../tvk_vijay_speeches.json';
 import { newsData } from '../../data/newsData';
 
-const t = inject('t');
 const getLang = inject('currentLang');
 const currentLocale = computed(() => getLang ? getLang() : 'ta');
 
@@ -137,19 +136,19 @@ const messageBox = ref(null);
 const showSuggestions = ref(true);
 
 const suggestions = [
-  { en: "What is TVK's ideology?", ta: "தவெக-வின் கொள்கை என்ன?" },
-  { en: "Women's welfare promises", ta: "பெண்கள் நல வாக்குறுதிகள்" },
-  { en: "AI & Technology vision", ta: "AI மற்றும் தொழில்நுட்ப தொலைநோக்கு" },
-  { en: "How to join the party?", ta: "கட்சியில் இணைய வழிமுறை" },
-  { en: "Latest campaign news", ta: "சமீபத்திய பரப்புரை செய்திகள்" }
+  { en: "CM Vijay's first orders", ta: "முதலமைச்சர் விஜய்யின் முதல் அரசாணைகள்" },
+  { en: "Free electricity scheme", ta: "இலவச மின்சாரத் திட்டம்" },
+  { en: "Singapen safety force", ta: "சிங்கப்பெண் பாதுகாப்புப் படை" },
+  { en: "Madhuravoyal victory", ta: "மதுரவாயல் வெற்றி விழா" },
+  { en: "How to join the party?", ta: "கட்சியில் இணைய வழிமுறை" }
 ];
 
 const messages = ref([
   { 
     role: 'ai', 
     text: currentLocale.value === 'ta' 
-      ? 'வணக்கம்! நான் TVK-வின் AI உதவியாளர். உங்களுக்கு எப்படி உதவ முடியும்?' 
-      : 'Hello! I am TVK\'s AI Assistant. How can I help you today?' 
+      ? 'வணக்கம்! தமிழக முதலமைச்சர் தளபதி விஜய் அவர்களின் அரசு மற்றும் தவெக குறித்த தகவல்களை வழங்க நான் தயார். உங்களுக்கு எப்படி உதவ முடியும்?' 
+      : 'Hello! I am here to provide information about Chief Minister Thalapathy Vijay\'s government and TVK. How can I help you today?' 
   }
 ]);
 
@@ -175,6 +174,27 @@ const findResponse = (query) => {
   const q = query.toLowerCase();
   const isTa = currentLocale.value === 'ta';
 
+  // Chief Minister & Government
+  if (q.includes('cm') || q.includes('chief minister') || q.includes('முதலமைச்சர்') || q.includes('பதவியேற்பு') || q.includes('governance')) {
+    return isTa
+      ? "தளபதி விஜய் அவர்கள் இன்று (மே 10, 2026) தமிழக முதலமைச்சராகப் பதவியேற்றுள்ளார். இது தமிழக அரசியல் வரலாற்றில் ஒரு புதிய சகாப்தத்தின் தொடக்கமாகும்."
+      : "Thalapathy Vijay has been sworn in as the Chief Minister of Tamil Nadu today (May 10, 2026), marking the beginning of a new era in state politics.";
+  }
+
+  // Executive Orders (Electricity, Singapen, Drugs)
+  if (q.includes('order') || q.includes('அரசாணை') || q.includes('electricity') || q.includes('மின்சாரம்') || q.includes('singapen') || q.includes('சிங்கப்பெண்') || q.includes('drug') || q.includes('போதை')) {
+    return isTa
+      ? "முதல்வர் விஜய் கையெழுத்திட்ட முதல் அரசாணைகள்: \n1. 500 யூனிட் வரை பயன்படுத்தும் குடும்பங்களுக்கு 200 யூனிட் இலவச மின்சாரம். \n2. 'சிங்கப்பெண்' சிறப்பு பாதுகாப்புப் படை. \n3. சிறப்பு போதைப்பொருள் ஒழிப்பு பிரிவுகள்."
+      : "CM Vijay's first executive orders include: \n1. 200 units of free electricity for families consuming up to 500 units. \n2. 'Singapen' special security force for women. \n3. Special anti-drug units in every district.";
+  }
+
+  // Madhuravoyal & Recent Wins
+  if (q.includes('madhuravoyal') || q.includes('மதுரவாயல்') || q.includes('155') || q.includes('victory') || q.includes('வெற்றி')) {
+    return isTa
+      ? "மதுரவாயல் தொகுதி 155-வது வார்டில் தவெக பிரம்மாண்ட வெற்றி பெற்றுள்ளது. இன்று அங்கு எழுச்சிமிக்க வெற்றி விழா மற்றும் கொண்டாட்டங்கள் நடைபெறுகின்றன."
+      : "TVK has secured a massive victory in the Madhuravoyal 155th ward. Grand victory celebrations and rallies are being held there today.";
+  }
+
   // Ideology & Icons
   if (q.includes('ideology') || q.includes('கொள்கை') || q.includes('vision') || q.includes('நோக்கம்') || q.includes('icons')) {
     const icons = isTa ? speechesData.party_overview.guiding_icons_ta.join(', ') : speechesData.party_overview.guiding_icons.join(', ');
@@ -184,33 +204,26 @@ const findResponse = (query) => {
       : `TVK is based on ${ideologies} ideologies. Our guiding icons are B.R. Ambedkar, Periyar, and K. Kamaraj.`;
   }
 
-  // Women's Welfare
-  if (q.includes('women') || q.includes('பெண்') || q.includes('welfare') || q.includes('நலம்') || q.includes('promise') || q.includes('வாக்குறுதி')) {
+  // Women's Welfare (General)
+  if (q.includes('women') || q.includes('பெண்') || q.includes('welfare') || q.includes('நலம்')) {
     return isTa
-      ? "பெண்களுக்கு மாதம் ₹2,500 நிதி உதவி, இலவச எரிவாயு சிலிண்டர்கள், அரசு பேருந்துகளில் இலவச பயணம் மற்றும் பெண்களுக்கு 33% இடஒதுக்கீடு ஆகியவற்றை தவெக உறுதி செய்கிறது."
-      : "TVK promises ₹2,500 monthly financial assistance for women, free LPG cylinders, free government bus travel, and 33% reservation for women in party and assembly seats.";
+      ? "பெண்களின் பாதுகாப்பிற்கு 'சிங்கப்பெண்' படை அமைப்பதோடு, மாதம் ₹2,500 நிதி உதவி மற்றும் அரசு பேருந்துகளில் இலவச பயணம் ஆகியவற்றை முதல்வர் விஜய் உறுதி செய்துள்ளார்."
+      : "In addition to the 'Singapen' safety force, CM Vijay has committed to ₹2,500 monthly financial assistance and free bus travel for women.";
   }
 
   // AI & Technology
-  if (q.includes('ai') || q.includes('tech') || q.includes('தொழில்நுட்பம்') || q.includes('computer')) {
+  if (q.includes('ai') || q.includes('tech') || q.includes('தொழில்நுட்பம்')) {
     return isTa
-      ? "தமிழகத்தை இந்தியாவின் AI தலைநகராக மாற்றுவோம். இதற்காக தனி AI அமைச்சகம், AI பல்கலைக்கழகம் மற்றும் 1,000 ஸ்டார்ட்அப்களுக்கு ஆதரவு வழங்கப்படும்."
-      : "We aim to make Tamil Nadu the AI capital of India. Plans include a dedicated AI Ministry, an AI University, and support for 1,000 deep-tech startups.";
-  }
-
-  // Education & OPS
-  if (q.includes('education') || q.includes('கல்வி') || q.includes('ops') || q.includes('pension') || q.includes('ஓய்வூதியம்')) {
-    return isTa
-      ? "அரசு ஊழியர்களுக்கு பழைய ஓய்வூதியத் திட்டம் (OPS) செயல்படுத்தப்படும். கல்வி மாநில பட்டியலுக்கு மாற்றப்படும் மற்றும் மாணவர்களுக்கு கல்வி உதவி வழங்கப்படும்."
-      : "We will implement the Old Pension Scheme (OPS) for government employees. Education will be moved to the State List, and educational assistance will be provided to students.";
+      ? "தமிழகத்தை இந்தியாவின் AI தலைநகராக மாற்றுவதே எங்கள் இலக்கு. இதற்காக தனி AI அமைச்சகம் மற்றும் பல்கலைக்கழகம் அமைக்கப்படும்."
+      : "Our goal is to make Tamil Nadu the AI capital of India, with a dedicated AI Ministry and University.";
   }
 
   // News & Campaign
-  if (q.includes('news') || q.includes('latest') || q.includes('செய்தி') || q.includes('சமீபத்திய') || q.includes('campaign') || q.includes('பரப்புரை')) {
+  if (q.includes('news') || q.includes('latest') || q.includes('செய்தி') || q.includes('சமீபத்திய')) {
     const latest = newsData[0];
     return isTa
-      ? `சமீபத்திய செய்தி: ${latest.location}ல் ${latest.tag} வெற்றிகரமாக நடந்தது. தளபதி விஜய் அவர்கள் மக்களைச் சந்தித்து உரையாற்றினார்.`
-      : `Latest news: A ${latest.tag} was held at ${latest.locationEn}. Thalapathy Vijay addressed the massive gathering.`;
+      ? `சமீபத்திய செய்தி: ${latest.title}. இது குறித்து மேலும் அறிய செய்திகள் பக்கத்திற்குச் செல்லவும்.`
+      : `Latest news: ${latest.title}. Visit the News section for full details.`;
   }
 
   // Join Party

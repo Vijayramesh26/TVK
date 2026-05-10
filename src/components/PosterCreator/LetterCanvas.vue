@@ -266,34 +266,53 @@ export default {
       let currentX = x;
       let currentY = y;
 
-      const setFont = () => {
+      const updateStyles = () => {
         let style = "";
         if (isItalic) style += "italic ";
         if (isBold) style += "bold ";
         this.ctx.font = `${style}${fontSize}px "Hind Madurai", sans-serif`;
+        
+        if (isBold) {
+          // Create the signature TVK Flag Gradient (Maroon-Gold-Maroon)
+          // Adjusted range to better center on Tamil characters (Visual Center)
+          const grad = this.ctx.createLinearGradient(0, currentY - fontSize * 0.65, 0, currentY + fontSize * 0.15);
+          grad.addColorStop(0, "#800000");
+          grad.addColorStop(0.42, "#800000");
+          grad.addColorStop(0.42, "#FFD700");
+          grad.addColorStop(0.58, "#FFD700");
+          grad.addColorStop(0.58, "#800000");
+          grad.addColorStop(1, "#800000");
+          this.ctx.fillStyle = grad;
+        } else {
+          this.ctx.fillStyle = "#1a1a1a";
+        }
       };
 
       // Reset and set initial font
       this.ctx.textAlign = "left";
-      this.ctx.fillStyle = "#1a1a1a";
-      setFont();
+      updateStyles();
 
       // Simple HTML Tokenizer
       const tokens = html.split(/(<[^>]+>)/g);
       
+      let paragraphHasContent = false;
+
       for (const token of tokens) {
         if (!token) continue;
 
         if (token.startsWith("<")) {
           const tag = token.toLowerCase();
           if (tag === "<p>" || tag === "<div>") {
+            paragraphHasContent = false;
             if (currentX > x) {
               currentX = x;
               currentY += lineHeight;
             }
           } else if (tag === "</p>" || tag === "</div>") {
             currentX = x;
-            currentY += lineHeight * 1.1; // Paragraph gap
+            // Ensure we move at least one full line height if the paragraph had content
+            // to prevent overlap. Empty paragraphs get a tiny gap.
+            currentY += paragraphHasContent ? lineHeight * 1.1 : lineHeight * 0.1;
           } else if (tag === "<b>" || tag === "<strong>") {
             isBold = true;
           } else if (tag === "</b>" || tag === "</strong>") {
@@ -308,15 +327,18 @@ export default {
             isUnderline = false;
           } else if (tag === "<br>" || tag === "<br />") {
             currentX = x;
-            currentY += lineHeight;
+            // If the paragraph has content, <br> is a full line
+            // If it's an empty line, <br> is much shorter (user request)
+            currentY += paragraphHasContent ? lineHeight : lineHeight * 0.3;
           } else if (tag === "<li>") {
+            paragraphHasContent = true;
             currentX = x + 50;
             this.ctx.fillText("•", x + 10, currentY);
           } else if (tag === "</li>") {
             currentX = x;
             currentY += lineHeight;
           }
-          setFont();
+          updateStyles();
         } else {
           // Text handling with wrapping
           const text = token
@@ -325,6 +347,10 @@ export default {
             .replace(/&lt;/g, "<")
             .replace(/&gt;/g, ">")
             .replace(/&#160;/g, " ");
+
+          if (text.trim().length > 0) {
+            paragraphHasContent = true;
+          }
 
           const words = text.split(" ");
           for (let i = 0; i < words.length; i++) {
@@ -337,6 +363,7 @@ export default {
             if (currentX + metrics.width > x + maxWidth) {
               currentX = x;
               currentY += lineHeight;
+              updateStyles(); // Recalculate gradient for new Y position
             }
 
             this.ctx.fillText(wordToDraw, currentX, currentY);
