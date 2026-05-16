@@ -1282,9 +1282,6 @@ export default {
   overflow: hidden;
 }
 
-.scroll-indicator-wrap {
-  z-index: 10;
-}
 
 @media (max-width: 959px) {
   .hero-section {
@@ -1369,7 +1366,12 @@ export default {
 
 /* Scroll Indicator */
 .scroll-indicator-wrap {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
   z-index: 10;
+  margin-top: 0 !important;
 }
 
 .btn-multiline {
