@@ -79,7 +79,7 @@
 
             <!-- Membership Counter -->
             <div
-              class="membership-counter d-flex align-center justify-center justify-md-start mt-6 mt-md-10 mb-12 mb-md-16 position-relative z-10"
+              class="membership-counter d-flex align-center justify-center justify-md-start mt-6 mt-md-8 mb-4 mb-md-6 position-relative z-10"
             >
               <div class="text-center text-md-left">
                 <div
@@ -1270,13 +1270,16 @@ export default {
 
 /* Hero Section */
 .hero-section {
+  height: calc(100vh - 104px);
   min-height: calc(100vh - 104px);
   background-color: #800000;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .scroll-indicator-wrap {
@@ -1285,8 +1288,9 @@ export default {
 
 @media (max-width: 959px) {
   .hero-section {
-    padding-top: 40px !important;
+    padding-top: 20px !important;
     padding-bottom: 20px !important;
+    height: calc(100vh - 104px);
     min-height: calc(100vh - 104px);
   }
 }
