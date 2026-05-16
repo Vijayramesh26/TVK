@@ -1270,8 +1270,7 @@ export default {
 
 /* Hero Section */
 .hero-section {
-  min-height: auto;
-  height: auto;
+  min-height: 100vh;
   background-color: #800000;
   display: flex;
   flex-direction: column;
@@ -1288,12 +1287,7 @@ export default {
   .hero-section {
     padding-top: 40px !important;
     padding-bottom: 20px !important;
-  }
-}
-
-@media (min-height: 900px) {
-  .hero-section {
-    height: auto;
+    min-height: 100vh;
   }
 }
 
