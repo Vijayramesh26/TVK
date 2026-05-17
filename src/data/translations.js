@@ -18,6 +18,8 @@ const translations = {
       volunteer: "தன்னார்வலர் படை",
       schemes: "அரசு திட்டங்கள்",
       connect: "தொகுதி இணைப்பு",
+      voterSlip: "வாக்காளர் பூத் சீட்டு",
+      vision: "தொலைநோக்கு 2026",
     },
     election: {
       title: "தமிழக சட்டமன்றத் தேர்தல்",
@@ -807,6 +809,74 @@ const translations = {
       event2: "புதிய உறுப்பினர் சேர்க்கை முகாம் - செவ்வாய் மாலை 4:00 மணி",
       event3: "மகளிர் அணி ஆலோசனைக் கூட்டம் - வியாழன் காலை 11:00 மணி"
     },
+    voterSlip: {
+      title: "டிஜிட்டல் வாக்காளர் பூத் சீட்டு",
+      subtitle: "உங்கள் வாக்காளர் அடையாள அட்டை எண் அல்லது பெயர் மூலம் உங்கள் வாக்குச்சாவடி விவரங்களை உடனுக்குடன் அறிந்துகொள்ளுங்கள்.",
+      epicLabel: "வாக்காளர் அடையாள அட்டை எண் (EPIC No)",
+      nameLabel: "வாக்காளர் பெயர்",
+      ageLabel: "வயது",
+      btnSearch: "பூத் சீட்டு உருவாக்கு",
+      slipHeader: "தமிழக சட்டமன்றத் தேர்தல் 2026 - அதிகாரப்பூர்வ பூத் சீட்டு",
+      boothNo: "வாக்குச்சாவடி எண் & பெயர்:",
+      partNo: "பாகம் எண்:",
+      serialNo: "வரிசை எண்:",
+      date: "வாக்குப்பதிவு நாள்: மே 2026 (காலை 7:00 - மாலை 6:00)",
+      incharge: "த.வெ.க பூத் முகவர்:",
+      btnDownload: "பூத் சீட்டு பதிவிறக்கம் செய்",
+      btnPrint: "அச்சிடு (Print)",
+      btnWhatsapp: "வாட்ஸ்அப் மூலம் பகிர்",
+    },
+    vision: {
+      title: "முதலமைச்சர் தளபதியின் தொலைநோக்கு 2026 - 2030",
+      subtitle: "தமிழகத்தின் வளர்ச்சிக்காக முதலமைச்சர் தளபதி விஜய் அவர்கள் முன்வைத்த முதல் 100 நாள் செயல் திட்டங்கள் மற்றும் முக்கிய உத்தரவுகள்.",
+      pledgeTitle: "மக்கள் ஆதரவு மீட்டர்",
+      btnSupport: "இந்தத் திட்டத்தை நான் ஆதரிக்கிறேன்",
+      supported: "உங்கள் ஆதரவுக்கு நன்றி!",
+      pillars: [
+        {
+          id: 1,
+          title: "இருமொழிக் கொள்கை & மாநில சுயாட்சி",
+          desc: "தமிழ் மற்றும் ஆங்கிலம் மட்டுமே தமிழகத்தின் ஆட்சி மொழிகளாகத் தொடரும். மத்திய அரசின் இந்தித் திணிப்புக்கு எவ்வித இடமுமில்லை. மாநில உரிமைகள் முழுமையாகப் பாதுகாக்கப்படும்.",
+          budget: "₹1,500 கோடி ஒதுக்கீடு",
+          votes: 142850
+        },
+        {
+          id: 2,
+          title: "நீட் தேர்வு ரத்து & கல்வி உரிமை",
+          desc: "தமிழக மாணவர்களின் மருத்துவக் கனவைச் சிதைக்கும் நீட் (NEET) தேர்வை ரத்து செய்யச் சட்டமன்றத்தில் சிறப்புச் சட்டம் இயற்றப்பட்டு ஜனாதிபதியின் ஒப்புதல் பெறப்படும்.",
+          budget: "₹5,000 கோடி சிறப்பு நிதி",
+          votes: 198420
+        },
+        {
+          id: 3,
+          title: "மகளிர் நலம் & 200 யூனிட் இலவச மின்சாரம்",
+          desc: "அனைத்துக் குடும்பங்களுக்கும் மாதம் 200 யூனிட் இலவச மின்சாரம் மற்றும் குடும்பத் தலைவிகளுக்கு மாதம் ₹1,500 உரிமைத்தொகை எவ்வித நிபந்தனையுமின்றி வழங்கப்படும்.",
+          budget: "₹18,000 கோடி ஒதுக்கீடு",
+          votes: 254100
+        },
+        {
+          id: 4,
+          title: "பெண்கள் மற்றும் குழந்தைகள் பாதுகாப்புப் படை",
+          desc: "பெண்களின் பாதுகாப்பை உறுதி செய்யக் காவல் துறையில் பிரத்யேகப் ‘பிங்க் படை’ (Pink Task Force) மற்றும் 24 மணி நேர நேரடி உதவி மையம் அமைக்கப்படும்.",
+          budget: "₹2,500 கோடி ஒதுக்கீடு",
+          votes: 165400
+        },
+        {
+          id: 5,
+          title: "பசுமைத் தமிழகம் 2030 (1 கோடி மரங்கள்)",
+          desc: "பருவநிலை மாற்றத்தை எதிர்கொள்ளவும், தமிழகத்தின் வனப்பரப்பை 33% ஆக உயர்த்தவும் அடுத்த 4 ஆண்டுகளில் 1 கோடி மரங்கள் நடும் மாபெரும் திட்டம்.",
+          budget: "₹1,200 கோடி ஒதுக்கீடு",
+          votes: 112000
+        },
+        {
+          id: 6,
+          title: "லஞ்சமில்லா டிஜிட்டல் அரசு",
+          desc: "அரசு அலுவலகங்களில் லஞ்சத்தை முழுமையாக ஒழிக்க அனைத்துச் சான்றிதழ்களும் சேவைகளும் வீடி தேடி வரும் ‘இ-சேவை 2.0’ திட்டம் செயல்படுத்தப்படும்.",
+          budget: "₹3,000 கோடி ஒதுக்கீடு",
+          votes: 189500
+        }
+      ]
+    },
   },
   en: {
     broadcast: "Breaking News: TN Chief Minister Thalapathy Vijay signs first executive orders - 200 units free electricity and special security force for women!",
@@ -827,6 +897,8 @@ const translations = {
       volunteer: "Volunteer Force",
       schemes: "Welfare Schemes",
       connect: "Local Connect",
+      voterSlip: "Voter Booth Slip",
+      vision: "Vision 2026",
     },
     election: {
       title: "Tamil Nadu Assembly Election",
@@ -1605,6 +1677,74 @@ const translations = {
       event1: "Booth Committee Review Meeting - Sunday 10:00 AM",
       event2: "New Membership Registration Camp - Tuesday 4:00 PM",
       event3: "Women Wing Advisory Consultation - Thursday 11:00 AM"
+    },
+    voterSlip: {
+      title: "Digital Voter Booth Slip",
+      subtitle: "Instantly check your polling booth details and serial number using your EPIC Voter ID number or Name.",
+      epicLabel: "Voter ID Number (EPIC No)",
+      nameLabel: "Voter Full Name",
+      ageLabel: "Age",
+      btnSearch: "Generate Booth Slip",
+      slipHeader: "Tamil Nadu Assembly Election 2026 - Official Booth Slip",
+      boothNo: "Polling Station No & Name:",
+      partNo: "Part Number:",
+      serialNo: "Serial Number:",
+      date: "Polling Date: May 2026 (7:00 AM - 6:00 PM)",
+      incharge: "TVK Booth Agent:",
+      btnDownload: "Download Booth Slip",
+      btnPrint: "Print Slip",
+      btnWhatsapp: "Share via WhatsApp",
+    },
+    vision: {
+      title: "Chief Minister Thalapathy's Vision 2026 - 2030",
+      subtitle: "Explore Chief Minister Thalapathy Vijay's First 100 Days Executive Action Plan and key flagship governance pillars.",
+      pledgeTitle: "Public Backing Meter",
+      btnSupport: "I Support This Policy",
+      supported: "Thank you for your support!",
+      pillars: [
+        {
+          id: 1,
+          title: "Two-Language Policy & State Autonomy",
+          desc: "Tamil and English will continue as the sole official languages in Tamil Nadu. There will be absolutely no place for Hindi imposition by the Central Government. State autonomy will be resolutely protected.",
+          budget: "₹1,500 Crore Allocation",
+          votes: 142850
+        },
+        {
+          id: 2,
+          title: "NEET Abolition & Right to Education",
+          desc: "To protect the medical aspirations of Tamil Nadu students, a special enactment will be passed in the State Assembly to permanently abolish the NEET examination.",
+          budget: "₹5,000 Crore Special Fund",
+          votes: 198420
+        },
+        {
+          id: 3,
+          title: "Women Welfare & 200 Units Free Electricity",
+          desc: "200 units of free electricity for all households and ₹1,500 monthly basic income for all women heads of families without any restrictive eligibility conditions.",
+          budget: "₹18,000 Crore Allocation",
+          votes: 254100
+        },
+        {
+          id: 4,
+          title: "Special Task Force for Women & Child Safety",
+          desc: "A dedicated 24/7 'Pink Task Force' and rapid response helpline will be set up within the police department to ensure absolute safety for women and children.",
+          budget: "₹2,500 Crore Allocation",
+          votes: 165400
+        },
+        {
+          id: 5,
+          title: "Green Tamil Nadu 2030 (1 Crore Trees)",
+          desc: "A massive state-wide afforestation drive to plant 1 crore saplings over the next 4 years to combat climate change and raise forest cover to 33%.",
+          budget: "₹1,200 Crore Allocation",
+          votes: 112000
+        },
+        {
+          id: 6,
+          title: "Zero-Corruption Digital Governance",
+          desc: "To completely eliminate bribery in government offices, 'e-Sevai 2.0' will be launched to deliver all certificates and public services directly to citizens' doorsteps.",
+          budget: "₹3,000 Crore Allocation",
+          votes: 189500
+        }
+      ]
     },
   },
 };

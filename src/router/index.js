@@ -176,6 +176,26 @@ const routes = [
         "Connect with local TVK WhatsApp groups, district secretaries, and local branch events. | உங்கள் தொகுதி வாட்ஸ்அப் குழுக்கள் மற்றும் நிகழ்வுகளை அறியுங்கள்.",
     },
   },
+  {
+    path: "/voter-slip",
+    name: "VoterSlip",
+    component: () => import("../components/VoterSlip/Main.vue"),
+    meta: {
+      title: "TVK Digital Booth Slip | வாக்காளர் பூத் சீட்டு | Polling Details",
+      description:
+        "Generate your official TVK Digital Voter Booth Slip and check your polling station details instantly.",
+    },
+  },
+  {
+    path: "/vision-2026",
+    name: "Vision2026",
+    component: () => import("../components/Vision/Main.vue"),
+    meta: {
+      title: "TVK Vision 2026-2030 | தொலைநோக்கு திட்டங்கள் | Executive Roadmap",
+      description:
+        "Explore Chief Minister Thalapathy Vijay's First 100 Days Executive Action Plan and key flagship governance pillars.",
+    },
+  },
 ];
 
 const router = createRouter({

@@ -383,6 +383,16 @@ export default {
           to: "/connect",
           icon: "mdi-account-group-outline",
         },
+        {
+          text: this.t("nav.voterSlip"),
+          to: "/voter-slip",
+          icon: "mdi-card-account-details-outline",
+        },
+        {
+          text: this.t("nav.vision"),
+          to: "/vision-2026",
+          icon: "mdi-eye-arrow-right-outline",
+        },
       ];
     },
   },
