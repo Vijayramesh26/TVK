@@ -44,7 +44,7 @@
                 return-object
               >
                 <template v-slot:item="{ props, item }">
-                  <v-list-item v-bind="props" :subtitle="item.raw.district">
+                  <v-list-item v-bind="props" :title="item.raw.constituencyOnly" :subtitle="`${item.raw.mlaOnly} (${item.raw.district})`">
                     <template v-slot:prepend>
                       <v-avatar color="#800000" size="36" class="text-white text-caption font-weight-bold mr-3">
                         {{ item.raw.id }}
@@ -59,9 +59,12 @@
                 {{ t("connect.constituencyLabel") }}
               </div>
               <h2 class="text-h4 font-weight-black color-maroon">
-                {{ selectedConstituency.name }}
+                {{ selectedConstituency.constituencyOnly }}
               </h2>
-              <v-chip color="rgba(128, 0, 0, 0.08)" text-color="#800000" class="mt-1 font-weight-bold" size="small">
+              <div class="text-h6 font-weight-bold text-grey-darken-3 mt-1">
+                {{ selectedConstituency.mlaOnly }}
+              </div>
+              <v-chip color="rgba(128, 0, 0, 0.08)" text-color="#800000" class="mt-2 font-weight-bold" size="small">
                 {{ t("connect.districtLabel") }}: {{ selectedConstituency.district }}
               </v-chip>
             </v-col>
@@ -80,7 +83,7 @@
                   </v-avatar>
                   <div>
                     <h3 class="text-h5 font-weight-black color-maroon">
-                      {{ selectedConstituency.name }} TVK Office
+                      {{ selectedConstituency.constituencyOnly }} TVK Office
                     </h3>
                     <div class="text-caption text-grey-darken-1 font-weight-bold">Official Regional Secretariat</div>
                   </div>
@@ -153,7 +156,7 @@
                   </div>
                 </div>
                 <v-chip color="rgba(212, 175, 55, 0.2)" text-color="#800000" class="font-weight-bold">
-                  {{ selectedConstituency.name }}
+                  {{ selectedConstituency.constituencyOnly }}
                 </v-chip>
               </div>
 
@@ -215,6 +218,7 @@
 
 <script>
 import { candidatesData } from "../../data/candidates";
+import { constituenciesMap } from "../../data/constituencies";
 
 export default {
   name: "ConnectPortal",
@@ -229,18 +233,25 @@ export default {
       return this.currentLang() === "ta";
     },
     constituenciesList() {
-      return candidatesData.map(c => ({
-        id: c.id,
-        name: this.isTamil ? c.name : c.constituency,
-        district: c.district,
-        secretary: this.isTamil ? `${c.name} (தொகுதிப் பொறுப்பாளர்)` : `${c.nameEn} (Constituency In-Charge)`,
-        phone: "9842" + Math.floor(100000 + Math.random() * 900000),
-      }));
+      return candidatesData.map(c => {
+        const taConst = constituenciesMap[c.constituency] || c.constituency;
+        const constName = this.isTamil ? taConst : c.constituency;
+        const mlaName = this.isTamil ? c.name : c.nameEn;
+        return {
+          id: c.id,
+          name: `${constName} - ${mlaName}`,
+          constituencyOnly: constName,
+          mlaOnly: mlaName,
+          district: c.district,
+          secretary: this.isTamil ? `${c.name} (தொகுதிப் பொறுப்பாளர்)` : `${c.nameEn} (Constituency In-Charge)`,
+          phone: "9842" + Math.floor(100000 + Math.random() * 900000),
+        };
+      });
     },
   },
   created() {
     this.selectedConstituency = this.constituenciesList[0] || {
-      id: 1, name: "Gummidipoondi", district: "Thiruvallur", secretary: "District Organizer", phone: "9842000000"
+      id: 1, name: "Gummidipoondi - S. Vijayakumar", constituencyOnly: "Gummidipoondi", mlaOnly: "S. Vijayakumar", district: "Thiruvallur", secretary: "District Organizer", phone: "9842000000"
     };
   },
   watch: {
@@ -252,7 +263,7 @@ export default {
   },
   methods: {
     joinGroup(platform) {
-      this.joinMsg = `Opening ${this.selectedConstituency.name} TVK ${platform} channel...`;
+      this.joinMsg = `Opening ${this.selectedConstituency.constituencyOnly} TVK ${platform} channel...`;
       this.snackbar = true;
     },
   },
