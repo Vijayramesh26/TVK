@@ -164,5 +164,39 @@ export const apiService = {
     }
     return null;
   },
+
+  /**
+   * Get All Voice Ideas Feed
+   */
+  async getVoiceIdeasFeed() {
+    try {
+      const res = await fetch(`${API_BASE}/api/voice/ideas`);
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {
+      // Fallback
+    }
+    return { success: false, data: [] };
+  },
+
+  /**
+   * Upvote Idea
+   */
+  async upvoteIdea(id) {
+    try {
+      const res = await fetch(`${API_BASE}/api/voice/idea/like`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id }),
+      });
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {
+      // Fallback
+    }
+    return { success: false };
+  },
 };
 

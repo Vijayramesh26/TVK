@@ -8,7 +8,48 @@ let goInstance = null;
 
 const inMemoryDB = {
   volunteers: [],
-  ideas: [],
+  ideas: [
+    {
+      id: "TVK-2026-ID-90124",
+      title: "24/7 Digital Grievance Redressal App with Live Officer Tracking",
+      category: "தொழில்நுட்பம் மற்றும் டிஜிட்டல் அரசு / Technology & Digital",
+      description: "A centralized citizen portal where every complaint is geotagged and tracked until resolution by the responsible IAS/municipal officer.",
+      name: "Ramesh K.",
+      district: "Chennai",
+      likes: 1248,
+      timestamp: "2026-05-15T09:30:00Z",
+    },
+    {
+      id: "TVK-2026-ID-88412",
+      title: "Farmers Direct Sales Kiosks in Every Taluk & Cold Storage Grid",
+      category: "விவசாயம் மற்றும் நீர்ப்பாசனம் / Agriculture",
+      description: "Establish solar-powered cold storage hubs and direct consumer kiosks to eliminate middlemen and double farmer profit margins.",
+      name: "Murugan S.",
+      district: "Madurai",
+      likes: 954,
+      timestamp: "2026-05-14T14:15:00Z",
+    },
+    {
+      id: "TVK-2026-ID-75192",
+      title: "Free High-Speed Wi-Fi & AI Learning Hubs in Government Colleges",
+      category: "பள்ளிக் கல்வி மற்றும் உயர்கல்வி / Education",
+      description: "Upgrade all state universities and rural colleges with gigabit internet and modern AI workstation laboratories.",
+      name: "Priyadharshini M.",
+      district: "Coimbatore",
+      likes: 812,
+      timestamp: "2026-05-12T11:20:00Z",
+    },
+    {
+      id: "TVK-2026-ID-63102",
+      title: "Solar Power Subsidy & Zero Electricity Bills for Handloom Weavers",
+      category: "பொருளாதாரம் மற்றும் தொழில் வளர்ச்சி / Economy & Industry",
+      description: "Provide 100% subsidy for rooftop solar panels to traditional weaving clusters in Kanchipuram, Erode, and Salem.",
+      name: "Senthil Vel",
+      district: "Salem",
+      likes: 670,
+      timestamp: "2026-05-10T16:45:00Z",
+    },
+  ],
   grievances: [],
   newsletter: [],
 };
@@ -19,7 +60,15 @@ async function saveSubmission(env, collection, record) {
     try {
       const stored = await env.TVK_DB.get(collection);
       const items = stored ? JSON.parse(stored) : [];
-      items.push(record);
+      if (collection === "ideas" && inMemoryDB.ideas.length > items.length) {
+        // If inMemory has pre-seeded items not yet in KV, merge them
+        const existingIds = new Set(items.map(i => i.id));
+        for (const pre of inMemoryDB.ideas) {
+          if (!existingIds.has(pre.id)) items.push(pre);
+        }
+      } else {
+        items.push(record);
+      }
       await env.TVK_DB.put(collection, JSON.stringify(items));
     } catch (e) {}
   }
@@ -31,7 +80,10 @@ async function getSubmissions(env) {
     for (const key of ["volunteers", "ideas", "grievances", "newsletter"]) {
       try {
         const val = await env.TVK_DB.get(key);
-        if (val) data[key] = JSON.parse(val);
+        if (val) {
+          const parsed = JSON.parse(val);
+          if (parsed.length > 0) data[key] = parsed;
+        }
       } catch (e) {}
     }
   }
@@ -141,7 +193,7 @@ export default {
     if (cleanPath === "/api/voice/idea" || cleanPath === "/api/v1/voice/idea") {
       const body = await request.json().catch(() => ({}));
       const trackingId = `TVK-2026-ID-${Math.floor(100000 + Math.random() * 900000)}`;
-      const record = { id: trackingId, timestamp: new Date().toISOString(), ...body };
+      const record = { id: trackingId, timestamp: new Date().toISOString(), likes: 1, ...body };
       await saveSubmission(env, "ideas", record);
 
       return new Response(
@@ -151,6 +203,72 @@ export default {
           trackingId,
           data: record,
           responseArr: [{ trackingId, message: "Idea submitted successfully to DB" }],
+          errMsg: "",
+        }),
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
+    }
+
+    // 4.1 Get All Voice Ideas Feed
+    if (cleanPath === "/api/voice/ideas" || cleanPath === "/api/v1/voice/ideas") {
+      const submissions = await getSubmissions(env);
+      const ideas = submissions.ideas || [];
+      // Sort by likes descending
+      const sortedIdeas = [...ideas].sort((a, b) => (b.likes || 0) - (a.likes || 0));
+
+      return new Response(
+        JSON.stringify({
+          status: "Success",
+          success: true,
+          data: sortedIdeas,
+          responseArr: [{ count: sortedIdeas.length, message: "Voice ideas feed retrieved successfully" }],
+          errMsg: "",
+        }),
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
+    }
+
+    // 4.2 Upvote / Like an Idea
+    if (cleanPath === "/api/voice/idea/like" || cleanPath === "/api/v1/voice/idea/like") {
+      const { id } = await request.json().catch(() => ({}));
+      const submissions = await getSubmissions(env);
+      const ideas = submissions.ideas || [];
+      const idx = ideas.findIndex(item => item.id === id);
+      let updatedItem = null;
+
+      if (idx !== -1) {
+        ideas[idx].likes = (ideas[idx].likes || 0) + 1;
+        updatedItem = ideas[idx];
+      } else {
+        updatedItem = { id, likes: 1 };
+        ideas.push(updatedItem);
+      }
+
+      inMemoryDB.ideas = ideas;
+      if (env && env.TVK_DB) {
+        try {
+          await env.TVK_DB.put("ideas", JSON.stringify(ideas));
+        } catch (e) {}
+      }
+
+      return new Response(
+        JSON.stringify({
+          status: "Success",
+          success: true,
+          data: updatedItem,
+          responseArr: [{ id, likes: updatedItem.likes, message: "Idea upvoted successfully" }],
           errMsg: "",
         }),
         {
