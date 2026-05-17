@@ -50,8 +50,87 @@ const inMemoryDB = {
       timestamp: "2026-05-10T16:45:00Z",
     },
   ],
-  grievances: [],
+  grievances: [
+    {
+      id: "TVK-2026-GR-90412",
+      name: "Karthik R.",
+      phone: "98402XXXXX",
+      district: "Chennai",
+      constituency: "Velachery",
+      category: "குடிநீர் மற்றும் சுகாதாரம் / Water & Sanitation",
+      desc: "Severe water logging and non-functional storm water drains near 100 feet road junction. Request immediate desilting before monsoons.",
+      status: "Resolved",
+      assignedOfficer: "Zone 13 Executive Engineer, GCC",
+      responseMsg: "Storm water drains completely desilted and cleared with heavy suction pumps on 16/05/2026.",
+      timestamp: "2026-05-14T08:15:00Z",
+      isPublic: true,
+    },
+    {
+      id: "TVK-2026-GR-81204",
+      name: "Lakshmi S.",
+      phone: "94431XXXXX",
+      district: "Madurai",
+      constituency: "Madurai Central",
+      category: "சாலை வசதி மற்றும் போக்குவரத்து / Roads & Transport",
+      desc: "Potholes on main arterial road connecting Periyar bus stand causing frequent two-wheeler accidents during night hours.",
+      status: "In Progress",
+      assignedOfficer: "Assistant Commissioner, Madurai Corporation",
+      responseMsg: "Road patch work sanctioned under emergency maintenance fund. Work scheduled for completion within 48 hours.",
+      timestamp: "2026-05-15T11:40:00Z",
+      isPublic: true,
+    },
+    {
+      id: "TVK-2026-GR-75109",
+      name: "Anbu Chezhiyan",
+      phone: "91765XXXXX",
+      district: "Tiruchirappalli",
+      constituency: "Tiruchirappalli West",
+      category: "மின்சாரம் மற்றும் தெருவிளக்கு / Electricity & Streetlights",
+      desc: "Streetlights not functioning on North Thillai Nagar 4th cross street for the past two weeks, creating safety concerns for women and elderly.",
+      status: "Pending",
+      assignedOfficer: "TANGEDCO Assistant Engineer (Urban)",
+      responseMsg: "Inspection team dispatched. LED fixtures replacement order placed.",
+      timestamp: "2026-05-16T19:20:00Z",
+      isPublic: true,
+    },
+    {
+      id: "TVK-2026-GR-63102",
+      name: "Meenakshi V.",
+      phone: "99401XXXXX",
+      district: "Coimbatore",
+      constituency: "Singanallur",
+      category: "மருத்துவம் மற்றும் பொது சுகாதாரம் / Health & Medical",
+      desc: "Primary health center at Singanallur lacks emergency anti-venom and rabies vaccines. Rural patients are forced to travel 15km to GH.",
+      status: "Resolved",
+      assignedOfficer: "Joint Director, Health Services (Coimbatore)",
+      responseMsg: "Emergency stock of anti-snake venom and anti-rabies vaccines replenished immediately. 24/7 cold chain storage verified.",
+      timestamp: "2026-05-12T14:30:00Z",
+      isPublic: true,
+    },
+    {
+      id: "TVK-2026-GR-54120",
+      name: "Venkatesan P.",
+      phone: "98422XXXXX",
+      district: "Salem",
+      constituency: "Salem North",
+      category: "அரசு சான்றிதழ்கள் மற்றும் இ-சேவை / e-Sevai & Certificates",
+      desc: "Community certificate application pending for over 30 days without any clarification on e-Sevai portal, delaying college admission counseling.",
+      status: "Resolved",
+      assignedOfficer: "Tahsildar (Salem Taluk)",
+      responseMsg: "Verification completed on priority. Digital community certificate issued and sent via SMS link.",
+      timestamp: "2026-05-10T10:15:00Z",
+      isPublic: true,
+    },
+  ],
   newsletter: [],
+  vision: [
+    { id: 1, votes: 142850 },
+    { id: 2, votes: 198420 },
+    { id: 3, votes: 254100 },
+    { id: 4, votes: 165400 },
+    { id: 5, votes: 112000 },
+    { id: 6, votes: 189500 },
+  ],
 };
 
 async function saveSubmission(env, collection, record) {
@@ -60,10 +139,10 @@ async function saveSubmission(env, collection, record) {
     try {
       const stored = await env.TVK_DB.get(collection);
       const items = stored ? JSON.parse(stored) : [];
-      if (collection === "ideas" && inMemoryDB.ideas.length > items.length) {
+      if ((collection === "ideas" || collection === "grievances") && inMemoryDB[collection].length > items.length) {
         // If inMemory has pre-seeded items not yet in KV, merge them
         const existingIds = new Set(items.map(i => i.id));
-        for (const pre of inMemoryDB.ideas) {
+        for (const pre of inMemoryDB[collection]) {
           if (!existingIds.has(pre.id)) items.push(pre);
         }
       } else {
@@ -77,7 +156,7 @@ async function saveSubmission(env, collection, record) {
 async function getSubmissions(env) {
   const data = { ...inMemoryDB };
   if (env && env.TVK_DB) {
-    for (const key of ["volunteers", "ideas", "grievances", "newsletter"]) {
+    for (const key of ["volunteers", "ideas", "grievances", "newsletter", "vision"]) {
       try {
         const val = await env.TVK_DB.get(key);
         if (val) {
@@ -285,7 +364,14 @@ export default {
     if (cleanPath === "/api/voice/grievance" || cleanPath === "/api/v1/voice/grievance") {
       const body = await request.json().catch(() => ({}));
       const trackingId = `TVK-2026-GR-${Math.floor(100000 + Math.random() * 900000)}`;
-      const record = { id: trackingId, timestamp: new Date().toISOString(), ...body };
+      const record = {
+        id: trackingId,
+        timestamp: new Date().toISOString(),
+        status: "Pending",
+        assignedOfficer: "Assigned to District Nodal Officer",
+        responseMsg: "Grievance received and currently under preliminary verification.",
+        ...body,
+      };
       await saveSubmission(env, "grievances", record);
 
       return new Response(
@@ -295,6 +381,170 @@ export default {
           trackingId,
           data: record,
           responseArr: [{ trackingId, message: "Grievance registered successfully in DB" }],
+          errMsg: "",
+        }),
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
+    }
+
+    // 5.1 Get All Grievances
+    if (cleanPath === "/api/grievances" || cleanPath === "/api/v1/grievances") {
+      const submissions = await getSubmissions(env);
+      const grievances = submissions.grievances || [];
+      const sorted = [...grievances].sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0));
+
+      return new Response(
+        JSON.stringify({
+          status: "Success",
+          success: true,
+          data: sorted,
+          responseArr: [{ count: sorted.length, message: "Grievances retrieved successfully" }],
+          errMsg: "",
+        }),
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
+    }
+
+    // 5.2 Update Grievance Status
+    if (cleanPath === "/api/grievance/update" || cleanPath === "/api/v1/grievance/update") {
+      const { id, status, assignedOfficer, responseMsg } = await request.json().catch(() => ({}));
+      const submissions = await getSubmissions(env);
+      const grievances = submissions.grievances || [...inMemoryDB.grievances];
+      const idx = grievances.findIndex(item => item.id === id);
+      let updated = null;
+
+      if (idx !== -1) {
+        if (status) grievances[idx].status = status;
+        if (assignedOfficer) grievances[idx].assignedOfficer = assignedOfficer;
+        if (responseMsg) grievances[idx].responseMsg = responseMsg;
+        updated = grievances[idx];
+      }
+
+      inMemoryDB.grievances = grievances;
+      if (env && env.TVK_DB) {
+        try {
+          await env.TVK_DB.put("grievances", JSON.stringify(grievances));
+        } catch (e) {}
+      }
+
+      return new Response(
+        JSON.stringify({
+          status: "Success",
+          success: true,
+          data: updated,
+          responseArr: [{ id, message: "Grievance updated successfully in DB" }],
+          errMsg: "",
+        }),
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
+    }
+
+    // 5.3 Reset / Clear All Grievances
+    if (cleanPath === "/api/grievance/reset" || cleanPath === "/api/v1/grievance/reset") {
+      const initialGrievances = [
+        {
+          id: "TVK-2026-GR-90412",
+          name: "Karthik R.",
+          phone: "98402XXXXX",
+          district: "Chennai",
+          constituency: "Velachery",
+          category: "குடிநீர் மற்றும் சுகாதாரம் / Water & Sanitation",
+          desc: "Severe water logging and non-functional storm water drains near 100 feet road junction. Request immediate desilting before monsoons.",
+          status: "Resolved",
+          assignedOfficer: "Zone 13 Executive Engineer, GCC",
+          responseMsg: "Storm water drains completely desilted and cleared with heavy suction pumps on 16/05/2026.",
+          timestamp: "2026-05-14T08:15:00Z",
+          isPublic: true,
+        },
+        {
+          id: "TVK-2026-GR-81204",
+          name: "Lakshmi S.",
+          phone: "94431XXXXX",
+          district: "Madurai",
+          constituency: "Madurai Central",
+          category: "சாலை வசதி மற்றும் போக்குவரத்து / Roads & Transport",
+          desc: "Potholes on main arterial road connecting Periyar bus stand causing frequent two-wheeler accidents during night hours.",
+          status: "In Progress",
+          assignedOfficer: "Assistant Commissioner, Madurai Corporation",
+          responseMsg: "Road patch work sanctioned under emergency maintenance fund. Work scheduled for completion within 48 hours.",
+          timestamp: "2026-05-15T11:40:00Z",
+          isPublic: true,
+        },
+        {
+          id: "TVK-2026-GR-75109",
+          name: "Anbu Chezhiyan",
+          phone: "91765XXXXX",
+          district: "Tiruchirappalli",
+          constituency: "Tiruchirappalli West",
+          category: "மின்சாரம் மற்றும் தெருவிளக்கு / Electricity & Streetlights",
+          desc: "Streetlights not functioning on North Thillai Nagar 4th cross street for the past two weeks, creating safety concerns for women and elderly.",
+          status: "Pending",
+          assignedOfficer: "TANGEDCO Assistant Engineer (Urban)",
+          responseMsg: "Inspection team dispatched. LED fixtures replacement order placed.",
+          timestamp: "2026-05-16T19:20:00Z",
+          isPublic: true,
+        },
+        {
+          id: "TVK-2026-GR-63102",
+          name: "Meenakshi V.",
+          phone: "99401XXXXX",
+          district: "Coimbatore",
+          constituency: "Singanallur",
+          category: "மருத்துவம் மற்றும் பொது சுகாதாரம் / Health & Medical",
+          desc: "Primary health center at Singanallur lacks emergency anti-venom and rabies vaccines. Rural patients are forced to travel 15km to GH.",
+          status: "Resolved",
+          assignedOfficer: "Joint Director, Health Services (Coimbatore)",
+          responseMsg: "Emergency stock of anti-snake venom and anti-rabies vaccines replenished immediately. 24/7 cold chain storage verified.",
+          timestamp: "2026-05-12T14:30:00Z",
+          isPublic: true,
+        },
+        {
+          id: "TVK-2026-GR-54120",
+          name: "Venkatesan P.",
+          phone: "98422XXXXX",
+          district: "Salem",
+          constituency: "Salem North",
+          category: "அரசு சான்றிதழ்கள் மற்றும் இ-சேவை / e-Sevai & Certificates",
+          desc: "Community certificate application pending for over 30 days without any clarification on e-Sevai portal, delaying college admission counseling.",
+          status: "Resolved",
+          assignedOfficer: "Tahsildar (Salem Taluk)",
+          responseMsg: "Verification completed on priority. Digital community certificate issued and sent via SMS link.",
+          timestamp: "2026-05-10T10:15:00Z",
+          isPublic: true,
+        },
+      ];
+
+      inMemoryDB.grievances = [...initialGrievances];
+      if (env && env.TVK_DB) {
+        try {
+          await env.TVK_DB.put("grievances", JSON.stringify(initialGrievances));
+        } catch (e) {}
+      }
+
+      return new Response(
+        JSON.stringify({
+          status: "Success",
+          success: true,
+          data: initialGrievances,
+          responseArr: [{ count: initialGrievances.length, message: "Grievances reset to pre-seeded state successfully" }],
           errMsg: "",
         }),
         {
@@ -341,6 +591,70 @@ export default {
           success: true,
           data: allSubmissions,
           responseArr: [{ count: Object.keys(allSubmissions).reduce((acc, k) => acc + allSubmissions[k].length, 0), message: "All submissions fetched successfully" }],
+          errMsg: "",
+        }),
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
+    }
+
+    // 6.8 Get Vision Pillars Support
+    if (cleanPath === "/api/vision/pillars" || cleanPath === "/api/v1/vision/pillars") {
+      const submissions = await getSubmissions(env);
+      const pillars = submissions.vision || inMemoryDB.vision;
+
+      return new Response(
+        JSON.stringify({
+          status: "Success",
+          success: true,
+          data: pillars,
+          responseArr: [{ count: pillars.length, message: "Vision pillars votes retrieved successfully" }],
+          errMsg: "",
+        }),
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
+    }
+
+    // 6.9 Upvote Vision Pillar Support
+    if (cleanPath === "/api/vision/support" || cleanPath === "/api/v1/vision/support") {
+      const { id } = await request.json().catch(() => ({}));
+      const submissions = await getSubmissions(env);
+      const pillars = submissions.vision || [...inMemoryDB.vision];
+      const idx = pillars.findIndex(item => item.id === Number(id));
+      let updatedItem = null;
+
+      if (idx !== -1) {
+        pillars[idx].votes = (pillars[idx].votes || 0) + 1;
+        updatedItem = pillars[idx];
+      } else {
+        updatedItem = { id: Number(id), votes: 1 };
+        pillars.push(updatedItem);
+      }
+
+      inMemoryDB.vision = pillars;
+      if (env && env.TVK_DB) {
+        try {
+          await env.TVK_DB.put("vision", JSON.stringify(pillars));
+        } catch (e) {}
+      }
+
+      return new Response(
+        JSON.stringify({
+          status: "Success",
+          success: true,
+          data: updatedItem,
+          responseArr: [{ id, votes: updatedItem.votes, message: "Vision pillar upvoted successfully" }],
           errMsg: "",
         }),
         {

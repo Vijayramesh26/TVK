@@ -249,7 +249,8 @@ export default {
   }),
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
-    this.fetchBackendCandidates();
+    // Use local authoritative dataset (candidates.js) directly to avoid remote Cloudflare worker overriding district mappings
+    // this.fetchBackendCandidates();
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);

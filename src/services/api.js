@@ -198,5 +198,82 @@ export const apiService = {
     }
     return { success: false };
   },
+
+  /**
+   * Get Vision Pillars Live Support Counts
+   */
+  async getVisionPillars() {
+    try {
+      const res = await fetch(`${API_BASE}/api/vision/pillars`);
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {}
+    return { success: false, data: [] };
+  },
+
+  /**
+   * Upvote Vision Pillar
+   */
+  async upvoteVisionPillar(id) {
+    try {
+      const res = await fetch(`${API_BASE}/api/vision/support`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id }),
+      });
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {}
+    return { success: false };
+  },
+
+  /**
+   * Get All Grievances
+   */
+  async getGrievances() {
+    try {
+      const res = await fetch(`${API_BASE}/api/grievances`);
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {}
+    return { success: false, data: [] };
+  },
+
+  /**
+   * Update Grievance Status
+   */
+  async updateGrievanceStatus(updateData) {
+    try {
+      const res = await fetch(`${API_BASE}/api/grievance/update`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(updateData),
+      });
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {}
+    return { success: false };
+  },
+
+  /**
+   * Reset / Clear All Grievances to Default Pre-Seeded DB
+   */
+  async resetGrievances() {
+    try {
+      const res = await fetch(`${API_BASE}/api/grievance/reset`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+      });
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {}
+    return { success: false };
+  },
 };
+
 

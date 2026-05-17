@@ -393,6 +393,11 @@ export default {
           to: "/vision-2026",
           icon: "mdi-eye-arrow-right-outline",
         },
+        {
+          text: this.t("nav.grievanceDashboard") || (this.isTamil ? "குறைதீர்வு மையம்" : "Grievance Dashboard"),
+          to: "/grievances",
+          icon: "mdi-shield-account-outline",
+        },
       ];
     },
   },
@@ -413,7 +418,7 @@ export default {
           return path;
         }
       }
-      return typeof current === 'string' ? current : path;
+      return current !== undefined ? current : path;
     },
     toggleLang() {
       this.currentLang = this.currentLang === "ta" ? "en" : "ta";

@@ -72,10 +72,6 @@
               <v-icon start icon="mdi-lightbulb-on" class="mr-2"></v-icon>
               {{ t("voice.tabIdeas") }}
             </v-tab>
-            <v-tab value="complaints" class="text-h6 text-none px-md-8">
-              <v-icon start icon="mdi-file-document-alert" class="mr-2"></v-icon>
-              {{ t("voice.tabComplaints") }}
-            </v-tab>
             <v-tab value="community" class="text-h6 text-none px-md-8">
               <v-icon start icon="mdi-account-group" class="mr-2"></v-icon>
               {{ t("voice.tabCommunity") || (isTamil ? 'மக்கள் குரல் கருத்துக்கள்' : 'Community Ideas') }}
@@ -131,11 +127,55 @@
                         :rules="[v => !!v || 'Required', v => /^\d{10}$/.test(v) || 'Enter valid 10-digit number']"
                       ></v-text-field>
                     </v-col>
-                    <v-col cols="12" md="6">
-                      <v-text-field
+                    <v-col cols="12" md="4">
+                      <v-autocomplete
                         v-model="formDataIdea.district"
+                        :items="formDistrictOptions"
+                        item-title="title"
+                        item-value="value"
                         :label="t('voice.formDist')"
                         prepend-inner-icon="mdi-map-marker"
+                        variant="outlined"
+                        color="#800000"
+                        bg-color="white"
+                        rounded="lg"
+                        :rules="[v => !!v || 'Required']"
+                        @update:model-value="onDistrictChange"
+                      ></v-autocomplete>
+                    </v-col>
+                    <v-col cols="12" md="4">
+                      <v-autocomplete
+                        v-model="formDataIdea.constituency"
+                        :items="formConstituencyOptions"
+                        item-title="title"
+                        item-value="value"
+                        :label="t('voice.formConstituency') || (isTamil ? 'சட்டமன்றத் தொகுதி' : 'Assembly Constituency')"
+                        prepend-inner-icon="mdi-bank"
+                        variant="outlined"
+                        color="#800000"
+                        bg-color="white"
+                        rounded="lg"
+                        :rules="[v => !!v || 'Required']"
+                        :disabled="!formDataIdea.district"
+                      ></v-autocomplete>
+                    </v-col>
+                    <v-col cols="12" md="4">
+                      <v-text-field
+                        v-model="formDataIdea.partNo"
+                        :label="t('voice.formPartNo') || (isTamil ? 'பாகம் எண் (Part No)' : 'Part Number (Part No)')"
+                        prepend-inner-icon="mdi-numeric"
+                        variant="outlined"
+                        color="#800000"
+                        bg-color="white"
+                        rounded="lg"
+                        :rules="[v => !!v || 'Required']"
+                      ></v-text-field>
+                    </v-col>
+                    <v-col cols="12" md="6">
+                      <v-text-field
+                        v-model="formDataIdea.streetName"
+                        :label="t('voice.formStreet') || (isTamil ? 'தெரு / பகுதி பெயர்' : 'Street / Area Name')"
+                        prepend-inner-icon="mdi-road-variant"
                         variant="outlined"
                         color="#800000"
                         bg-color="white"
@@ -194,122 +234,6 @@
                     >
                       <v-icon start icon="mdi-send-circle" size="large"></v-icon>
                       {{ t("voice.btnSubmitIdea") }}
-                    </v-btn>
-                  </div>
-                </v-form>
-              </v-window-item>
-
-              <!-- COMPLAINTS / GRIEVANCE TAB -->
-              <v-window-item value="complaints">
-                <div class="text-center mb-8">
-                  <p class="text-h6 font-weight-regular text-grey-darken-2">
-                    {{ t("voice.complaintsDesc") }}
-                  </p>
-                  <div class="title-divider mx-auto bg-gold mb-6"></div>
-                </div>
-
-                <v-form ref="complaintForm" v-model="validComplaint" @submit.prevent="submitComplaint">
-                  <v-row>
-                    <v-col cols="12" md="6">
-                      <v-text-field
-                        v-model="formDataComplaint.name"
-                        :label="t('voice.formName')"
-                        prepend-inner-icon="mdi-account"
-                        variant="outlined"
-                        color="#800000"
-                        bg-color="white"
-                        rounded="lg"
-                        :rules="[v => !!v || 'Required']"
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="12" md="6">
-                      <v-text-field
-                        v-model="formDataComplaint.phone"
-                        :label="t('voice.formPhone')"
-                        prepend-inner-icon="mdi-phone"
-                        variant="outlined"
-                        color="#800000"
-                        bg-color="white"
-                        rounded="lg"
-                        :rules="[v => !!v || 'Required', v => /^\d{10}$/.test(v) || 'Enter valid 10-digit number']"
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="12" md="4">
-                      <v-text-field
-                        v-model="formDataComplaint.district"
-                        :label="t('voice.formDist')"
-                        prepend-inner-icon="mdi-map-marker"
-                        variant="outlined"
-                        color="#800000"
-                        bg-color="white"
-                        rounded="lg"
-                        :rules="[v => !!v || 'Required']"
-                      ></v-text-field>
-                    </v-col>
-                    <v-col cols="12" md="4">
-                      <v-select
-                        v-model="formDataComplaint.category"
-                        :items="complaintCategories"
-                        :label="t('voice.formCategory')"
-                        prepend-inner-icon="mdi-alert-octagon"
-                        variant="outlined"
-                        color="#800000"
-                        bg-color="white"
-                        rounded="lg"
-                        :rules="[v => !!v || 'Required']"
-                      ></v-select>
-                    </v-col>
-                    <v-col cols="12" md="4">
-                      <v-select
-                        v-model="formDataComplaint.priority"
-                        :items="priorityLevels"
-                        :label="t('voice.formPriority')"
-                        prepend-inner-icon="mdi-flag-triangle"
-                        variant="outlined"
-                        color="#800000"
-                        bg-color="white"
-                        rounded="lg"
-                        :rules="[v => !!v || 'Required']"
-                      ></v-select>
-                    </v-col>
-                    <v-col cols="12">
-                      <v-textarea
-                        v-model="formDataComplaint.description"
-                        :label="t('voice.formDesc')"
-                        prepend-inner-icon="mdi-message-alert"
-                        variant="outlined"
-                        color="#800000"
-                        bg-color="white"
-                        rounded="lg"
-                        rows="5"
-                        :rules="[v => !!v || 'Required', v => v.length >= 20 || 'Minimum 20 characters required']"
-                      ></v-textarea>
-                    </v-col>
-                    <v-col cols="12">
-                      <v-file-input
-                        v-model="formDataComplaint.attachment"
-                        :label="t('voice.formAttach')"
-                        prepend-icon=""
-                        prepend-inner-icon="mdi-camera-plus"
-                        variant="outlined"
-                        color="#800000"
-                        bg-color="white"
-                        rounded="lg"
-                        show-size
-                      ></v-file-input>
-                    </v-col>
-                  </v-row>
-
-                  <div class="text-center mt-8">
-                    <v-btn
-                      type="submit"
-                      color="#800000"
-                      size="x-large"
-                      class="rounded-pill px-12 py-4 font-weight-bold text-white elevation-4 text-h6"
-                      :loading="submitting"
-                    >
-                      <v-icon start icon="mdi-shield-check" size="large"></v-icon>
-                      {{ t("voice.btnSubmitComplaint") }}
                     </v-btn>
                   </div>
                 </v-form>
@@ -377,7 +301,11 @@
                           </v-avatar>
                           <div>
                             <div class="text-subtitle-2 font-weight-bold text-grey-darken-3 mb-0">{{ idea.name || 'Citizen' }}</div>
-                            <div class="text-caption text-grey mt-n1">{{ idea.district || 'Tamil Nadu' }}</div>
+                            <div class="text-caption text-grey mt-n1">
+                              {{ getDistrictName(idea.district) || 'Tamil Nadu' }}
+                              <span v-if="idea.constituency">, {{ getConstituencyName(idea.constituency) }}</span>
+                              <span v-if="idea.streetName"> ({{ idea.streetName }})</span>
+                            </div>
                           </div>
                         </div>
 
@@ -440,6 +368,8 @@
 
 <script>
 import { apiService } from "../../services/api";
+import { candidatesData } from "../../data/candidates";
+import { constituenciesMap } from "../../data/constituencies";
 
 export default {
   name: "VoicePortal",
@@ -447,7 +377,6 @@ export default {
   data: () => ({
     activeTab: "ideas",
     validIdea: false,
-    validComplaint: false,
     submitting: false,
     successDialog: false,
     trackingReference: "",
@@ -461,16 +390,10 @@ export default {
       name: "",
       phone: "",
       district: "",
+      constituency: "",
+      partNo: "",
+      streetName: "",
       category: null,
-      description: "",
-      attachment: null,
-    },
-    formDataComplaint: {
-      name: "",
-      phone: "",
-      district: "",
-      category: null,
-      priority: null,
       description: "",
       attachment: null,
     },
@@ -502,26 +425,6 @@ export default {
         "கிராமப்புற மேம்பாடு / Rural Development"
       ];
     },
-    complaintCategories() {
-      const items = this.t("voice.categoriesComplaint");
-      return Array.isArray(items) ? items : [
-        "சாலை மற்றும் போக்குவரத்து / Roads & Transport",
-        "மின்சாரம் மற்றும் தெருவிளக்கு / Electricity",
-        "குடிநீர் மற்றும் சுகாதாரம் / Drinking Water",
-        "லஞ்ச ஒழிப்பு / Anti-Corruption",
-        "பெண்கள் மற்றும் குழந்தைகள் பாதுகாப்பு / Women & Child Safety",
-        "வேலைவாய்ப்பு / Youth & Employment",
-        "இதர குறைகள் / Others"
-      ];
-    },
-    priorityLevels() {
-      const items = this.t("voice.priorities");
-      return Array.isArray(items) ? items : [
-        "சாதாரண / Normal",
-        "அவசரம் / High Priority",
-        "மிக அவசரம் / Urgent"
-      ];
-    },
     filteredIdeas() {
       if (!this.searchIdeas) return this.communityIdeas;
       const s = this.searchIdeas.toLowerCase();
@@ -530,11 +433,56 @@ export default {
         (i.description && i.description.toLowerCase().includes(s)) ||
         (i.category && i.category.toLowerCase().includes(s)) ||
         (i.district && i.district.toLowerCase().includes(s)) ||
+        (i.constituency && i.constituency.toLowerCase().includes(s)) ||
+        (i.streetName && i.streetName.toLowerCase().includes(s)) ||
         (i.name && i.name.toLowerCase().includes(s))
       );
     },
+    formDistrictOptions() {
+      const distMap = this.t("districts") || {};
+      const uniqueDistricts = [...new Set(candidatesData.map(c => c.district).filter(Boolean))];
+      return uniqueDistricts.map(d => {
+        const taName = distMap[d] || d;
+        return {
+          title: this.isTamil ? taName : d,
+          value: d,
+          key: d
+        };
+      }).sort((a, b) => a.title.localeCompare(b.title));
+    },
+    formConstituencyOptions() {
+      let filtered = candidatesData;
+      const currentDist = this.formDataIdea ? this.formDataIdea.district : null;
+      if (currentDist) {
+        filtered = candidatesData.filter(c => c.district === currentDist);
+      }
+      return filtered.map(c => {
+        const taConst = constituenciesMap[c.constituency] || c.constituency;
+        const dispName = this.isTamil ? taConst : c.constituency;
+        return {
+          title: dispName,
+          value: c.constituency,
+          key: c.constituency
+        };
+      }).sort((a, b) => a.title.localeCompare(b.title));
+    },
   },
   methods: {
+    getDistrictName(distKey) {
+      if (!distKey) return "";
+      const distMap = this.t("districts") || {};
+      return this.isTamil ? (distMap[distKey] || distKey) : distKey;
+    },
+    getConstituencyName(constKey) {
+      if (!constKey) return "";
+      const taConst = constituenciesMap[constKey];
+      return this.isTamil ? (taConst || constKey) : constKey;
+    },
+    onDistrictChange() {
+      if (this.formDataIdea) {
+        this.formDataIdea.constituency = "";
+      }
+    },
     async fetchIdeasFeed() {
       this.loadingIdeas = true;
       try {
@@ -583,6 +531,9 @@ export default {
         description: this.formDataIdea.description,
         name: this.formDataIdea.name,
         district: this.formDataIdea.district,
+        constituency: this.formDataIdea.constituency,
+        partNo: this.formDataIdea.partNo,
+        streetName: this.formDataIdea.streetName,
         timestamp: new Date().toISOString(),
         likes: 1,
       };
@@ -591,23 +542,10 @@ export default {
       this.submitting = false;
       this.successDialog = true;
     },
-    async submitComplaint() {
-      const { valid } = await this.$refs.complaintForm.validate();
-      if (!valid) return;
-
-      this.submitting = true;
-      const res = await apiService.submitGrievance(this.formDataComplaint);
-      this.trackingReference = res.trackingId || `TVK-2026-GR-${Math.floor(100000 + Math.random() * 900000)}`;
-      this.activeCount++;
-      this.submitting = false;
-      this.successDialog = true;
-    },
     closeSuccess() {
       this.successDialog = false;
-      if (this.activeTab === "ideas") {
+      if (this.$refs.ideaForm) {
         this.$refs.ideaForm.reset();
-      } else {
-        this.$refs.complaintForm.reset();
       }
     },
   },

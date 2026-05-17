@@ -132,121 +132,305 @@
       </div>
     </section>
 
-    <!-- Quick Tools Section -->
-    <v-container class="my-4 position-relative z-20 py-10">
+    <!-- Explore All Features & Portals Section -->
+    <v-container class="my-8 position-relative z-20 py-10">
+      <div class="text-center mb-12">
+        <v-chip color="#D4AF37" variant="outlined" class="mb-3 font-weight-bold tracking-widest text-uppercase">
+          <v-icon start icon="mdi-star-circle" size="small" color="#D4AF37"></v-icon>
+          {{ isTamil ? "அனைத்து டிஜிட்டல் சேவைகளும்" : "Explore All Digital Portals" }}
+        </v-chip>
+        <h2 class="text-h3 font-weight-black color-maroon mb-3">
+          {{ isTamil ? "நமது டிஜிட்டல் சேவைகள் & மக்கள் களங்கள்" : "Flagship Services & Interactive Portals" }}
+        </h2>
+        <p class="text-subtitle-1 text-grey-darken-1 max-w-lg mx-auto mb-0">
+          {{ isTamil ? "தளபதி விஜய் தலைமையிலான தமிழக வெற்றிக் கழகத்தின் மக்கள் நலத் திட்டங்கள் மற்றும் டிஜிட்டல் வசதிகள் அனைத்தையும் ஒரே இடத்தில் அணுகுங்கள்." : "Access all flagship portals, citizen welfare tools, and digital governance features of Tamilaga Vettri Kazhagam in one unified hub." }}
+        </p>
+      </div>
+
       <v-row align="stretch">
+        <!-- Card 1: Voter Booth Slip -->
         <v-col cols="12" sm="6" md="3">
-          <v-card
-            to="/quotes"
-            class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
-          >
-            <div class="d-flex align-center h-100">
-              <v-avatar
-                color="#800000"
-                size="64"
-                class="mr-4 elevation-4 flex-shrink-0"
-              >
-                <v-icon color="#D4AF37" size="32">mdi-format-quote-open</v-icon>
+          <v-card to="/voter-slip" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column bg-maroon-lighten">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-card-bulleted-outline</v-icon>
               </v-avatar>
               <div>
-                <h3 class="text-h6 font-weight-black color-maroon mb-1">
-                  {{ isTamil ? "தளபதியின் பொன்மொழிகள்" : "Daily Inspiration" }}
+                <v-chip color="#800000" text-color="white" size="x-small" class="font-weight-bold mb-1" variant="flat">
+                  {{ isTamil ? "முக்கிய சேவை" : "FLAGSHIP" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "வாக்காளர் பூத் சீட்டு" : "Voter Booth Slip" }}
                 </h3>
-                <p class="text-caption text-grey-darken-1 mb-0">
-                  {{
-                    isTamil
-                      ? "தளபதியின் எழுச்சிமிகு உரைகள்"
-                      : "Random powerful quotes from speeches"
-                  }}
-                </p>
               </div>
             </div>
+            <p class="text-caption text-grey-darken-2 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "உங்கள் வாக்குச்சாவடி, பாகம் எண் & பூத் ஏஜென்ட் வாட்ஸ்அப் தொடர்பு." : "Instantly check polling station details and connect with local booth agent." }}
+            </p>
           </v-card>
         </v-col>
+
+        <!-- Card 2: Vision 2026 -->
         <v-col cols="12" sm="6" md="3">
-          <v-card
-            to="/supporter-card"
-            class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
-          >
-            <div class="d-flex align-center h-100">
-              <v-avatar
-                color="#800000"
-                size="64"
-                class="mr-4 elevation-4 flex-shrink-0"
-              >
-                <v-icon color="#D4AF37" size="32"
-                  >mdi-card-account-details-star-outline</v-icon
-                >
+          <v-card to="/vision-2026" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column bg-gold-lighten">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-flag-star</v-icon>
               </v-avatar>
               <div>
-                <h3 class="text-h6 font-weight-black color-maroon mb-1">
-                  {{ isTamil ? "ஆதரவாளர் அட்டை" : "Supporter Card" }}
+                <v-chip color="#D4AF37" text-color="#800000" size="x-small" class="font-weight-bold mb-1" variant="flat">
+                  {{ isTamil ? "100 நாள் திட்டம்" : "EXECUTIVE" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "விஷன் 2026 செயல்திட்டம்" : "Vision 2026 Roadmap" }}
                 </h3>
-                <p class="text-caption text-grey-darken-1 mb-0">
-                  {{
-                    isTamil
-                      ? "உங்கள் டிஜிட்டல் ஐடி உருவாக்குங்கள்"
-                      : "Create your digital identity card"
-                  }}
-                </p>
               </div>
             </div>
+            <p class="text-caption text-grey-darken-2 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "முதல்வர் தளபதியின் 100 நாள் திட்டங்கள் & நேரடி மக்கள் ஆதரவு மீட்டர்." : "Explore Chief Minister Thalapathy's First 100 Days action plan and backing meter." }}
+            </p>
           </v-card>
         </v-col>
+
+        <!-- Card 3: Connect Portal -->
         <v-col cols="12" sm="6" md="3">
-          <v-card
-            to="/voice"
-            class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 bg-gold-lighten"
-          >
-            <div class="d-flex align-center h-100">
-              <v-avatar
-                color="#800000"
-                size="64"
-                class="mr-4 elevation-4 flex-shrink-0"
-              >
-                <v-icon color="#D4AF37" size="32">mdi-account-voice</v-icon>
+          <v-card to="/connect" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-account-group-outline</v-icon>
               </v-avatar>
               <div>
-                <h3 class="text-h6 font-weight-black color-maroon mb-1">
-                  {{ isTamil ? "மக்கள் களம்" : "Citizen Voice" }}
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "களப்பணி" : "COMMUNITY" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "தொகுதி & MLA களம்" : "Constituency Connect" }}
                 </h3>
-                <p class="text-caption text-grey-darken-1 mb-0 font-weight-bold">
-                  {{
-                    isTamil
-                      ? "யோசனைகள் & புகார் பதிவு"
-                      : "Share ideas & file grievances"
-                  }}
-                </p>
               </div>
             </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "உங்கள் தொகுதி அலுவலகம், MLA விவரம் & வாட்ஸ்அப் குழுவில் இணைய." : "Connect with local TVK secretariat, MLA representatives & WhatsApp channels." }}
+            </p>
           </v-card>
         </v-col>
+
+        <!-- Card 4: Welfare Schemes -->
         <v-col cols="12" sm="6" md="3">
-          <v-card
-            to="/candidates"
-            class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
-          >
-            <div class="d-flex align-center h-100">
-              <v-avatar
-                color="#800000"
-                size="64"
-                class="mr-4 elevation-4 flex-shrink-0"
-              >
-                <v-icon color="#D4AF37" size="32">mdi-account-search</v-icon>
+          <v-card to="/schemes" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-hand-coin-outline</v-icon>
               </v-avatar>
               <div>
-                <h3 class="text-h6 font-weight-black color-maroon mb-1">
-                  {{ isTamil ? "வேட்பாளர் தேடல்" : "Find Candidate" }}
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "அரசு திட்டங்கள்" : "WELFARE" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "மக்கள் நலத்திட்டங்கள்" : "Welfare Schemes" }}
                 </h3>
-                <p class="text-caption text-grey-darken-1 mb-0">
-                  {{
-                    isTamil
-                      ? "உங்கள் தொகுதி வேட்பாளரை அறியுங்கள்"
-                      : "Meet your local TVK representative"
-                  }}
-                </p>
               </div>
             </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "இலவச மின்சாரம், சிங்கப்பெண் படை & அரசு திட்டங்களின் தகுதி சரிபார்ப்பு." : "Explore flagship government schemes and check your eligibility instantly." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 5: Citizen Voice -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/voice" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column bg-gold-lighten">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-account-voice</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#D4AF37" text-color="#800000" size="x-small" class="font-weight-bold mb-1" variant="flat">
+                  {{ isTamil ? "முதல்வர் தனிப்பிரிவு" : "GRIEVANCE" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "மக்கள் களம் (குரல்)" : "Citizen Voice" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-2 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "உங்கள் ஆக்கப்பூர்வமான யோசனைகள் & குறைகளை முதல்வரிடம் நேரடியாக தெரிவிக்க." : "Submit governance ideas and file official grievances with CM Special Cell." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 5B: Grievance Dashboard -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/grievances" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column bg-maroon-lighten">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-crosshairs-gps</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#800000" text-color="white" size="x-small" class="font-weight-bold mb-1" variant="flat">
+                  {{ isTamil ? "கண்காணிப்பு" : "TRACKING" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "குறைதீர்வு மையம்" : "Grievance Dashboard" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-2 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "உங்கள் புகார்களின் நேரடி தீர்வு நிலை மற்றும் அரசு அதிகாரிகளின் நடவடிக்கையை அறிய." : "Track real-time resolution status and official actions taken on citizen grievances." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 6: Volunteer Brigade -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/volunteer" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-account-multiple-plus-outline</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "இளைஞர் படை" : "ACTION SQUAD" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "தன்னார்வலர் படை" : "Volunteer Brigade" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "களப்பணியில் இணைந்து மக்கள் சேவை செய்ய & லீடர்போர்டு தாக்கம் அறிய." : "Join grassroots action force, volunteer for initiatives and track leaderboard." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 7: Poster Creator -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/create" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-palette-outline</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "வடிவமைப்பு" : "CANVAS" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "போஸ்டர் உருவாக்கி" : "AI Poster Creator" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "தளபதி விஜயுடன் உங்கள் புகைப்படம் இணைத்து அதிகாரப்பூர்வ போஸ்டர் உருவாக்க." : "Generate customized high-resolution campaign posters with CM Thalapathy." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 8: CM Letter Creator -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/letter" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-script-text-outline</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "வாழ்த்து" : "GREETINGS" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "முதல்வர் கடிதம்" : "CM Letter Creator" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "உங்கள் பெயரில் தளபதியின் கையொப்பமிட்ட வாழ்த்து கடிதம் பெற." : "Generate personalized appreciation letters signed by Chief Minister Vijay." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 9: AI Archive Search -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/search" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-archive-search-outline</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "செயற்கை நுண்ணறிவு" : "AI ENGINE" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "ஆர்க்கைவ் தேடல்" : "AI Speech Search" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "தளபதியின் வரலாற்றுச் சிறப்புமிக்க உரைகளை சொற்கள் வாரியாக தேட." : "Search across thousands of speech transcripts and YouTube highlights." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 10: Supporter ID Card -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/supporter-card" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-card-account-details-star-outline</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "உறுப்பினர்" : "MEMBERSHIP" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "ஆதரவாளர் அட்டை" : "Supporter ID Card" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "உங்கள் புகைப்படத்துடன் கூடிய அதிகாரப்பூர்வ டிஜிட்டல் அடையாள அட்டை." : "Create your official digital supporter identity card with QR verification." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 11: Ideology & Principles -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/kolgai" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-book-open-page-variant-outline</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "கொள்கை" : "MANIFESTO" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "கட்சி கொள்கைகள்" : "Ideology & Pillars" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "தவெக-வின் இருமொழிக் கொள்கை, மாநில சுயாட்சி & மதச்சார்பற்ற சமூக நீதி." : "Explore TVK's core ideological pillars, state autonomy & social justice." }}
+            </p>
+          </v-card>
+        </v-col>
+
+        <!-- Card 12: Election Results & Stats -->
+        <v-col cols="12" sm="6" md="3">
+          <v-card to="/results" class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 d-flex flex-column">
+            <div class="d-flex align-center mb-3">
+              <v-avatar color="#800000" size="56" class="mr-4 elevation-4 flex-shrink-0">
+                <v-icon color="#D4AF37" size="28">mdi-vote-outline</v-icon>
+              </v-avatar>
+              <div>
+                <v-chip color="#800000" variant="outlined" size="x-small" class="font-weight-bold mb-1">
+                  {{ isTamil ? "தேர்தல் 2026" : "ELECTION 2026" }}
+                </v-chip>
+                <h3 class="text-h6 font-weight-black color-maroon mb-0">
+                  {{ isTamil ? "தேர்தல் முடிவுகள்" : "Election Results Map" }}
+                </h3>
+              </div>
+            </div>
+            <p class="text-caption text-grey-darken-1 mb-0 font-weight-medium mt-auto">
+              {{ isTamil ? "234 தொகுதிகளின் வெற்றி நிலவரம், வாக்கு சதவீதம் & விரிவான புள்ளிவிவரங்கள்." : "Explore 234 constituency win data, vote share map & detailed statistics." }}
+            </p>
           </v-card>
         </v-col>
       </v-row>
@@ -1693,6 +1877,9 @@ export default {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
+
+.bg-maroon-lighten { background: rgba(128, 0, 0, 0.03) !important; }
+.bg-gold-lighten { background: rgba(212, 175, 55, 0.06) !important; }
 
 .border-white-thin {
   border: 1px solid rgba(255, 255, 255, 0.15) !important;

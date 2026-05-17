@@ -196,6 +196,17 @@ const routes = [
         "Explore Chief Minister Thalapathy Vijay's First 100 Days Executive Action Plan and key flagship governance pillars.",
     },
   },
+  {
+    path: "/grievances",
+    alias: "/grievance-dashboard",
+    name: "GrievanceDashboard",
+    component: () => import("../components/GrievanceDashboard/Main.vue"),
+    meta: {
+      title: "TVK Grievance Redressal Dashboard | மக்கள் குறைதீர்வு மையம்",
+      description:
+        "Track real-time status of citizen grievances and inspect direct remedial actions taken by responsible IAS and departmental officers.",
+    },
+  },
 ];
 
 const router = createRouter({

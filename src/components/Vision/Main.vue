@@ -116,6 +116,7 @@
 
 <script>
 import logo from "../../assets/tvk-logo.png";
+import { apiService } from "../../services/api";
 
 export default {
   name: "VisionPortal",
@@ -124,6 +125,7 @@ export default {
     logo,
     supportedIds: [],
     localPillars: null,
+    loadingVotes: false,
   }),
   computed: {
     isTamil() {
@@ -182,19 +184,36 @@ export default {
     },
   },
   methods: {
-    supportPillar(id) {
+    async fetchVotes() {
+      this.loadingVotes = true;
+      const res = await apiService.getVisionPillars();
+      if (res && res.success && res.data && res.data.length > 0) {
+        if (!this.localPillars) {
+          this.localPillars = JSON.parse(JSON.stringify(this.currentPillars));
+        }
+        res.data.forEach(item => {
+          const found = this.localPillars.find(p => p.id === item.id);
+          if (found && item.votes) found.votes = item.votes;
+        });
+      }
+      this.loadingVotes = false;
+    },
+    async supportPillar(id) {
       if (!this.localPillars) {
         this.localPillars = JSON.parse(JSON.stringify(this.currentPillars));
       }
-      const idx = this.localPillars.findIndex(p => p.id === id);
-      if (idx !== -1) {
-        this.localPillars[idx].votes += 1;
+      if (!this.supportedIds.includes(id)) {
         this.supportedIds.push(id);
+        const idx = this.localPillars.findIndex(p => p.id === id);
+        if (idx !== -1) {
+          this.localPillars[idx].votes += 1;
+        }
+        await apiService.upvoteVisionPillar(id);
       }
     },
   },
   watch: {
-    currentLang() {
+    isTamil() {
       // Refresh local copy when language toggles to ensure translated text updates while keeping like count increments
       const translated = this.t("vision.pillars");
       if (Array.isArray(translated)) {
@@ -212,8 +231,9 @@ export default {
       }
     },
   },
-  created() {
+  async created() {
     this.localPillars = JSON.parse(JSON.stringify(this.currentPillars));
+    await this.fetchVotes();
   },
 };
 </script>
