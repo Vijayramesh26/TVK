@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Backend
+backend/tvk-server
+backend/data.json
+backend/tvk-backend.wasm
+backend/wasm_exec.js

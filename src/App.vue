@@ -314,6 +314,9 @@ export default {
     currentLang: "ta",
   }),
   computed: {
+    isTamil() {
+      return this.currentLang === "ta";
+    },
     navItems() {
       return [
         { text: this.t("nav.home"), to: "/", icon: "mdi-home" },
@@ -331,34 +334,54 @@ export default {
         { text: this.t("nav.kolgai"), to: "/kolgai", icon: "mdi-script-text" },
         { text: this.t("nav.results"), to: "/results", icon: "mdi-poll" },
         {
-          text: this.isTamil ? "வேட்பாளர்கள்" : "Candidates",
+          text: this.t("nav.candidates"),
           to: "/candidates",
           icon: "mdi-account-group",
         },
         {
-          text: this.isTamil ? "நிர்வாகம்" : "Admin",
+          text: this.t("nav.dashboard"),
           to: "/dashboard",
           icon: "mdi-view-dashboard",
         },
         {
-          text: this.isTamil ? "AI தேடல்" : "AI Search",
+          text: this.t("nav.search"),
           to: "/search",
           icon: "mdi-robot-outline",
         },
         {
-          text: this.isTamil ? "பொன்மொழிகள்" : "Quotes",
+          text: this.t("nav.quotes"),
           to: "/quotes",
           icon: "mdi-format-quote-open",
         },
         {
-          text: this.isTamil ? "ஆதரவாளர் அட்டை" : "Supporter Card",
+          text: this.t("nav.supporterCard"),
           to: "/supporter-card",
           icon: "mdi-card-account-details-star-outline",
         },
         {
-          text: this.isTamil ? "வரலாற்றுப் பயணம்" : "Journey",
+          text: this.t("nav.journey"),
           to: "/journey",
           icon: "mdi-timeline-clock-outline",
+        },
+        {
+          text: this.t("nav.voice"),
+          to: "/voice",
+          icon: "mdi-account-voice",
+        },
+        {
+          text: this.t("nav.volunteer"),
+          to: "/volunteer",
+          icon: "mdi-hand-heart",
+        },
+        {
+          text: this.t("nav.schemes"),
+          to: "/schemes",
+          icon: "mdi-shield-star",
+        },
+        {
+          text: this.t("nav.connect"),
+          to: "/connect",
+          icon: "mdi-account-group-outline",
         },
       ];
     },
@@ -385,9 +408,6 @@ export default {
     toggleLang() {
       this.currentLang = this.currentLang === "ta" ? "en" : "ta";
     },
-    isTamil() {
-      return this.currentLang === "ta";
-    }
   },
 };
 </script>

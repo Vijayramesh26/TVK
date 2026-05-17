@@ -18,19 +18,18 @@
                 variant="flat"
               >
                 <v-icon start icon="mdi-party-popper" size="small"></v-icon>
-                அதிகாரப்பூர்வ பக்கம்
+                {{ isTamil ? "அதிகாரப்பூர்வ பக்கம்" : "Official Page" }}
               </v-chip>
               <h1
                 class="text-h4 text-md-h3 font-weight-black text-white mb-2"
                 style="line-height: 1.2"
               >
-                தமிழக வெற்றிக் கழகம்
+                {{ isTamil ? "தமிழக வெற்றிக் கழகம்" : "Tamilaga Vettri Kazhagam" }}
               </h1>
               <p
                 class="text-subtitle-1 text-md-h6 font-weight-regular text-white opacity-90 mb-6"
               >
-                தொகுதி வாரியான செயல்பாடுகள் மற்றும் டிஜிட்டல் வளர்ச்சி (Digital
-                Momentum)
+                {{ isTamil ? "தொகுதி வாரியான செயல்பாடுகள் மற்றும் டிஜிட்டல் வளர்ச்சி (Digital Momentum)" : "Constituency-wise Activities & Digital Momentum" }}
               </p>
               <v-btn
                 color="#D4AF37"
@@ -39,7 +38,7 @@
                 class="rounded-pill font-weight-bold elevation-4 text-maroon"
                 to="/create"
               >
-                புதிய போஸ்டர் உருவாக்கு
+                {{ isTamil ? "புதிய போஸ்டர் உருவாக்கு" : "Create New Poster" }}
               </v-btn>
             </div>
 
@@ -84,7 +83,7 @@
               <div
                 class="text-overline text-grey-darken-1 font-weight-bold mb-1"
               >
-                மொத்த பதிவிறக்கங்கள்
+                {{ isTamil ? "மொத்த பதிவிறக்கங்கள்" : "Total Downloads" }}
               </div>
               <div
                 class="text-h3 font-weight-black color-maroon d-flex align-center"
@@ -117,7 +116,7 @@
               <div
                 class="text-overline text-grey-darken-1 font-weight-bold mb-1"
               >
-                செயல்பாட்டில் உள்ள தொகுதிகள்
+                {{ isTamil ? "செயல்பாட்டில் உள்ள தொகுதிகள்" : "Active Constituencies" }}
               </div>
               <div class="text-h3 font-weight-black color-gold">
                 {{ constituencyCount }}
@@ -139,7 +138,7 @@
               <div
                 class="text-overline text-grey-darken-1 font-weight-bold mb-1"
               >
-                அறிவிக்கப்பட்ட வேட்பாளர்கள்
+                {{ isTamil ? "அறிவிக்கப்பட்ட வேட்பாளர்கள்" : "Announced Candidates" }}
               </div>
               <div class="text-h3 font-weight-black color-maroon">
                 {{ candidatesCount }}
@@ -160,10 +159,10 @@
               >
                 <div>
                   <h2 class="text-h6 font-weight-bold color-maroon mb-0">
-                    முன்னணி தொகுதிகள்
+                    {{ isTamil ? "முன்னணி தொகுதிகள்" : "Top Constituencies" }}
                   </h2>
                   <div class="text-caption text-grey-darken-1">
-                    அதிக போஸ்டர்கள் பதிவிறக்கம் செய்த டாப் 10 தொகுதிகள்
+                    {{ isTamil ? "அதிக போஸ்டர்கள் பதிவிறக்கம் செய்த டாப் 10 தொகுதிகள்" : "Top 10 Constituencies by Poster Downloads" }}
                   </div>
                 </div>
                 <v-btn
@@ -195,7 +194,7 @@
                   :series="chartSeries"
                 ></apexchart>
                 <div v-else class="text-center py-12 text-grey-darken-1">
-                  தரவுகள் இல்லை
+                  {{ isTamil ? "தரவுகள் இல்லை" : "No Data Available" }}
                 </div>
               </v-card-text>
             </v-card>
@@ -207,7 +206,7 @@
               <v-col cols="12">
                 <v-card class="glass-card rounded-xl elevation-2 h-100 pa-6">
                   <h3 class="text-h6 font-weight-bold color-maroon mb-4">
-                    விரைவு வழிகள்
+                    {{ isTamil ? "விரைவு வழிகள்" : "Quick Links" }}
                   </h3>
                   <v-list class="bg-transparent pa-0">
                     <v-list-item
@@ -217,10 +216,10 @@
                       append-icon="mdi-chevron-right"
                     >
                       <v-list-item-title class="font-weight-bold"
-                        >வேட்பாளர்கள் 2026</v-list-item-title
+                        >{{ isTamil ? "வேட்பாளர்கள் 2026" : "Candidates 2026" }}</v-list-item-title
                       >
                       <v-list-item-subtitle
-                        >234 தொகுதிகள் பட்டியல்</v-list-item-subtitle
+                        >{{ isTamil ? "234 தொகுதிகள் பட்டியல்" : "234 Constituencies List" }}</v-list-item-subtitle
                       >
                     </v-list-item>
 
@@ -231,10 +230,66 @@
                       append-icon="mdi-chevron-right"
                     >
                       <v-list-item-title class="font-weight-bold"
-                        >கட்சியின் கொள்கைகள்</v-list-item-title
+                        >{{ isTamil ? "கட்சியின் கொள்கைகள்" : "Party Ideology" }}</v-list-item-title
                       >
                       <v-list-item-subtitle
-                        >நமது கனவு தமிழ்நாடு</v-list-item-subtitle
+                        >{{ isTamil ? "நமது கனவு தமிழ்நாடு" : "Our Dream Tamil Nadu" }}</v-list-item-subtitle
+                      >
+                    </v-list-item>
+
+                    <v-list-item
+                      to="/voice"
+                      class="quick-action-item rounded-lg mb-3"
+                      prepend-icon="mdi-account-voice"
+                      append-icon="mdi-chevron-right"
+                    >
+                      <v-list-item-title class="font-weight-bold color-maroon"
+                        >{{ isTamil ? "மக்கள் களம் (குறைகள் & யோசனைகள்)" : "Citizen Voice Portal" }}</v-list-item-title
+                      >
+                      <v-list-item-subtitle
+                        >{{ isTamil ? "புகார் பதிவு மற்றும் கருத்துகள்" : "Grievances & Policy Ideas" }}</v-list-item-subtitle
+                      >
+                    </v-list-item>
+
+                    <v-list-item
+                      to="/volunteer"
+                      class="quick-action-item rounded-lg mb-3"
+                      prepend-icon="mdi-hand-heart"
+                      append-icon="mdi-chevron-right"
+                    >
+                      <v-list-item-title class="font-weight-bold color-maroon"
+                        >{{ isTamil ? "தன்னார்வலர் படை பதிவு" : "Volunteer Force Registration" }}</v-list-item-title
+                      >
+                      <v-list-item-subtitle
+                        >{{ isTamil ? "பூத் கமிட்டி மற்றும் இளைஞர் அணி" : "Booth Committee & Youth Brigade" }}</v-list-item-subtitle
+                      >
+                    </v-list-item>
+
+                    <v-list-item
+                      to="/schemes"
+                      class="quick-action-item rounded-lg mb-3"
+                      prepend-icon="mdi-shield-star"
+                      append-icon="mdi-chevron-right"
+                    >
+                      <v-list-item-title class="font-weight-bold color-maroon"
+                        >{{ isTamil ? "அரசு திட்டங்கள் & தகுதி அறியும் கருவி" : "Government Schemes & Eligibility" }}</v-list-item-title
+                      >
+                      <v-list-item-subtitle
+                        >{{ isTamil ? "முதலமைச்சரின் முன்னோடித் திட்டங்கள்" : "CM Flagship Welfare Initiatives" }}</v-list-item-subtitle
+                      >
+                    </v-list-item>
+
+                    <v-list-item
+                      to="/connect"
+                      class="quick-action-item rounded-lg mb-3"
+                      prepend-icon="mdi-account-group-outline"
+                      append-icon="mdi-chevron-right"
+                    >
+                      <v-list-item-title class="font-weight-bold color-maroon"
+                        >{{ isTamil ? "தொகுதி வாரியான மக்கள் இணைப்பு" : "Constituency Community Connect" }}</v-list-item-title
+                      >
+                      <v-list-item-subtitle
+                        >{{ isTamil ? "வாட்ஸ்அப் குழுக்கள் & நிகழ்வுகள்" : "WhatsApp Groups & Local Events" }}</v-list-item-subtitle
                       >
                     </v-list-item>
 
@@ -246,10 +301,10 @@
                       append-icon="mdi-open-in-new"
                     >
                       <v-list-item-title class="font-weight-bold"
-                        >அதிகாரப்பூர்வ தளம்</v-list-item-title
+                        >{{ isTamil ? "அதிகாரப்பூர்வ தளம்" : "Official Portal" }}</v-list-item-title
                       >
                       <v-list-item-subtitle
-                        >tvk.family காணவும்</v-list-item-subtitle
+                        >{{ isTamil ? "tvk.family காணவும்" : "Visit tvk.family" }}</v-list-item-subtitle
                       >
                     </v-list-item>
                   </v-list>
@@ -280,6 +335,7 @@ export default {
   components: {
     apexchart: VueApexCharts,
   },
+  inject: ['t', 'currentLang'],
   data: () => ({
     loading: true,
     stats: [],
@@ -287,6 +343,9 @@ export default {
     candidatesCount: candidatesData ? candidatesData.length : 0,
   }),
   computed: {
+    isTamil() {
+      return this.currentLang() === 'ta';
+    },
     totalDownloads() {
       return this.allStats.reduce((acc, curr) => acc + (curr.count || 0), 0);
     },
@@ -300,7 +359,7 @@ export default {
     chartSeries() {
       return [
         {
-          name: "போஸ்டர் பதிவிறக்கங்கள்",
+          name: this.isTamil ? "போஸ்டர் பதிவிறக்கங்கள்" : "Poster Downloads",
           data: this.stats.slice(0, 10).map((s) => s.count),
         },
       ];

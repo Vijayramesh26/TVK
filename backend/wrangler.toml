@@ -1,0 +1,12 @@
+name = "tvk-golang-backend"
+main = "./worker.js"
+compatibility_date = "2026-05-16"
+
+[[rules]]
+type = "CompiledWasm"
+globs = ["**/*.wasm"]
+fallthrough = true
+
+[[kv_namespaces]]
+binding = "TVK_DB"
+id = "66b4cea129b242fbb265e13ee059ae33"

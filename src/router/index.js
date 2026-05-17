@@ -136,6 +136,46 @@ const routes = [
         "AI-powered search for Thalapathy Vijay's speeches and vision. | தளபதியின் உரைகளைத் தேடுங்கள்.",
     },
   },
+  {
+    path: "/voice",
+    name: "VoicePortal",
+    component: () => import("../components/Voice/Main.vue"),
+    meta: {
+      title: "TVK Citizen Voice | மக்கள் களம் | Ideas & Grievance Redressal",
+      description:
+        "Submit governance ideas and file official grievances directly with the CM Special Cell. | உங்கள் யோசனைகள் மற்றும் குறைகளை முதலமைச்சர் தனிப்பிரிவிடம் சமர்ப்பியுங்கள்.",
+    },
+  },
+  {
+    path: "/volunteer",
+    name: "VolunteerPortal",
+    component: () => import("../components/Volunteer/Main.vue"),
+    meta: {
+      title: "TVK Volunteer Force | தன்னார்வலர் படை | Youth Brigade Registration",
+      description:
+        "Join the grassroots movement for political transformation in Tamil Nadu. | தமிழகத்தின் அரசியல் மாற்றத்திற்கான களப்பணியில் இணையுங்கள்.",
+    },
+  },
+  {
+    path: "/schemes",
+    name: "SchemesPortal",
+    component: () => import("../components/Schemes/Main.vue"),
+    meta: {
+      title: "TVK Government Schemes | அரசு திட்டங்கள் & தகுதி அறியும் கருவி",
+      description:
+        "Explore Chief Minister Thalapathy Vijay's flagship welfare schemes and check your eligibility. | முதலமைச்சரின் முன்னோடித் திட்டங்கள் மற்றும் தகுதி அறியும் கருவி.",
+    },
+  },
+  {
+    path: "/connect",
+    name: "ConnectPortal",
+    component: () => import("../components/Connect/Main.vue"),
+    meta: {
+      title: "TVK Constituency Connect | தொகுதி இணைப்பு | Local Community Hub",
+      description:
+        "Connect with local TVK WhatsApp groups, district secretaries, and local branch events. | உங்கள் தொகுதி வாட்ஸ்அப் குழுக்கள் மற்றும் நிகழ்வுகளை அறியுங்கள்.",
+    },
+  },
 ];
 
 const router = createRouter({

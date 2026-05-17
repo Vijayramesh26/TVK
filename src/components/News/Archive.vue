@@ -117,6 +117,7 @@
 
 <script>
 import { newsData } from '../../data/newsData';
+import { apiService } from '../../services/api';
 
 export default {
   name: 'NewsArchive',
@@ -140,6 +141,15 @@ export default {
     }
   },
   methods: {
+    async fetchBackendNews() {
+      const backendNews = await apiService.getNewsData();
+      if (backendNews && backendNews.length > 0) {
+        this.news = backendNews.map((bItem, idx) => ({
+          ...this.news[idx % this.news.length],
+          ...bItem,
+        })).sort((a, b) => new Date(b.date) - new Date(a.date));
+      }
+    },
     updateSEO() {
       // Breadcrumb Schema
       let breadcrumbScript = document.getElementById('json-ld-breadcrumb-archive');
@@ -182,6 +192,7 @@ export default {
   mounted() {
     window.scrollTo(0, 0);
     this.updateSEO();
+    this.fetchBackendNews();
   }
 };
 </script>

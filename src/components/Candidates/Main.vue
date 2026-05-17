@@ -235,6 +235,7 @@
 <script>
 import { candidatesData } from '../../data/candidates';
 import { votingData } from '../../data/votingData';
+import { apiService } from '../../services/api';
 
 export default {
   name: "Candidates",
@@ -248,6 +249,7 @@ export default {
   }),
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
+    this.fetchBackendCandidates();
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
@@ -287,6 +289,15 @@ export default {
     }
   },
   methods: {
+    async fetchBackendCandidates() {
+      const backendCandidates = await apiService.getCandidatesData();
+      if (backendCandidates && backendCandidates.length > 0) {
+        this.candidates = backendCandidates.map((bItem, idx) => ({
+          ...this.candidates[idx % this.candidates.length],
+          ...bItem,
+        }));
+      }
+    },
     translateDistrict(districtEn) {
       return this.t('districts.' + districtEn);
     },

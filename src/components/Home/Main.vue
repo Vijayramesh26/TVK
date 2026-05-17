@@ -126,7 +126,7 @@
       >
         <span
           class="text-caption mb-2 font-weight-bold letter-spacing-1 text-uppercase"
-          >கீழே செல்லவும்</span
+          >{{ isTamil ? 'கீழே செல்லவும்' : 'Scroll Down' }}</span
         >
         <v-icon class="animate-bounce">mdi-chevron-down</v-icon>
       </div>
@@ -135,7 +135,7 @@
     <!-- Quick Tools Section -->
     <v-container class="my-4 position-relative z-20 py-10">
       <v-row align="stretch">
-        <v-col cols="12" md="4">
+        <v-col cols="12" sm="6" md="3">
           <v-card
             to="/quotes"
             class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
@@ -163,7 +163,7 @@
             </div>
           </v-card>
         </v-col>
-        <v-col cols="12" md="4">
+        <v-col cols="12" sm="6" md="3">
           <v-card
             to="/supporter-card"
             class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
@@ -193,7 +193,35 @@
             </div>
           </v-card>
         </v-col>
-        <v-col cols="12" md="4">
+        <v-col cols="12" sm="6" md="3">
+          <v-card
+            to="/voice"
+            class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100 bg-gold-lighten"
+          >
+            <div class="d-flex align-center h-100">
+              <v-avatar
+                color="#800000"
+                size="64"
+                class="mr-4 elevation-4 flex-shrink-0"
+              >
+                <v-icon color="#D4AF37" size="32">mdi-account-voice</v-icon>
+              </v-avatar>
+              <div>
+                <h3 class="text-h6 font-weight-black color-maroon mb-1">
+                  {{ isTamil ? "மக்கள் களம்" : "Citizen Voice" }}
+                </h3>
+                <p class="text-caption text-grey-darken-1 mb-0 font-weight-bold">
+                  {{
+                    isTamil
+                      ? "யோசனைகள் & புகார் பதிவு"
+                      : "Share ideas & file grievances"
+                  }}
+                </p>
+              </div>
+            </div>
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="6" md="3">
           <v-card
             to="/candidates"
             class="tool-card pa-6 rounded-xl elevation-10 border-gold hover-lift h-100"
@@ -1053,22 +1081,6 @@ export default {
     tickerInterval: null,
     ready: false,
 
-    leaders: [
-      { id: "periyar", name: "தந்தை பெரியார்", image: periyarImg },
-      { id: "kamarajar", name: "பெருந்தலைவர் காமராஜர்", image: kamarajarImg },
-      { id: "ambedkar", name: "அண்ணல் அம்பேத்கர்", image: ambedkarImg },
-      {
-        id: "velunachiyar",
-        name: "வீரமங்கை வேலுநாச்சியார்",
-        image: velunachiyarImg,
-      },
-      {
-        id: "anjalaiammal",
-        name: "கடலூர் அஞ்சலையம்மாள்",
-        image: anjalaiammalImg,
-      },
-    ],
-
     gallery: [
       {
         id: 1,
@@ -1109,6 +1121,23 @@ export default {
   computed: {
     isTamil() {
       return this.currentLang() === "ta";
+    },
+    leaders() {
+      return [
+        { id: "periyar", name: this.isTamil ? "தந்தை பெரியார்" : "Thanthai Periyar", image: periyarImg },
+        { id: "kamarajar", name: this.isTamil ? "பெருந்தலைவர் காமராஜர்" : "Perunthalaivar Kamarajar", image: kamarajarImg },
+        { id: "ambedkar", name: this.isTamil ? "அண்ணல் அம்பேத்கர்" : "Annal Ambedkar", image: ambedkarImg },
+        {
+          id: "velunachiyar",
+          name: this.isTamil ? "வீரமங்கை வேலுநாச்சியார்" : "Veeramangai Velunachiyar",
+          image: velunachiyarImg,
+        },
+        {
+          id: "anjalaiammal",
+          name: this.isTamil ? "கடலூர் அஞ்சலையம்மாள்" : "Cuddalore Anjalaiammal",
+          image: anjalaiammalImg,
+        },
+      ];
     },
     sortedNews() {
       return [...newsData].sort((a, b) => {

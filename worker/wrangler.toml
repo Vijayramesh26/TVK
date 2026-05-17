@@ -1,0 +1,13 @@
+name = "tvk-platform-backend"
+main = "src/index.js"
+compatibility_date = "2026-05-16"
+
+# Enable KV Storage binding
+[[kv_namespaces]]
+binding = "TVK_KV"
+id = "preview_kv_namespace_id_replace_on_deploy"
+preview_id = "preview_kv_namespace_id_replace_on_deploy"
+
+[vars]
+ENVIRONMENT = "production"
+APP_NAME = "Tamilaga Vettri Kazhagam Backend"

@@ -280,6 +280,7 @@ import { candidatesData } from '../../data/candidates';
 import { constituencyTranslations } from '../../data/constituencyTranslations';
 import { TN_MAP_DATA } from '../../data/mapData';
 import resultsBg from "../../assets/voteForWhistle.jpg";
+import { apiService } from '../../services/api';
 
 export default {
   name: "Results",
@@ -361,9 +362,19 @@ export default {
     }
   },
   mounted() {
+    this.fetchBackendVoting();
     this.fetchLiveResults();
   },
   methods: {
+    async fetchBackendVoting() {
+      const backendVoting = await apiService.getVotingData();
+      if (backendVoting && backendVoting.length > 0) {
+        this.votingStats = backendVoting.map((bItem, idx) => ({
+          ...this.votingStats[idx % this.votingStats.length],
+          ...bItem,
+        }));
+      }
+    },
     async fetchLiveResults() {
       try {
         const res = await fetch('https://results.eci.gov.in/ResultAcGenMay2026/election-json-S22-live.json');
