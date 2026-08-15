@@ -377,7 +377,7 @@ export default {
     },
     async fetchLiveResults() {
       try {
-        const res = await fetch('https://results.eci.gov.in/ResultAcGenMay2026/election-json-S22-live.json');
+        const res = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent('https://results.eci.gov.in/ResultAcGenMay2026/election-json-S22-live.json'));
         if (!res.ok) throw new Error("HTTP " + res.status);
         const data = await res.json();
         const liveData = data.S22.chartData;
@@ -400,7 +400,7 @@ export default {
         let allVoteMap = {};
         const parsePartyPage = async (partyId) => {
           try {
-            const r = await fetch(`https://results.eci.gov.in/ResultAcGenMay2026/partywisewinresult-${partyId}S22.htm`);
+            const r = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(`https://results.eci.gov.in/ResultAcGenMay2026/partywisewinresult-${partyId}S22.htm`));
             if (!r.ok) return;
             const html = await r.text();
             const parser = new DOMParser();

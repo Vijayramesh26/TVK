@@ -181,7 +181,7 @@
             ref="letterCanvas"
             :title="letterTitle"
             :textContent="letterContent"
-            :date="letterDate"
+            :date="formattedDate"
             :reference-no="letterRef"
             :image-url="letterImageUrl"
             :show-main-title="showPressReleaseTitle"
@@ -227,6 +227,12 @@ export default {
     isTamil() {
       return this.currentLang() === "ta";
     },
+    formattedDate() {
+      if (!this.letterDate) return "";
+      const parts = this.letterDate.split("-");
+      if (parts.length !== 3) return this.letterDate;
+      return `${parts[2]}-${parts[1]}-${parts[0]}`;
+    },
   },
   methods: {
     initQuill() {
@@ -268,7 +274,7 @@ export default {
     downloadLetter() {
       const dataUrl = this.$refs.letterCanvas.exportAsImage();
       const link = document.createElement("a");
-      link.download = `tvk-press-release-${this.letterDate}.png`;
+      link.download = `tvk-press-release-${this.formattedDate}.png`;
       link.href = dataUrl;
       link.click();
     },
